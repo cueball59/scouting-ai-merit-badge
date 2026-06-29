@@ -53,11 +53,10 @@
       <section class="hero">
         <div>
           <div class="badge-row">
-            <span class="badge">Scouting America</span>
             <span class="badge">Artificial Intelligence</span>
             <span class="badge">Live session ready</span>
           </div>
-          <h1>Scouting America AI Merit Badge</h1>
+          <h1>Scouting AI Merit Badge</h1>
           <p>The Artificial Intelligence merit badge introduces Scouts to AI concepts, automation, responsible use, deepfakes, practical AI skills, and career pathways. This site supports live instruction with requirement pages, counselor prompts, and interactive activities grounded in the official Scouting America requirements.</p>
           <div class="actions">
             <a class="button secondary" href="${link("counselor-prompts.html")}">Counselor Prompts</a>
@@ -158,37 +157,44 @@
           <span class="requirement-number">Join on your phone</span>
           <h2>Scan to play AI or Not?</h2>
           <p>Use this QR code to open the same game page quickly. For shared scores, everyone enters the same session code.</p>
-          <a href="https://cueball59.github.io/scouting-ai-merit-badge/games/ai-or-not.html">cueball59.github.io/scouting-ai-merit-badge/games/ai-or-not.html</a>
         </div>
         <img src="${link("assets/ai-or-not-qr.png")}" alt="QR code for the AI or Not game page">
+      </section>
+      <section class="shared-score-panel shared-score-panel-top">
+        <div>
+          <span class="requirement-number">Live session</span>
+          <h2>Shared scores</h2>
+          <p>Enter the same session code on every device to combine scores across all Scouts.</p>
+        </div>
+        <div class="session-join-grid">
+          <label>
+            Session code
+            <input id="session-code" autocomplete="off" maxlength="20" placeholder="TROOP123">
+          </label>
+          <label>
+            Scout nickname
+            <input id="player-name" autocomplete="off" maxlength="40" placeholder="First name or patrol">
+          </label>
+          <button class="secondary" id="join-session">Join session</button>
+        </div>
+        <p class="shared-status" id="shared-status"></p>
+        <div class="shared-local-score" id="shared-local-score"></div>
+        <div class="leaderboard" id="leaderboard"></div>
       </section>
       <section class="game-layout">
         <article class="game-card game-stage" id="game-card"></article>
         <aside class="panel game-controls">
-          <h2>Group answer</h2>
+          <h2>Answers</h2>
           <div class="choice-row vote-buttons">
             <button class="vote-button vote-ai" id="vote-ai">AI</button>
             <button class="vote-button vote-not" id="vote-not">Not AI</button>
           </div>
-          <div class="actions">
+          <div class="actions answer-actions">
             <button id="reveal">Show answer</button>
             <button class="ghost" id="next">Next question</button>
-            <button class="ghost" id="restart">Restart game</button>
           </div>
-          <div class="shared-score-panel">
-            <h3>Shared scores</h3>
-            <label>
-              Session code
-              <input id="session-code" autocomplete="off" maxlength="20" placeholder="TROOP123">
-            </label>
-            <label>
-              Scout nickname
-              <input id="player-name" autocomplete="off" maxlength="40" placeholder="First name or patrol">
-            </label>
-            <button class="secondary" id="join-session">Join leaderboard</button>
-            <p class="shared-status" id="shared-status"></p>
-            <div class="shared-local-score" id="shared-local-score"></div>
-            <div class="leaderboard" id="leaderboard"></div>
+          <div class="actions">
+            <button class="ghost" id="restart">Restart game</button>
           </div>
         </aside>
       </section>
@@ -310,17 +316,25 @@
     async function refreshLeaderboard() {
       if (!shared.enabled) return;
       try {
-        const rows = await supabaseRequest(`ai_or_not_scores?session_code=eq.${encodeURIComponent(shared.sessionCode)}&select=player_name,correct,wrong,answered,total,percent,updated_at&order=correct.desc,wrong.asc,updated_at.asc`, {
+        const rows = await supabaseRequest(`ai_or_not_scores?session_code=eq.${encodeURIComponent(shared.sessionCode)}&select=correct,wrong,answered,total,percent,updated_at`, {
           method: "GET"
         });
         leaderboard.innerHTML = rows.length ? `
-          <h4>Session leaderboard: ${esc(shared.sessionCode)}</h4>
-          ${rows.map((row, rowIndex) => `
-            <div class="leaderboard-row">
-              <strong>${rowIndex + 1}. ${esc(row.player_name)}</strong>
-              <span>${row.correct} correct, ${row.wrong} wrong (${row.percent}%)</span>
+          <h4>Session totals: ${esc(shared.sessionCode)}</h4>
+          <div class="session-total-grid">
+            <div class="session-total-tile">
+              <span>Scouts joined</span>
+              <strong>${rows.length}</strong>
             </div>
-          `).join("")}
+            <div class="session-total-tile">
+              <span>Total correct</span>
+              <strong>${rows.reduce((sum, row) => sum + Number(row.correct || 0), 0)}</strong>
+            </div>
+            <div class="session-total-tile">
+              <span>Total wrong</span>
+              <strong>${rows.reduce((sum, row) => sum + Number(row.wrong || 0), 0)}</strong>
+            </div>
+          </div>
         ` : `<p>No shared scores yet.</p>`;
       } catch (error) {
         setSharedStatus("Could not load leaderboard.", true);
@@ -375,9 +389,6 @@
         ${selectedAnswer ? `<div class="selected-answer">Group chose: <strong>${esc(selectedAnswer)}</strong></div>` : ""}
         <div class="answer-box ${revealed ? "" : "hidden"}">
           <span class="answer-pill">${selectedAnswer ? (selectedAnswer === item.answer ? "Correct" : "Wrong") : "Answer"}: ${esc(item.answer)}</span>
-          <p>${esc(item.explanation)}</p>
-          <h3>Talking points</h3>
-          <ul>${item.discuss.map((question) => `<li>${esc(question)}</li>`).join("")}</ul>
         </div>
       `;
       aiButton.classList.toggle("selected", selectedAnswer === "AI");
@@ -463,7 +474,7 @@
     app.innerHTML = `
       <section class="page-title">
         <span class="requirement-number">Requirement 4(b)</span>
-        <h1>Ethics in AI: What Would You Do?</h1>
+        <h1>Ethics in AI:<br>What Would You Do?</h1>
         <p>Choose a response, discuss tradeoffs, then reveal talking points. There is not always one perfect answer, which is literally the point.</p>
       </section>
       <section class="game-layout">

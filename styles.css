@@ -443,15 +443,32 @@ button.ghost {
 }
 
 .shared-score-panel {
-  border-top: 2px solid var(--cp-blue);
+  border: 2px solid var(--cp-blue);
+  border-radius: 16px;
   display: grid;
   gap: 0.75rem;
-  margin-top: 1rem;
-  padding-top: 1rem;
+  margin-top: 1.25rem;
+  padding: 1rem;
 }
 
+.shared-score-panel-top {
+  background: var(--cp-white);
+}
+
+.shared-score-panel h2,
 .shared-score-panel h3 {
   margin: 0;
+}
+
+.shared-score-panel p {
+  margin: 0.35rem 0 0;
+}
+
+.session-join-grid {
+  align-items: end;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
 }
 
 .shared-score-panel label {
@@ -521,16 +538,38 @@ button.ghost {
   margin: 0.5rem 0 0;
 }
 
-.leaderboard-row {
+.session-total-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.session-total-tile {
+  background: var(--cp-blue);
   border: 1px solid var(--cp-blue);
   border-radius: 0.625rem;
-  display: grid;
-  gap: 0.15rem;
+  color: var(--cp-white);
   padding: 0.6rem 0.7rem;
 }
 
-.leaderboard-row span {
-  color: var(--cp-blue);
+.session-total-tile span {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.session-total-tile strong {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+  margin-top: 0.25rem;
+}
+
+.answer-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .vote-buttons {
@@ -672,7 +711,9 @@ ul {
   .hero,
   .two-column,
   .join-game-card,
+  .session-join-grid,
   .game-layout,
+  .session-total-grid,
   .ethics-choices {
     grid-template-columns: 1fr;
   }
