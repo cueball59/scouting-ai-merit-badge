@@ -17,6 +17,14 @@
     return `${base}${path}`;
   }
 
+  function getSupabaseConfig() {
+    const config = window.SUPABASE_CONFIG || {};
+    return {
+      url: String(config.url || "").replace(/\/$/, ""),
+      anonKey: String(config.anonKey || "")
+    };
+  }
+
   function renderNav() {
     const nav = document.getElementById("site-nav");
     const items = [
@@ -149,6 +157,12 @@
     let revealed = false;
     let finished = false;
     const answers = Array(SITE_DATA.aiOrNot.length).fill(null);
+    const shared = {
+      enabled: false,
+      sessionCode: "",
+      playerName: "",
+      loading: false
+    };
 
     app.innerHTML = `
       <section class="page-title">
@@ -160,7 +174,7 @@
         <div>
           <span class="requirement-number">Join on your phone</span>
           <h2>Scan to play AI or Not?</h2>
-          <p>Use this QR code to open the same game page quickly during a live session.</p>
+          <p>Use this QR code to open the same game page quickly. For shared scores, everyone enters the same session code.</p>
           <a href="https://cueball59.github.io/scouting-ai-merit-badge/games/ai-or-not.html">cueball59.github.io/scouting-ai-merit-badge/games/ai-or-not.html</a>
         </div>
         <img src="${link("assets/ai-or-not-qr.png")}" alt="QR code for the AI or Not game page">
@@ -182,6 +196,20 @@
             <button class="ghost" id="next">Next question</button>
             <button class="ghost" id="restart">Restart game</button>
           </div>
+          <div class="shared-score-panel">
+            <h3>Shared scores</h3>
+            <label>
+              Session code
+              <input id="session-code" autocomplete="off" maxlength="20" placeholder="TROOP123">
+            </label>
+            <label>
+              Scout nickname
+              <input id="player-name" autocomplete="off" maxlength="40" placeholder="First name or patrol">
+            </label>
+            <button class="secondary" id="join-session">Join leaderboard</button>
+            <p class="shared-status" id="shared-status"></p>
+            <div class="leaderboard" id="leaderboard"></div>
+          </div>
         </aside>
       </section>
     `;
@@ -193,6 +221,19 @@
     const notButton = document.getElementById("vote-not");
     const nextButton = document.getElementById("next");
     const revealButton = document.getElementById("reveal");
+    const sessionCodeInput = document.getElementById("session-code");
+    const playerNameInput = document.getElementById("player-name");
+    const joinSessionButton = document.getElementById("join-session");
+    const sharedStatus = document.getElementById("shared-status");
+    const leaderboard = document.getElementById("leaderboard");
+
+    function normalizeSessionCode(value) {
+      return value.trim().toUpperCase().replace(/[^A-Z0-9-]/g, "").slice(0, 20);
+    }
+
+    function normalizePlayerName(value) {
+      return value.trim().replace(/\s+/g, " ").slice(0, 40);
+    }
 
     function tally() {
       const answered = answers.filter(Boolean);
@@ -205,6 +246,89 @@
         wrong: answered.length - correct,
         unanswered: answers.length - answered.length
       };
+    }
+
+    function supabaseReady() {
+      const config = getSupabaseConfig();
+      return Boolean(config.url && config.anonKey);
+    }
+
+    function setSharedStatus(message, isError) {
+      sharedStatus.textContent = message;
+      sharedStatus.classList.toggle("error", Boolean(isError));
+    }
+
+    function scorePayload() {
+      const score = tally();
+      return {
+        session_code: shared.sessionCode,
+        player_name: shared.playerName,
+        correct: score.correct,
+        wrong: score.wrong,
+        answered: score.answered,
+        total: SITE_DATA.aiOrNot.length,
+        percent: Math.round((score.correct / SITE_DATA.aiOrNot.length) * 100),
+        updated_at: new Date().toISOString()
+      };
+    }
+
+    async function supabaseRequest(path, options) {
+      const config = getSupabaseConfig();
+      const response = await fetch(`${config.url}/rest/v1/${path}`, {
+        ...options,
+        headers: {
+          apikey: config.anonKey,
+          Authorization: `Bearer ${config.anonKey}`,
+          "Content-Type": "application/json",
+          ...(options && options.headers ? options.headers : {})
+        }
+      });
+      if (!response.ok) {
+        const detail = await response.text();
+        throw new Error(detail || `Supabase request failed with ${response.status}`);
+      }
+      if (response.status === 204) return null;
+      return response.json();
+    }
+
+    async function saveSharedScore() {
+      if (!shared.enabled || shared.loading) return;
+      shared.loading = true;
+      try {
+        await supabaseRequest("ai_or_not_scores?on_conflict=session_code,player_name", {
+          method: "POST",
+          headers: {
+            Prefer: "resolution=merge-duplicates,return=minimal"
+          },
+          body: JSON.stringify([scorePayload()])
+        });
+        setSharedStatus(`Score saved for ${shared.playerName} in ${shared.sessionCode}.`, false);
+        await refreshLeaderboard();
+      } catch (error) {
+        setSharedStatus("Could not save shared score. Check Supabase setup.", true);
+      } finally {
+        shared.loading = false;
+      }
+    }
+
+    async function refreshLeaderboard() {
+      if (!shared.enabled) return;
+      try {
+        const rows = await supabaseRequest(`ai_or_not_scores?session_code=eq.${encodeURIComponent(shared.sessionCode)}&select=player_name,correct,wrong,answered,total,percent,updated_at&order=correct.desc,wrong.asc,updated_at.asc`, {
+          method: "GET"
+        });
+        leaderboard.innerHTML = rows.length ? `
+          <h4>Leaderboard: ${esc(shared.sessionCode)}</h4>
+          ${rows.map((row, rowIndex) => `
+            <div class="leaderboard-row">
+              <strong>${rowIndex + 1}. ${esc(row.player_name)}</strong>
+              <span>${row.correct}/${row.total} right (${row.percent}%)</span>
+            </div>
+          `).join("")}
+        ` : `<p>No shared scores yet.</p>`;
+      } catch (error) {
+        setSharedStatus("Could not load leaderboard.", true);
+      }
     }
 
     function paint() {
@@ -273,6 +397,7 @@
       answers[index] = answer;
       revealed = true;
       paint();
+      saveSharedScore();
     }
 
     aiButton.addEventListener("click", () => choose("AI"));
@@ -286,6 +411,7 @@
       if (index === SITE_DATA.aiOrNot.length - 1) {
         finished = true;
         paint();
+        saveSharedScore();
         return;
       }
       index += 1;
@@ -302,6 +428,33 @@
       revealButton.disabled = false;
       nextButton.disabled = false;
       paint();
+      saveSharedScore();
+    });
+
+    joinSessionButton.addEventListener("click", async () => {
+      const sessionCode = normalizeSessionCode(sessionCodeInput.value);
+      const playerName = normalizePlayerName(playerNameInput.value);
+      sessionCodeInput.value = sessionCode;
+      playerNameInput.value = playerName;
+
+      if (!supabaseReady()) {
+        setSharedStatus("Shared scoring is not configured yet. Add your Supabase URL and anon key to supabase-config.js.", true);
+        return;
+      }
+      if (!sessionCode || sessionCode.length < 3) {
+        setSharedStatus("Enter a session code with at least 3 letters or numbers.", true);
+        return;
+      }
+      if (!playerName) {
+        setSharedStatus("Enter a Scout nickname before joining.", true);
+        return;
+      }
+
+      shared.enabled = true;
+      shared.sessionCode = sessionCode;
+      shared.playerName = playerName;
+      setSharedStatus(`Joined ${sessionCode}. Scores will update as you play.`, false);
+      await saveSharedScore();
     });
 
     paint();
