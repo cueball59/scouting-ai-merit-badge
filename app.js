@@ -116,6 +116,21 @@
           </div>
         </section>
       ` : ""}
+      ${req.aiComparison ? `
+        <section class="panel">
+          <h2>Narrow AI vs. General AI vs. Superintelligent AI</h2>
+          <div class="ai-comparison-grid">
+            ${req.aiComparison.map((item) => `
+              <article class="comparison-card">
+                <h3>${esc(item.type)}</h3>
+                <p>${esc(item.meaning)}</p>
+                <p><strong>Status:</strong> ${esc(item.today)}</p>
+                <p><strong>Example:</strong> ${esc(item.example)}</p>
+              </article>
+            `).join("")}
+          </div>
+        </section>
+      ` : ""}
       ${nextReq ? `
         <section class="requirement-next no-print">
           <a class="button" href="${link(`requirements/${nextReq.id}.html`)}">Next requirement: ${nextReq.id}. ${esc(nextReq.title)}</a>

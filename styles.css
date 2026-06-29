@@ -316,6 +316,27 @@ button.ghost {
   display: block;
 }
 
+.ai-comparison-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.comparison-card {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  padding: 1rem;
+}
+
+.comparison-card h3 {
+  color: var(--cp-blue);
+  margin-top: 0;
+}
+
+.comparison-card p {
+  color: var(--cp-text-muted);
+}
+
 .join-game-card {
   align-items: center;
   background: var(--cp-white);
@@ -730,6 +751,7 @@ ul {
   .session-join-grid,
   .game-layout,
   .session-total-grid,
+  .ai-comparison-grid,
   .ethics-choices {
     grid-template-columns: 1fr;
   }

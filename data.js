@@ -23,6 +23,26 @@ const SITE_DATA = {
         ["Trigger", "An event that starts an automated action or workflow."],
         ["Variable", "A named value that can change while a program or workflow runs."],
         ["Database", "An organized collection of data that can be searched, updated, and analyzed."]
+      ],
+      aiComparison: [
+        {
+          type: "Narrow AI",
+          meaning: "AI designed to do a specific task or set of related tasks.",
+          today: "Common today",
+          example: "A translation app, recommendation system, image recognizer, or chatbot."
+        },
+        {
+          type: "General AI",
+          meaning: "A theoretical AI that could learn, reason, and solve problems across many areas like a human.",
+          today: "Not available today",
+          example: "An AI that could independently handle school, work, hobbies, and unfamiliar real-world tasks as flexibly as a person."
+        },
+        {
+          type: "Superintelligent AI",
+          meaning: "A theoretical AI that would exceed human ability in most or all areas of thinking and problem solving.",
+          today: "Not available today",
+          example: "An AI far better than humans at science, planning, creativity, strategy, and decision-making."
+        }
       ]
     },
     {
