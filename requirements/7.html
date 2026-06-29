@@ -5,20 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Requirement 7: Practical Application</title>
   <script>
-    (() => {
-      const param = new URLSearchParams(window.location.search).get("scoutTheme");
-      const theme =
-        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-      document.documentElement.setAttribute("data-theme", theme);
-    })();
+    document.documentElement.setAttribute("data-theme", "scouting");
   </script>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body data-page="requirement" data-requirement="7" data-base="../">
   <header class="site-header">
-    <a class="brand" href="../index.html" aria-label="AI Merit Badge home">
+    <a class="brand" href="../index.html" aria-label="Scouting America AI Merit Badge home">
       <img src="../assets/scouting-america-logo.png" alt="Scouting America logo">
-      <span>AI Merit Badge</span>
+      <span>Scouting America AI Merit Badge</span>
     </a>
     <nav id="site-nav" class="site-nav" aria-label="Primary"></nav>
   </header>

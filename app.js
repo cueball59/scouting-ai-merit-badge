@@ -21,6 +21,7 @@
     const nav = document.getElementById("site-nav");
     const items = [
       ["Home", "index.html"],
+      ["Counselor Prompts", "counselor-prompts.html"],
       ["AI or Not?", "games/ai-or-not.html"],
       ["Ethics Game", "games/ethics.html"],
       ["Official Requirements", SITE_DATA.officialRequirementsUrl]
@@ -34,7 +35,7 @@
 
   function renderFooter() {
     document.getElementById("site-footer").innerHTML = `
-      Built for live AI Merit Badge sessions. Reference the
+      Built for Scouting America AI Merit Badge sessions. Reference the
       <a href="${SITE_DATA.officialRequirementsUrl}" target="_blank" rel="noopener">official Scouting America requirement page</a>
       and the <a href="${SITE_DATA.counselorUrl}" target="_blank" rel="noopener">counselor resource</a>.
     `;
@@ -49,16 +50,17 @@
             <span class="badge">Artificial Intelligence</span>
             <span class="badge">Live session ready</span>
           </div>
-          <h1>AI Merit Badge Live Session Hub</h1>
-          <p>Requirement pages, counselor prompts, and two interactive games for Scouts learning how AI works, where automation ends, and how ethics shape responsible technology.</p>
+          <h1>Scouting America AI Merit Badge</h1>
+          <p>The Artificial Intelligence merit badge introduces Scouts to AI concepts, automation, responsible use, deepfakes, practical AI skills, and career pathways. This site supports live instruction with requirement pages, counselor prompts, and interactive activities grounded in the official Scouting America requirements.</p>
           <div class="actions">
+            <a class="button secondary" href="${link("counselor-prompts.html")}">Counselor Prompts</a>
             <a class="button" href="${link("games/ai-or-not.html")}">Play AI or Not?</a>
             <a class="button secondary" href="${link("games/ethics.html")}">Play Ethics Game</a>
           </div>
         </div>
-        <aside class="hero-panel" aria-label="Facilitator notes">
-          <h2>Session flow</h2>
-          <p>Start with the glossary, play the AI basics game, pause for automation comparisons, then use the ethics game for Scout Law discussion.</p>
+        <aside class="hero-panel" aria-label="Badge overview">
+          <h2>Badge overview</h2>
+          <p>Scouts define key terms, identify AI and automation in everyday life, discuss ethical questions, learn how to communicate with AI tools, complete a practical activity, and explore careers that use AI or automation.</p>
           <div class="badge-row">
             <span class="badge">8 requirement pages</span>
             <span class="badge">20 AI rounds</span>
@@ -104,8 +106,9 @@
           <ul>${req.activities.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
         </article>
         <aside class="panel">
-          <h2>Counselor prompt</h2>
-          <p>${esc(req.counselorPrompt)}</p>
+          <h2>Counselor prompts</h2>
+          <p>Counselor prompts are grouped on one dedicated page for easier live-session facilitation.</p>
+          <p><a href="${link("counselor-prompts.html")}">Open all counselor prompts</a></p>
           <p><a href="${SITE_DATA.officialRequirementsUrl}" target="_blank" rel="noopener">Check the official requirement wording</a></p>
         </aside>
       </section>
@@ -119,6 +122,26 @@
           </div>
         </section>
       ` : ""}
+    `;
+  }
+
+  function renderCounselorPrompts() {
+    app.innerHTML = `
+      <section class="page-title">
+        <span class="requirement-number">Counselor resource</span>
+        <h1>Counselor Prompts</h1>
+        <p>All requirement prompts are organized here so a counselor can facilitate discussion without jumping between individual requirement pages.</p>
+      </section>
+      <section class="grid" aria-label="Counselor prompts by requirement">
+        ${SITE_DATA.requirements.map((req) => `
+          <article class="card prompt-card">
+            <span class="requirement-number">Requirement ${req.id}</span>
+            <h2>${esc(req.title)}</h2>
+            <p>${esc(req.counselorPrompt)}</p>
+            <a href="${link(`requirements/${req.id}.html`)}">Open requirement ${req.id}</a>
+          </article>
+        `).join("")}
+      </section>
     `;
   }
 
@@ -278,6 +301,7 @@
 
   if (page === "home") renderHome();
   if (page === "requirement") renderRequirement();
+  if (page === "counselor-prompts") renderCounselorPrompts();
   if (page === "ai-game") renderAiGame();
   if (page === "ethics-game") renderEthicsGame();
 }());

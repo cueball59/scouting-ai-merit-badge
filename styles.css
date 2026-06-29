@@ -1,54 +1,32 @@
 :root {
   color-scheme: light;
-  --cp-bg: #f7f4ef;
-  --cp-bg-elevated: #fcfbf8;
+  --cp-bg: #ffffff;
+  --cp-bg-elevated: #f5f8fc;
   --cp-surface: #ffffff;
-  --cp-surface-soft: #f5f5f5;
-  --cp-border: #dedede;
-  --cp-border-strong: #919191;
-  --cp-text: #242424;
-  --cp-text-muted: #5c5c5c;
-  --cp-text-soft: #6f6f6f;
-  --cp-accent: #b11f4b;
-  --cp-accent-hover: #9a1a41;
-  --cp-accent-soft: rgba(177, 31, 75, 0.08);
+  --cp-surface-soft: #eef3f8;
+  --cp-border: #d7e2ee;
+  --cp-border-strong: #003f87;
+  --cp-text: #102033;
+  --cp-text-muted: #3d5268;
+  --cp-text-soft: #5f7081;
+  --cp-accent: #ce1126;
+  --cp-accent-hover: #a80d1f;
+  --cp-accent-soft: rgba(206, 17, 38, 0.1);
   --cp-accent-fg: #ffffff;
   --cp-success: #16a34a;
-  --cp-danger: #dc2626;
-  --cp-warning: #f59e0b;
-  --cp-link: #0078d4;
+  --cp-danger: #ce1126;
+  --cp-warning: #f2a900;
+  --cp-link: #003f87;
   --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
   --cp-overlay: rgba(255, 255, 255, 0.8);
   --cp-panel: rgba(255, 255, 255, 0.86);
   --cp-panel-strong: rgba(255, 255, 255, 0.96);
   --cp-sheen: rgba(255, 255, 255, 0.55);
-  --cp-highlight: rgba(177, 31, 75, 0.12);
-}
-html[data-theme="dark"] {
-  color-scheme: dark;
-  --cp-bg: #3d3b3a;
-  --cp-bg-elevated: #343231;
-  --cp-surface: #292929;
-  --cp-surface-soft: #2e2e2e;
-  --cp-border: #474747;
-  --cp-border-strong: #5f5f5f;
-  --cp-text: #dedede;
-  --cp-text-muted: #919191;
-  --cp-text-soft: #b0b0b0;
-  --cp-accent: #fd8ea1;
-  --cp-accent-hover: #fb7b91;
-  --cp-accent-soft: rgba(253, 142, 161, 0.14);
-  --cp-accent-fg: #1a1a1a;
-  --cp-success: #4ade80;
-  --cp-danger: #f87171;
-  --cp-warning: #fbbf24;
-  --cp-link: #4da6ff;
-  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
-  --cp-overlay: rgba(41, 41, 41, 0.88);
-  --cp-panel: rgba(41, 41, 41, 0.72);
-  --cp-panel-strong: rgba(41, 41, 41, 0.96);
-  --cp-sheen: rgba(255, 255, 255, 0.04);
-  --cp-highlight: rgba(253, 142, 161, 0.12);
+  --cp-highlight: rgba(0, 63, 135, 0.11);
+  --cp-blue: #003f87;
+  --cp-blue-hover: #002f66;
+  --cp-red: #ce1126;
+  --cp-white: #ffffff;
 }
 
 * {
@@ -58,7 +36,7 @@ html[data-theme="dark"] {
 body {
   margin: 0;
   background:
-    linear-gradient(135deg, var(--cp-highlight), transparent 35%),
+    linear-gradient(135deg, var(--cp-highlight), transparent 38%),
     radial-gradient(circle at top right, var(--cp-accent-soft), transparent 28%),
     var(--cp-bg);
   color: var(--cp-text);
@@ -112,8 +90,8 @@ button.ghost {
 
 .site-header {
   align-items: center;
-  background: var(--cp-panel-strong);
-  border-bottom: 1px solid var(--cp-border);
+  background: var(--cp-blue);
+  border-bottom: 4px solid var(--cp-red);
   display: flex;
   gap: 1rem;
   justify-content: space-between;
@@ -125,7 +103,7 @@ button.ghost {
 
 .brand {
   align-items: center;
-  color: var(--cp-text);
+  color: var(--cp-white);
   display: inline-flex;
   font-weight: 800;
   gap: 0.75rem;
@@ -134,7 +112,7 @@ button.ghost {
 
 .brand img {
   background: var(--cp-surface);
-  border: 1px solid var(--cp-border);
+  border: 1px solid var(--cp-white);
   border-radius: 0.625rem;
   height: 3rem;
   object-fit: contain;
@@ -151,9 +129,9 @@ button.ghost {
 }
 
 .site-nav a {
-  border: 1px solid var(--cp-border);
+  border: 1px solid var(--cp-white);
   border-radius: 999px;
-  color: var(--cp-text);
+  color: var(--cp-white);
   font-size: 0.92rem;
   font-weight: 700;
   padding: 0.42rem 0.75rem;
@@ -162,8 +140,8 @@ button.ghost {
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
-  background: var(--cp-accent-soft);
-  border-color: var(--cp-accent);
+  background: var(--cp-red);
+  border-color: var(--cp-red);
 }
 
 .site-main {
@@ -173,8 +151,8 @@ button.ghost {
 }
 
 .hero {
-  background: var(--cp-panel-strong);
-  border: 1px solid var(--cp-border);
+  background: linear-gradient(135deg, var(--cp-blue), var(--cp-blue-hover));
+  border: 1px solid var(--cp-blue);
   border-radius: 16px;
   box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
   display: grid;
@@ -185,13 +163,17 @@ button.ghost {
 }
 
 .hero h1,
+.hero p {
+  color: var(--cp-white);
+}
+
+.hero h1,
 .page-title h1 {
   font-size: clamp(2.2rem, 6vw, 4.8rem);
   line-height: 0.95;
   margin: 0;
 }
 
-.hero p,
 .page-title p {
   color: var(--cp-text-muted);
   font-size: 1.12rem;
@@ -200,8 +182,8 @@ button.ghost {
 
 .hero-panel {
   align-content: center;
-  background: var(--cp-surface-soft);
-  border: 1px solid var(--cp-border);
+  background: var(--cp-white);
+  border: 1px solid var(--cp-white);
   border-radius: 16px;
   display: grid;
   gap: 1rem;
@@ -217,10 +199,10 @@ button.ghost {
 }
 
 .badge {
-  background: var(--cp-accent-soft);
+  background: var(--cp-white);
   border: 1px solid var(--cp-border);
   border-radius: 999px;
-  color: var(--cp-text);
+  color: var(--cp-blue);
   display: inline-flex;
   font-weight: 800;
   padding: 0.35rem 0.7rem;
@@ -264,7 +246,7 @@ button.ghost {
 }
 
 .requirement-number {
-  color: var(--cp-accent);
+  color: var(--cp-red);
   font-size: 0.85rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -272,10 +254,24 @@ button.ghost {
 }
 
 .page-title {
-  background: var(--cp-panel-strong);
-  border: 1px solid var(--cp-border);
+  background: var(--cp-blue);
+  border: 1px solid var(--cp-blue);
   border-radius: 16px;
   padding: clamp(1.25rem, 4vw, 2.25rem);
+}
+
+.page-title,
+.page-title .requirement-number,
+.page-title h1,
+.page-title p {
+  color: var(--cp-white);
+}
+
+.page-title .requirement-number {
+  background: var(--cp-red);
+  border-radius: 999px;
+  display: inline-flex;
+  padding: 0.35rem 0.7rem;
 }
 
 .two-column {
@@ -291,7 +287,7 @@ button.ghost {
 }
 
 .term {
-  border-left: 4px solid var(--cp-accent);
+  border-left: 4px solid var(--cp-blue);
   padding-left: 0.85rem;
 }
 
@@ -334,7 +330,7 @@ button.ghost {
 
 .answer-pill {
   background: var(--cp-accent-soft);
-  border: 1px solid var(--cp-accent);
+  border: 1px solid var(--cp-red);
   border-radius: 999px;
   display: inline-flex;
   font-size: 1rem;
