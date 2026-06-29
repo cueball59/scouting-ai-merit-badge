@@ -698,27 +698,30 @@ button.ghost {
   width: 100%;
 }
 
-.vote-ai {
+.vote-ai,
+.vote-not,
+#reveal {
   background: var(--cp-blue);
   border-color: var(--cp-blue);
 }
 
-.vote-ai:hover {
+.vote-ai:hover,
+.vote-not:hover,
+#reveal:hover {
   background: var(--cp-blue-hover);
   border-color: var(--cp-blue-hover);
 }
 
-.vote-ai.selected {
-  outline: 3px solid var(--cp-red);
-}
-
-.vote-not {
+.vote-ai.selected,
+.vote-not.selected {
   background: var(--cp-red);
   border-color: var(--cp-red);
 }
 
-.vote-not.selected {
-  outline: 3px solid var(--cp-blue);
+.vote-ai.selected:hover,
+.vote-not.selected:hover {
+  background: var(--cp-accent-hover);
+  border-color: var(--cp-accent-hover);
 }
 
 .selected-answer {

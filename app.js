@@ -194,14 +194,15 @@
       enabled: false,
       sessionCode: "",
       playerName: "",
-      loading: false
+      loading: false,
+      showAllScores: false
     };
 
     app.innerHTML = `
       <section class="page-title">
         <span class="requirement-number">Requirement 2(d)</span>
         <h1>AI or Not?</h1>
-        <p>Read the scenario, choose the group answer, reveal the result, and use the talking points to spark discussion. The game stops after question 20 and shows a final score.</p>
+        <p>Read the scenario, choose your answer, reveal the result, and use the talking points to spark discussion. The game stops after question 20 and shows a final score.</p>
       </section>
       <section class="join-game-card" aria-label="Join this game">
         <div>
@@ -388,9 +389,11 @@
             number: itemIndex + 1,
             title: item.title,
             correct,
+            wrong: questionRows.length - correct,
             answered: questionRows.length
           };
         });
+        const activeQuestion = questionTotals[Math.min(index, SITE_DATA.aiOrNot.length - 1)];
         leaderboard.innerHTML = rows.length ? `
           <h4>Session totals: ${esc(shared.sessionCode)}</h4>
           <div class="session-total-grid">
@@ -407,16 +410,24 @@
               <strong>${totalWrong}</strong>
             </div>
           </div>
-          <div class="question-total-grid" aria-label="Correct answers by question">
-            ${questionTotals.map((question) => `
+          <div class="question-total-grid" aria-label="${finished && shared.showAllScores ? "Correct answers by question" : "Current question score"}">
+            ${(finished && shared.showAllScores ? questionTotals : [activeQuestion]).map((question) => `
               <div class="question-total-row">
                 <strong>Q${question.number}</strong>
                 <span>${esc(question.title)}</span>
-                <em>${question.correct} correct${question.answered ? ` / ${question.answered} answered` : ""}</em>
+                <em>${question.correct} right, ${question.wrong} wrong${question.answered ? ` / ${question.answered} answered` : ""}</em>
               </div>
             `).join("")}
           </div>
+          ${finished ? `<button class="secondary view-all-scores" type="button">${shared.showAllScores ? "Show current question only" : "View all question scores"}</button>` : ""}
         ` : `<p>No shared scores yet.</p>`;
+        const viewAllButton = leaderboard.querySelector(".view-all-scores");
+        if (viewAllButton) {
+          viewAllButton.addEventListener("click", () => {
+            shared.showAllScores = !shared.showAllScores;
+            refreshLeaderboard();
+          });
+        }
       } catch (error) {
         setSharedStatus("Could not load leaderboard.", true);
       }
@@ -498,18 +509,22 @@
     nextButton.addEventListener("click", () => {
       if (index === SITE_DATA.aiOrNot.length - 1) {
         finished = true;
+        shared.showAllScores = false;
         paint();
         saveSharedScore();
         return;
       }
       index += 1;
       revealed = false;
+      shared.showAllScores = false;
       paint();
+      refreshLeaderboard();
     });
     document.getElementById("restart").addEventListener("click", () => {
       index = 0;
       revealed = false;
       finished = false;
+      shared.showAllScores = false;
       answers.fill(null);
       aiButton.disabled = false;
       notButton.disabled = false;
