@@ -65,15 +65,6 @@
             <a class="button secondary" href="${link("games/ethics.html")}">Play Ethics Game</a>
           </div>
         </div>
-        <aside class="hero-panel" aria-label="Badge overview">
-          <h2>Badge overview</h2>
-          <p>Scouts define key terms, identify AI and automation in everyday life, discuss ethical questions, learn how to communicate with AI tools, complete a practical activity, and explore careers that use AI or automation.</p>
-          <div class="badge-row">
-            <span class="badge">8 requirement pages</span>
-            <span class="badge">20 AI rounds</span>
-            <span class="badge">10 ethics scenarios</span>
-          </div>
-        </aside>
       </section>
 
       <section class="grid" aria-label="Requirement pages">
@@ -105,19 +96,11 @@
         <p>${esc(req.summary)}</p>
         ${req.gameLink ? `<div class="actions"><a class="button" href="${link(req.gameLink)}">Open related game</a></div>` : ""}
       </section>
-      <section class="two-column">
-        <article class="panel">
-          <h2>Requirement focus</h2>
-          <p>${esc(req.requirement)}</p>
-          <h3>Live-session activities</h3>
-          <ul>${req.activities.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
-        </article>
-        <aside class="panel">
-          <h2>Counselor prompts</h2>
-          <p>Counselor prompts are grouped on one dedicated page for easier live-session facilitation.</p>
-          <p><a href="${link("counselor-prompts.html")}">Open all counselor prompts</a></p>
-          <p><a href="${SITE_DATA.officialRequirementsUrl}" target="_blank" rel="noopener">Check the official requirement wording</a></p>
-        </aside>
+      <section class="panel">
+        <h2>Requirement focus</h2>
+        <p>${esc(req.requirement)}</p>
+        <h3>Live-session activities</h3>
+        <ul>${req.activities.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
       </section>
       ${req.terms ? `
         <section class="panel">

@@ -158,9 +158,7 @@ button.ghost {
   border: 1px solid var(--cp-blue);
   border-radius: 16px;
   box-shadow: none;
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1.4fr 0.8fr;
+  display: block;
   overflow: hidden;
   padding: clamp(1.25rem, 4vw, 3rem);
 }
@@ -275,6 +273,10 @@ button.ghost {
   border-radius: 999px;
   display: inline-flex;
   padding: 0.35rem 0.7rem;
+}
+
+.page-title + .panel {
+  margin-top: 1rem;
 }
 
 .two-column {
