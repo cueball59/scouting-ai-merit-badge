@@ -93,7 +93,17 @@ const SITE_DATA = {
         "Create a response checklist: preserve evidence, report, ask a trusted adult, and avoid resharing.",
         "Talk about empathy for people targeted by fake media."
       ],
-      counselorPrompt: "Keep the conversation practical and safety-focused. Emphasize not amplifying harmful content."
+      counselorPrompt: "Keep the conversation practical and safety-focused. Emphasize not amplifying harmful content.",
+      videos: [
+        {
+          title: "Deepfake video discussion starter",
+          embedUrl: "https://www.youtube.com/embed/WSStTnoSb_c"
+        },
+        {
+          title: "Deepfake awareness video",
+          embedUrl: "https://www.youtube.com/embed/d04vPyO2AoA"
+        }
+      ]
     },
     {
       id: 6,

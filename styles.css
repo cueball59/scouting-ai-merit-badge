@@ -339,6 +339,36 @@ button.ghost {
   color: var(--cp-text-muted);
 }
 
+.video-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.video-card {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  padding: 1rem;
+}
+
+.video-card h3 {
+  color: var(--cp-blue);
+  margin-top: 0;
+}
+
+.video-frame {
+  aspect-ratio: 16 / 9;
+  background: var(--cp-blue);
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.video-frame iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .join-game-card {
   align-items: center;
   background: var(--cp-white);
@@ -754,6 +784,7 @@ ul {
   .game-layout,
   .session-total-grid,
   .ai-comparison-grid,
+  .video-grid,
   .ethics-choices {
     grid-template-columns: 1fr;
   }

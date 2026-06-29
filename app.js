@@ -132,6 +132,21 @@
           </div>
         </section>
       ` : ""}
+      ${req.videos ? `
+        <section class="panel">
+          <h2>Videos</h2>
+          <div class="video-grid">
+            ${req.videos.map((video) => `
+              <article class="video-card">
+                <h3>${esc(video.title)}</h3>
+                <div class="video-frame">
+                  <iframe src="${esc(video.embedUrl)}" title="${esc(video.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </article>
+            `).join("")}
+          </div>
+        </section>
+      ` : ""}
       ${previousReq || nextReq ? `
         <section class="requirement-nav no-print">
           ${previousReq ? `<a class="button secondary" href="${link(`requirements/${previousReq.id}.html`)}">Previous requirement: ${previousReq.id}. ${esc(previousReq.title)}</a>` : "<span></span>"}
