@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T22:08:37.241Z",
+  "lastUpdated": "2026-06-29T22:20:13.876Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -34,347 +34,552 @@
   ],
   "posts": [
     {
-      "source": "Perplexity",
-      "title": "Introducing Perplexity Computer",
-      "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-computer",
-      "summary": "Perplexity Computer unifies every current AI capability into a single system. Computer is a general-purpose digital worker that operates the same interfaces you do.",
-      "published": "2026-06-29T22:08:37.150Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Welcoming Gannett to the Perplexity Publisher Program",
-      "url": "https://www.perplexity.ai/hub/blog/welcoming-gannett-to-the-perplexity-publisher-program",
-      "summary": "Gannett (USA TODAY + 200 local outlets) licenses content to Perplexity, enriching its AI search and Comet browser with trusted journalism while adopting Sonar API and Enterprise Pro.",
-      "published": "2026-06-29T22:08:37.150Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Disaggregated Prefill and Decode",
-      "url": "https://www.perplexity.ai/hub/blog/disaggregated-prefill-and-decode",
-      "summary": "Separating prefill and decode across devices speeds up LLM inference and improves performance",
-      "published": "2026-06-29T22:08:37.150Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Bullying is Not Innovation",
-      "url": "https://www.perplexity.ai/hub/blog/bullying-is-not-innovation",
-      "summary": "The point of technology is to make life better for people. We call it innovation, but it’s just the constant process of asking how to make things better. Bullying, on the other hand, is when large corporations use legal threats and intimidation to block innovation and make life w",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Comet Assistant puts you in control",
-      "url": "https://www.perplexity.ai/hub/blog/comet-assistant-puts-you-in-control",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Announcing our Partnership with the United States Government",
-      "url": "https://www.perplexity.ai/hub/blog/announcing-our-partnership-with-the-united-states-government",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "The New Comet Assistant",
-      "url": "https://www.perplexity.ai/hub/blog/the-new-comet-assistant",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Shopping That Puts You First",
-      "url": "https://www.perplexity.ai/hub/blog/shopping-that-puts-you-first",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Comet for Android is Here",
-      "url": "https://www.perplexity.ai/hub/blog/comet-for-android-is-here",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Introducing AI assistants with memory",
-      "url": "https://www.perplexity.ai/hub/blog/introducing-ai-assistants-with-memory",
-      "summary": "With our upgraded personalization and memory, Perplexity remembers key details across conversations so future answers are more personalized and efficient.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Building Safer AI Browsers with BrowseSafe",
-      "url": "https://www.perplexity.ai/hub/blog/building-safer-ai-browsers-with-browsesafe",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Perplexity x Cristiano Ronaldo",
-      "url": "https://www.perplexity.ai/hub/blog/perplexity-x-cristiano-ronaldo",
-      "summary": "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "How People Use AI Agents",
-      "url": "https://www.perplexity.ai/hub/blog/how-people-use-ai-agents",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Happy 25th Birthday, Wikipedia",
-      "url": "https://www.perplexity.ai/hub/blog/happy-25th-birthday-wikipedia",
-      "summary": "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Introducing Perplexity for Public Safety Organizations",
-      "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-for-public-safety-organizations",
-      "summary": "Perplexity is now the first frontier AI company to offer Enterprise Pro specifically to law enforcement and public safety agencies.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Inside the Rise of Enterprise AI Model-Switching",
-      "url": "https://www.perplexity.ai/hub/blog/inside-the-rise-of-enterprise-ai-model-switching",
-      "summary": "Enterprise usage data shows employees are now treating models as a menu of options, not a single default tool.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Finish Your Annual Plan Faster With Perplexity",
-      "url": "https://www.perplexity.ai/hub/blog/finish-your-annual-plan-faster-with-perplexity",
-      "summary": "Use Perplexity to turn messy annual planning into a fast, focused system your team can actually execute.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Introducing Model Council",
-      "url": "https://www.perplexity.ai/hub/blog/introducing-model-council",
-      "summary": "Today we are launching Model Council, a multi-model research feature that brings several models together for one answer.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "How We Built Security Into Comet From Day One",
-      "url": "https://www.perplexity.ai/hub/blog/how-we-built-security-into-comet-from-day-one",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Perplexity APIs deliver powerful AI to the world’s largest Android device maker",
-      "url": "https://www.perplexity.ai/hub/blog/perplexity-apis-deliver-powerful-ai-to-the-world%E2%80%99s-largest-android-device-maker",
-      "summary": "Perplexity is now integrated into Samsung Galaxy S26 phones at a deep level, powering search and reasoning for both the Perplexity assistant and Samsung's Bixby.",
-      "published": "2026-06-29T22:08:37.149Z"
-    },
-    {
-      "source": "Claude",
-      "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
-      "url": "https://www.anthropic.com/news/introducing-claude-tag",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.991Z"
-    },
-    {
-      "source": "Claude",
-      "title": "Announcements Jun 11, 2026 Introducing Claude Corps We’re launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
-      "url": "https://www.anthropic.com/news/claude-corps",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.991Z"
-    },
-    {
-      "source": "Claude",
-      "title": "Product May 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
-      "url": "https://www.anthropic.com/news/claude-opus-4-8",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.991Z"
-    },
-    {
-      "source": "Claude",
-      "title": "Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries",
-      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.991Z"
-    },
-    {
-      "source": "Claude",
-      "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
-      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.991Z"
-    },
-    {
-      "source": "Claude",
-      "title": "Jun 9, 2026 Announcements Claude Fable 5 and Claude Mythos 5",
-      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.991Z"
-    },
-    {
-      "source": "Claude",
-      "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.991Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.699Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats",
-      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.699Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5 Announcements Jun 12, 2026 The US government has issued an export control directive to suspend all access to Fable 5 and Mythos 5.",
-      "url": "https://www.anthropic.com/news/fable-mythos-access",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.698Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
-      "url": "https://www.anthropic.com/news/introducing-claude-tag",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.698Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Announcements Jun 11, 2026 Introducing Claude Corps We’re launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
-      "url": "https://www.anthropic.com/news/claude-corps",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.698Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Announcements Jun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries.",
-      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.698Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Product May 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
-      "url": "https://www.anthropic.com/news/claude-opus-4-8",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.698Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
-      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.698Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 12, 2026 Announcements Results from the first Anthropic Public Record",
-      "url": "https://www.anthropic.com/news/anthropic-public-record",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.698Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries",
-      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.698Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
-      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.698Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 9, 2026 Announcements Claude Fable 5 and Claude Mythos 5",
-      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "summary": "",
-      "published": "2026-06-29T22:08:36.698Z"
-    },
-    {
       "source": "Microsoft",
       "title": "Farming is risky business. This app helps Turkish growers succeed",
       "url": "https://news.microsoft.com/source/emea/features/farming-is-risky-business-this-app-helps-turkish-growers-succeed/",
-      "summary": "The post Farming is risky business. This app helps Turkish growers succeed appeared first on Source . ]]>",
+      "summary": "Built on Microsoft Azure, an AI farming app for Turkish growers offers crop analysis, weather alerts and tools for smarter farm decisions.",
+      "summaryParagraphs": [
+        "Built on Microsoft Azure, an AI farming app for Turkish growers offers crop analysis, weather alerts and tools for smarter farm decisions.",
+        "ALAŞEHIR, Türkiye — When Pınar Ünsal left the corporate world to start her blueberry farm in this valley in 2021, one of the first steps was to spread a black weed-barrier fabric over most of the seven hectares. Then she set out 30,000 plastic pots where the bushes would grow.",
+        "“Imagine there’s only this black carpet and there’s all these pots, and they were talking about me saying, ‘This eccentric lady is trying to grow pots — plastic will not give fruit,’” she recalled with a chuckle. Now those pots are full of blooming blueberry bushes, and she is expecting an abundant harvest in June."
+      ],
       "published": "2026-06-16T13:41:44.000Z"
     },
     {
       "source": "Microsoft",
       "title": "Why don’t cancer medicines work the same for everyone?",
       "url": "https://news.microsoft.com/signal/articles/why-dont-cancer-medicines-work-the-same-for-everyone-ex-vivo/",
-      "summary": "The post Why don’t cancer medicines work the same for everyone? appeared first on Source . ]]>",
+      "summary": "Why do cancer drugs work for some people but not others? New AI research looks at how tumor cells behave to better match treatments to patients.",
+      "summaryParagraphs": [
+        "Why do cancer drugs work for some people but not others? New AI research looks at how tumor cells behave to better match treatments to patients.",
+        "Jun 9, 2026 &nbsp;&nbsp;-&nbsp;&nbsp; The estimated reading time is 6 min.",
+        "Cancer treatment has gotten more precise over time, as doctors first classified the disease by where it began in the body and, more recently, by the mutations found inside cancer cells to help find the right drugs to treat it."
+      ],
       "published": "2026-06-09T15:05:35.000Z"
     },
     {
       "source": "Microsoft",
       "title": "AI alone won’t change your business. The system running it will.",
       "url": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
-      "summary": "The post AI alone won’t change your business. The system running it will. appeared first on Source . ]]>",
+      "summary": "Become an AI-first enterprise with Microsoft’s agent platform.",
+      "summaryParagraphs": [
+        "Become an AI-first enterprise with Microsoft’s agent platform.",
+        "AI has arrived in the enterprise, and the shift is happening all at once. Every function, every role, every workflow is being reshaped. At the same time, a new class of organizations is emerging, one that will look fundamentally different from the companies that defined the last era of business. The winners won’t be those with the most demos, but those that turn AI into a governed, continuously improving system fo...",
+        "This isn’t just about chatbots, either. Those experiences are useful, but they don’t transform how large organizations operate. The real opportunity is teams of agents executing long running work across functions like software delivery, support, finance, HR, and operations — with the identity, context, policy, and human oversight required to trust them in production."
+      ],
       "published": "2026-06-02T16:25:45.000Z"
     },
     {
       "source": "Microsoft",
       "title": "There is no Copilot without the pilots, says Slovenian insurance executive",
       "url": "https://news.microsoft.com/source/emea/features/zavarovalnica-triglav-copilot-adoption-insurance/",
-      "summary": "The post There is no Copilot without the pilots, says Slovenian insurance executive appeared first on Source . ]]>",
+      "summary": "How Zavarovalnica Triglav is adopting Microsoft Copilot across a regulated insurance business, using digital mentors and strong governance.",
+      "summaryParagraphs": [
+        "How Zavarovalnica Triglav is adopting Microsoft Copilot across a regulated insurance business, using digital mentors and strong governance.",
+        "For a 125-plus-year-old company in a highly regulated industry, Zavarovalnica Triglav , the Triglav Group’s parent company , has been an early and enthusiastic adopter of AI, through Copilot.",
+        "The diversified insurance and financial group, based in Ljubljana, Slovenia, has been using Copilot “heavily since the beginning” of the AI tool, says Klemen Ramoveš, chief digital officer, at Triglav."
+      ],
       "published": "2026-05-27T20:55:17.000Z"
     },
     {
       "source": "Microsoft",
       "title": "At aged care provider Regis, AI takes on paperwork so staff can focus on residents",
       "url": "https://news.microsoft.com/source/asia/features/at-aged-care-provider-regis-ai-takes-on-paperwork-so-staff-can-focus-on-residents/",
-      "summary": "The post At aged care provider Regis, AI takes on paperwork so staff can focus on residents appeared first on Source . ]]>",
+      "summary": "Regis Aged Care uses AI with Microsoft Foundry and Copilot Studio to reduce admin work and help staff focus on resident care.",
+      "summaryParagraphs": [
+        "Regis Aged Care uses AI with Microsoft Foundry and Copilot Studio to reduce admin work and help staff focus on resident care.",
+        "Dorkas Sangalang is just 30 minutes into her morning shift,&nbsp;and&nbsp;she’s&nbsp;already up to speed on&nbsp;clinical concerns&nbsp;raised&nbsp;overnight about the residents of the aged care home&nbsp;she works at.",
+        "She knows who in the 97-bed&nbsp;home&nbsp;has had a fall,&nbsp;who’s&nbsp;refusing medication and if someone is nearing&nbsp;end&nbsp;of&nbsp;life. And&nbsp;she’s&nbsp;all&nbsp;set&nbsp;for the 9:30&nbsp;a.m.&nbsp;meeting, where she flags the day’s follow-ups and priorities to her team of registered nurses and personal care assistants."
+      ],
       "published": "2026-05-18T23:06:46.000Z"
     },
     {
       "source": "Microsoft",
       "title": "Costa Rican dairy cooperative turns AI agents into coworkers",
       "url": "https://news.microsoft.com/source/latam/features/ai/costa-rica-dos-pinos-ai-agents-microsoft-copilot-en/?lang=en",
-      "summary": "The post Costa Rican dairy cooperative turns AI agents into coworkers appeared first on Source . ]]>",
+      "summary": "Costa Rica’s Dos Pinos uses AI agents with Microsoft Copilot to boost efficiency, eliminate errors, and transform workflows across its dairy operations.",
+      "summaryParagraphs": [
+        "Costa Rica’s Dos Pinos uses AI agents with Microsoft Copilot to boost efficiency, eliminate errors, and transform workflows across its dairy operations.",
+        "When a new packaging redesign lands on his team, Jhojan Rodríguez no longer braces for the most stressful part of the job.",
+        "Instead of scanning dense nutritional tables line by line—looking for a mismatched number or a missing comma—the designer on his team now runs a prompt through an AI agent Rodríguez built himself. Seconds later, it flags any discrepancies between the technical documentation and the final label."
+      ],
       "published": "2026-05-14T13:01:18.000Z"
     },
     {
       "source": "Microsoft",
       "title": "Inside Porsche Cup Brasil’s AI-powered race operations",
       "url": "https://news.microsoft.com/source/latam/features/ai/porsche-cup-brasil-ai-powered-crash-analysis/?lang=en",
-      "summary": "The post Inside Porsche Cup Brasil’s AI-powered race operations appeared first on Source . ]]>",
+      "summary": "Porsche Cup Brasil uses AI and real-time telemetry to analyze crashes, speed repairs and improve race operations—cutting turnaround time by nearly half.",
+      "summaryParagraphs": [
+        "Porsche Cup Brasil uses AI and real-time telemetry to analyze crashes, speed repairs and improve race operations—cutting turnaround time by nearly half.",
+        "Porsche Cup Brasil is turning racing into a real-time decision system. From AI-powered crash analysis to live telemetry streamed through connected data platforms, the series is transforming how teams diagnose problems, recover cars and manage race operations, turning delays into faster turnaround times and keeping more cars on track. On a race weekend where the gap between competing and falling behind is measured...",
+        "The process begins when a damaged car arrives in the pit. Engineers conduct a physical inspection and document the exterior damage."
+      ],
       "published": "2026-05-07T15:03:19.000Z"
     },
     {
       "source": "Microsoft",
       "title": "Work smarter in 90 days: A real-world guide to using AI",
       "url": "https://news.microsoft.com/signal/articles/work-smarter-in-90-days-a-real-world-guide-to-using-ai/",
-      "summary": "The post Work smarter in 90 days: A real-world guide to using AI appeared first on Source . ]]>",
+      "summary": "Learn how to use AI at work in 90 days with a practical, step-by-step plan to boost productivity, build key skills and grow your career.",
+      "summaryParagraphs": [
+        "Learn how to use AI at work in 90 days with a practical, step-by-step plan to boost productivity, build key skills and grow your career.",
+        "Apr 28, 2026 &nbsp;&nbsp;-&nbsp;&nbsp; The estimated reading time is 7 min.",
+        "You hear about it everywhere, from LinkedIn posts to keynote speakers to job listings: Learning to use AI is the way to get ahead in your job and help future-proof your career."
+      ],
       "published": "2026-04-28T15:05:49.000Z"
     },
     {
       "source": "Microsoft",
       "title": "Cricket Australia uses AI Insights to bring fans closer to the action",
       "url": "https://news.microsoft.com/source/asia/features/cricket-australia-uses-ai-insights-to-bring-fans-closer-to-the-action/",
-      "summary": "The post Cricket Australia uses AI Insights to bring fans closer to the action appeared first on Source . ]]>",
+      "summary": "Cricket Australia Live app brings the game closer to fans with Microsoft AI powered rich insights",
+      "summaryParagraphs": [
+        "Cricket Australia Live app brings the game closer to fans with Microsoft AI powered rich insights",
+        "When England and Australia faced off on Day 5 of the fifth Test of the always tense Ashes cricket series in January, every ball bowled and solid crack had fans on the edge of their seats both at the Sydney Cricket Ground and around the globe.",
+        "As Australia looked to extend its winning streak to four straight Ashes on home soil, it was clear that left-handed batter Travis Head was leading the way for Australia as the runs piled up. But just how good was his performance? Fans using the Cricket Australia Live app had an instant answer."
+      ],
       "published": "2026-04-23T01:47:07.000Z"
     },
     {
       "source": "Microsoft",
       "title": "Pairing geotechnical data with AI helps New Zealand build better",
       "url": "https://news.microsoft.com/source/asia/features/pairing-geotechnical-data-with-ai-helps-new-zealand-to-build-better/",
-      "summary": "The post Pairing geotechnical data with AI helps New Zealand build better appeared first on Source . ]]>",
+      "summary": "Beca’s digital twin platform BEYON and its AI assistant, powered by Azure and Azure OpenAI in Microsoft Foundry is helping New Zealand build safer.",
+      "summaryParagraphs": [
+        "Beca’s digital twin platform BEYON and its AI assistant, powered by Azure and Azure OpenAI in Microsoft Foundry is helping New Zealand build safer.",
+        "Olivia Ellis-Garland clicks on a map of New Zealand on her laptop and types: “Show me the investigations in Hobsonville.” A list pops up in seconds and the map automatically zooms, displaying underground tests of the scenic Auckland suburb, each containing crucial data like soil composition, water levels and rock layers.",
+        "Details like these inform Ellis-Garland, an engineering geologist, what the ground beneath is made of and how it behaves. She uses this data to advise her clients at geotechnical engineering firm ENGEO what can be built above ground and how."
+      ],
       "published": "2026-04-20T23:36:57.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Announcements Jun 11, 2026 Introducing Claude Corps We’re launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+      "url": "https://www.anthropic.com/news/claude-corps",
+      "summary": "Anthropic is launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+      "summaryParagraphs": [
+        "Anthropic is launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+        "We’re launching Claude Corps , a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+        "We’ll teach 1,000 fellows how to use Claude well, match them with nonprofits across America, and pay them to spend a year—full-time, in-person—helping host organizations to advance their missions. Our goals are twofold: that host organizations are equipped with valuable tools and systems, and fellows build AI skills that will serve them in their careers."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Announcements Jun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries.",
+      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "summary": "We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries",
+      "summaryParagraphs": [
+        "We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries",
+        "Project Glasswing is our collaborative effort to secure the world’s most important software. In early April, we announced that roughly 50 initial partners had access to Claude Mythos Preview, and since then, they’ve been deploying the model to scan their codebases for vulnerabilities. We recently described how these partners have so far found more than 10,000 high- or critical-severity security flaws.",
+        "We’re now expanding Project Glasswing. Following several weeks of close collaboration with our Project Glasswing partners, the security industry, open-source software maintainers, and the US government, we’re extending the partnership to approximately 150 new organizations. Each one will need to meet our security requirements before they gain access."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "summary": "Anthropic is announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
+      "summaryParagraphs": [
+        "Anthropic is announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
+        "We’re announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies. DXC will train tens of thousands of Claude-certified forward-deployed engineers (FDEs)—engineers embedded directly inside customer organizations—to bring Claude into the systems DXC operates for the world’s largest banks, airlines, insurers, manufacturers, and government agencies.",
+        "These systems, which DXC has run for decades, handle the transactions, claims, and operations businesses depend on, under strict security and compliance requirements. Before bringing Claude to these businesses, DXC worked with Claude inside its own operations, comprising some 115,000 employees across 70 countries, with similarly stringent requirements—including collaborating with Claude to write more than 95% of t..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 12, 2026 Announcements Results from the first Anthropic Public Record",
+      "url": "https://www.anthropic.com/news/anthropic-public-record",
+      "summary": "Anthropic Public Record is a national survey of attitudes and opinions towards AI.",
+      "summaryParagraphs": [
+        "Anthropic Public Record is a national survey of attitudes and opinions towards AI.",
+        "We’re conducting a new survey series, Anthropic Public Record, to understand how the public thinks and feels about AI, and presenting a snapshot of the results from the first wave, fielded in November and December of 2025 with nearly 52,000 Americans.",
+        "Strikingly, on most questions, AI did not heavily divide Americans along typical partisan, geographic, or educational lines. In general, there was broad consensus across topics: Americans are eager to realize AI’s promised benefits but fear the disruption it may bring, and they want accountability from the companies building it. To the extent we saw disagreement, it was largely only in the intensity of people's vi..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries",
+      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+      "summary": "Anthropic is announcing a partnership with Tata Consultancy Services (TCS). TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network.",
+      "summaryParagraphs": [
+        "Anthropic is announcing a partnership with Tata Consultancy Services (TCS). TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network.",
+        "We’re announcing a partnership with Tata Consultancy Services (TCS), one of the world’s largest technology services companies. TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network, our network of consulting and services firms that...",
+        "Regulated industries need their work to be highly accurate and auditable, and enterprises in these fields already use Claude for that reason. TCS brings decades of experience delivering technology that is compliant with companies’ regulatory requirements—and the reach to bring Claude to thousands of enterprises worldwide."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+      "summary": "Anthropic opens in Seoul and announces new partnerships across the Korean AI ecosystem.",
+      "summaryParagraphs": [
+        "Anthropic opens in Seoul and announces new partnerships across the Korean AI ecosystem.",
+        "We’ve just opened our Seoul office . Alongside it, we’re announcing new partnerships across the Korean AI ecosystem, with the enterprises, startups, and researchers behind some of the most ambitious uses of Claude. We’ve also signed a Memorandum of Understanding (MOU) with Korea’s Ministry of Science and ICT to advance AI safety.",
+        "“What I see in Korea are teams who understand that innovation and safety are two sides of the same coin,” said KiYoung Choi, Representative Director of Korea at Anthropic. “Korean organizations are building with Claude to bring the benefits of AI to millions around the world. Opening an office in Seoul gives a long-term home to our work alongside the people shaping Korean leadership in AI.”"
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "summary": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
+      "summaryParagraphs": [
+        "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
+        "Almost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work—and the real opportunity—is in the integration, the evaluation, and the way people's work evolves. That's why the companies getting AI integration right are doing it with partners who have done it before.",
+        "In March, we launched the Claude Partner Network—a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification—a credential, held by an individual, that signals they've been trained..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats",
+      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "summary": "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question.",
+      "summaryParagraphs": [
+        "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question.",
+        "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up?",
+        "In a new report, we seek to answer that question. We examine 832 accounts that were banned for malicious cyber activity between March 2025 and March 2026 and map them onto MITRE ATT&CK , a longstanding database of the tactics and techniques used by cyberattackers. We published some of these results in Verizon’s 2026 Data Breach Investigations Report (DBIR), and are sharing a more detailed analysis here. These 832..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 9, 2026 Announcements Claude Fable 5 and Claude Mythos 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "summary": "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
+      "summaryParagraphs": [
+        "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
+        "We are suspending access to Claude Fable 5 and Claude Mythos 5. We apologize for this disruption to our customers and are working to restore access as soon as possible.",
+        "Today we’re launching Claude Fable 5 : a Mythos-class 1 model that we’ve made safe for general use."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
+      "url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "summary": "Claude Tag is a new way for teams to work with Claude.",
+      "summaryParagraphs": [
+        "Claude Tag is a new way for teams to work with Claude.",
+        "We’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.",
+        "We see Claude Tag as the beginning of an evolution of Claude Code: it makes the model even more proactive, and it works better with a full team. Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team’s code is created by our internal version of Claude Tag. The same pattern is now spreading well beyond engineering—we’re tagging Claude to chase down product metric..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Product May 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "summary": "Our latest model, Claude Opus 4.8, is an upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
+      "summaryParagraphs": [
+        "Our latest model, Claude Opus 4.8, is an upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
+        "We’re upgrading Claude Opus to a new version: Claude Opus 4.8. It builds on Opus 4.7 with improvements across benchmarks, and is a more effective collaborator. It’s available today for the same price.",
+        "Opus 4.8 launches alongside several new features. Users on claude.ai now have control over the amount of effort Claude puts into a task. Claude Code has a new “dynamic workflows” feature that allows it to tackle very large-scale problems. And fast mode for Opus 4.8—where the model can work at 2.5× the speed—is now three times cheaper than it was for previous models."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5 Announcements Jun 12, 2026 The US government has issued an export control directive to suspend all access to Fable 5 and Mythos 5.",
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "summary": "The US government has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States.",
+      "summaryParagraphs": [
+        "The US government has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States.",
+        "The US government, citing national security authorities, has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States, including foreign national Anthropic employees. The net effect of this order is that we must abruptly disable Fable 5 and Mythos 5 for all our customers to ensure compliance. Access to all other Anthropic...",
+        "We received the directive from the government today at 5:21pm (ET). The letter did not provide specific details of its national security concern. Our understanding is that the government believes it has become aware of a method of bypassing, or “jailbreaking” Fable 5. We reviewed a demonstration of this specific technique being used to identify a small number of previously known, minor vulnerabilities. These vulne..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
+      "title": "Announcements Jun 11, 2026 Introducing Claude Corps We’re launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+      "url": "https://www.anthropic.com/news/claude-corps",
+      "summary": "Anthropic is launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+      "summaryParagraphs": [
+        "Anthropic is launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+        "We’re launching Claude Corps , a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+        "We’ll teach 1,000 fellows how to use Claude well, match them with nonprofits across America, and pay them to spend a year—full-time, in-person—helping host organizations to advance their missions. Our goals are twofold: that host organizations are equipped with valuable tools and systems, and fellows build AI skills that will serve them in their careers."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
+      "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "summary": "Anthropic is announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
+      "summaryParagraphs": [
+        "Anthropic is announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
+        "We’re announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies. DXC will train tens of thousands of Claude-certified forward-deployed engineers (FDEs)—engineers embedded directly inside customer organizations—to bring Claude into the systems DXC operates for the world’s largest banks, airlines, insurers, manufacturers, and government agencies.",
+        "These systems, which DXC has run for decades, handle the transactions, claims, and operations businesses depend on, under strict security and compliance requirements. Before bringing Claude to these businesses, DXC worked with Claude inside its own operations, comprising some 115,000 employees across 70 countries, with similarly stringent requirements—including collaborating with Claude to write more than 95% of t..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
+      "title": "Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries",
+      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+      "summary": "Anthropic is announcing a partnership with Tata Consultancy Services (TCS). TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network.",
+      "summaryParagraphs": [
+        "Anthropic is announcing a partnership with Tata Consultancy Services (TCS). TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network.",
+        "We’re announcing a partnership with Tata Consultancy Services (TCS), one of the world’s largest technology services companies. TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network, our network of consulting and services firms that...",
+        "Regulated industries need their work to be highly accurate and auditable, and enterprises in these fields already use Claude for that reason. TCS brings decades of experience delivering technology that is compliant with companies’ regulatory requirements—and the reach to bring Claude to thousands of enterprises worldwide."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
+      "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "summary": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
+      "summaryParagraphs": [
+        "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
+        "Almost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work—and the real opportunity—is in the integration, the evaluation, and the way people's work evolves. That's why the companies getting AI integration right are doing it with partners who have done it before.",
+        "In March, we launched the Claude Partner Network—a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification—a credential, held by an individual, that signals they've been trained..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
+      "title": "Jun 9, 2026 Announcements Claude Fable 5 and Claude Mythos 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "summary": "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
+      "summaryParagraphs": [
+        "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
+        "We are suspending access to Claude Fable 5 and Claude Mythos 5. We apologize for this disruption to our customers and are working to restore access as soon as possible.",
+        "Today we’re launching Claude Fable 5 : a Mythos-class 1 model that we’ve made safe for general use."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
+      "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
+      "url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "summary": "Claude Tag is a new way for teams to work with Claude.",
+      "summaryParagraphs": [
+        "Claude Tag is a new way for teams to work with Claude.",
+        "We’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.",
+        "We see Claude Tag as the beginning of an evolution of Claude Code: it makes the model even more proactive, and it works better with a full team. Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team’s code is created by our internal version of Claude Tag. The same pattern is now spreading well beyond engineering—we’re tagging Claude to chase down product metric..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
+      "title": "Product May 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "summary": "Our latest model, Claude Opus 4.8, is an upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
+      "summaryParagraphs": [
+        "Our latest model, Claude Opus 4.8, is an upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
+        "We’re upgrading Claude Opus to a new version: Claude Opus 4.8. It builds on Opus 4.7 with improvements across benchmarks, and is a more effective collaborator. It’s available today for the same price.",
+        "Opus 4.8 launches alongside several new features. Users on claude.ai now have control over the amount of effort Claude puts into a task. Claude Code has a new “dynamic workflows” feature that allows it to tackle very large-scale problems. And fast mode for Opus 4.8—where the model can work at 2.5× the speed—is now three times cheaper than it was for previous models."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Announcing our Partnership with the United States Government",
+      "url": "https://www.perplexity.ai/hub/blog/announcing-our-partnership-with-the-united-states-government",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "summaryParagraphs": [
+        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Building Safer AI Browsers with BrowseSafe",
+      "url": "https://www.perplexity.ai/hub/blog/building-safer-ai-browsers-with-browsesafe",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "summaryParagraphs": [
+        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Bullying is Not Innovation",
+      "url": "https://www.perplexity.ai/hub/blog/bullying-is-not-innovation",
+      "summary": "The point of technology is to make life better for people. We call it innovation, but it’s just the constant process of asking how to make things better. Bullying, on the other hand, is when large corporations use legal threats and intimidation to block innovation and make life w",
+      "summaryParagraphs": [
+        "The point of technology is to make life better for people. We call it innovation, but it’s just the constant process of asking how to make things better. Bullying, on the other hand, is when large corporations use legal threats and intimidation to block innovation and make life w"
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Comet Assistant puts you in control",
+      "url": "https://www.perplexity.ai/hub/blog/comet-assistant-puts-you-in-control",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "summaryParagraphs": [
+        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Comet for Android is Here",
+      "url": "https://www.perplexity.ai/hub/blog/comet-for-android-is-here",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "summaryParagraphs": [
+        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Disaggregated Prefill and Decode",
+      "url": "https://www.perplexity.ai/hub/blog/disaggregated-prefill-and-decode",
+      "summary": "Separating prefill and decode across devices speeds up LLM inference and improves performance",
+      "summaryParagraphs": [
+        "Separating prefill and decode across devices speeds up LLM inference and improves performance"
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Finish Your Annual Plan Faster With Perplexity",
+      "url": "https://www.perplexity.ai/hub/blog/finish-your-annual-plan-faster-with-perplexity",
+      "summary": "Use Perplexity to turn messy annual planning into a fast, focused system your team can actually execute.",
+      "summaryParagraphs": [
+        "Use Perplexity to turn messy annual planning into a fast, focused system your team can actually execute."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Happy 25th Birthday, Wikipedia",
+      "url": "https://www.perplexity.ai/hub/blog/happy-25th-birthday-wikipedia",
+      "summary": "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it.",
+      "summaryParagraphs": [
+        "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "How People Use AI Agents",
+      "url": "https://www.perplexity.ai/hub/blog/how-people-use-ai-agents",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "summaryParagraphs": [
+        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "How We Built Security Into Comet From Day One",
+      "url": "https://www.perplexity.ai/hub/blog/how-we-built-security-into-comet-from-day-one",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "summaryParagraphs": [
+        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Inside the Rise of Enterprise AI Model-Switching",
+      "url": "https://www.perplexity.ai/hub/blog/inside-the-rise-of-enterprise-ai-model-switching",
+      "summary": "Enterprise usage data shows employees are now treating models as a menu of options, not a single default tool.",
+      "summaryParagraphs": [
+        "Enterprise usage data shows employees are now treating models as a menu of options, not a single default tool."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Introducing AI assistants with memory",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-ai-assistants-with-memory",
+      "summary": "With our upgraded personalization and memory, Perplexity remembers key details across conversations so future answers are more personalized and efficient.",
+      "summaryParagraphs": [
+        "With our upgraded personalization and memory, Perplexity remembers key details across conversations so future answers are more personalized and efficient."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Introducing Model Council",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-model-council",
+      "summary": "Today we are launching Model Council, a multi-model research feature that brings several models together for one answer.",
+      "summaryParagraphs": [
+        "Today we are launching Model Council, a multi-model research feature that brings several models together for one answer."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Introducing Perplexity Computer",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-computer",
+      "summary": "Perplexity Computer unifies every current AI capability into a single system. Computer is a general-purpose digital worker that operates the same interfaces you do.",
+      "summaryParagraphs": [
+        "Perplexity Computer unifies every current AI capability into a single system. Computer is a general-purpose digital worker that operates the same interfaces you do."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Introducing Perplexity for Public Safety Organizations",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-for-public-safety-organizations",
+      "summary": "Perplexity is now the first frontier AI company to offer Enterprise Pro specifically to law enforcement and public safety agencies.",
+      "summaryParagraphs": [
+        "Perplexity is now the first frontier AI company to offer Enterprise Pro specifically to law enforcement and public safety agencies."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Perplexity APIs deliver powerful AI to the world’s largest Android device maker",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-apis-deliver-powerful-ai-to-the-world%E2%80%99s-largest-android-device-maker",
+      "summary": "Perplexity is now integrated into Samsung Galaxy S26 phones at a deep level, powering search and reasoning for both the Perplexity assistant and Samsung's Bixby.",
+      "summaryParagraphs": [
+        "Perplexity is now integrated into Samsung Galaxy S26 phones at a deep level, powering search and reasoning for both the Perplexity assistant and Samsung's Bixby."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Perplexity x Cristiano Ronaldo",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-x-cristiano-ronaldo",
+      "summary": "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo.",
+      "summaryParagraphs": [
+        "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Shopping That Puts You First",
+      "url": "https://www.perplexity.ai/hub/blog/shopping-that-puts-you-first",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "summaryParagraphs": [
+        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "The New Comet Assistant",
+      "url": "https://www.perplexity.ai/hub/blog/the-new-comet-assistant",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "summaryParagraphs": [
+        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Welcoming Gannett to the Perplexity Publisher Program",
+      "url": "https://www.perplexity.ai/hub/blog/welcoming-gannett-to-the-perplexity-publisher-program",
+      "summary": "Gannett (USA TODAY + 200 local outlets) licenses content to Perplexity, enriching its AI search and Comet browser with trusted journalism while adopting Sonar API and Enterprise Pro.",
+      "summaryParagraphs": [
+        "Gannett (USA TODAY + 200 local outlets) licenses content to Perplexity, enriching its AI search and Comet browser with trusted journalism while adopting Sonar API and Enterprise Pro."
+      ],
+      "published": ""
     }
   ]
 }

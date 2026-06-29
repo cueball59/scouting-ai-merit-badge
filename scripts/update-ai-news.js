@@ -63,6 +63,12 @@ function stripHtml(value = "") {
   return decodeEntities(value.replace(/<[^>]*>/g, " ")).replace(/\s+/g, " ").trim();
 }
 
+function validIsoDate(value = "") {
+  if (!value) return "";
+  const date = new Date(stripHtml(value));
+  return Number.isNaN(date.getTime()) ? "" : date.toISOString();
+}
+
 function textBetween(block, tag) {
   const match = block.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i"));
   return match ? stripHtml(match[1]) : "";
@@ -82,6 +88,39 @@ function titleFromUrl(url) {
   return slug.replace(/[-_]+/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
+function extractPublishedDate(html) {
+  const patterns = [
+    /property=["']article:published_time["'][^>]*content=["']([^"']+)["']/i,
+    /name=["']date["'][^>]*content=["']([^"']+)["']/i,
+    /"datePublished"\s*:\s*"([^"]+)"/i,
+    /"dateModified"\s*:\s*"([^"]+)"/i,
+    /<time[^>]*datetime=["']([^"']+)["']/i
+  ];
+  for (const pattern of patterns) {
+    const match = html.match(pattern);
+    const date = validIsoDate(match && match[1]);
+    if (date) return date;
+  }
+  return "";
+}
+
+function extractSummaryParagraphs(html, fallback = "") {
+  const paragraphs = [];
+  const metaDescription = html.match(/<meta\s+(?:name|property)=["'](?:description|og:description)["'][^>]*content=["']([^"']+)["']/i);
+  if (metaDescription) paragraphs.push(stripHtml(metaDescription[1]));
+
+  for (const match of html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)) {
+    const paragraph = stripHtml(match[1]);
+    if (paragraph.length < 70) continue;
+    if (/cookie|privacy|subscribe|newsletter|sign up|all rights reserved/i.test(paragraph)) continue;
+    if (!paragraphs.includes(paragraph)) paragraphs.push(paragraph);
+    if (paragraphs.length >= 3) break;
+  }
+
+  if (!paragraphs.length && fallback) paragraphs.push(stripHtml(fallback));
+  return paragraphs.slice(0, 3).map((paragraph) => paragraph.length > 420 ? `${paragraph.slice(0, 417).trim()}...` : paragraph);
+}
+
 async function fetchText(url) {
   const response = await fetch(url, {
     headers: {
@@ -95,12 +134,15 @@ async function fetchText(url) {
 function parseRss(xml, source) {
   return [...xml.matchAll(/<item\b[\s\S]*?<\/item>/gi)].map(([item]) => {
     const url = textBetween(item, "link");
+    const published = validIsoDate(textBetween(item, "pubDate"));
+    const summary = textBetween(item, "description").slice(0, 280);
     return {
       source: source.name,
       title: textBetween(item, "title"),
       url,
-      summary: textBetween(item, "description").slice(0, 280),
-      published: new Date(textBetween(item, "pubDate") || Date.now()).toISOString()
+      summary,
+      summaryParagraphs: summary ? [summary] : [],
+      published
     };
   }).filter((post) => post.title && post.url);
 }
@@ -121,7 +163,8 @@ function parsePageLinks(html, source) {
         title,
         url,
         summary: "",
-        published: new Date().toISOString()
+        summaryParagraphs: [],
+        published: ""
       });
     }
   }
@@ -136,7 +179,8 @@ function parsePageLinks(html, source) {
         title,
         url,
         summary: "",
-        published: new Date().toISOString()
+        summaryParagraphs: [],
+        published: ""
       });
     }
   }
@@ -163,11 +207,32 @@ function parseFramerIndex(searchIndex, source) {
         title: stripHtml(title),
         url,
         summary: stripHtml(summary),
-        published: new Date().toISOString()
+        summaryParagraphs: summary ? [stripHtml(summary)] : [],
+        published: ""
       };
     })
     .filter((post) => post.title && post.url)
     .slice(0, 20);
+}
+
+async function enrichPost(post) {
+  try {
+    const html = await fetchText(post.url);
+    const published = post.published || extractPublishedDate(html);
+    const summaryParagraphs = extractSummaryParagraphs(html, post.summary);
+    return {
+      ...post,
+      summary: summaryParagraphs[0] || post.summary || "",
+      summaryParagraphs,
+      published
+    };
+  } catch {
+    return {
+      ...post,
+      summaryParagraphs: post.summaryParagraphs && post.summaryParagraphs.length ? post.summaryParagraphs : (post.summary ? [post.summary] : []),
+      published: post.published || ""
+    };
+  }
 }
 
 async function getSourcePosts(source) {
@@ -207,8 +272,18 @@ async function main() {
     if (!merged.has(key)) merged.set(key, post);
   }
 
-  const sorted = [...merged.values()]
-    .sort((a, b) => new Date(b.published || 0) - new Date(a.published || 0))
+  const enriched = [];
+  for (const post of [...merged.values()].slice(0, 80)) {
+    enriched.push(await enrichPost(post));
+  }
+
+  const sorted = enriched
+    .sort((a, b) => {
+      const aTime = a.published ? new Date(a.published).getTime() : 0;
+      const bTime = b.published ? new Date(b.published).getTime() : 0;
+      if (aTime !== bTime) return bTime - aTime;
+      return `${a.source} ${a.title}`.localeCompare(`${b.source} ${b.title}`);
+    })
     .slice(0, 150);
 
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });

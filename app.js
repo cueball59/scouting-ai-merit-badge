@@ -28,17 +28,18 @@
   function renderNav() {
     const nav = document.getElementById("site-nav");
     const items = [
-      ["Home", "index.html"],
-      ["AI News", "ai-news.html"],
-      ["AI or Not?", "games/ai-or-not.html"],
-      ["Ethics Game", "games/ethics.html"],
-      ["Official Requirements", SITE_DATA.officialRequirementsUrl],
-      ["Counselor Prompts", "counselor-prompts.html"]
+      ["Home", "index.html", "home"],
+      ["AI News", "ai-news.html", "ai-news"],
+      ["AI or Not?", "games/ai-or-not.html", "ai-game"],
+      ["Ethics Game", "games/ethics.html", "ethics-game"],
+      ["Official Requirements", SITE_DATA.officialRequirementsUrl, ""],
+      ["Counselor Prompts", "counselor-prompts.html", "counselor-prompts"]
     ];
-    nav.innerHTML = items.map(([label, href]) => {
+    nav.innerHTML = items.map(([label, href, key]) => {
       const isExternal = href.startsWith("https://");
       const target = isExternal ? " target=\"_blank\" rel=\"noopener\"" : "";
-      return `<a href="${isExternal ? href : link(href)}"${target}>${label}</a>`;
+      const current = key && key === page ? ` aria-current="page"` : "";
+      return `<a href="${isExternal ? href : link(href)}"${target}${current}>${label}</a>`;
     }).join("");
   }
 
@@ -281,9 +282,9 @@
   async function renderAiNews() {
     app.innerHTML = `
       <section class="page-title">
-        <span class="requirement-number">Daily refresh</span>
+        <span class="requirement-number">Current AI updates</span>
         <h1>AI News</h1>
-        <p>A running list of recent AI posts and announcements from Microsoft, Anthropic, Claude, Perplexity, and xAI. This page updates daily through GitHub Actions.</p>
+        <p>A running list of recent AI posts and announcements from Microsoft, Anthropic, Claude, Perplexity, and xAI.</p>
       </section>
       <section class="panel">
         <h2>Latest posts</h2>
@@ -321,7 +322,9 @@
           <article class="news-card">
             <span class="requirement-number">${esc(post.source)}</span>
             <h3><a href="${esc(post.url)}" target="_blank" rel="noopener">${esc(post.title)}</a></h3>
-            <p>${esc(post.summary || "Open the post for details.")}</p>
+            <div class="news-summary">
+              ${(Array.isArray(post.summaryParagraphs) && post.summaryParagraphs.length ? post.summaryParagraphs : [post.summary || "Open the post for details."]).slice(0, 3).map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}
+            </div>
             <time>${post.published ? new Date(post.published).toLocaleDateString() : "Date unavailable"}</time>
           </article>
         `).join("") : `<p>No posts found for this source yet.</p>`;

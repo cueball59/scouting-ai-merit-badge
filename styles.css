@@ -107,7 +107,8 @@ button.ghost {
   display: inline-flex;
   font-weight: 800;
   gap: 0.75rem;
-  padding: 0.75rem clamp(1rem, 3vw, 2rem);
+  justify-self: center;
+  padding: 0.85rem clamp(1rem, 3vw, 2rem);
   text-decoration: none;
 }
 
@@ -124,39 +125,40 @@ button.ghost {
 .site-nav {
   align-items: center;
   background: var(--cp-white);
-  border-top: 1px solid var(--cp-white);
+  border-top: 1px solid var(--cp-border);
   display: flex;
   flex-wrap: wrap;
-  gap: 0;
+  gap: 0.25rem;
   justify-content: center;
+  padding: 0.25rem clamp(0.75rem, 2vw, 1.5rem);
 }
 
 .site-nav a,
 .site-nav button {
   background: transparent;
   border: 0;
-  border-right: 1px solid var(--cp-blue);
-  border-radius: 0;
+  border-bottom: 3px solid transparent;
+  border-radius: 0.625rem 0.625rem 0 0;
   color: var(--cp-blue);
   cursor: pointer;
   font-size: 0.92rem;
   font-weight: 700;
   font-family: inherit;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 0.9rem;
   text-decoration: none;
-}
-
-.site-nav a:first-child,
-.site-nav button:first-child {
-  border-left: 1px solid var(--cp-blue);
 }
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"],
 .site-nav button:hover {
-  background: var(--cp-blue);
-  color: var(--cp-white);
+  background: var(--cp-surface-soft);
+  border-bottom-color: var(--cp-red);
+  color: var(--cp-blue);
   transform: none;
+}
+
+.site-nav a[aria-current="page"] {
+  font-weight: 900;
 }
 
 .site-main {
@@ -524,8 +526,15 @@ button.ghost {
   margin: 0.35rem 0;
 }
 
+.news-summary {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0.5rem 0;
+}
+
 .news-card p {
   color: var(--cp-text-muted);
+  margin: 0;
 }
 
 .news-card time {
