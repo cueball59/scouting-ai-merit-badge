@@ -156,6 +156,15 @@
         <h1>AI or Not?</h1>
         <p>Read the scenario, choose the group answer, reveal the result, and use the talking points to spark discussion. The game stops after question 20 and shows a final score.</p>
       </section>
+      <section class="join-game-card" aria-label="Join this game">
+        <div>
+          <span class="requirement-number">Join on your phone</span>
+          <h2>Scan to play AI or Not?</h2>
+          <p>Use this QR code to open the same game page quickly during a live session.</p>
+          <a href="https://cueball59.github.io/scouting-ai-merit-badge/games/ai-or-not.html">cueball59.github.io/scouting-ai-merit-badge/games/ai-or-not.html</a>
+        </div>
+        <img src="${link("assets/ai-or-not-qr.png")}" alt="QR code for the AI or Not game page">
+      </section>
       <section class="game-layout">
         <article class="game-card game-stage" id="game-card"></article>
         <aside class="panel game-controls">
