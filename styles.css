@@ -92,13 +92,10 @@ button.ghost {
 }
 
 .site-header {
-  align-items: center;
   background: var(--cp-blue);
   border-bottom: 4px solid var(--cp-red);
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  padding: 0.75rem clamp(1rem, 3vw, 2rem);
+  display: grid;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -110,6 +107,7 @@ button.ghost {
   display: inline-flex;
   font-weight: 800;
   gap: 0.75rem;
+  padding: 0.75rem clamp(1rem, 3vw, 2rem);
   text-decoration: none;
 }
 
@@ -125,31 +123,39 @@ button.ghost {
 
 .site-nav {
   align-items: center;
+  background: var(--cp-white);
+  border-top: 1px solid var(--cp-white);
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: flex-end;
+  gap: 0;
+  justify-content: center;
 }
 
 .site-nav a,
 .site-nav button {
   background: transparent;
-  border: 1px solid var(--cp-white);
-  border-radius: 999px;
-  color: var(--cp-white);
+  border: 0;
+  border-right: 1px solid var(--cp-blue);
+  border-radius: 0;
+  color: var(--cp-blue);
   cursor: pointer;
   font-size: 0.92rem;
   font-weight: 700;
   font-family: inherit;
-  padding: 0.42rem 0.75rem;
+  padding: 0.7rem 1rem;
   text-decoration: none;
+}
+
+.site-nav a:first-child,
+.site-nav button:first-child {
+  border-left: 1px solid var(--cp-blue);
 }
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"],
 .site-nav button:hover {
-  background: var(--cp-red);
-  border-color: var(--cp-red);
+  background: var(--cp-blue);
+  color: var(--cp-white);
   transform: none;
 }
 

@@ -29,11 +29,11 @@
     const nav = document.getElementById("site-nav");
     const items = [
       ["Home", "index.html"],
-      ["Counselor Prompts", "counselor-prompts.html"],
       ["AI News", "ai-news.html"],
       ["AI or Not?", "games/ai-or-not.html"],
       ["Ethics Game", "games/ethics.html"],
-      ["Official Requirements", SITE_DATA.officialRequirementsUrl]
+      ["Official Requirements", SITE_DATA.officialRequirementsUrl],
+      ["Counselor Prompts", "counselor-prompts.html"]
     ];
     nav.innerHTML = items.map(([label, href]) => {
       const isExternal = href.startsWith("https://");
