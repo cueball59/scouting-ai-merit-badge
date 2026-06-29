@@ -383,6 +383,83 @@ button.ghost {
   width: 100%;
 }
 
+.tool-link-grid,
+.prompt-card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tool-link-card,
+.prompt-practice-card {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  color: var(--cp-blue);
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.tool-link-card {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.tool-link-card:hover {
+  background: var(--cp-blue);
+  color: var(--cp-white);
+}
+
+.tool-link-card strong,
+.prompt-practice-card h3 {
+  font-size: 1.15rem;
+}
+
+.tool-link-card span {
+  color: inherit;
+}
+
+.prompt-practice-card h3 {
+  color: var(--cp-blue);
+  margin-top: 0;
+}
+
+.prompt-text {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  color: var(--cp-blue);
+  font-family: Consolas, "Courier New", Courier, monospace;
+  overflow-x: auto;
+  padding: 0.85rem;
+  white-space: pre-wrap;
+}
+
+.prompt-builder {
+  align-items: end;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.prompt-builder label {
+  color: var(--cp-blue);
+  display: grid;
+  font-weight: 800;
+  gap: 0.3rem;
+}
+
+.prompt-builder input {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  color: var(--cp-blue);
+  font: inherit;
+  padding: 0.65rem 0.75rem;
+  width: 100%;
+}
+
+.prompt-builder button {
+  align-self: stretch;
+}
+
 .join-game-card {
   align-items: center;
   background: var(--cp-white);
@@ -835,6 +912,9 @@ ul {
   .session-total-grid,
   .ai-comparison-grid,
   .video-grid,
+  .tool-link-grid,
+  .prompt-card-grid,
+  .prompt-builder,
   .ethics-choices {
     grid-template-columns: 1fr;
   }

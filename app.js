@@ -148,6 +148,62 @@
           </div>
         </section>
       ` : ""}
+      ${req.aiTools ? `
+        <section class="panel">
+          <h2>Try an AI assistant</h2>
+          <p>Open one of these consumer AI tools in a new tab, then use the practice prompts below. Avoid entering private information, passwords, or personal details.</p>
+          <div class="tool-link-grid">
+            ${req.aiTools.map((tool) => `
+              <a class="tool-link-card" href="${esc(tool.url)}" target="_blank" rel="noopener">
+                <strong>${esc(tool.name)}</strong>
+                <span>${esc(tool.note)}</span>
+              </a>
+            `).join("")}
+          </div>
+        </section>
+      ` : ""}
+      ${req.promptPractice ? `
+        <section class="panel">
+          <h2>Prompt practice cards</h2>
+          <p>Each card starts with a basic prompt. Use the button to compare it with a more detailed prompt that gives the AI clearer context, format, and expectations.</p>
+          <div class="prompt-card-grid">
+            ${req.promptPractice.map((prompt, index) => `
+              <article class="prompt-practice-card" data-basic="${esc(prompt.basic)}" data-detailed="${esc(prompt.detailed)}">
+                <h3>${esc(prompt.title)}</h3>
+                <pre class="prompt-text" id="prompt-practice-${index}">${esc(prompt.basic)}</pre>
+                <div class="actions">
+                  <button class="secondary prompt-toggle" type="button" aria-controls="prompt-practice-${index}" aria-pressed="false">Show deeper prompt</button>
+                  <button class="secondary prompt-copy" type="button">Copy prompt</button>
+                </div>
+              </article>
+            `).join("")}
+          </div>
+        </section>
+        <section class="panel">
+          <h2>Prompt builder</h2>
+          <p>Build a model-agnostic prompt by filling in the task, audience, format, and quality check.</p>
+          <div class="prompt-builder">
+            <label>
+              Task
+              <input id="builder-task" placeholder="Explain, plan, summarize, brainstorm...">
+            </label>
+            <label>
+              Audience
+              <input id="builder-audience" placeholder="A Scout, a teacher, a patrol...">
+            </label>
+            <label>
+              Output format
+              <input id="builder-format" placeholder="Bullet list, table, checklist...">
+            </label>
+            <label>
+              Quality check
+              <input id="builder-check" placeholder="Ask questions first, cite sources, list assumptions...">
+            </label>
+            <button id="build-prompt" type="button">Build prompt</button>
+          </div>
+          <pre class="prompt-text prompt-builder-output" id="builder-output">Fill in the fields, then select Build prompt.</pre>
+        </section>
+      ` : ""}
       ${previousReq || nextReq ? `
         <section class="requirement-nav no-print">
           ${previousReq ? `<a class="button secondary" href="${link(`requirements/${previousReq.id}.html`)}">Previous requirement: ${previousReq.id}. ${esc(previousReq.title)}</a>` : "<span></span>"}
@@ -163,6 +219,36 @@
         button.textContent = isHidden ? "Show example" : "Hide example";
       });
     });
+    app.querySelectorAll(".prompt-toggle").forEach((button) => {
+      button.addEventListener("click", () => {
+        const card = button.closest(".prompt-practice-card");
+        const target = document.getElementById(button.getAttribute("aria-controls"));
+        const showingDetailed = button.getAttribute("aria-pressed") === "true";
+        target.textContent = showingDetailed ? card.dataset.basic : card.dataset.detailed;
+        button.setAttribute("aria-pressed", String(!showingDetailed));
+        button.textContent = showingDetailed ? "Show deeper prompt" : "Show basic prompt";
+      });
+    });
+    app.querySelectorAll(".prompt-copy").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const promptText = button.closest(".prompt-practice-card").querySelector(".prompt-text").textContent;
+        await navigator.clipboard.writeText(promptText);
+        button.textContent = "Copied";
+        setTimeout(() => {
+          button.textContent = "Copy prompt";
+        }, 1200);
+      });
+    });
+    const buildPromptButton = document.getElementById("build-prompt");
+    if (buildPromptButton) {
+      buildPromptButton.addEventListener("click", () => {
+        const task = document.getElementById("builder-task").value.trim() || "help me complete this task";
+        const audience = document.getElementById("builder-audience").value.trim() || "a Scout";
+        const format = document.getElementById("builder-format").value.trim() || "a clear bullet list";
+        const check = document.getElementById("builder-check").value.trim() || "ask clarifying questions first and explain any assumptions";
+        document.getElementById("builder-output").textContent = `You are helping ${audience}. Your task is to ${task}. Provide the answer as ${format}. Before giving the final answer, ${check}. Keep the response clear, age-appropriate, and easy to verify.`;
+      });
+    }
   }
 
   function renderCounselorPrompts() {

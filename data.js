@@ -117,7 +117,41 @@ const SITE_DATA = {
         "Compare outputs from two different prompt styles.",
         "Discuss checking AI output for accuracy."
       ],
-      counselorPrompt: "Ask Scouts how they would verify an AI answer before using it for school or Scouting."
+      counselorPrompt: "Ask Scouts how they would verify an AI answer before using it for school or Scouting.",
+      aiTools: [
+        {
+          name: "Microsoft Copilot",
+          url: "https://copilot.microsoft.com",
+          note: "Consumer Copilot experience."
+        },
+        {
+          name: "ChatGPT",
+          url: "https://chatgpt.com",
+          note: "Consumer ChatGPT experience."
+        },
+        {
+          name: "Claude",
+          url: "https://claude.ai",
+          note: "Consumer Anthropic Claude experience."
+        }
+      ],
+      promptPractice: [
+        {
+          title: "Explain a concept",
+          basic: "Explain artificial intelligence.",
+          detailed: "Explain artificial intelligence to a middle school student in 5 short bullet points. Include one everyday example, one school example, and one caution about checking AI answers for accuracy."
+        },
+        {
+          title: "Improve school work",
+          basic: "Help me with my science project.",
+          detailed: "Act as a project coach. I am planning a science project about renewable energy. Ask me 3 clarifying questions first, then suggest a project outline with a research question, materials, steps, and ways to check whether my results are reliable."
+        },
+        {
+          title: "Plan a Scouting activity",
+          basic: "Give me ideas for a patrol activity.",
+          detailed: "Suggest 5 patrol activity ideas for Scouts ages 11-14 that can be done in 30 minutes, require simple materials, and include teamwork. For each idea, include the goal, materials, safety reminder, and one reflection question."
+        }
+      ]
     },
     {
       id: 7,
