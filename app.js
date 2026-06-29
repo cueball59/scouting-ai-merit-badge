@@ -147,43 +147,95 @@
   function renderAiGame() {
     let index = 0;
     let revealed = false;
-    let aiVotes = 0;
-    let notVotes = 0;
+    let finished = false;
+    const answers = Array(SITE_DATA.aiOrNot.length).fill(null);
 
     app.innerHTML = `
       <section class="page-title">
         <span class="requirement-number">Requirement 2(d)</span>
         <h1>AI or Not?</h1>
-        <p>Read the scenario, let Scouts vote, reveal the answer, and use the talking points to spark discussion. Requirement asks for ten rounds; this deck includes twenty.</p>
+        <p>Read the scenario, choose the group answer, reveal the result, and use the talking points to spark discussion. The game stops after question 20 and shows a final score.</p>
       </section>
       <section class="game-layout">
         <article class="game-card game-stage" id="game-card"></article>
         <aside class="panel game-controls">
-          <h2>Vote board</h2>
+          <h2>Group answer</h2>
           <div class="choice-row vote-buttons">
             <button class="vote-button vote-ai" id="vote-ai">AI</button>
             <button class="vote-button vote-not" id="vote-not">Not AI</button>
           </div>
           <div class="scoreboard">
-            <div class="score-item"><span>AI</span><strong id="ai-votes">0</strong></div>
-            <div class="score-item"><span>Not AI</span><strong id="not-votes">0</strong></div>
+            <div class="score-item"><span>Correct</span><strong id="correct-count">0</strong></div>
+            <div class="score-item"><span>Wrong</span><strong id="wrong-count">0</strong></div>
           </div>
           <div class="actions">
             <button id="reveal">Show answer</button>
             <button class="ghost" id="next">Next question</button>
-            <button class="ghost" id="reset">Reset votes</button>
+            <button class="ghost" id="restart">Restart game</button>
           </div>
         </aside>
       </section>
     `;
 
     const card = document.getElementById("game-card");
-    const aiVote = document.getElementById("ai-votes");
-    const notVote = document.getElementById("not-votes");
+    const correctCount = document.getElementById("correct-count");
+    const wrongCount = document.getElementById("wrong-count");
+    const aiButton = document.getElementById("vote-ai");
+    const notButton = document.getElementById("vote-not");
+    const nextButton = document.getElementById("next");
+    const revealButton = document.getElementById("reveal");
+
+    function tally() {
+      const answered = answers.filter(Boolean);
+      const correct = answers.reduce((total, answer, answerIndex) => {
+        return total + (answer === SITE_DATA.aiOrNot[answerIndex].answer ? 1 : 0);
+      }, 0);
+      return {
+        answered: answered.length,
+        correct,
+        wrong: answered.length - correct,
+        unanswered: answers.length - answered.length
+      };
+    }
 
     function paint() {
+      const score = tally();
+      correctCount.textContent = score.correct;
+      wrongCount.textContent = score.wrong;
+
+      if (finished) {
+        const percent = Math.round((score.correct / SITE_DATA.aiOrNot.length) * 100);
+        card.innerHTML = `
+          <div class="score-summary">
+            <div class="scenario-label">Final score</div>
+            <h2 class="game-title">${score.correct} right, ${score.wrong} wrong</h2>
+            <div class="final-score">${percent}%</div>
+            <p>${score.unanswered ? `${score.unanswered} question${score.unanswered === 1 ? "" : "s"} unanswered.` : "All 20 questions answered."}</p>
+            <div class="score-review">
+              ${SITE_DATA.aiOrNot.map((item, itemIndex) => {
+                const answer = answers[itemIndex];
+                const isCorrect = answer === item.answer;
+                const status = !answer ? "Unanswered" : isCorrect ? "Right" : "Wrong";
+                return `
+                  <div class="review-row ${!answer ? "unanswered" : isCorrect ? "right" : "wrong"}">
+                    <strong>${itemIndex + 1}. ${esc(item.title)}</strong>
+                    <span>${status}${answer ? ` - chose ${esc(answer)}` : ""}; answer: ${esc(item.answer)}</span>
+                  </div>
+                `;
+              }).join("")}
+            </div>
+          </div>
+        `;
+        aiButton.disabled = true;
+        notButton.disabled = true;
+        revealButton.disabled = true;
+        nextButton.disabled = true;
+        return;
+      }
+
       const item = SITE_DATA.aiOrNot[index];
       const progress = Math.round(((index + 1) / SITE_DATA.aiOrNot.length) * 100);
+      const selectedAnswer = answers[index];
       card.innerHTML = `
         <div class="game-topline">
           <div class="game-count">Round ${index + 1} of ${SITE_DATA.aiOrNot.length}</div>
@@ -192,39 +244,54 @@
         <div class="scenario-label">Scenario</div>
         <h2 class="game-title">${esc(item.title)}</h2>
         <div class="scenario">${esc(item.scenario)}</div>
+        ${selectedAnswer ? `<div class="selected-answer">Group chose: <strong>${esc(selectedAnswer)}</strong></div>` : ""}
         <div class="answer-box ${revealed ? "" : "hidden"}">
-          <span class="answer-pill">Answer: ${esc(item.answer)}</span>
+          <span class="answer-pill">${selectedAnswer ? (selectedAnswer === item.answer ? "Correct" : "Wrong") : "Answer"}: ${esc(item.answer)}</span>
           <p>${esc(item.explanation)}</p>
           <h3>Talking points</h3>
           <ul>${item.discuss.map((question) => `<li>${esc(question)}</li>`).join("")}</ul>
         </div>
       `;
-      aiVote.textContent = aiVotes;
-      notVote.textContent = notVotes;
+      aiButton.classList.toggle("selected", selectedAnswer === "AI");
+      notButton.classList.toggle("selected", selectedAnswer === "Not AI");
+      nextButton.textContent = index === SITE_DATA.aiOrNot.length - 1 ? "Show final score" : "Next question";
+      nextButton.disabled = false;
+      revealButton.disabled = false;
     }
 
-    document.getElementById("vote-ai").addEventListener("click", () => {
-      aiVotes += 1;
+    function choose(answer) {
+      if (finished) return;
+      answers[index] = answer;
+      revealed = true;
       paint();
-    });
-    document.getElementById("vote-not").addEventListener("click", () => {
-      notVotes += 1;
-      paint();
-    });
-    document.getElementById("reveal").addEventListener("click", () => {
+    }
+
+    aiButton.addEventListener("click", () => choose("AI"));
+    notButton.addEventListener("click", () => choose("Not AI"));
+    revealButton.addEventListener("click", () => {
+      if (finished) return;
       revealed = true;
       paint();
     });
-    document.getElementById("next").addEventListener("click", () => {
-      index = (index + 1) % SITE_DATA.aiOrNot.length;
+    nextButton.addEventListener("click", () => {
+      if (index === SITE_DATA.aiOrNot.length - 1) {
+        finished = true;
+        paint();
+        return;
+      }
+      index += 1;
       revealed = false;
-      aiVotes = 0;
-      notVotes = 0;
       paint();
     });
-    document.getElementById("reset").addEventListener("click", () => {
-      aiVotes = 0;
-      notVotes = 0;
+    document.getElementById("restart").addEventListener("click", () => {
+      index = 0;
+      revealed = false;
+      finished = false;
+      answers.fill(null);
+      aiButton.disabled = false;
+      notButton.disabled = false;
+      revealButton.disabled = false;
+      nextButton.disabled = false;
       paint();
     });
 

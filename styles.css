@@ -1,28 +1,28 @@
 :root {
   color-scheme: light;
   --cp-bg: #ffffff;
-  --cp-bg-elevated: #f5f8fc;
+  --cp-bg-elevated: #ffffff;
   --cp-surface: #ffffff;
-  --cp-surface-soft: #eef3f8;
-  --cp-border: #d7e2ee;
+  --cp-surface-soft: #ffffff;
+  --cp-border: #003f87;
   --cp-border-strong: #003f87;
-  --cp-text: #102033;
-  --cp-text-muted: #3d5268;
-  --cp-text-soft: #5f7081;
+  --cp-text: #003f87;
+  --cp-text-muted: #003f87;
+  --cp-text-soft: #003f87;
   --cp-accent: #ce1126;
   --cp-accent-hover: #a80d1f;
-  --cp-accent-soft: rgba(206, 17, 38, 0.1);
+  --cp-accent-soft: #ffffff;
   --cp-accent-fg: #ffffff;
   --cp-success: #16a34a;
   --cp-danger: #ce1126;
   --cp-warning: #f2a900;
   --cp-link: #003f87;
-  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
-  --cp-overlay: rgba(255, 255, 255, 0.8);
-  --cp-panel: rgba(255, 255, 255, 0.86);
-  --cp-panel-strong: rgba(255, 255, 255, 0.96);
-  --cp-sheen: rgba(255, 255, 255, 0.55);
-  --cp-highlight: rgba(0, 63, 135, 0.11);
+  --cp-shadow: none;
+  --cp-overlay: #ffffff;
+  --cp-panel: #ffffff;
+  --cp-panel-strong: #ffffff;
+  --cp-sheen: #ffffff;
+  --cp-highlight: #ffffff;
   --cp-blue: #003f87;
   --cp-blue-hover: #002f66;
   --cp-red: #ce1126;
@@ -35,10 +35,7 @@
 
 body {
   margin: 0;
-  background:
-    linear-gradient(135deg, var(--cp-highlight), transparent 38%),
-    radial-gradient(circle at top right, var(--cp-accent-soft), transparent 28%),
-    var(--cp-bg);
+  background: var(--cp-bg);
   color: var(--cp-text);
   font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.55;
@@ -73,6 +70,12 @@ button:hover,
   background: var(--cp-accent-hover);
   border-color: var(--cp-accent-hover);
   transform: translateY(-1px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  transform: none;
 }
 
 button.secondary,
@@ -151,10 +154,10 @@ button.ghost {
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--cp-blue), var(--cp-blue-hover));
+  background: var(--cp-blue);
   border: 1px solid var(--cp-blue);
   border-radius: 16px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+  box-shadow: none;
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1.4fr 0.8fr;
@@ -221,7 +224,7 @@ button.ghost {
   background: var(--cp-surface);
   border: 1px solid var(--cp-border);
   border-radius: 16px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+  box-shadow: none;
   padding: 1rem;
 }
 
@@ -308,8 +311,7 @@ button.ghost {
 }
 
 .game-stage {
-  background:
-    linear-gradient(135deg, var(--cp-white), var(--cp-bg-elevated));
+  background: var(--cp-white);
   border: 2px solid var(--cp-blue);
   overflow: hidden;
   padding: clamp(1.25rem, 3vw, 2rem);
@@ -452,9 +454,79 @@ button.ghost {
   border-color: var(--cp-blue-hover);
 }
 
+.vote-ai.selected {
+  outline: 3px solid var(--cp-red);
+}
+
 .vote-not {
   background: var(--cp-red);
   border-color: var(--cp-red);
+}
+
+.vote-not.selected {
+  outline: 3px solid var(--cp-blue);
+}
+
+.selected-answer {
+  background: var(--cp-surface-soft);
+  border: 1px solid var(--cp-border-strong);
+  border-radius: 0.625rem;
+  color: var(--cp-blue);
+  display: inline-flex;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  padding: 0.55rem 0.75rem;
+}
+
+.score-summary {
+  display: grid;
+  gap: 1rem;
+}
+
+.final-score {
+  align-items: center;
+  background: var(--cp-blue);
+  border: 0.5rem solid var(--cp-red);
+  border-radius: 999px;
+  color: var(--cp-white);
+  display: inline-flex;
+  font-size: clamp(3rem, 10vw, 7rem);
+  font-weight: 950;
+  height: clamp(10rem, 28vw, 15rem);
+  justify-content: center;
+  line-height: 1;
+  width: clamp(10rem, 28vw, 15rem);
+}
+
+.score-review {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.review-row {
+  border: 1px solid var(--cp-border);
+  border-left: 0.5rem solid var(--cp-border-strong);
+  border-radius: 0.625rem;
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.7rem 0.85rem;
+}
+
+.review-row.right {
+  border-left-color: var(--cp-success);
+}
+
+.review-row.wrong {
+  border-left-color: var(--cp-red);
+}
+
+.review-row.unanswered {
+  border-left-color: var(--cp-warning);
+}
+
+.review-row span {
+  color: var(--cp-text-muted);
 }
 
 .ethics-choices {
