@@ -20,5 +20,4 @@ Then visit `http://localhost:8080`.
 ## References
 
 - Official requirement page: https://www.scouting.org/merit-badges/artificial-intelligence/
-- Counselor resource PDF: https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Note-to-Counselor-Artificial-Intelligence-(AI)-Merit-Badge.pdf
-
+- Scouting America AI Merit Badge support PDF: https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Note-to-Counselor-Artificial-Intelligence-(AI)-Merit-Badge.pdf

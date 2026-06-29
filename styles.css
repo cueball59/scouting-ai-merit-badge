@@ -297,41 +297,107 @@ button.ghost {
 
 .game-layout {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: minmax(0, 1fr) 280px;
-  margin-top: 1rem;
+  align-items: start;
+  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.32fr);
+  margin-top: 1.25rem;
 }
 
 .game-card {
-  min-height: 430px;
+  min-height: 520px;
+}
+
+.game-stage {
+  background:
+    linear-gradient(135deg, var(--cp-white), var(--cp-bg-elevated));
+  border: 2px solid var(--cp-blue);
+  overflow: hidden;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  position: relative;
+}
+
+.game-stage::before {
+  background: var(--cp-red);
+  content: "";
+  display: block;
+  height: 0.5rem;
+  inset: 0 0 auto;
+  position: absolute;
+}
+
+.game-controls {
+  border-top: 0.5rem solid var(--cp-red);
+  position: sticky;
+  top: 6rem;
+}
+
+.game-topline {
+  align-items: center;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: auto 1fr;
+}
+
+.progress-track {
+  background: var(--cp-surface-soft);
+  border: 1px solid var(--cp-border);
+  border-radius: 999px;
+  height: 0.8rem;
+  overflow: hidden;
+}
+
+.progress-track span {
+  background: var(--cp-red);
+  display: block;
+  height: 100%;
 }
 
 .game-count {
-  color: var(--cp-text-muted);
+  color: var(--cp-blue);
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
+.scenario-label {
+  background: var(--cp-blue);
+  border-radius: 999px;
+  color: var(--cp-white);
+  display: inline-flex;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  margin-top: 1.5rem;
+  padding: 0.4rem 0.75rem;
+  text-transform: uppercase;
+}
+
+.game-title {
+  color: var(--cp-blue);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  margin: 0.75rem 0 0;
+}
+
 .scenario {
-  font-size: clamp(1.45rem, 4vw, 2.45rem);
+  color: var(--cp-text);
+  font-size: clamp(1.55rem, 4vw, 2.75rem);
   font-weight: 850;
   line-height: 1.1;
-  margin: 1rem 0;
+  margin: 1rem 0 1.25rem;
 }
 
 .answer-box {
-  background: var(--cp-surface-soft);
-  border: 1px solid var(--cp-border);
+  background: var(--cp-white);
+  border: 2px solid var(--cp-red);
   border-radius: 16px;
-  margin-top: 1rem;
-  padding: 1rem;
+  margin-top: 1.25rem;
+  padding: 1.25rem;
 }
 
 .answer-pill {
-  background: var(--cp-accent-soft);
+  background: var(--cp-red);
   border: 1px solid var(--cp-red);
   border-radius: 999px;
+  color: var(--cp-white);
   display: inline-flex;
   font-size: 1rem;
   font-weight: 900;
@@ -346,18 +412,72 @@ button.ghost {
 .scoreboard {
   display: grid;
   gap: 0.75rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
 }
 
 .score-item {
-  background: var(--cp-surface-soft);
-  border: 1px solid var(--cp-border);
+  background: var(--cp-blue);
+  border: 1px solid var(--cp-blue);
   border-radius: 0.625rem;
+  color: var(--cp-white);
   padding: 0.75rem;
+  text-align: center;
 }
 
 .score-item strong {
   display: block;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
+  line-height: 1;
+  margin-top: 0.25rem;
+}
+
+.vote-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.vote-button {
+  min-height: 5rem;
+  width: 100%;
+}
+
+.vote-ai {
+  background: var(--cp-blue);
+  border-color: var(--cp-blue);
+}
+
+.vote-ai:hover {
+  background: var(--cp-blue-hover);
+  border-color: var(--cp-blue-hover);
+}
+
+.vote-not {
+  background: var(--cp-red);
+  border-color: var(--cp-red);
+}
+
+.ethics-choices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.choice-card {
+  background: var(--cp-white);
+  border: 2px solid var(--cp-border-strong);
+  color: var(--cp-blue);
+  justify-content: flex-start;
+  min-height: 5rem;
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.choice-card:hover,
+.choice-card.selected {
+  background: var(--cp-blue);
+  border-color: var(--cp-blue);
+  color: var(--cp-white);
 }
 
 .site-footer {
@@ -380,8 +500,13 @@ ul {
   .site-header,
   .hero,
   .two-column,
-  .game-layout {
+  .game-layout,
+  .ethics-choices {
     grid-template-columns: 1fr;
+  }
+
+  .game-controls {
+    position: static;
   }
 
   .site-header {

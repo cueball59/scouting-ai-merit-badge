@@ -36,8 +36,7 @@
   function renderFooter() {
     document.getElementById("site-footer").innerHTML = `
       Built for Scouting America AI Merit Badge sessions. Reference the
-      <a href="${SITE_DATA.officialRequirementsUrl}" target="_blank" rel="noopener">official Scouting America requirement page</a>
-      and the <a href="${SITE_DATA.counselorUrl}" target="_blank" rel="noopener">counselor resource</a>.
+      <a href="${SITE_DATA.officialRequirementsUrl}" target="_blank" rel="noopener">official Scouting America requirement page</a>.
     `;
   }
 
@@ -128,7 +127,7 @@
   function renderCounselorPrompts() {
     app.innerHTML = `
       <section class="page-title">
-        <span class="requirement-number">Counselor resource</span>
+        <span class="requirement-number">Facilitator prompts</span>
         <h1>Counselor Prompts</h1>
         <p>All requirement prompts are organized here so a counselor can facilitate discussion without jumping between individual requirement pages.</p>
       </section>
@@ -155,19 +154,19 @@
       <section class="page-title">
         <span class="requirement-number">Requirement 2(d)</span>
         <h1>AI or Not?</h1>
-        <p>Read the scenario aloud, let Scouts vote, then reveal the answer and discussion prompts. Requirement asks for ten rounds; this deck includes twenty.</p>
+        <p>Read the scenario, let Scouts vote, reveal the answer, and use the talking points to spark discussion. Requirement asks for ten rounds; this deck includes twenty.</p>
       </section>
       <section class="game-layout">
-        <article class="game-card" id="game-card"></article>
-        <aside class="panel">
-          <h2>Facilitator controls</h2>
-          <div class="choice-row">
-            <button class="secondary" id="vote-ai">Vote AI</button>
-            <button class="secondary" id="vote-not">Vote Not AI</button>
+        <article class="game-card game-stage" id="game-card"></article>
+        <aside class="panel game-controls">
+          <h2>Vote board</h2>
+          <div class="choice-row vote-buttons">
+            <button class="vote-button vote-ai" id="vote-ai">AI</button>
+            <button class="vote-button vote-not" id="vote-not">Not AI</button>
           </div>
           <div class="scoreboard">
-            <div class="score-item"><span>AI votes</span><strong id="ai-votes">0</strong></div>
-            <div class="score-item"><span>Not AI votes</span><strong id="not-votes">0</strong></div>
+            <div class="score-item"><span>AI</span><strong id="ai-votes">0</strong></div>
+            <div class="score-item"><span>Not AI</span><strong id="not-votes">0</strong></div>
           </div>
           <div class="actions">
             <button id="reveal">Show answer</button>
@@ -184,14 +183,19 @@
 
     function paint() {
       const item = SITE_DATA.aiOrNot[index];
+      const progress = Math.round(((index + 1) / SITE_DATA.aiOrNot.length) * 100);
       card.innerHTML = `
-        <div class="game-count">Round ${index + 1} of ${SITE_DATA.aiOrNot.length}</div>
-        <h2>${esc(item.title)}</h2>
+        <div class="game-topline">
+          <div class="game-count">Round ${index + 1} of ${SITE_DATA.aiOrNot.length}</div>
+          <div class="progress-track" aria-label="Game progress"><span style="width: ${progress}%"></span></div>
+        </div>
+        <div class="scenario-label">Scenario</div>
+        <h2 class="game-title">${esc(item.title)}</h2>
         <div class="scenario">${esc(item.scenario)}</div>
         <div class="answer-box ${revealed ? "" : "hidden"}">
-          <span class="answer-pill">${esc(item.answer)}</span>
+          <span class="answer-pill">Answer: ${esc(item.answer)}</span>
           <p>${esc(item.explanation)}</p>
-          <h3>Discuss</h3>
+          <h3>Talking points</h3>
           <ul>${item.discuss.map((question) => `<li>${esc(question)}</li>`).join("")}</ul>
         </div>
       `;
@@ -236,17 +240,17 @@
       <section class="page-title">
         <span class="requirement-number">Requirement 4(b)</span>
         <h1>Ethics in AI: What Would You Do?</h1>
-        <p>Choose a response, discuss tradeoffs, then reveal the counselor guide. There is not always one perfect answer, which is literally the point.</p>
+        <p>Choose a response, discuss tradeoffs, then reveal talking points. There is not always one perfect answer, which is literally the point.</p>
       </section>
       <section class="game-layout">
-        <article class="game-card" id="ethics-card"></article>
-        <aside class="panel">
+        <article class="game-card game-stage ethics-stage" id="ethics-card"></article>
+        <aside class="panel game-controls">
           <h2>Facilitator controls</h2>
           <div class="actions">
-            <button id="ethics-reveal">Show guide</button>
+            <button id="ethics-reveal">Show talking points</button>
             <button class="ghost" id="ethics-next">Next scenario</button>
           </div>
-          <p>Ask Scouts to connect their choice to the Scout Law before revealing the guide.</p>
+          <p>Ask Scouts to connect their choice to the Scout Law before revealing the talking points.</p>
         </aside>
       </section>
     `;
@@ -255,21 +259,26 @@
 
     function paint() {
       const item = SITE_DATA.ethics[index];
+      const progress = Math.round(((index + 1) / SITE_DATA.ethics.length) * 100);
       card.innerHTML = `
-        <div class="game-count">Scenario ${index + 1} of ${SITE_DATA.ethics.length}</div>
-        <h2>${esc(item.title)}</h2>
+        <div class="game-topline">
+          <div class="game-count">Scenario ${index + 1} of ${SITE_DATA.ethics.length}</div>
+          <div class="progress-track" aria-label="Game progress"><span style="width: ${progress}%"></span></div>
+        </div>
+        <div class="scenario-label">What would you do?</div>
+        <h2 class="game-title">${esc(item.title)}</h2>
         <div class="scenario">${esc(item.scenario)}</div>
-        <div class="choice-row">
+        <div class="choice-row ethics-choices">
           ${item.choices.map((choice) => `
-            <button class="${selected === choice ? "" : "secondary"}" data-choice="${esc(choice)}">${esc(choice)}</button>
+            <button class="choice-card ${selected === choice ? "selected" : ""}" data-choice="${esc(choice)}">${esc(choice)}</button>
           `).join("")}
         </div>
         <div class="answer-box ${revealed ? "" : "hidden"}">
-          <span class="answer-pill">Discussion guide</span>
+          <span class="answer-pill">Talking points</span>
           ${selected ? `<p><strong>Group choice:</strong> ${esc(selected)}</p>` : ""}
           <p>${esc(item.guide)}</p>
           <p><strong>Scout Law connections:</strong> ${item.scoutLaw.map(esc).join(", ")}</p>
-          <h3>Discuss</h3>
+          <h3>Discussion questions</h3>
           <ul>${item.discuss.map((question) => `<li>${esc(question)}</li>`).join("")}</ul>
         </div>
       `;
