@@ -187,10 +187,6 @@
             <button class="vote-button vote-ai" id="vote-ai">AI</button>
             <button class="vote-button vote-not" id="vote-not">Not AI</button>
           </div>
-          <div class="scoreboard">
-            <div class="score-item"><span>Correct</span><strong id="correct-count">0</strong></div>
-            <div class="score-item"><span>Wrong</span><strong id="wrong-count">0</strong></div>
-          </div>
           <div class="actions">
             <button id="reveal">Show answer</button>
             <button class="ghost" id="next">Next question</button>
@@ -208,6 +204,7 @@
             </label>
             <button class="secondary" id="join-session">Join leaderboard</button>
             <p class="shared-status" id="shared-status"></p>
+            <div class="shared-local-score" id="shared-local-score"></div>
             <div class="leaderboard" id="leaderboard"></div>
           </div>
         </aside>
@@ -215,8 +212,6 @@
     `;
 
     const card = document.getElementById("game-card");
-    const correctCount = document.getElementById("correct-count");
-    const wrongCount = document.getElementById("wrong-count");
     const aiButton = document.getElementById("vote-ai");
     const notButton = document.getElementById("vote-not");
     const nextButton = document.getElementById("next");
@@ -225,6 +220,7 @@
     const playerNameInput = document.getElementById("player-name");
     const joinSessionButton = document.getElementById("join-session");
     const sharedStatus = document.getElementById("shared-status");
+    const sharedLocalScore = document.getElementById("shared-local-score");
     const leaderboard = document.getElementById("leaderboard");
 
     function normalizeSessionCode(value) {
@@ -258,6 +254,22 @@
       sharedStatus.classList.toggle("error", Boolean(isError));
     }
 
+    function updateSharedLocalScore() {
+      const score = tally();
+      sharedLocalScore.innerHTML = `
+        <div class="shared-score-grid" aria-label="Your cumulative score">
+          <div class="shared-score-tile">
+            <span>Your correct</span>
+            <strong>${score.correct}</strong>
+          </div>
+          <div class="shared-score-tile">
+            <span>Your wrong</span>
+            <strong>${score.wrong}</strong>
+          </div>
+        </div>
+      `;
+    }
+
     function scorePayload() {
       const score = tally();
       return {
@@ -288,7 +300,8 @@
         throw new Error(detail || `Supabase request failed with ${response.status}`);
       }
       if (response.status === 204) return null;
-      return response.json();
+      const text = await response.text();
+      return text ? JSON.parse(text) : null;
     }
 
     async function saveSharedScore() {
@@ -318,11 +331,11 @@
           method: "GET"
         });
         leaderboard.innerHTML = rows.length ? `
-          <h4>Leaderboard: ${esc(shared.sessionCode)}</h4>
+          <h4>Session leaderboard: ${esc(shared.sessionCode)}</h4>
           ${rows.map((row, rowIndex) => `
             <div class="leaderboard-row">
               <strong>${rowIndex + 1}. ${esc(row.player_name)}</strong>
-              <span>${row.correct}/${row.total} right (${row.percent}%)</span>
+              <span>${row.correct} correct, ${row.wrong} wrong (${row.percent}%)</span>
             </div>
           `).join("")}
         ` : `<p>No shared scores yet.</p>`;
@@ -333,8 +346,7 @@
 
     function paint() {
       const score = tally();
-      correctCount.textContent = score.correct;
-      wrongCount.textContent = score.wrong;
+      updateSharedLocalScore();
 
       if (finished) {
         const percent = Math.round((score.correct / SITE_DATA.aiOrNot.length) * 100);

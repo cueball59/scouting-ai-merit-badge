@@ -500,6 +500,39 @@ button.ghost {
   color: var(--cp-red);
 }
 
+.shared-local-score {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.shared-score-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.shared-score-tile {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  color: var(--cp-blue);
+  padding: 0.65rem 0.75rem;
+}
+
+.shared-score-tile span {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.shared-score-tile strong {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+  margin-top: 0.25rem;
+}
+
 .leaderboard {
   display: grid;
   gap: 0.5rem;
