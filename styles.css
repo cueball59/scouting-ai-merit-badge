@@ -289,9 +289,11 @@ button.ghost {
   margin-top: 1.5rem;
 }
 
-.requirement-next {
+.requirement-nav {
+  align-items: center;
   display: flex;
-  justify-content: flex-end;
+  gap: 1rem;
+  justify-content: space-between;
   margin-top: 1rem;
 }
 

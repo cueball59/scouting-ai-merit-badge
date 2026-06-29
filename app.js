@@ -87,6 +87,7 @@
   function renderRequirement() {
     const id = Number(document.body.dataset.requirement);
     const req = SITE_DATA.requirements.find((item) => item.id === id);
+    const previousReq = SITE_DATA.requirements.find((item) => item.id === id - 1);
     const nextReq = SITE_DATA.requirements.find((item) => item.id === id + 1);
     if (!req) {
       app.innerHTML = "<p>Requirement not found.</p>";
@@ -131,9 +132,10 @@
           </div>
         </section>
       ` : ""}
-      ${nextReq ? `
-        <section class="requirement-next no-print">
-          <a class="button" href="${link(`requirements/${nextReq.id}.html`)}">Next requirement: ${nextReq.id}. ${esc(nextReq.title)}</a>
+      ${previousReq || nextReq ? `
+        <section class="requirement-nav no-print">
+          ${previousReq ? `<a class="button secondary" href="${link(`requirements/${previousReq.id}.html`)}">Previous requirement: ${previousReq.id}. ${esc(previousReq.title)}</a>` : "<span></span>"}
+          ${nextReq ? `<a class="button" href="${link(`requirements/${nextReq.id}.html`)}">Next requirement: ${nextReq.id}. ${esc(nextReq.title)}</a>` : ""}
         </section>
       ` : ""}
     `;
