@@ -56,7 +56,8 @@ const SITE_DATA = {
         "Make a five-milestone AI timeline."
       ],
       counselorPrompt: "When Scouts say something is AI, ask what data it uses and whether it learns or adapts.",
-      gameLink: "games/ai-or-not.html"
+      gameLink: "games/ai-or-not.html",
+      gameName: "AI or Not?"
     },
     {
       id: 3,
@@ -81,7 +82,8 @@ const SITE_DATA = {
         "Draft a short set of responsible AI guidelines."
       ],
       counselorPrompt: "There is rarely one perfect answer. Push Scouts to explain tradeoffs, safeguards, and who should be accountable.",
-      gameLink: "games/ethics.html"
+      gameLink: "games/ethics.html",
+      gameName: "What Would You Do?"
     },
     {
       id: 5,

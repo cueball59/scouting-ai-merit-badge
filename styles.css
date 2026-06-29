@@ -281,6 +281,10 @@ button.ghost {
   padding: 0.35rem 0.7rem;
 }
 
+.page-title-actions {
+  margin-top: 1.25rem;
+}
+
 .page-title + .panel {
   margin-top: 1rem;
 }

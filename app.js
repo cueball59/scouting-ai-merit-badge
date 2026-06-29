@@ -99,7 +99,7 @@
         <span class="requirement-number">Requirement ${req.id}</span>
         <h1>${esc(req.title)}</h1>
         <p>${esc(req.summary)}</p>
-        ${req.gameLink ? `<div class="actions"><a class="button" href="${link(req.gameLink)}">Open related game</a></div>` : ""}
+        ${req.gameLink ? `<div class="actions page-title-actions"><a class="button" href="${link(req.gameLink)}">Open ${esc(req.gameName || "game")}</a></div>` : ""}
       </section>
       <section class="panel">
         <h2>Requirement focus</h2>
