@@ -301,6 +301,14 @@ button.ghost {
   margin-top: 1rem;
 }
 
+.bottom-print {
+  border-top: 2px solid var(--cp-blue);
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+
 .two-column {
   display: grid;
   gap: 1rem;
@@ -840,6 +848,34 @@ button.ghost {
   justify-content: center;
   line-height: 1;
   width: clamp(10rem, 28vw, 15rem);
+}
+
+.achievement-summary {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  color: var(--cp-blue);
+  display: inline-grid;
+  gap: 0.25rem;
+  padding: 0.85rem 1rem;
+}
+
+.achievement-summary strong {
+  font-size: 1.35rem;
+}
+
+.achievement-levels {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  padding: 1rem;
+}
+
+.achievement-levels h3 {
+  color: var(--cp-blue);
+  margin-top: 0;
+}
+
+.achievement-levels ol {
+  margin-bottom: 0;
 }
 
 .score-review {

@@ -39,10 +39,16 @@
       const target = isExternal ? " target=\"_blank\" rel=\"noopener\"" : "";
       return `<a href="${isExternal ? href : link(href)}"${target}>${label}</a>`;
     }).join("");
-    if (page !== "ai-game" && page !== "ethics-game") {
-      nav.insertAdjacentHTML("beforeend", `<button class="nav-print no-print" type="button">Print page</button>`);
-      nav.querySelector(".nav-print").addEventListener("click", () => window.print());
-    }
+  }
+
+  function renderBottomPrint() {
+    if (page === "ai-game" || page === "ethics-game") return;
+    app.insertAdjacentHTML("beforeend", `
+      <section class="bottom-print no-print">
+        <button type="button">Print page</button>
+      </section>
+    `);
+    app.querySelector(".bottom-print button").addEventListener("click", () => window.print());
   }
 
   function renderFooter() {
@@ -406,6 +412,37 @@
       });
     }
 
+    function detectionLevel(correct) {
+      if (correct >= 17) {
+        return {
+          title: "AI Detection Expert",
+          message: "You can usually spot the difference between fixed automation and systems that learn or adapt."
+        };
+      }
+      if (correct >= 13) {
+        return {
+          title: "AI Pattern Ranger",
+          message: "You are strong at recognizing clues like learning, prediction, and adaptation."
+        };
+      }
+      if (correct >= 9) {
+        return {
+          title: "AI Apprentice",
+          message: "You are building good instincts and are ready to sharpen the tricky edge cases."
+        };
+      }
+      if (correct >= 5) {
+        return {
+          title: "Pattern Spotter",
+          message: "You caught some signals. Keep practicing the difference between simple rules and AI."
+        };
+      }
+      return {
+        title: "AI Explorer",
+        message: "You are getting started. Review what makes AI different from basic automation."
+      };
+    }
+
     function scorePayload() {
       const score = tally();
       return {
@@ -526,12 +563,27 @@
 
       if (finished) {
         const percent = Math.round((score.correct / SITE_DATA.aiOrNot.length) * 100);
+        const level = detectionLevel(score.correct);
         card.innerHTML = `
           <div class="score-summary">
-            <div class="scenario-label">Final score</div>
-            <h2 class="game-title">${score.correct} right, ${score.wrong} wrong</h2>
+            <div class="scenario-label">How did you do?</div>
+            <h2 class="game-title">${level.title}</h2>
             <div class="final-score">${percent}%</div>
-            <p>${score.unanswered ? `${score.unanswered} question${score.unanswered === 1 ? "" : "s"} unanswered.` : "All 20 questions answered."}</p>
+            <div class="achievement-summary">
+              <strong>${score.correct} of ${SITE_DATA.aiOrNot.length} right</strong>
+              <span>${score.wrong} wrong${score.unanswered ? `, ${score.unanswered} unanswered` : ""}</span>
+            </div>
+            <p>${level.message}</p>
+            <div class="achievement-levels">
+              <h3>AI detection achievement levels</h3>
+              <ol>
+                <li><strong>AI Explorer:</strong> 0-4 right</li>
+                <li><strong>Pattern Spotter:</strong> 5-8 right</li>
+                <li><strong>AI Apprentice:</strong> 9-12 right</li>
+                <li><strong>AI Pattern Ranger:</strong> 13-16 right</li>
+                <li><strong>AI Detection Expert:</strong> 17-20 right</li>
+              </ol>
+            </div>
             <div class="score-review">
               ${SITE_DATA.aiOrNot.map((item, itemIndex) => {
                 const answer = answers[itemIndex];
@@ -738,4 +790,5 @@
   if (page === "counselor-prompts") renderCounselorPrompts();
   if (page === "ai-game") renderAiGame();
   if (page === "ethics-game") renderEthicsGame();
+  renderBottomPrint();
 }());
