@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "validate": "node --check data.js && node --check app.js"
+    "validate": "node --check data.js && node --check app.js && node --check scripts/update-ai-news.js",
+    "refresh:ai-news": "node scripts/update-ai-news.js"
   }
 }

@@ -30,6 +30,7 @@
     const items = [
       ["Home", "index.html"],
       ["Counselor Prompts", "counselor-prompts.html"],
+      ["AI News", "ai-news.html"],
       ["AI or Not?", "games/ai-or-not.html"],
       ["Ethics Game", "games/ethics.html"],
       ["Official Requirements", SITE_DATA.officialRequirementsUrl]
@@ -275,6 +276,68 @@
         `).join("")}
       </section>
     `;
+  }
+
+  async function renderAiNews() {
+    app.innerHTML = `
+      <section class="page-title">
+        <span class="requirement-number">Daily refresh</span>
+        <h1>AI News</h1>
+        <p>A running list of recent AI posts and announcements from Microsoft, Anthropic, Claude, Perplexity, and xAI. This page updates daily through GitHub Actions.</p>
+      </section>
+      <section class="panel">
+        <h2>Latest posts</h2>
+        <p id="news-status">Loading AI news...</p>
+        <div class="news-source-status" id="news-source-status"></div>
+        <div class="news-source-filter" id="news-source-filter"></div>
+        <div class="news-list" id="news-list"></div>
+      </section>
+    `;
+
+    const status = document.getElementById("news-status");
+    const sourceStatus = document.getElementById("news-source-status");
+    const filter = document.getElementById("news-source-filter");
+    const list = document.getElementById("news-list");
+
+    try {
+      const response = await fetch(link("data/ai-news.json"), { cache: "no-store" });
+      if (!response.ok) throw new Error(`Unable to load AI news (${response.status})`);
+      const news = await response.json();
+      const posts = Array.isArray(news.posts) ? news.posts : [];
+      const sourceResults = Array.isArray(news.sources) ? news.sources : [];
+      const sources = ["All", ...Array.from(new Set(posts.map((post) => post.source))).sort()];
+      let activeSource = "All";
+
+      function paint() {
+        const visible = activeSource === "All" ? posts : posts.filter((post) => post.source === activeSource);
+        status.textContent = `Last updated: ${news.lastUpdated ? new Date(news.lastUpdated).toLocaleString() : "not yet"} · ${visible.length} post${visible.length === 1 ? "" : "s"} shown`;
+        sourceStatus.innerHTML = sourceResults.length ? sourceResults.map((source) => `
+          <span class="source-status-pill ${source.ok ? "" : "source-status-warning"}">${esc(source.name)}: ${source.ok ? `${source.count} found` : "blocked"}</span>
+        `).join("") : "";
+        filter.innerHTML = sources.map((source) => `
+          <button class="secondary ${source === activeSource ? "selected" : ""}" type="button" data-source="${esc(source)}">${esc(source)}</button>
+        `).join("");
+        list.innerHTML = visible.length ? visible.map((post) => `
+          <article class="news-card">
+            <span class="requirement-number">${esc(post.source)}</span>
+            <h3><a href="${esc(post.url)}" target="_blank" rel="noopener">${esc(post.title)}</a></h3>
+            <p>${esc(post.summary || "Open the post for details.")}</p>
+            <time>${post.published ? new Date(post.published).toLocaleDateString() : "Date unavailable"}</time>
+          </article>
+        `).join("") : `<p>No posts found for this source yet.</p>`;
+        filter.querySelectorAll("[data-source]").forEach((button) => {
+          button.addEventListener("click", () => {
+            activeSource = button.dataset.source;
+            paint();
+          });
+        });
+      }
+
+      paint();
+    } catch (error) {
+      status.textContent = "AI news could not be loaded right now.";
+      list.innerHTML = `<p>Try refreshing the page, or check the GitHub Action refresh status.</p>`;
+    }
   }
 
   function renderAiGame() {
@@ -788,6 +851,7 @@
   if (page === "home") renderHome();
   if (page === "requirement") renderRequirement();
   if (page === "counselor-prompts") renderCounselorPrompts();
+  if (page === "ai-news") renderAiNews();
   if (page === "ai-game") renderAiGame();
   if (page === "ethics-game") renderEthicsGame();
   renderBottomPrint();

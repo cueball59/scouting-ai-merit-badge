@@ -175,7 +175,54 @@ const SITE_DATA = {
         "Prepare interview questions about daily work, challenges, and future trends.",
         "Discuss whether the career sounds interesting and why."
       ],
-      counselorPrompt: "Encourage Scouts to include both technical and nontechnical AI-related careers."
+      counselorPrompt: "Encourage Scouts to include both technical and nontechnical AI-related careers.",
+      careerOptions: [
+        {
+          title: "Machine Learning Engineer",
+          summary: "Builds systems that learn from data and improve predictions or recommendations.",
+          details: ["Common skills: programming, math, data modeling, testing.", "Research: education paths, Python, model training, responsible AI practices."]
+        },
+        {
+          title: "Data Scientist",
+          summary: "Uses data to find patterns, answer questions, and support decisions.",
+          details: ["Common skills: statistics, visualization, coding, communication.", "Research: data analysis tools, college majors, portfolio projects, salary ranges."]
+        },
+        {
+          title: "Robotics Engineer",
+          summary: "Designs robots and automated machines that sense, move, and complete tasks.",
+          details: ["Common skills: engineering, sensors, programming, safety testing.", "Research: robotics clubs, mechanical/electrical engineering, automation careers."]
+        },
+        {
+          title: "Automation Specialist",
+          summary: "Creates workflows that reduce repetitive work in offices, factories, or service teams.",
+          details: ["Common skills: process mapping, scripting, workflow tools, troubleshooting.", "Research: business process automation, RPA, certifications, industries that use automation."]
+        },
+        {
+          title: "AI Product Manager",
+          summary: "Helps teams decide what AI products should do and whether they are useful and responsible.",
+          details: ["Common skills: planning, user research, communication, ethics, prioritization.", "Research: product management, user-centered design, AI safety reviews."]
+        },
+        {
+          title: "Cybersecurity Analyst",
+          summary: "Protects systems and uses automation or AI tools to detect threats faster.",
+          details: ["Common skills: networks, investigation, risk thinking, clear reporting.", "Research: security certifications, incident response, AI in threat detection."]
+        },
+        {
+          title: "AI Ethics or Policy Analyst",
+          summary: "Studies how AI affects people and recommends rules for safe and fair use.",
+          details: ["Common skills: research, writing, law/policy awareness, bias and privacy analysis.", "Research: responsible AI, privacy laws, public policy, digital citizenship."]
+        },
+        {
+          title: "Prompt Engineer / AI Workflow Designer",
+          summary: "Designs prompts and repeatable AI workflows that help people get useful results.",
+          details: ["Common skills: clear writing, testing, subject knowledge, process design.", "Research: prompt patterns, evaluation methods, AI tool limitations."]
+        },
+        {
+          title: "AI Research Scientist",
+          summary: "Investigates new AI methods and publishes discoveries that may shape future tools.",
+          details: ["Common skills: advanced math, experiments, coding, reading research papers.", "Research: graduate education, research labs, machine learning papers, long-term career paths."]
+        }
+      ]
     }
   ],
   aiOrNot: [

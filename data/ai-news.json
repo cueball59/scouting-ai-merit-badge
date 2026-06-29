@@ -1,0 +1,380 @@
+{
+  "lastUpdated": "2026-06-29T22:08:37.241Z",
+  "sources": [
+    {
+      "name": "Microsoft",
+      "ok": true,
+      "count": 10,
+      "error": ""
+    },
+    {
+      "name": "Anthropic",
+      "ok": true,
+      "count": 12,
+      "error": ""
+    },
+    {
+      "name": "Claude",
+      "ok": true,
+      "count": 7,
+      "error": ""
+    },
+    {
+      "name": "Perplexity",
+      "ok": true,
+      "count": 20,
+      "error": ""
+    },
+    {
+      "name": "xAI",
+      "ok": false,
+      "count": 0,
+      "error": "https://x.ai/news returned 403"
+    }
+  ],
+  "posts": [
+    {
+      "source": "Perplexity",
+      "title": "Introducing Perplexity Computer",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-computer",
+      "summary": "Perplexity Computer unifies every current AI capability into a single system. Computer is a general-purpose digital worker that operates the same interfaces you do.",
+      "published": "2026-06-29T22:08:37.150Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Welcoming Gannett to the Perplexity Publisher Program",
+      "url": "https://www.perplexity.ai/hub/blog/welcoming-gannett-to-the-perplexity-publisher-program",
+      "summary": "Gannett (USA TODAY + 200 local outlets) licenses content to Perplexity, enriching its AI search and Comet browser with trusted journalism while adopting Sonar API and Enterprise Pro.",
+      "published": "2026-06-29T22:08:37.150Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Disaggregated Prefill and Decode",
+      "url": "https://www.perplexity.ai/hub/blog/disaggregated-prefill-and-decode",
+      "summary": "Separating prefill and decode across devices speeds up LLM inference and improves performance",
+      "published": "2026-06-29T22:08:37.150Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Bullying is Not Innovation",
+      "url": "https://www.perplexity.ai/hub/blog/bullying-is-not-innovation",
+      "summary": "The point of technology is to make life better for people. We call it innovation, but it’s just the constant process of asking how to make things better. Bullying, on the other hand, is when large corporations use legal threats and intimidation to block innovation and make life w",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Comet Assistant puts you in control",
+      "url": "https://www.perplexity.ai/hub/blog/comet-assistant-puts-you-in-control",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Announcing our Partnership with the United States Government",
+      "url": "https://www.perplexity.ai/hub/blog/announcing-our-partnership-with-the-united-states-government",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "The New Comet Assistant",
+      "url": "https://www.perplexity.ai/hub/blog/the-new-comet-assistant",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Shopping That Puts You First",
+      "url": "https://www.perplexity.ai/hub/blog/shopping-that-puts-you-first",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Comet for Android is Here",
+      "url": "https://www.perplexity.ai/hub/blog/comet-for-android-is-here",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Introducing AI assistants with memory",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-ai-assistants-with-memory",
+      "summary": "With our upgraded personalization and memory, Perplexity remembers key details across conversations so future answers are more personalized and efficient.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Building Safer AI Browsers with BrowseSafe",
+      "url": "https://www.perplexity.ai/hub/blog/building-safer-ai-browsers-with-browsesafe",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Perplexity x Cristiano Ronaldo",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-x-cristiano-ronaldo",
+      "summary": "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "How People Use AI Agents",
+      "url": "https://www.perplexity.ai/hub/blog/how-people-use-ai-agents",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Happy 25th Birthday, Wikipedia",
+      "url": "https://www.perplexity.ai/hub/blog/happy-25th-birthday-wikipedia",
+      "summary": "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Introducing Perplexity for Public Safety Organizations",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-for-public-safety-organizations",
+      "summary": "Perplexity is now the first frontier AI company to offer Enterprise Pro specifically to law enforcement and public safety agencies.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Inside the Rise of Enterprise AI Model-Switching",
+      "url": "https://www.perplexity.ai/hub/blog/inside-the-rise-of-enterprise-ai-model-switching",
+      "summary": "Enterprise usage data shows employees are now treating models as a menu of options, not a single default tool.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Finish Your Annual Plan Faster With Perplexity",
+      "url": "https://www.perplexity.ai/hub/blog/finish-your-annual-plan-faster-with-perplexity",
+      "summary": "Use Perplexity to turn messy annual planning into a fast, focused system your team can actually execute.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Introducing Model Council",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-model-council",
+      "summary": "Today we are launching Model Council, a multi-model research feature that brings several models together for one answer.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "How We Built Security Into Comet From Day One",
+      "url": "https://www.perplexity.ai/hub/blog/how-we-built-security-into-comet-from-day-one",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Perplexity APIs deliver powerful AI to the world’s largest Android device maker",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-apis-deliver-powerful-ai-to-the-world%E2%80%99s-largest-android-device-maker",
+      "summary": "Perplexity is now integrated into Samsung Galaxy S26 phones at a deep level, powering search and reasoning for both the Perplexity assistant and Samsung's Bixby.",
+      "published": "2026-06-29T22:08:37.149Z"
+    },
+    {
+      "source": "Claude",
+      "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
+      "url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.991Z"
+    },
+    {
+      "source": "Claude",
+      "title": "Announcements Jun 11, 2026 Introducing Claude Corps We’re launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+      "url": "https://www.anthropic.com/news/claude-corps",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.991Z"
+    },
+    {
+      "source": "Claude",
+      "title": "Product May 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.991Z"
+    },
+    {
+      "source": "Claude",
+      "title": "Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries",
+      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.991Z"
+    },
+    {
+      "source": "Claude",
+      "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.991Z"
+    },
+    {
+      "source": "Claude",
+      "title": "Jun 9, 2026 Announcements Claude Fable 5 and Claude Mythos 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.991Z"
+    },
+    {
+      "source": "Claude",
+      "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.991Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.699Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats",
+      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.699Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5 Announcements Jun 12, 2026 The US government has issued an export control directive to suspend all access to Fable 5 and Mythos 5.",
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.698Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
+      "url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.698Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Announcements Jun 11, 2026 Introducing Claude Corps We’re launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+      "url": "https://www.anthropic.com/news/claude-corps",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.698Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Announcements Jun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries.",
+      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.698Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Product May 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.698Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.698Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 12, 2026 Announcements Results from the first Anthropic Public Record",
+      "url": "https://www.anthropic.com/news/anthropic-public-record",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.698Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries",
+      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.698Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.698Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 9, 2026 Announcements Claude Fable 5 and Claude Mythos 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "summary": "",
+      "published": "2026-06-29T22:08:36.698Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "Farming is risky business. This app helps Turkish growers succeed",
+      "url": "https://news.microsoft.com/source/emea/features/farming-is-risky-business-this-app-helps-turkish-growers-succeed/",
+      "summary": "The post Farming is risky business. This app helps Turkish growers succeed appeared first on Source . ]]>",
+      "published": "2026-06-16T13:41:44.000Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "Why don’t cancer medicines work the same for everyone?",
+      "url": "https://news.microsoft.com/signal/articles/why-dont-cancer-medicines-work-the-same-for-everyone-ex-vivo/",
+      "summary": "The post Why don’t cancer medicines work the same for everyone? appeared first on Source . ]]>",
+      "published": "2026-06-09T15:05:35.000Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "AI alone won’t change your business. The system running it will.",
+      "url": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
+      "summary": "The post AI alone won’t change your business. The system running it will. appeared first on Source . ]]>",
+      "published": "2026-06-02T16:25:45.000Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "There is no Copilot without the pilots, says Slovenian insurance executive",
+      "url": "https://news.microsoft.com/source/emea/features/zavarovalnica-triglav-copilot-adoption-insurance/",
+      "summary": "The post There is no Copilot without the pilots, says Slovenian insurance executive appeared first on Source . ]]>",
+      "published": "2026-05-27T20:55:17.000Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "At aged care provider Regis, AI takes on paperwork so staff can focus on residents",
+      "url": "https://news.microsoft.com/source/asia/features/at-aged-care-provider-regis-ai-takes-on-paperwork-so-staff-can-focus-on-residents/",
+      "summary": "The post At aged care provider Regis, AI takes on paperwork so staff can focus on residents appeared first on Source . ]]>",
+      "published": "2026-05-18T23:06:46.000Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "Costa Rican dairy cooperative turns AI agents into coworkers",
+      "url": "https://news.microsoft.com/source/latam/features/ai/costa-rica-dos-pinos-ai-agents-microsoft-copilot-en/?lang=en",
+      "summary": "The post Costa Rican dairy cooperative turns AI agents into coworkers appeared first on Source . ]]>",
+      "published": "2026-05-14T13:01:18.000Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "Inside Porsche Cup Brasil’s AI-powered race operations",
+      "url": "https://news.microsoft.com/source/latam/features/ai/porsche-cup-brasil-ai-powered-crash-analysis/?lang=en",
+      "summary": "The post Inside Porsche Cup Brasil’s AI-powered race operations appeared first on Source . ]]>",
+      "published": "2026-05-07T15:03:19.000Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "Work smarter in 90 days: A real-world guide to using AI",
+      "url": "https://news.microsoft.com/signal/articles/work-smarter-in-90-days-a-real-world-guide-to-using-ai/",
+      "summary": "The post Work smarter in 90 days: A real-world guide to using AI appeared first on Source . ]]>",
+      "published": "2026-04-28T15:05:49.000Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "Cricket Australia uses AI Insights to bring fans closer to the action",
+      "url": "https://news.microsoft.com/source/asia/features/cricket-australia-uses-ai-insights-to-bring-fans-closer-to-the-action/",
+      "summary": "The post Cricket Australia uses AI Insights to bring fans closer to the action appeared first on Source . ]]>",
+      "published": "2026-04-23T01:47:07.000Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "Pairing geotechnical data with AI helps New Zealand build better",
+      "url": "https://news.microsoft.com/source/asia/features/pairing-geotechnical-data-with-ai-helps-new-zealand-to-build-better/",
+      "summary": "The post Pairing geotechnical data with AI helps New Zealand build better appeared first on Source . ]]>",
+      "published": "2026-04-20T23:36:57.000Z"
+    }
+  ]
+}

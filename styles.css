@@ -468,6 +468,65 @@ button.ghost {
   align-self: stretch;
 }
 
+.news-source-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.news-source-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.source-status-pill {
+  border: 1px solid var(--cp-blue);
+  border-radius: 999px;
+  color: var(--cp-blue);
+  display: inline-flex;
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 0.3rem 0.65rem;
+}
+
+.source-status-warning {
+  border-color: var(--cp-red);
+  color: var(--cp-red);
+}
+
+.news-source-filter button.selected {
+  background: var(--cp-blue);
+  border-color: var(--cp-blue);
+  color: var(--cp-white);
+}
+
+.news-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.news-card {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  padding: 1rem;
+}
+
+.news-card h3 {
+  margin: 0.35rem 0;
+}
+
+.news-card p {
+  color: var(--cp-text-muted);
+}
+
+.news-card time {
+  color: var(--cp-blue);
+  font-weight: 800;
+}
+
 .join-game-card {
   align-items: center;
   background: var(--cp-white);
