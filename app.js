@@ -327,6 +327,7 @@
             <button class="vote-button vote-ai" id="vote-ai">AI</button>
             <button class="vote-button vote-not" id="vote-not">Not AI</button>
           </div>
+          <div class="answer-control-divider" aria-hidden="true"></div>
           <div class="actions answer-actions">
             <button id="reveal">Show answer</button>
             <button class="ghost" id="next">Next question</button>
@@ -568,17 +569,20 @@
         ${selectedAnswer ? `<div class="selected-answer">You chose: <strong>${esc(selectedAnswer)}</strong></div>` : ""}
         <div class="answer-box ${revealed ? "" : "hidden"}">
           <span class="answer-pill">Answer: ${esc(item.answer)}</span>
+          <p><strong>Why:</strong> ${esc(item.explanation)}</p>
         </div>
       `;
       aiButton.classList.toggle("selected", selectedAnswer === "AI");
       notButton.classList.toggle("selected", selectedAnswer === "Not AI");
+      aiButton.disabled = Boolean(selectedAnswer);
+      notButton.disabled = Boolean(selectedAnswer);
       nextButton.textContent = index === SITE_DATA.aiOrNot.length - 1 ? "Show final score" : "Next question";
       nextButton.disabled = false;
       revealButton.disabled = false;
     }
 
     function choose(answer) {
-      if (finished) return;
+      if (finished || answers[index]) return;
       answers[index] = answer;
       revealed = true;
       paint();
@@ -603,6 +607,8 @@
       index += 1;
       revealed = false;
       shared.showAllScores = false;
+      aiButton.disabled = false;
+      notButton.disabled = false;
       paint();
       refreshLeaderboard();
     });

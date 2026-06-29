@@ -493,7 +493,7 @@ button.ghost {
   display: grid;
   align-items: start;
   gap: 1.25rem;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.32fr);
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 0.36fr);
   margin-top: 1.25rem;
 }
 
@@ -764,14 +764,20 @@ button.ghost {
   grid-template-columns: 1fr 1fr;
 }
 
+.answer-control-divider {
+  border-top: 2px solid var(--cp-blue);
+  margin: 1rem 0;
+}
+
 .vote-buttons {
   display: grid;
-  gap: 0.5rem;
+  gap: 0.75rem;
   grid-template-columns: 1fr 1fr;
 }
 
 .vote-button {
-  min-height: 5rem;
+  min-height: 6.5rem;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -799,6 +805,10 @@ button.ghost {
 .vote-not.selected:hover {
   background: var(--cp-accent-hover);
   border-color: var(--cp-accent-hover);
+}
+
+.vote-button:disabled {
+  opacity: 1;
 }
 
 .selected-answer {
