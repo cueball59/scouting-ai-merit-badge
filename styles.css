@@ -285,6 +285,10 @@ button.ghost {
   margin-top: 1rem;
 }
 
+.panel + .panel {
+  margin-top: 1.5rem;
+}
+
 .requirement-next {
   display: flex;
   justify-content: flex-end;

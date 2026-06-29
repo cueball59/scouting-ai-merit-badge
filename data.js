@@ -18,6 +18,7 @@ const SITE_DATA = {
         ["AI agent", "A system that can observe information, make decisions, and take actions toward a goal."],
         ["Automation", "A process that follows set rules or triggers without needing a person to repeat every step."],
         ["Machine learning", "A way for systems to improve from examples, patterns, or feedback instead of only fixed instructions."],
+        ["Large language model", "An AI system trained on large amounts of text to recognize language patterns and generate text-based responses."],
         ["Workflow", "A sequence of steps that moves work from start to finish."],
         ["Trigger", "An event that starts an automated action or workflow."],
         ["Variable", "A named value that can change while a program or workflow runs."],
