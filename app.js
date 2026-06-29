@@ -245,7 +245,7 @@
             <button class="ghost" id="next">Next question</button>
           </div>
           <div class="actions">
-            <button class="ghost" id="restart">Restart game</button>
+            <button class="ghost hidden" id="restart">Restart game</button>
           </div>
         </aside>
       </section>
@@ -256,6 +256,7 @@
     const notButton = document.getElementById("vote-not");
     const nextButton = document.getElementById("next");
     const revealButton = document.getElementById("reveal");
+    const restartButton = document.getElementById("restart");
     const sessionCodeInput = document.getElementById("session-code");
     const playerNameInput = document.getElementById("player-name");
     const joinSessionButton = document.getElementById("join-session");
@@ -310,6 +311,13 @@
       `;
     }
 
+    function answerResults() {
+      return answers.map((answer, answerIndex) => {
+        if (!answer) return null;
+        return answer === SITE_DATA.aiOrNot[answerIndex].answer;
+      });
+    }
+
     function scorePayload() {
       const score = tally();
       return {
@@ -320,6 +328,7 @@
         answered: score.answered,
         total: SITE_DATA.aiOrNot.length,
         percent: Math.round((score.correct / SITE_DATA.aiOrNot.length) * 100),
+        answers: answerResults(),
         updated_at: new Date().toISOString()
       };
     }
@@ -367,8 +376,20 @@
     async function refreshLeaderboard() {
       if (!shared.enabled) return;
       try {
-        const rows = await supabaseRequest(`ai_or_not_scores?session_code=eq.${encodeURIComponent(shared.sessionCode)}&select=correct,wrong,answered,total,percent,updated_at`, {
+        const rows = await supabaseRequest(`ai_or_not_scores?session_code=eq.${encodeURIComponent(shared.sessionCode)}&select=correct,wrong,answered,total,percent,answers,updated_at`, {
           method: "GET"
+        });
+        const totalCorrect = rows.reduce((sum, row) => sum + Number(row.correct || 0), 0);
+        const totalWrong = rows.reduce((sum, row) => sum + Number(row.wrong || 0), 0);
+        const questionTotals = SITE_DATA.aiOrNot.map((item, itemIndex) => {
+          const questionRows = rows.filter((row) => Array.isArray(row.answers) && row.answers[itemIndex] !== null && row.answers[itemIndex] !== undefined);
+          const correct = questionRows.filter((row) => row.answers[itemIndex] === true).length;
+          return {
+            number: itemIndex + 1,
+            title: item.title,
+            correct,
+            answered: questionRows.length
+          };
         });
         leaderboard.innerHTML = rows.length ? `
           <h4>Session totals: ${esc(shared.sessionCode)}</h4>
@@ -379,12 +400,21 @@
             </div>
             <div class="session-total-tile">
               <span>Total correct</span>
-              <strong>${rows.reduce((sum, row) => sum + Number(row.correct || 0), 0)}</strong>
+              <strong>${totalCorrect}</strong>
             </div>
             <div class="session-total-tile">
               <span>Total wrong</span>
-              <strong>${rows.reduce((sum, row) => sum + Number(row.wrong || 0), 0)}</strong>
+              <strong>${totalWrong}</strong>
             </div>
+          </div>
+          <div class="question-total-grid" aria-label="Correct answers by question">
+            ${questionTotals.map((question) => `
+              <div class="question-total-row">
+                <strong>Q${question.number}</strong>
+                <span>${esc(question.title)}</span>
+                <em>${question.correct} correct${question.answered ? ` / ${question.answered} answered` : ""}</em>
+              </div>
+            `).join("")}
           </div>
         ` : `<p>No shared scores yet.</p>`;
       } catch (error) {
@@ -423,6 +453,7 @@
         notButton.disabled = true;
         revealButton.disabled = true;
         nextButton.disabled = true;
+        restartButton.classList.remove("hidden");
         return;
       }
 
@@ -437,9 +468,9 @@
         <div class="scenario-label">Scenario</div>
         <h2 class="game-title">${esc(item.title)}</h2>
         <div class="scenario">${esc(item.scenario)}</div>
-        ${selectedAnswer ? `<div class="selected-answer">Group chose: <strong>${esc(selectedAnswer)}</strong></div>` : ""}
+        ${selectedAnswer ? `<div class="selected-answer">You chose: <strong>${esc(selectedAnswer)}</strong></div>` : ""}
         <div class="answer-box ${revealed ? "" : "hidden"}">
-          <span class="answer-pill">${selectedAnswer ? (selectedAnswer === item.answer ? "Correct" : "Wrong") : "Answer"}: ${esc(item.answer)}</span>
+          <span class="answer-pill">Answer: ${esc(item.answer)}</span>
         </div>
       `;
       aiButton.classList.toggle("selected", selectedAnswer === "AI");
@@ -484,6 +515,7 @@
       notButton.disabled = false;
       revealButton.disabled = false;
       nextButton.disabled = false;
+      restartButton.classList.add("hidden");
       paint();
       saveSharedScore();
     });

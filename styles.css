@@ -646,13 +646,46 @@ button.ghost {
   margin-top: 0.25rem;
 }
 
+.question-total-grid {
+  display: grid;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.question-total-row {
+  align-items: center;
+  border: 1px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  padding: 0.5rem 0.65rem;
+}
+
+.question-total-row strong {
+  color: var(--cp-red);
+}
+
+.question-total-row span {
+  color: var(--cp-blue);
+  font-weight: 700;
+}
+
+.question-total-row em {
+  color: var(--cp-blue);
+  font-style: normal;
+  font-weight: 900;
+}
+
 .answer-actions {
   display: grid;
+  gap: 0.5rem;
   grid-template-columns: 1fr 1fr;
 }
 
 .vote-buttons {
   display: grid;
+  gap: 0.5rem;
   grid-template-columns: 1fr 1fr;
 }
 

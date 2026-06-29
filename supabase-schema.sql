@@ -7,10 +7,14 @@ create table if not exists public.ai_or_not_scores (
   answered integer not null default 0,
   total integer not null default 20,
   percent integer not null default 0,
+  answers jsonb not null default '[]'::jsonb,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
   unique (session_code, player_name)
 );
+
+alter table public.ai_or_not_scores
+add column if not exists answers jsonb not null default '[]'::jsonb;
 
 alter table public.ai_or_not_scores enable row level security;
 
