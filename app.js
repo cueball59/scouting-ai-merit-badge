@@ -121,12 +121,13 @@
         <section class="panel">
           <h2>Narrow AI vs. General AI vs. Superintelligent AI</h2>
           <div class="ai-comparison-grid">
-            ${req.aiComparison.map((item) => `
+            ${req.aiComparison.map((item, index) => `
               <article class="comparison-card">
                 <h3>${esc(item.type)}</h3>
                 <p>${esc(item.meaning)}</p>
                 <p><strong>Status:</strong> ${esc(item.today)}</p>
-                <p><strong>Example:</strong> ${esc(item.example)}</p>
+                <button class="secondary reveal-example" type="button" aria-expanded="false" aria-controls="ai-example-${index}">Show example</button>
+                <p class="comparison-example hidden" id="ai-example-${index}"><strong>Example:</strong> ${esc(item.example)}</p>
               </article>
             `).join("")}
           </div>
@@ -154,6 +155,14 @@
         </section>
       ` : ""}
     `;
+    app.querySelectorAll(".reveal-example").forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = document.getElementById(button.getAttribute("aria-controls"));
+        const isHidden = target.classList.toggle("hidden");
+        button.setAttribute("aria-expanded", String(!isHidden));
+        button.textContent = isHidden ? "Show example" : "Hide example";
+      });
+    });
   }
 
   function renderCounselorPrompts() {

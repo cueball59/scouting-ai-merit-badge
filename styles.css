@@ -339,6 +339,16 @@ button.ghost {
   color: var(--cp-text-muted);
 }
 
+.comparison-card button {
+  margin-top: 0.5rem;
+}
+
+.comparison-example {
+  border-left: 4px solid var(--cp-red);
+  margin-bottom: 0;
+  padding-left: 0.75rem;
+}
+
 .video-grid {
   display: grid;
   gap: 1rem;
