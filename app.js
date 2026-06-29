@@ -39,6 +39,10 @@
       const target = isExternal ? " target=\"_blank\" rel=\"noopener\"" : "";
       return `<a href="${isExternal ? href : link(href)}"${target}>${label}</a>`;
     }).join("");
+    if (page !== "ai-game" && page !== "ethics-game") {
+      nav.insertAdjacentHTML("beforeend", `<button class="nav-print no-print" type="button">Print page</button>`);
+      nav.querySelector(".nav-print").addEventListener("click", () => window.print());
+    }
   }
 
   function renderFooter() {
@@ -83,6 +87,7 @@
   function renderRequirement() {
     const id = Number(document.body.dataset.requirement);
     const req = SITE_DATA.requirements.find((item) => item.id === id);
+    const nextReq = SITE_DATA.requirements.find((item) => item.id === id + 1);
     if (!req) {
       app.innerHTML = "<p>Requirement not found.</p>";
       return;
@@ -109,6 +114,11 @@
               <div class="term"><strong>${esc(term)}</strong><span>${esc(definition)}</span></div>
             `).join("")}
           </div>
+        </section>
+      ` : ""}
+      ${nextReq ? `
+        <section class="requirement-next no-print">
+          <a class="button" href="${link(`requirements/${nextReq.id}.html`)}">Next requirement: ${nextReq.id}. ${esc(nextReq.title)}</a>
         </section>
       ` : ""}
     `;
