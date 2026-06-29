@@ -1,0 +1,8 @@
+{
+  "name": "scouting-ai-merit-badge-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "validate": "node --check data.js && node --check app.js"
+  }
+}
