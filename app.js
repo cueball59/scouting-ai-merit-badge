@@ -146,6 +146,25 @@
           </div>
         </section>
       ` : ""}
+      ${req.automationComparison ? `
+        <section class="panel">
+          <h2>Compare automation patterns</h2>
+          <p>Compare a timer, sensor, checklist, and adaptive system. Use each button to reveal more detail.</p>
+          <div class="automation-comparison-grid">
+            ${req.automationComparison.map((item, index) => `
+              <article class="comparison-card">
+                <h3>${esc(item.type)}</h3>
+                <p>${esc(item.meaning)}</p>
+                <button class="secondary reveal-automation-detail" type="button" aria-expanded="false" aria-controls="automation-detail-${index}">Show details</button>
+                <div class="comparison-example hidden" id="automation-detail-${index}">
+                  <p><strong>Example:</strong> ${esc(item.example)}</p>
+                  <p><strong>Why it matters:</strong> ${esc(item.detail)}</p>
+                </div>
+              </article>
+            `).join("")}
+          </div>
+        </section>
+      ` : ""}
       ${req.aiTimeline ? `
         <section class="panel interactive-timeline-section">
           <h2>${esc(req.timelineTitle || "Five-milestone timeline")}</h2>
@@ -276,6 +295,14 @@
         const isHidden = target.classList.toggle("hidden");
         button.setAttribute("aria-expanded", String(!isHidden));
         button.textContent = isHidden ? "Show example" : "Hide example";
+      });
+    });
+    app.querySelectorAll(".reveal-automation-detail").forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = document.getElementById(button.getAttribute("aria-controls"));
+        const isHidden = target.classList.toggle("hidden");
+        button.setAttribute("aria-expanded", String(!isHidden));
+        button.textContent = isHidden ? "Show details" : "Hide details";
       });
     });
     const revealTimeline = app.querySelector(".reveal-timeline");

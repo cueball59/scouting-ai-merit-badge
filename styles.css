@@ -356,6 +356,12 @@ button.ghost {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.automation-comparison-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .comparison-card {
   border: 2px solid var(--cp-blue);
   border-radius: 0.625rem;
@@ -1135,6 +1141,7 @@ ul {
   .game-layout,
   .session-total-grid,
   .ai-comparison-grid,
+  .automation-comparison-grid,
   .timeline-buttons,
   .video-grid,
   .tool-link-grid,

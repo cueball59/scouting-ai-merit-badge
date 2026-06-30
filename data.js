@@ -119,6 +119,32 @@ const SITE_DATA = {
         "Discuss where automation helps and where human review still matters."
       ],
       counselorPrompt: "Ask Scouts to explain the trigger, task, and outcome for each automation example.",
+      automationComparison: [
+        {
+          type: "Timer",
+          meaning: "Runs an action at a set time or on a fixed schedule.",
+          example: "A sprinkler system turns on every morning at 7:00 a.m. whether the lawn needs water or not.",
+          detail: "A timer is useful for repeated predictable tasks, but it does not sense conditions or decide whether the action is still needed."
+        },
+        {
+          type: "Sensor",
+          meaning: "Starts an action when it detects something in the environment.",
+          example: "A motion sensor turns on a light when someone walks into a room.",
+          detail: "A sensor reacts to a trigger. It can make automation more responsive, but it still usually follows a simple if-this-then-that rule."
+        },
+        {
+          type: "Checklist",
+          meaning: "Guides people or systems through a repeatable sequence of steps.",
+          example: "A campout packing checklist helps a patrol make sure tents, food, water, and first-aid supplies are ready.",
+          detail: "A checklist reduces missed steps and human error. It may be manual, digital, or part of a workflow, but it does not automatically adapt on its own."
+        },
+        {
+          type: "Adaptive system",
+          meaning: "Changes its behavior based on data, conditions, or feedback.",
+          example: "A smart thermostat learns patterns and adjusts heating or cooling to save energy while keeping people comfortable.",
+          detail: "An adaptive system is closer to AI when it learns from patterns or uses data to improve decisions instead of only following fixed rules."
+        }
+      ],
       timelineTitle: "Five-milestone automation timeline",
       timelineButtonText: "Show automation timeline",
       aiTimeline: [
