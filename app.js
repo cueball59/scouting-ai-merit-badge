@@ -28,12 +28,11 @@
   function renderNav() {
     const nav = document.getElementById("site-nav");
     const items = [
-      ["Home", "index.html", "home"],
+      ["Requirements", "index.html", "home"],
       ["AI News", "ai-news.html", "ai-news"],
       ["AI or Not?", "games/ai-or-not.html", "ai-game"],
       ["Ethics Game", "games/ethics.html", "ethics-game"],
-      ["Official Requirements", SITE_DATA.officialRequirementsUrl, ""],
-      ["Counselor Prompts", "counselor-prompts.html", "counselor-prompts"]
+      ["Official Requirements", SITE_DATA.officialRequirementsUrl, ""]
     ];
     nav.innerHTML = items.map(([label, href, key]) => {
       const isExternal = href.startsWith("https://");
@@ -71,7 +70,6 @@
           <h1>Scouting AI Merit Badge</h1>
           <p>The Artificial Intelligence merit badge introduces Scouts to AI concepts, automation, responsible use, deepfakes, practical AI skills, and career pathways. This site supports live instruction with requirement pages, counselor prompts, and interactive activities grounded in the official Scouting America requirements.</p>
           <div class="actions">
-            <a class="button secondary" href="${link("counselor-prompts.html")}">Counselor Prompts</a>
             <a class="button" href="${link("games/ai-or-not.html")}">Play AI or Not?</a>
             <a class="button secondary" href="${link("games/ethics.html")}">Play Ethics Game</a>
           </div>
@@ -151,7 +149,7 @@
       ${req.aiTimeline ? `
         <section class="panel interactive-timeline-section">
           <h2>${esc(req.timelineTitle || "Five-milestone timeline")}</h2>
-          <p>This example timeline is hidden by default. Reveal it, then select each milestone to explore why it matters.</p>
+          <p>Select each milestone to explore why it matters.</p>
           <button class="secondary reveal-timeline" type="button" aria-expanded="false" aria-controls="ai-timeline">${esc(req.timelineButtonText || "Show timeline")}</button>
           <div class="interactive-timeline hidden" id="ai-timeline">
             <div class="timeline-buttons" role="tablist" aria-label="AI timeline milestones">
@@ -312,26 +310,6 @@
         document.getElementById("builder-output").textContent = `You are helping ${audience}. Your task is to ${task}. Provide the answer as ${format}. Before giving the final answer, ${check}. Keep the response clear, age-appropriate, and easy to verify.`;
       });
     }
-  }
-
-  function renderCounselorPrompts() {
-    app.innerHTML = `
-      <section class="page-title">
-        <span class="requirement-number">Facilitator prompts</span>
-        <h1>Counselor Prompts</h1>
-        <p>All requirement prompts are organized here so a counselor can facilitate discussion without jumping between individual requirement pages.</p>
-      </section>
-      <section class="grid" aria-label="Counselor prompts by requirement">
-        ${SITE_DATA.requirements.map((req) => `
-          <article class="card prompt-card">
-            <span class="requirement-number">Requirement ${req.id}</span>
-            <h2>${esc(req.title)}</h2>
-            <p>${esc(req.counselorPrompt)}</p>
-            <a href="${link(`requirements/${req.id}.html`)}">Open requirement ${req.id}</a>
-          </article>
-        `).join("")}
-      </section>
-    `;
   }
 
   async function renderAiNews() {
@@ -908,7 +886,6 @@
 
   if (page === "home") renderHome();
   if (page === "requirement") renderRequirement();
-  if (page === "counselor-prompts") renderCounselorPrompts();
   if (page === "ai-news") renderAiNews();
   if (page === "ai-game") renderAiGame();
   if (page === "ethics-game") renderEthicsGame();
