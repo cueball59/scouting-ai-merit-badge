@@ -111,7 +111,14 @@
       </section>
       <section class="panel">
         <h2>Requirement focus</h2>
+        ${req.completionNote ? `<p class="completion-note"><strong>Completion expectation:</strong> ${esc(req.completionNote)}</p>` : ""}
         <p>${esc(req.requirement)}</p>
+        ${req.requirementDetails ? `
+          <h3>Full requirement checklist</h3>
+          <ul class="requirement-detail-list">
+            ${req.requirementDetails.map((item) => `<li>${esc(item)}</li>`).join("")}
+          </ul>
+        ` : ""}
         <h3>Live-session activities</h3>
         <ul>${req.activities.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
       </section>

@@ -302,6 +302,17 @@ button.ghost {
   margin-top: 1.5rem;
 }
 
+.completion-note {
+  border-left: 4px solid var(--cp-red);
+  color: var(--cp-blue);
+  padding-left: 0.75rem;
+}
+
+.requirement-detail-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
 .requirement-nav {
   align-items: center;
   display: flex;

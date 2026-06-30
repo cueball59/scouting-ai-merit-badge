@@ -7,6 +7,10 @@ const SITE_DATA = {
       title: "Key Concepts",
       summary: "Define the core vocabulary Scouts need before discussing artificial intelligence and automation.",
       requirement: "Share the meaning of AI, agents, automation, programming, bots, data, databases, digital workers, machine learning, workflows, variables, and related terms with your counselor.",
+      completionNote: "Complete all parts of this requirement.",
+      requirementDetails: [
+        "Define each required term and share the meaning of each with your counselor: artificial intelligence (AI), artificial intelligence agents, automation, basic programming, bots, data, databases, digital workers, general AI, machine learning (ML), narrow AI, superintelligent AI, tasks, triggers, workflows, and variables."
+      ],
       activities: [
         "Build a shared class glossary before starting the games.",
         "Ask each Scout to explain one term using an everyday example.",
@@ -50,6 +54,14 @@ const SITE_DATA = {
       title: "Artificial Intelligence Basics",
       summary: "Identify AI in daily life, work, and school, then practice deciding whether a scenario uses AI.",
       requirement: "Find examples of AI in everyday life, the workplace, and education; play ten rounds of AI or Not?; and create a short AI development timeline.",
+      completionNote: "Complete all parts: 2a through 2e.",
+      requirementDetails: [
+        "2a. Identify ten examples of how AI is currently used in everyday life.",
+        "2b. Identify five examples of how AI is currently used in the workplace.",
+        "2c. Identify five examples of how AI can be used at school or in support of your education.",
+        "2d. Meet with your counselor and play ten rounds of the AI or Not? game to determine if the presented scenario utilizes AI. Discuss your answers.",
+        "2e. Create a timeline with five key milestones in the development of artificial intelligence."
+      ],
       activities: [
         "Run the AI or Not? game with the group.",
         "Have Scouts sort examples into home, workplace, and school categories.",
@@ -64,6 +76,14 @@ const SITE_DATA = {
       title: "Automation Basics",
       summary: "Separate simple automation from AI and explain how automated systems reduce repetitive effort.",
       requirement: "Identify automation examples in daily life, work, and school; explain how automation performs repetitive tasks; and create an automation timeline.",
+      completionNote: "Complete all parts: 3a through 3e.",
+      requirementDetails: [
+        "3a. Identify 10 examples of how automation is currently used in everyday life.",
+        "3b. Identify five examples of how automation is currently used in the workplace.",
+        "3c. Identify five examples of how automation can be used at school or in support of your education.",
+        "3d. Explain how automation performs repetitive tasks without human intervention and how it reduces human error and optimizes resources.",
+        "3e. Create a timeline with five significant milestones in automation development."
+      ],
       activities: [
         "Compare a timer, sensor, checklist, and adaptive system.",
         "List repetitive tasks Scouts see at home or school.",
@@ -76,6 +96,13 @@ const SITE_DATA = {
       title: "Ethics in AI",
       summary: "Explore bias, privacy, accountability, and responsible decision making with real-world scenarios.",
       requirement: "Research ethical concerns and responsible AI use, play five rounds of the What Would You Do? game, develop AI guidelines, and explain the Turing test.",
+      completionNote: "Complete all parts: 4a through 4d.",
+      requirementDetails: [
+        "4a. Research ethical concerns and responsible use in AI, including bias, privacy, and AI decision-making.",
+        "4b. Meet with your counselor, play, and discuss five rounds of the What Would You Do? ethical decision-making scenarios.",
+        "4c. Develop your own ethical guidelines for the use of AI.",
+        "4d. Explain what the Turing test is."
+      ],
       activities: [
         "Run the What Would You Do? ethics game.",
         "Connect each scenario to Scout Law values.",
@@ -90,6 +117,11 @@ const SITE_DATA = {
       title: "Deepfakes",
       summary: "Understand manipulated media, its impact, and what to do if someone is harmed by it.",
       requirement: "Explain what a deepfake is, how it can affect someone, and what actions to take if you or someone you know is impacted.",
+      completionNote: "Complete both parts: 5a and 5b.",
+      requirementDetails: [
+        "5a. Explain what a deepfake is and how it can affect an individual.",
+        "5b. Describe what actions to take if you or someone you know is impacted by a deepfake."
+      ],
       activities: [
         "Discuss signs that media may be manipulated.",
         "Create a response checklist: preserve evidence, report, ask a trusted adult, and avoid resharing.",
@@ -112,6 +144,13 @@ const SITE_DATA = {
       title: "Developing AI Skills",
       summary: "Practice communicating clearly with AI and understanding where AI can fail.",
       requirement: "Discuss how AI learns and its limitations, identify ways to communicate with AI, explain prompt engineering, and demonstrate clear school-related prompts.",
+      completionNote: "Complete all parts: 6a through 6d.",
+      requirementDetails: [
+        "6a. Discuss the learning process for AI and its limitations.",
+        "6b. Identify five methods of how to effectively communicate with AI.",
+        "6c. Explain the importance of prompt engineering when using AI to create better output.",
+        "6d. Demonstrate three examples of writing clear instructions for a school-related task."
+      ],
       activities: [
         "Rewrite vague prompts into clear prompts with audience, task, format, and constraints.",
         "Compare outputs from two different prompt styles.",
@@ -158,6 +197,11 @@ const SITE_DATA = {
       title: "Practical Application",
       summary: "Choose either an approved AI project or a short AI lesson for Scouts.",
       requirement: "With counselor approval, complete either an AI project with objectives, data needs, and ethics considerations, or design and teach a short AI lesson.",
+      completionNote: "Do one option: 7a or 7b.",
+      requirementDetails: [
+        "7a. With your counselor's approval, choose an artificial intelligence project based on your personal interest or a community need. Develop a plan outlining the project's objectives, data requirements, and potential ethical considerations. Implement the project using appropriate AI tools, languages, or platforms. Share your project with your counselor and discuss the steps you followed and your experience.",
+        "7b. With your counselor's approval, design a short lesson plan on AI and teach it to your patrol or a group of Scouts. Include an AI-generated age-appropriate explanation of AI, examples of AI in everyday life and the workplace, and an interactive demonstration of how Scouts could use AI for a school assignment, Scouting activity, or rank advancement. Share the development process and teaching experience with your counselor."
+      ],
       activities: [
         "Use a project plan with goal, users, data, tools, risks, and demo.",
         "For the lesson option, include an explanation, examples, and an interactive demo.",
@@ -170,6 +214,11 @@ const SITE_DATA = {
       title: "Career Exploration",
       summary: "Research AI or automation careers and connect them to skills, training, and future goals.",
       requirement: "Research three AI or automation careers and study one in depth, or interview an AI or automation professional.",
+      completionNote: "Do one option: 8a or 8b.",
+      requirementDetails: [
+        "8a. Identify three career opportunities that use artificial intelligence or automation. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research employment prospects, starting salary, advancement opportunities, and career goals. Discuss what you learned with your counselor and whether you might be interested in this career.",
+        "8b. Interview an artificial intelligence or automation professional. Learn about their day-to-day work, challenges, and vision for the future of AI or automation. Ask about training, education, certification requirements, experience, and expenses associated with entering the field. Share what you learned with your counselor."
+      ],
       activities: [
         "Compare careers by skills, training, certifications, salary, and advancement paths.",
         "Prepare interview questions about daily work, challenges, and future trends.",
