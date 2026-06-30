@@ -197,6 +197,30 @@
           </div>
         </section>
       ` : ""}
+      ${req.promptGuidance ? `
+        <section class="panel">
+          <h2>What makes a strong prompt?</h2>
+          <p>${esc(req.promptGuidance.source)}</p>
+          <div class="prompt-guidance-grid">
+            ${req.promptGuidance.ingredients.map((ingredient) => `
+              <article class="prompt-guidance-card">
+                <h3>${esc(ingredient.name)}</h3>
+                <p>${esc(ingredient.detail)}</p>
+              </article>
+            `).join("")}
+          </div>
+          <div class="prompt-tip-grid">
+            <div>
+              <h3>Helpful habits</h3>
+              <ul>${req.promptGuidance.tips.map((tip) => `<li>${esc(tip)}</li>`).join("")}</ul>
+            </div>
+            <div>
+              <h3>Useful follow-up prompts</h3>
+              <ul>${req.promptGuidance.followUps.map((tip) => `<li>${esc(tip)}</li>`).join("")}</ul>
+            </div>
+          </div>
+        </section>
+      ` : ""}
       ${req.promptPractice ? `
         <section class="panel">
           <h2>Prompt practice cards</h2>

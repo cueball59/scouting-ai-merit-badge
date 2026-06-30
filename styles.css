@@ -547,6 +547,39 @@ button.ghost {
   align-self: stretch;
 }
 
+.prompt-guidance-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.prompt-guidance-card {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  padding: 1rem;
+}
+
+.prompt-guidance-card h3 {
+  color: var(--cp-blue);
+  margin-top: 0;
+}
+
+.prompt-guidance-card p {
+  color: var(--cp-text-muted);
+}
+
+.prompt-tip-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.prompt-tip-grid h3 {
+  color: var(--cp-blue);
+}
+
 .news-source-filter {
   display: flex;
   flex-wrap: wrap;
@@ -1106,6 +1139,8 @@ ul {
   .video-grid,
   .tool-link-grid,
   .prompt-card-grid,
+  .prompt-guidance-grid,
+  .prompt-tip-grid,
   .prompt-builder,
   .ethics-choices {
     grid-template-columns: 1fr;

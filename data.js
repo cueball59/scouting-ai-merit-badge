@@ -215,6 +215,41 @@ const SITE_DATA = {
         "Discuss checking AI output for accuracy."
       ],
       counselorPrompt: "Ask Scouts how they would verify an AI answer before using it for school or Scouting.",
+      promptGuidance: {
+        source: "Adapted from Microsoft guidance on writing effective prompts for Microsoft 365 Copilot.",
+        ingredients: [
+          {
+            name: "Goal",
+            detail: "Tell the AI what you want it to do, such as explain, summarize, compare, edit, brainstorm, or create."
+          },
+          {
+            name: "Context",
+            detail: "Give background details the AI needs, including audience, topic, grade level, constraints, or what you already know."
+          },
+          {
+            name: "Source",
+            detail: "Point to the information the AI should use, such as notes, a passage, a document, data, or a trusted source."
+          },
+          {
+            name: "Expectations",
+            detail: "Describe the format and quality you expect: bullets, table, checklist, length, tone, questions first, or things to avoid."
+          }
+        ],
+        tips: [
+          "Use plain, clear language and treat prompting like a conversation.",
+          "Ask follow-up questions to improve the answer instead of stopping after the first response.",
+          "Use quotation marks around text you want the AI to rewrite, edit, or replace.",
+          "Start a new topic when switching tasks so the AI does not mix old context with the new request.",
+          "Remember that AI can make mistakes, so verify important facts before using the answer."
+        ],
+        followUps: [
+          "Make that shorter and easier for a sixth grader to understand.",
+          "Turn this into a checklist I can use while working.",
+          "Ask me three questions before you answer.",
+          "What assumptions did you make?",
+          "What should I verify before I trust this?"
+        ]
+      },
       aiTools: [
         {
           name: "Microsoft Copilot",
