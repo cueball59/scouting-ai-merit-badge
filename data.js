@@ -335,8 +335,16 @@ const SITE_DATA = {
       requirement: "Research three AI or automation careers and study one in depth, or interview an AI or automation professional.",
       completionNote: "Do one option: 8a or 8b.",
       requirementDetails: [
-        "8a. Identify three career opportunities that use artificial intelligence or automation. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research employment prospects, starting salary, advancement opportunities, and career goals. Discuss what you learned with your counselor and whether you might be interested in this career.",
-        "8b. Interview an artificial intelligence or automation professional. Learn about their day-to-day work, challenges, and vision for the future of AI or automation. Ask about training, education, certification requirements, experience, and expenses associated with entering the field. Share what you learned with your counselor."
+        {
+          text: "8a. Identify three career opportunities that use artificial intelligence or automation. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research employment prospects, starting salary, advancement opportunities, and career goals. Discuss what you learned with your counselor and whether you might be interested in this career.",
+          worksheet: "worksheets/8a-career-research.html",
+          worksheetLabel: "Open 8a career research worksheet"
+        },
+        {
+          text: "8b. Interview an artificial intelligence or automation professional. Learn about their day-to-day work, challenges, and vision for the future of AI or automation. Ask about training, education, certification requirements, experience, and expenses associated with entering the field. Share what you learned with your counselor.",
+          worksheet: "worksheets/8b-professional-interview.html",
+          worksheetLabel: "Open 8b interview worksheet"
+        }
       ],
       activities: [
         "Compare careers by skills, training, certifications, salary, and advancement paths.",
@@ -393,6 +401,66 @@ const SITE_DATA = {
       ]
     }
   ],
+  careerWorksheets: {
+    "8a": {
+      title: "Requirement 8a Career Research Worksheet",
+      subtitle: "Research three AI or automation careers and study one in depth.",
+      instructions: [
+        "Use this worksheet to organize your research before discussing Requirement 8a with your counselor.",
+        "Research three careers first, then pick one career to study in more detail.",
+        "Use reliable sources such as BLS, O*NET, college program pages, certification providers, company career pages, or interviews with professionals."
+      ],
+      sections: [
+        {
+          title: "Scout information",
+          prompts: ["Name", "Date", "Merit badge counselor", "Troop / unit"]
+        },
+        {
+          title: "Three career opportunities",
+          prompts: ["Career 1: title, what the person does, and why it uses AI or automation", "Career 2: title, what the person does, and why it uses AI or automation", "Career 3: title, what the person does, and why it uses AI or automation"]
+        },
+        {
+          title: "Career selected for deeper research",
+          prompts: ["Career title", "Why I chose this career", "Typical day-to-day responsibilities", "Training, education, or degree requirements", "Certifications or licenses, if any", "Experience or portfolio expectations", "Expenses associated with entering the field", "Employment prospects / job outlook", "Starting salary or wage information and source", "Advancement opportunities", "Long-term career goals this role could support"]
+        },
+        {
+          title: "Sources used",
+          prompts: ["Source 1", "Source 2", "Source 3"]
+        },
+        {
+          title: "Reflection",
+          prompts: ["What surprised me", "What sounds interesting", "What sounds challenging", "Would I be interested in this career? Why or why not?", "Questions I still have for my counselor"]
+        }
+      ]
+    },
+    "8b": {
+      title: "Requirement 8b AI or Automation Professional Interview Worksheet",
+      subtitle: "Interview an AI or automation professional and summarize what you learned.",
+      instructions: [
+        "Use this worksheet before, during, and after your interview.",
+        "Ask permission before recording or quoting someone.",
+        "Do not share private company information; summarize what the professional is comfortable discussing."
+      ],
+      sections: [
+        {
+          title: "Scout and interview information",
+          prompts: ["Name", "Date", "Professional interviewed", "Job title / organization", "How the interview was conducted"]
+        },
+        {
+          title: "Interview questions",
+          prompts: ["What does your day-to-day work look like?", "How do you use AI or automation in your job?", "What problems are you trying to solve?", "What tools, platforms, or systems do you commonly use?", "What are the biggest challenges in your work?", "How do ethics, safety, privacy, or bias show up in your work?", "What education, training, certifications, or experience helped you enter this field?", "What expenses should someone expect when preparing for this career?", "What changes do you expect in AI or automation in the future?", "What advice would you give a Scout interested in this career?"]
+        },
+        {
+          title: "Interview notes",
+          prompts: ["Most important things I learned", "Skills this professional uses", "Challenges they described", "Their vision for the future of AI or automation", "Training or education recommendations", "Career advice they gave me"]
+        },
+        {
+          title: "Reflection",
+          prompts: ["What interested me most", "What surprised me", "Would I want to learn more about this career? Why or why not?", "What I will share with my counselor"]
+        }
+      ]
+    }
+  },
   aiOrNot: [
     {
       title: "Basic Calculator",

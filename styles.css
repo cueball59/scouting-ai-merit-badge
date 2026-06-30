@@ -329,6 +329,36 @@ button.ghost {
   padding-top: 1rem;
 }
 
+.checklist-action {
+  margin-top: 0.5rem;
+}
+
+.worksheet-panel ul {
+  margin-bottom: 0;
+}
+
+.worksheet-field-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.worksheet-field {
+  color: var(--cp-blue);
+  display: grid;
+  font-weight: 800;
+  gap: 0.45rem;
+}
+
+.worksheet-lines {
+  min-height: 4rem;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 1.65rem,
+    var(--cp-border) 1.7rem
+  );
+}
+
 .two-column {
   display: grid;
   gap: 1rem;
@@ -1221,5 +1251,9 @@ ul {
   .page-title,
   .hero {
     border: 2px solid var(--cp-blue);
+  }
+
+  .worksheet-lines {
+    min-height: 5rem;
   }
 }

@@ -25,6 +25,14 @@
     };
   }
 
+  function renderRequirementDetail(item) {
+    if (typeof item === "string") return esc(item);
+    return `
+      <span>${esc(item.text)}</span>
+      ${item.worksheet ? `<div class="checklist-action no-print"><a class="button secondary" href="${link(item.worksheet)}">${esc(item.worksheetLabel || "Open worksheet")}</a></div>` : ""}
+    `;
+  }
+
   function renderNav() {
     const nav = document.getElementById("site-nav");
     const items = [
@@ -114,7 +122,7 @@
         ${req.requirementDetails ? `
           <h3>Full requirement checklist</h3>
           <ul class="requirement-detail-list">
-            ${req.requirementDetails.map((item) => `<li>${esc(item)}</li>`).join("")}
+            ${req.requirementDetails.map((item) => `<li>${renderRequirementDetail(item)}</li>`).join("")}
           </ul>
         ` : ""}
         <h3>Live-session activities</h3>
@@ -444,6 +452,43 @@
             paint();
           });
         });
+      }
+
+      function renderWorksheet() {
+        const worksheetId = document.body.dataset.worksheet;
+        const worksheet = SITE_DATA.careerWorksheets && SITE_DATA.careerWorksheets[worksheetId];
+        if (!worksheet) {
+          app.innerHTML = "<p>Worksheet not found.</p>";
+          return;
+        }
+
+        app.innerHTML = `
+          <section class="page-title worksheet-title">
+            <span class="requirement-number">Career Exploration</span>
+            <h1>${esc(worksheet.title)}</h1>
+            <p>${esc(worksheet.subtitle)}</p>
+          </section>
+          <section class="panel worksheet-panel">
+            <h2>Instructions</h2>
+            <ul>${worksheet.instructions.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
+          </section>
+          ${worksheet.sections.map((section) => `
+            <section class="panel worksheet-panel">
+              <h2>${esc(section.title)}</h2>
+              <div class="worksheet-field-grid">
+                ${section.prompts.map((prompt) => `
+                  <label class="worksheet-field">
+                    <span>${esc(prompt)}</span>
+                    <div class="worksheet-lines" aria-hidden="true"></div>
+                  </label>
+                `).join("")}
+              </div>
+            </section>
+          `).join("")}
+          <section class="requirement-nav no-print">
+            <a class="button secondary" href="${link("requirements/8.html")}">Back to Requirement 8</a>
+          </section>
+        `;
       }
 
       paint();
@@ -964,6 +1009,7 @@
   if (page === "home") renderHome();
   if (page === "requirement") renderRequirement();
   if (page === "ai-news") renderAiNews();
+  if (page === "worksheet") renderWorksheet();
   if (page === "ai-game") renderAiGame();
   if (page === "ethics-game") renderEthicsGame();
   renderBottomPrint();
