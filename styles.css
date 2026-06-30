@@ -1596,6 +1596,26 @@ button.ghost {
   color: var(--cp-link);
 }
 
+.site-footer p {
+  margin: 0.4rem 0;
+}
+
+.footer-utility .link-button {
+  appearance: none;
+  background: none;
+  border: 0;
+  color: var(--cp-link);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+}
+
+.footer-utility .link-button:hover {
+  color: var(--cp-red);
+}
+
 ul {
   padding-left: 1.2rem;
 }

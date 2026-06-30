@@ -255,10 +255,25 @@
   }
 
   function renderFooter() {
-    document.getElementById("site-footer").innerHTML = `
-      Built for Scouting America AI Merit Badge sessions. Reference the
-      <a href="${SITE_DATA.officialRequirementsUrl}" target="_blank" rel="noopener">official Scouting America requirement page</a>.
+    const footer = document.getElementById("site-footer");
+    footer.innerHTML = `
+      <p>Built for Scouting America AI Merit Badge sessions. Reference the
+      <a href="${SITE_DATA.officialRequirementsUrl}" target="_blank" rel="noopener">official Scouting America requirement page</a>.</p>
+      <p class="footer-utility no-print"><button type="button" id="reset-tracking" class="link-button">Reset my progress tracking</button></p>
     `;
+    const resetButton = document.getElementById("reset-tracking");
+    if (resetButton) {
+      resetButton.addEventListener("click", () => {
+        const confirmed = window.confirm("Reset your saved progress on this device? This clears every requirement you marked as explored.");
+        if (!confirmed) return;
+        try {
+          window.localStorage.removeItem(PROGRESS_KEY);
+        } catch (error) {
+          // localStorage unavailable; nothing to clear.
+        }
+        window.location.reload();
+      });
+    }
   }
 
   function renderHome() {
