@@ -71,6 +71,8 @@
   }
 
   function downloadPdf() {
+    const pdfFormatVersion = "worksheet-pdf-lines-v2";
+    void pdfFormatVersion;
     const rawLines = collectPdfLines();
     const pages = [];
     let pageLines = [];
