@@ -37,8 +37,9 @@
 body {
   margin: 0;
   background-color: var(--cp-bg);
-  background-image: url("assets/bg-pattern.svg");
+  background-image: url("assets/bg-scout.svg");
   background-repeat: repeat;
+  background-size: 360px 360px;
   background-attachment: fixed;
   color: var(--cp-text);
   font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;

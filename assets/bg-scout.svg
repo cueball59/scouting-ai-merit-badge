@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360">
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <!-- Fleur-de-lis (Scout emblem) top-left -->
+    <g transform="translate(40 44)" fill="#003f87" opacity="0.13">
+      <path d="M0 -22 C5 -10 5 -4 0 4 C-5 -4 -5 -10 0 -22 Z"/>
+      <path d="M0 2 C9 -10 17 -6 15 6 C13 14 4 14 0 8 C-4 14 -13 14 -15 6 C-17 -6 -9 -10 0 2 Z"/>
+      <rect x="-12" y="6" width="24" height="4" rx="2"/>
+      <path d="M0 8 L0 24"/>
+      <line x1="0" y1="8" x2="0" y2="24" stroke="#003f87" stroke-width="3"/>
+    </g>
+
+    <!-- Pine trees cluster top-right -->
+    <g transform="translate(250 50)" fill="#16a34a" opacity="0.12">
+      <path d="M0 -26 L11 -4 L6 -4 L15 12 L-15 12 L-6 -4 L-11 -4 Z"/>
+      <rect x="-3" y="12" width="6" height="9" fill="#7c4a1e"/>
+    </g>
+    <g transform="translate(290 70)" fill="#16a34a" opacity="0.10">
+      <path d="M0 -18 L8 -2 L4 -2 L11 10 L-11 10 L-4 -2 L-8 -2 Z"/>
+      <rect x="-2" y="10" width="4" height="7" fill="#7c4a1e"/>
+    </g>
+
+    <!-- Mountains center -->
+    <g transform="translate(180 150)" opacity="0.11">
+      <path d="M-60 30 L-20 -30 L5 5 L30 -22 L60 30 Z" fill="#003f87"/>
+      <path d="M-20 -30 L-9 -14 L-2 -22 L5 5 Z" fill="#ffffff" opacity="0.6"/>
+      <path d="M30 -22 L37 -12 L44 -19 Z" fill="#ffffff" opacity="0.6"/>
+    </g>
+
+    <!-- Compass / north star bottom-left -->
+    <g transform="translate(60 250)" opacity="0.12">
+      <circle cx="0" cy="0" r="26" fill="none" stroke="#003f87" stroke-width="2.5"/>
+      <path d="M0 -22 L6 0 L0 22 L-6 0 Z" fill="#ce1126"/>
+      <path d="M-22 0 L0 -6 L22 0 L0 6 Z" fill="#003f87"/>
+    </g>
+
+    <!-- Tent bottom-center -->
+    <g transform="translate(190 280)" opacity="0.11">
+      <path d="M-30 24 L0 -20 L30 24 Z" fill="none" stroke="#ce1126" stroke-width="3"/>
+      <path d="M0 -20 L0 24" stroke="#ce1126" stroke-width="3"/>
+      <path d="M-8 24 L0 6 L8 24 Z" fill="#ce1126"/>
+    </g>
+
+    <!-- Campfire bottom-right -->
+    <g transform="translate(305 270)" opacity="0.12">
+      <path d="M0 -20 C10 -8 8 4 0 12 C-8 4 -10 -8 0 -20 Z" fill="#ce1126"/>
+      <path d="M0 -8 C5 -2 4 6 0 12 C-4 6 -5 -2 0 -8 Z" fill="#f2a900"/>
+      <line x1="-16" y1="20" x2="16" y2="12" stroke="#7c4a1e" stroke-width="3"/>
+      <line x1="-16" y1="12" x2="16" y2="20" stroke="#7c4a1e" stroke-width="3"/>
+    </g>
+
+    <!-- Subtle AI circuit nodes connecting motifs -->
+    <g stroke="#003f87" stroke-width="1.2" fill="#003f87" opacity="0.06">
+      <path d="M120 110 H160 V70" fill="none"/>
+      <path d="M210 200 H250 V240" fill="none"/>
+      <circle cx="120" cy="110" r="2.4"/>
+      <circle cx="160" cy="70" r="2.4"/>
+      <circle cx="250" cy="240" r="2.4"/>
+    </g>
+  </g>
+</svg>
