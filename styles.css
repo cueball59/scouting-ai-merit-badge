@@ -553,6 +553,39 @@ button.ghost {
   align-self: stretch;
 }
 
+.career-card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.career-card {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.625rem;
+  display: grid;
+  gap: 0.65rem;
+  padding: 1rem;
+}
+
+.career-card h3 {
+  color: var(--cp-blue);
+  margin: 0;
+}
+
+.career-card p {
+  color: var(--cp-text-muted);
+  margin: 0;
+}
+
+.career-detail {
+  border-left: 4px solid var(--cp-red);
+  padding-left: 0.75rem;
+}
+
+.career-detail ul {
+  margin: 0;
+}
+
 .prompt-guidance-grid {
   display: grid;
   gap: 1rem;
@@ -1146,6 +1179,7 @@ ul {
   .video-grid,
   .tool-link-grid,
   .prompt-card-grid,
+  .career-card-grid,
   .prompt-guidance-grid,
   .prompt-tip-grid,
   .prompt-builder,

@@ -282,6 +282,24 @@
           <pre class="prompt-text prompt-builder-output" id="builder-output">Fill in the fields, then select Build prompt.</pre>
         </section>
       ` : ""}
+      ${req.careerOptions ? `
+        <section class="panel">
+          <h2>Career opportunities to explore</h2>
+          <p>Use these cards as starting points. Scouts should research three AI or automation careers, then study one in depth or interview a professional.</p>
+          <div class="career-card-grid">
+            ${req.careerOptions.map((career, index) => `
+              <article class="career-card">
+                <h3>${esc(career.title)}</h3>
+                <p>${esc(career.summary)}</p>
+                <button class="secondary reveal-career-detail" type="button" aria-expanded="false" aria-controls="career-detail-${index}">Details</button>
+                <div class="career-detail hidden" id="career-detail-${index}">
+                  <ul>${career.details.map((detail) => `<li>${esc(detail)}</li>`).join("")}</ul>
+                </div>
+              </article>
+            `).join("")}
+          </div>
+        </section>
+      ` : ""}
       ${previousReq || nextReq ? `
         <section class="requirement-nav no-print">
           ${previousReq ? `<a class="button secondary" href="${link(`requirements/${previousReq.id}.html`)}">Previous requirement: ${previousReq.id}. ${esc(previousReq.title)}</a>` : "<span></span>"}
@@ -303,6 +321,14 @@
         const isHidden = target.classList.toggle("hidden");
         button.setAttribute("aria-expanded", String(!isHidden));
         button.textContent = isHidden ? "Show details" : "Hide details";
+      });
+    });
+    app.querySelectorAll(".reveal-career-detail").forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = document.getElementById(button.getAttribute("aria-controls"));
+        const isHidden = target.classList.toggle("hidden");
+        button.setAttribute("aria-expanded", String(!isHidden));
+        button.textContent = isHidden ? "Details" : "Hide details";
       });
     });
     const revealTimeline = app.querySelector(".reveal-timeline");
