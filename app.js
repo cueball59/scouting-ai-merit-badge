@@ -68,7 +68,7 @@
             <span class="badge">Live session ready</span>
           </div>
           <h1>Scouting AI Merit Badge</h1>
-          <p>The Artificial Intelligence merit badge introduces Scouts to AI concepts, automation, responsible use, deepfakes, practical AI skills, and career pathways. This site supports live instruction with requirement pages, counselor prompts, and interactive activities grounded in the official Scouting America requirements.</p>
+          <p>The Artificial Intelligence merit badge introduces Scouts to AI concepts, automation, responsible use, deepfakes, practical AI skills, and career pathways. This site supports live instruction with requirement pages and interactive activities grounded in the official Scouting America requirements.</p>
           <div class="actions">
             <a class="button" href="${link("games/ai-or-not.html")}">Play AI or Not?</a>
             <a class="button secondary" href="${link("games/ethics.html")}">Play Ethics Game</a>
