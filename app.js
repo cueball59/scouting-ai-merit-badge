@@ -454,48 +454,48 @@
         });
       }
 
-      function renderWorksheet() {
-        const worksheetId = document.body.dataset.worksheet;
-        const worksheet = SITE_DATA.careerWorksheets && SITE_DATA.careerWorksheets[worksheetId];
-        if (!worksheet) {
-          app.innerHTML = "<p>Worksheet not found.</p>";
-          return;
-        }
-
-        app.innerHTML = `
-          <section class="page-title worksheet-title">
-            <span class="requirement-number">Career Exploration</span>
-            <h1>${esc(worksheet.title)}</h1>
-            <p>${esc(worksheet.subtitle)}</p>
-          </section>
-          <section class="panel worksheet-panel">
-            <h2>Instructions</h2>
-            <ul>${worksheet.instructions.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
-          </section>
-          ${worksheet.sections.map((section) => `
-            <section class="panel worksheet-panel">
-              <h2>${esc(section.title)}</h2>
-              <div class="worksheet-field-grid">
-                ${section.prompts.map((prompt) => `
-                  <label class="worksheet-field">
-                    <span>${esc(prompt)}</span>
-                    <div class="worksheet-lines" aria-hidden="true"></div>
-                  </label>
-                `).join("")}
-              </div>
-            </section>
-          `).join("")}
-          <section class="requirement-nav no-print">
-            <a class="button secondary" href="${link("requirements/8.html")}">Back to Requirement 8</a>
-          </section>
-        `;
-      }
-
       paint();
     } catch (error) {
       status.textContent = "AI news could not be loaded right now.";
       list.innerHTML = `<p>Try refreshing the page, or check the GitHub Action refresh status.</p>`;
     }
+  }
+
+  function renderWorksheet() {
+    const worksheetId = document.body.dataset.worksheet;
+    const worksheet = SITE_DATA.careerWorksheets && SITE_DATA.careerWorksheets[worksheetId];
+    if (!worksheet) {
+      app.innerHTML = "<p>Worksheet not found.</p>";
+      return;
+    }
+
+    app.innerHTML = `
+      <section class="page-title worksheet-title">
+        <span class="requirement-number">Career Exploration</span>
+        <h1>${esc(worksheet.title)}</h1>
+        <p>${esc(worksheet.subtitle)}</p>
+      </section>
+      <section class="panel worksheet-panel">
+        <h2>Instructions</h2>
+        <ul>${worksheet.instructions.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
+      </section>
+      ${worksheet.sections.map((section) => `
+        <section class="panel worksheet-panel">
+          <h2>${esc(section.title)}</h2>
+          <div class="worksheet-field-grid">
+            ${section.prompts.map((prompt) => `
+              <label class="worksheet-field">
+                <span>${esc(prompt)}</span>
+                <div class="worksheet-lines" aria-hidden="true"></div>
+              </label>
+            `).join("")}
+          </div>
+        </section>
+      `).join("")}
+      <section class="requirement-nav no-print">
+        <a class="button secondary" href="${link("requirements/8.html")}">Back to Requirement 8</a>
+      </section>
+    `;
   }
 
   function renderAiGame() {
