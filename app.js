@@ -284,7 +284,7 @@
       <section class="page-title">
         <span class="requirement-number">Current AI updates</span>
         <h1>AI News</h1>
-        <p>A running list of recent AI posts and announcements from Microsoft, Anthropic, Claude, Perplexity, and xAI.</p>
+        <p>A running list of recent AI posts and announcements from Microsoft, Anthropic, Claude, and Perplexity.</p>
       </section>
       <section class="panel">
         <h2>Latest posts</h2>

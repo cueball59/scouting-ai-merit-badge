@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T22:20:13.876Z",
+  "lastUpdated": "2026-06-30T12:08:28.959Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -24,12 +24,6 @@
       "ok": true,
       "count": 20,
       "error": ""
-    },
-    {
-      "name": "xAI",
-      "ok": false,
-      "count": 0,
-      "error": "https://x.ai/news returned 403"
     }
   ],
   "posts": [

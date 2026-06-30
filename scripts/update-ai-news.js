@@ -31,13 +31,6 @@ const SOURCES = [
     type: "framerIndex",
     baseUrl: "https://www.perplexity.ai",
     include: /^\/hub\/(blog|updates|features)\//
-  },
-  {
-    name: "xAI",
-    url: "https://x.ai/news",
-    type: "page",
-    baseUrl: "https://x.ai",
-    include: /^\/news\//
   }
 ];
 
