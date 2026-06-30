@@ -444,7 +444,7 @@ const SITE_DATA = {
       sections: [
         {
           title: "Scout and interview information",
-          prompts: ["Name", "Date", "Professional interviewed", "Job title / organization", "How the interview was conducted"]
+          prompts: ["Name", "Date", "Professional interviewed", "Job title / organization"]
         },
         {
           title: "Interview questions",
