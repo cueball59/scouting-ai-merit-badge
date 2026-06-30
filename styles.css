@@ -288,6 +288,128 @@ button.ghost {
   margin: 0;
 }
 
+.progress-tracker-compact {
+  margin-top: 1rem;
+  padding: 0.85rem 1.1rem;
+}
+
+.progress-tracker-compact .progress-bar {
+  height: 0.7rem;
+  margin: 0.6rem 0 0;
+}
+
+.progress-summary-link {
+  font-weight: 700;
+}
+
+.summary-learnings {
+  display: grid;
+  gap: 0.85rem;
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  counter-reset: none;
+}
+
+.summary-learning {
+  border: 1px solid var(--cp-border);
+  border-left: 6px solid var(--cp-border);
+  border-radius: 12px;
+  padding: 0.9rem 1.1rem;
+  background: var(--cp-surface);
+}
+
+.summary-learning.is-done {
+  border-left-color: #16a34a;
+}
+
+.summary-learning.is-todo {
+  opacity: 0.85;
+}
+
+.summary-learning-head {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.summary-learning-head h3 {
+  color: var(--cp-blue);
+  margin: 0;
+  flex: 1 1 auto;
+  font-size: 1.05rem;
+}
+
+.summary-status {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  font-weight: 900;
+  height: 1.7rem;
+  justify-content: center;
+  width: 1.7rem;
+}
+
+.summary-learning.is-done .summary-status {
+  background: #16a34a;
+  color: #fff;
+}
+
+.summary-learning.is-todo .summary-status {
+  background: var(--cp-surface-soft);
+  border: 2px solid var(--cp-border);
+  color: var(--cp-text-muted);
+}
+
+.summary-status-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--cp-text-muted);
+}
+
+.summary-learning.is-done .summary-status-label {
+  color: #16a34a;
+}
+
+.summary-learning p {
+  margin: 0.6rem 0 0.4rem;
+}
+
+.summary-revisit {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.counselor-note {
+  background: #fff5f5;
+  border: 2px solid var(--cp-red);
+  border-radius: 16px;
+  margin-top: 1.5rem;
+  padding: 1.1rem 1.25rem;
+}
+
+.counselor-note h2 {
+  color: var(--cp-red);
+  margin-top: 0;
+}
+
+.counselor-note p {
+  margin-bottom: 0;
+}
+
+.finish-button {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+.finish-button:hover {
+  background: #128a3d;
+  border-color: #128a3d;
+}
+
 .requirement-complete {
   background: var(--cp-surface);
   border: 2px dashed var(--cp-blue);

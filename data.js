@@ -6,6 +6,7 @@ const SITE_DATA = {
       id: 1,
       title: "Key Concepts",
       summary: "Define the core vocabulary Scouts need before discussing artificial intelligence and automation.",
+      keyTakeaway: "You can define and explain the core vocabulary of AI and automation - from machine learning, agents, and bots to workflows, triggers, and variables - and tell apart narrow, general, and superintelligent AI.",
       requirement: "Share the meaning of AI, agents, automation, programming, bots, data, databases, digital workers, machine learning, workflows, variables, and related terms with your counselor.",
       completionNote: "Complete all parts of this requirement.",
       requirementDetails: [
@@ -53,6 +54,7 @@ const SITE_DATA = {
       id: 2,
       title: "Artificial Intelligence Basics",
       summary: "Identify AI in daily life, work, and school, then practice deciding whether a scenario uses AI.",
+      keyTakeaway: "You can spot artificial intelligence in everyday life and judge whether a given scenario actually uses AI or just looks like it does.",
       requirement: "Find examples of AI in everyday life, the workplace, and education; play ten rounds of AI or Not?; and create a short AI development timeline.",
       completionNote: "Complete all parts: 2a through 2e.",
       requirementDetails: [
@@ -104,6 +106,7 @@ const SITE_DATA = {
       id: 3,
       title: "Automation Basics",
       summary: "Separate simple automation from AI and explain how automated systems reduce repetitive effort.",
+      keyTakeaway: "You can tell rule-based automation apart from AI and explain how automated systems - from timers to sensors to adaptive tools - reduce repetitive work.",
       requirement: "Identify automation examples in daily life, work, and school; explain how automation performs repetitive tasks; and create an automation timeline.",
       completionNote: "Complete all parts: 3a through 3e.",
       requirementDetails: [
@@ -179,6 +182,7 @@ const SITE_DATA = {
       id: 4,
       title: "Ethics in AI",
       summary: "Explore bias, privacy, accountability, and responsible decision making with real-world scenarios.",
+      keyTakeaway: "You can reason through bias, privacy, and accountability and make responsible decisions about how AI should and should not be used.",
       requirement: "Research ethical concerns and responsible AI use, play five rounds of the What Would You Do? game, develop AI guidelines, and explain the Turing test.",
       completionNote: "Complete all parts: 4a through 4d.",
       requirementDetails: [
@@ -200,6 +204,7 @@ const SITE_DATA = {
       id: 5,
       title: "Deepfakes",
       summary: "Understand manipulated media, its impact, and what to do if someone is harmed by it.",
+      keyTakeaway: "You understand how deepfakes and manipulated media are created, the harm they can cause, and the steps to take if someone is targeted.",
       requirement: "Explain what a deepfake is, how it can affect someone, and what actions to take if you or someone you know is impacted.",
       completionNote: "Complete both parts: 5a and 5b.",
       requirementDetails: [
@@ -227,6 +232,7 @@ const SITE_DATA = {
       id: 6,
       title: "Developing AI Skills",
       summary: "Practice communicating clearly with AI and understanding where AI can fail.",
+      keyTakeaway: "You can write clear prompts, get better results from AI tools, and recognize where AI can fail, mislead, or produce inaccurate answers.",
       requirement: "Discuss how AI learns and its limitations, identify ways to communicate with AI, explain prompt engineering, and demonstrate clear school-related prompts.",
       completionNote: "Complete all parts: 6a through 6d.",
       requirementDetails: [
@@ -315,6 +321,7 @@ const SITE_DATA = {
       id: 7,
       title: "Practical Application",
       summary: "Choose either an approved AI project or a short AI lesson for Scouts.",
+      keyTakeaway: "You applied your knowledge hands-on by completing an approved AI project or teaching a short AI lesson to other Scouts.",
       requirement: "With counselor approval, complete either an AI project with objectives, data needs, and ethics considerations, or design and teach a short AI lesson.",
       completionNote: "Do one option: 7a or 7b.",
       requirementDetails: [
@@ -332,6 +339,7 @@ const SITE_DATA = {
       id: 8,
       title: "Career Exploration",
       summary: "Research AI or automation careers and connect them to skills, training, and future goals.",
+      keyTakeaway: "You researched AI and automation careers and connected them to the skills, education, and personal goals that interest you most.",
       requirement: "Research three AI or automation careers and study one in depth, or interview an AI or automation professional.",
       completionNote: "Do one option: 8a or 8b.",
       requirementDetails: [

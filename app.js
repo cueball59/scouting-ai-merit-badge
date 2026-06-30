@@ -71,6 +71,23 @@
     return SITE_DATA.requirements.filter((req) => progress[req.id]).length;
   }
 
+  function progressStripHtml() {
+    const total = SITE_DATA.requirements.length;
+    const done = completedCount();
+    const percent = Math.round((done / total) * 100);
+    return `
+      <section class="progress-tracker progress-tracker-compact no-print" aria-label="Your progress">
+        <div class="progress-tracker-top">
+          <span class="progress-count">${done} of ${total} requirements explored</span>
+          <a class="progress-summary-link" href="${link("summary.html")}">View summary</a>
+        </div>
+        <div class="progress-bar" role="progressbar" aria-valuenow="${done}" aria-valuemin="0" aria-valuemax="${total}">
+          <span style="width: ${percent}%"></span>
+        </div>
+      </section>
+    `;
+  }
+
   function pdfEscape(value) {
     return String(value).replace(/\\/g, "\\\\").replace(/\(/g, "\\(").replace(/\)/g, "\\)");
   }
@@ -314,6 +331,7 @@
         <p>${esc(req.summary)}</p>
         ${req.gameLink ? `<div class="actions page-title-actions"><a class="button" href="${link(req.gameLink)}">Open ${esc(req.gameName || "game")}</a></div>` : ""}
       </section>
+      ${progressStripHtml()}
       <section class="panel">
         <h2>Requirement focus</h2>
         ${req.completionNote ? `<p class="completion-note"><strong>Completion expectation:</strong> ${esc(req.completionNote)}</p>` : ""}
@@ -519,10 +537,12 @@
           <span>Mark Requirement ${req.id} as explored</span>
         </label>
       </section>
-      ${previousReq || nextReq ? `
+      ${previousReq || nextReq || !nextReq ? `
         <section class="requirement-nav no-print">
           ${previousReq ? `<a class="button secondary" href="${link(`requirements/${previousReq.id}.html`)}">Previous requirement: ${previousReq.id}. ${esc(previousReq.title)}</a>` : "<span></span>"}
-          ${nextReq ? `<a class="button" href="${link(`requirements/${nextReq.id}.html`)}">Next requirement: ${nextReq.id}. ${esc(nextReq.title)}</a>` : ""}
+          ${nextReq
+            ? `<a class="button" href="${link(`requirements/${nextReq.id}.html`)}">Next requirement: ${nextReq.id}. ${esc(nextReq.title)}</a>`
+            : `<a class="button finish-button" href="${link("summary.html")}">Finish &amp; view summary &#10003;</a>`}
         </section>
       ` : ""}
     `;
@@ -1230,6 +1250,67 @@
     paint();
   }
 
+  function renderSummary() {
+    const reqs = SITE_DATA.requirements;
+    const total = reqs.length;
+    const done = completedCount();
+    const percent = Math.round((done / total) * 100);
+    const allDone = done === total;
+
+    app.innerHTML = `
+      <section class="page-title">
+        <span class="requirement-number">Badge progress</span>
+        <h1>${allDone ? "You explored every requirement!" : "Your AI Merit Badge progress"}</h1>
+        <p>${allDone
+          ? "Great work! You have explored all eight requirements of the Artificial Intelligence merit badge. Below is a recap of what you learned along the way."
+          : "Here is everything you have explored so far. Mark each requirement as explored on its page to complete your summary."}</p>
+      </section>
+
+      <section class="progress-tracker" aria-label="Your progress">
+        <div class="progress-tracker-top">
+          <h2>${done} of ${total} requirements explored</h2>
+          <span class="progress-count">${percent}%</span>
+        </div>
+        <div class="progress-bar" role="progressbar" aria-valuenow="${done}" aria-valuemin="0" aria-valuemax="${total}">
+          <span style="width: ${percent}%"></span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>What you learned</h2>
+        <p>Use this recap to talk through each requirement with your merit badge counselor.</p>
+        <ol class="summary-learnings">
+          ${reqs.map((req) => {
+            const complete = isRequirementDone(req.id);
+            return `
+              <li class="summary-learning ${complete ? "is-done" : "is-todo"}">
+                <div class="summary-learning-head">
+                  <span class="summary-status" aria-hidden="true">${complete ? "&#10003;" : "&#9675;"}</span>
+                  <h3>Requirement ${req.id}: ${esc(req.title)}</h3>
+                  <span class="summary-status-label">${complete ? "Explored" : "Not yet explored"}</span>
+                </div>
+                <p>${esc(req.keyTakeaway || req.summary)}</p>
+                <a class="summary-revisit no-print" href="${link(`requirements/${req.id}.html`)}">Revisit requirement ${req.id}</a>
+              </li>
+            `;
+          }).join("")}
+        </ol>
+      </section>
+
+      <section class="counselor-note">
+        <h2>Official sign-off</h2>
+        <p>This site helps you learn and practice, but it does not award the badge. Official sign-off and validation of the Artificial Intelligence merit badge is managed by your merit badge counselor. Review your work with your counselor to have each requirement formally approved.</p>
+      </section>
+
+      <section class="requirement-nav no-print">
+        <a class="button secondary" href="${link("index.html")}">Back to requirements</a>
+        ${SITE_DATA.officialRequirementsUrl ? `<a class="button" href="${SITE_DATA.officialRequirementsUrl}" target="_blank" rel="noopener">Official requirements</a>` : ""}
+      </section>
+    `;
+
+    if (allDone) launchConfetti();
+  }
+
   renderNav();
   renderFooter();
 
@@ -1239,5 +1320,6 @@
   if (page === "worksheet") renderWorksheet();
   if (page === "ai-game") renderAiGame();
   if (page === "ethics-game") renderEthicsGame();
+  if (page === "summary") renderSummary();
   renderBottomPrint();
 }());
