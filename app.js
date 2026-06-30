@@ -211,6 +211,171 @@
     URL.revokeObjectURL(anchor.href);
   }
 
+  function pdfWinAnsi(value) {
+    return String(value)
+      .replace(/[\u2010-\u2015]/g, "-")
+      .replace(/[\u2018\u2019\u201A]/g, "'")
+      .replace(/[\u201C\u201D\u201E]/g, '"')
+      .replace(/\u2026/g, "...")
+      .replace(/[^\x20-\x7E]/g, " ");
+  }
+
+  function downloadWorksheetPdf() {
+    const worksheetId = document.body.dataset.worksheet;
+    const worksheet = SITE_DATA.careerWorksheets && SITE_DATA.careerWorksheets[worksheetId];
+    if (!worksheet) {
+      downloadPdf();
+      return;
+    }
+
+    const PAGE_W = 612;
+    const PAGE_H = 792;
+    const LEFT = 54;
+    const WIDTH = 504;
+    const TOP = 752;
+    const BOTTOM = 56;
+
+    const blocks = [];
+    blocks.push({ type: "title", text: worksheet.title });
+    if (worksheet.subtitle) blocks.push({ type: "subtitle", text: worksheet.subtitle });
+    (worksheet.sections || []).forEach((section, sectionIndex) => {
+      blocks.push({ type: "section", text: section.title });
+      const compact = sectionIndex === 0;
+      (section.prompts || []).forEach((prompt) => {
+        blocks.push({ type: "field", label: prompt, compact });
+      });
+    });
+
+    const pages = [];
+    let current = { ops: [], widgets: [] };
+    let y = TOP;
+    let fieldCount = 0;
+
+    const pushPage = () => {
+      pages.push(current);
+      current = { ops: [], widgets: [] };
+      y = TOP;
+    };
+    const ensureSpace = (height) => {
+      if (y - height < BOTTOM) pushPage();
+    };
+    const drawText = (text, size, font, x, yy) => {
+      current.ops.push(`BT /${font} ${size} Tf ${x} ${yy.toFixed(1)} Td (${pdfEscape(pdfWinAnsi(text))}) Tj ET`);
+    };
+
+    blocks.forEach((block) => {
+      if (block.type === "title") {
+        const lines = wrapPdfText(pdfWinAnsi(block.text), 44);
+        ensureSpace(lines.length * 24 + 18);
+        lines.forEach((line) => {
+          y -= 24;
+          drawText(line, 18, "F2", LEFT, y);
+        });
+        y -= 8;
+        current.ops.push(`0.0 0.247 0.529 RG 1.5 w ${LEFT} ${y.toFixed(1)} m ${LEFT + WIDTH} ${y.toFixed(1)} l S`);
+        y -= 14;
+      } else if (block.type === "subtitle") {
+        const lines = wrapPdfText(pdfWinAnsi(block.text), 92);
+        ensureSpace(lines.length * 14 + 8);
+        lines.forEach((line) => {
+          y -= 14;
+          drawText(line, 11, "F1", LEFT, y);
+        });
+        y -= 8;
+      } else if (block.type === "section") {
+        const lines = wrapPdfText(pdfWinAnsi(block.text), 66);
+        ensureSpace(lines.length * 17 + 18);
+        y -= 20;
+        lines.forEach((line, lineIndex) => {
+          if (lineIndex > 0) y -= 16;
+          drawText(line, 13, "F2", LEFT, y);
+        });
+        y -= 9;
+      } else if (block.type === "field") {
+        const labelLines = wrapPdfText(pdfWinAnsi(block.label), 96);
+        const boxHeight = block.compact ? 20 : 54;
+        const needed = labelLines.length * 13 + 5 + boxHeight + 14;
+        ensureSpace(needed);
+        labelLines.forEach((line) => {
+          y -= 13;
+          drawText(line, 10, "F1", LEFT, y);
+        });
+        y -= 5;
+        const top = y;
+        const bottom = y - boxHeight;
+        fieldCount += 1;
+        current.widgets.push({
+          name: `field_${fieldCount}`,
+          tooltip: pdfWinAnsi(block.label),
+          rect: [LEFT, bottom, LEFT + WIDTH, top],
+          multiline: !block.compact
+        });
+        y = bottom - 14;
+      }
+    });
+    pushPage();
+
+    const objects = [
+      "",
+      "",
+      "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>",
+      "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>"
+    ];
+    const addObject = (content) => {
+      objects.push(content);
+      return objects.length;
+    };
+
+    const pageRefs = [];
+    const fieldRefs = [];
+
+    pages.forEach((pageData) => {
+      const stream = pageData.ops.join("\n");
+      const streamRef = addObject(`<< /Length ${stream.length} >>\nstream\n${stream}\nendstream`);
+      const pageIndex = addObject("");
+      const widgetRefs = pageData.widgets.map((widget) => {
+        const flags = widget.multiline ? " /Ff 4096" : "";
+        const ref = addObject(
+          `<< /Type /Annot /Subtype /Widget /FT /Tx /T (${pdfEscape(widget.name)}) /TU (${pdfEscape(widget.tooltip)}) ` +
+          `/Rect [${widget.rect.map((value) => value.toFixed(1)).join(" ")}] /F 4 /P ${pageIndex} 0 R ` +
+          `/DA (/Helv 11 Tf 0 0.247 0.529 rg) /BS << /W 1 /S /S >> /MK << /BC [0.55 0.55 0.55] /BG [0.97 0.98 1] >>${flags} >>`
+        );
+        fieldRefs.push(ref);
+        return ref;
+      });
+      const annots = widgetRefs.length ? ` /Annots [${widgetRefs.map((ref) => `${ref} 0 R`).join(" ")}]` : "";
+      objects[pageIndex - 1] =
+        `<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${PAGE_W} ${PAGE_H}] ` +
+        `/Resources << /Font << /F1 3 0 R /F2 4 0 R /Helv 3 0 R >> >> /Contents ${streamRef} 0 R${annots} >>`;
+      pageRefs.push(pageIndex);
+    });
+
+    objects[0] =
+      `<< /Type /Catalog /Pages 2 0 R /AcroForm << /Fields [${fieldRefs.map((ref) => `${ref} 0 R`).join(" ")}] ` +
+      `/NeedAppearances true /DA (/Helv 11 Tf 0 g) /DR << /Font << /Helv 3 0 R /HelvB 4 0 R >> >> >> >>`;
+    objects[1] = `<< /Type /Pages /Kids [${pageRefs.map((ref) => `${ref} 0 R`).join(" ")}] /Count ${pageRefs.length} >>`;
+
+    let pdf = "%PDF-1.4\n";
+    const offsets = [0];
+    objects.forEach((object, index) => {
+      offsets.push(pdf.length);
+      pdf += `${index + 1} 0 obj\n${object}\nendobj\n`;
+    });
+    const xref = pdf.length;
+    pdf += `xref\n0 ${objects.length + 1}\n0000000000 65535 f \n`;
+    offsets.slice(1).forEach((offset) => {
+      pdf += `${String(offset).padStart(10, "0")} 00000 n \n`;
+    });
+    pdf += `trailer\n<< /Size ${objects.length + 1} /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF`;
+
+    const blob = new Blob([pdf], { type: "application/pdf" });
+    const anchor = document.createElement("a");
+    anchor.href = URL.createObjectURL(blob);
+    anchor.download = `${(worksheet.title || "worksheet").replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "").toLowerCase() || "worksheet"}.pdf`;
+    anchor.click();
+    URL.revokeObjectURL(anchor.href);
+  }
+
   function getSupabaseConfig() {
     const config = window.SUPABASE_CONFIG || {};
     return {
@@ -246,12 +411,14 @@
 
   function renderBottomPrint() {
     if (page === "ai-game" || page === "ethics-game") return;
+    const isWorksheet = page === "worksheet";
     app.insertAdjacentHTML("beforeend", `
       <section class="bottom-print no-print">
-        <button type="button">Download PDF</button>
+        <button type="button">${isWorksheet ? "Download fillable PDF" : "Download PDF"}</button>
+        ${isWorksheet ? `<p class="bottom-print-hint">Opens a printable PDF with type-in fields. Fill it in Adobe Acrobat, Preview, or most browsers, or print it and write by hand.</p>` : ""}
       </section>
     `);
-    app.querySelector(".bottom-print button").addEventListener("click", downloadPdf);
+    app.querySelector(".bottom-print button").addEventListener("click", isWorksheet ? downloadWorksheetPdf : downloadPdf);
   }
 
   function renderFooter() {
