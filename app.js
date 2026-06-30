@@ -150,9 +150,9 @@
       ` : ""}
       ${req.aiTimeline ? `
         <section class="panel interactive-timeline-section">
-          <h2>Five-milestone AI timeline</h2>
+          <h2>${esc(req.timelineTitle || "Five-milestone timeline")}</h2>
           <p>This example timeline is hidden by default. Reveal it, then select each milestone to explore why it matters.</p>
-          <button class="secondary reveal-timeline" type="button" aria-expanded="false" aria-controls="ai-timeline">Show AI timeline</button>
+          <button class="secondary reveal-timeline" type="button" aria-expanded="false" aria-controls="ai-timeline">${esc(req.timelineButtonText || "Show timeline")}</button>
           <div class="interactive-timeline hidden" id="ai-timeline">
             <div class="timeline-buttons" role="tablist" aria-label="AI timeline milestones">
               ${req.aiTimeline.map((item, index) => `
@@ -264,7 +264,7 @@
       revealTimeline.addEventListener("click", () => {
         const isHidden = timeline.classList.toggle("hidden");
         revealTimeline.setAttribute("aria-expanded", String(!isHidden));
-        revealTimeline.textContent = isHidden ? "Show AI timeline" : "Hide AI timeline";
+        revealTimeline.textContent = isHidden ? (req.timelineButtonText || "Show timeline") : "Hide timeline";
       });
       app.querySelectorAll("[data-timeline-index]").forEach((button) => {
         button.addEventListener("click", () => {

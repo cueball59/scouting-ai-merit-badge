@@ -70,6 +70,8 @@ const SITE_DATA = {
       counselorPrompt: "When Scouts say something is AI, ask what data it uses and whether it learns or adapts.",
       gameLink: "games/ai-or-not.html",
       gameName: "AI or Not?",
+      timelineTitle: "Five-milestone AI timeline",
+      timelineButtonText: "Show AI timeline",
       aiTimeline: [
         {
           year: "1950",
@@ -116,7 +118,36 @@ const SITE_DATA = {
         "List repetitive tasks Scouts see at home or school.",
         "Discuss where automation helps and where human review still matters."
       ],
-      counselorPrompt: "Ask Scouts to explain the trigger, task, and outcome for each automation example."
+      counselorPrompt: "Ask Scouts to explain the trigger, task, and outcome for each automation example.",
+      timelineTitle: "Five-milestone automation timeline",
+      timelineButtonText: "Show automation timeline",
+      aiTimeline: [
+        {
+          year: "1785",
+          title: "Automated flour mill",
+          detail: "Oliver Evans designed an automated flour mill that moved grain and flour through multiple steps with less manual labor, showing how machines could coordinate repeated work."
+        },
+        {
+          year: "1913",
+          title: "Moving assembly line",
+          detail: "Ford's moving assembly line helped standardize production and reduce the time needed to build a car, becoming a major milestone in industrial automation."
+        },
+        {
+          year: "1947",
+          title: "Numerical control machining",
+          detail: "Early numerical control used coded instructions to guide machine tools, paving the way for computer-controlled manufacturing."
+        },
+        {
+          year: "1961",
+          title: "First industrial robot",
+          detail: "Unimate began work on a General Motors assembly line, showing how robots could take on repetitive or dangerous factory tasks."
+        },
+        {
+          year: "2000s",
+          title: "Robotic process automation",
+          detail: "Software bots began automating repetitive digital tasks such as moving data between systems, helping offices automate workflows as well as factories."
+        }
+      ]
     },
     {
       id: 4,
