@@ -17,6 +17,126 @@
     return `${base}${path}`;
   }
 
+  function pdfEscape(value) {
+    return String(value).replace(/\\/g, "\\\\").replace(/\(/g, "\\(").replace(/\)/g, "\\)");
+  }
+
+  function wrapPdfText(text, maxChars) {
+    const words = String(text).replace(/\s+/g, " ").trim().split(" ");
+    const lines = [];
+    let current = "";
+    words.forEach((word) => {
+      const next = current ? `${current} ${word}` : word;
+      if (next.length > maxChars && current) {
+        lines.push(current);
+        current = word;
+      } else {
+        current = next;
+      }
+    });
+    if (current) lines.push(current);
+    return lines;
+  }
+
+  function collectPdfLines() {
+    const lines = [];
+    const add = (text, size = 11, bold = false) => {
+      const clean = String(text || "").trim();
+      if (clean) lines.push({ text: clean, size, bold });
+    };
+
+    const visit = (element) => {
+      if (!element || element.classList.contains("no-print") || element.classList.contains("hidden")) return;
+      if (["BUTTON", "IFRAME", "IMG", "SCRIPT"].includes(element.tagName)) return;
+      if (element.classList.contains("worksheet-field")) {
+        add(element.querySelector("span")?.textContent || element.textContent, 11, true);
+        lines.push({ text: "____________________________________________________________", size: 11, bold: false });
+        lines.push({ text: "____________________________________________________________", size: 11, bold: false });
+        lines.push({ text: "____________________________________________________________", size: 11, bold: false });
+        lines.push({ text: "____________________________________________________________", size: 11, bold: false });
+        return;
+      }
+
+      if (element.tagName === "H1") return add(element.textContent, 20, true);
+      if (element.tagName === "H2") return add(element.textContent, 16, true);
+      if (element.tagName === "H3") return add(element.textContent, 13, true);
+      if (["P", "LI", "TIME"].includes(element.tagName)) return add(element.textContent, 11, false);
+
+      Array.from(element.children).forEach(visit);
+    };
+
+    visit(app);
+    return lines;
+  }
+
+  function downloadPdf() {
+    const rawLines = collectPdfLines();
+    const pages = [];
+    let pageLines = [];
+    let y = 740;
+
+    const pushPage = () => {
+      pages.push(pageLines);
+      pageLines = [];
+      y = 740;
+    };
+
+    rawLines.forEach((line) => {
+      const maxChars = line.size >= 18 ? 54 : line.size >= 14 ? 68 : 88;
+      const wrapped = wrapPdfText(line.text, maxChars);
+      wrapped.forEach((text) => {
+        if (y < 60) pushPage();
+        pageLines.push({ ...line, text, y });
+        y -= line.size + 6;
+      });
+      y -= line.size >= 13 ? 6 : 2;
+    });
+    if (pageLines.length) pushPage();
+
+    const objects = [
+      "<< /Type /Catalog /Pages 2 0 R >>",
+      "",
+      "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>",
+      "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>"
+    ];
+    const addObject = (content) => {
+      objects.push(content);
+      return objects.length;
+    };
+
+    const pageRefs = [];
+    pages.forEach((page) => {
+      const stream = page.map((line) => {
+        const font = line.bold ? "F2" : "F1";
+        return `BT /${font} ${line.size} Tf 54 ${line.y} Td (${pdfEscape(line.text)}) Tj ET`;
+      }).join("\n");
+      const streamRef = addObject(`<< /Length ${stream.length} >>\nstream\n${stream}\nendstream`);
+      pageRefs.push(addObject(`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents ${streamRef} 0 R >>`));
+    });
+
+    objects[1] = `<< /Type /Pages /Kids [${pageRefs.map((ref) => `${ref} 0 R`).join(" ")}] /Count ${pageRefs.length} >>`;
+
+    let pdf = "%PDF-1.4\n";
+    const offsets = [0];
+    objects.forEach((object, index) => {
+      offsets.push(pdf.length);
+      pdf += `${index + 1} 0 obj\n${object}\nendobj\n`;
+    });
+    const xref = pdf.length;
+    pdf += `xref\n0 ${objects.length + 1}\n0000000000 65535 f \n`;
+    offsets.slice(1).forEach((offset) => {
+      pdf += `${String(offset).padStart(10, "0")} 00000 n \n`;
+    });
+    pdf += `trailer\n<< /Size ${objects.length + 1} /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF`;
+
+    const blob = new Blob([pdf], { type: "application/pdf" });
+    const anchor = document.createElement("a");
+    anchor.href = URL.createObjectURL(blob);
+    anchor.download = `${document.title.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "").toLowerCase() || "worksheet"}.pdf`;
+    anchor.click();
+    URL.revokeObjectURL(anchor.href);
+  }
+
   function getSupabaseConfig() {
     const config = window.SUPABASE_CONFIG || {};
     return {
@@ -54,10 +174,10 @@
     if (page === "ai-game" || page === "ethics-game") return;
     app.insertAdjacentHTML("beforeend", `
       <section class="bottom-print no-print">
-        <button type="button">Print page</button>
+        <button type="button">Download PDF</button>
       </section>
     `);
-    app.querySelector(".bottom-print button").addEventListener("click", () => window.print());
+    app.querySelector(".bottom-print button").addEventListener("click", downloadPdf);
   }
 
   function renderFooter() {
