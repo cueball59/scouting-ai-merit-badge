@@ -49,11 +49,12 @@
       if (!element || element.classList.contains("no-print") || element.classList.contains("hidden")) return;
       if (["BUTTON", "IFRAME", "IMG", "SCRIPT"].includes(element.tagName)) return;
       if (element.classList.contains("worksheet-field")) {
+        const isCompact = Boolean(element.closest(".worksheet-field-grid-compact"));
+        const lineCount = isCompact ? 1 : 4;
         add(element.querySelector("span")?.textContent || element.textContent, 11, true);
-        lines.push({ text: "____________________________________________________________", size: 11, bold: false });
-        lines.push({ text: "____________________________________________________________", size: 11, bold: false });
-        lines.push({ text: "____________________________________________________________", size: 11, bold: false });
-        lines.push({ text: "____________________________________________________________", size: 11, bold: false });
+        for (let i = 0; i < lineCount; i += 1) {
+          lines.push({ text: "____________________________________________________________", size: 11, bold: false });
+        }
         return;
       }
 
