@@ -17,6 +17,41 @@
     return `${base}${path}`;
   }
 
+  const PROGRESS_KEY = "scouting-ai-merit-badge-progress";
+
+  function getProgress() {
+    try {
+      const raw = window.localStorage.getItem(PROGRESS_KEY);
+      const parsed = raw ? JSON.parse(raw) : {};
+      return parsed && typeof parsed === "object" ? parsed : {};
+    } catch (error) {
+      return {};
+    }
+  }
+
+  function setRequirementDone(id, done) {
+    try {
+      const progress = getProgress();
+      if (done) {
+        progress[id] = true;
+      } else {
+        delete progress[id];
+      }
+      window.localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+    } catch (error) {
+      // localStorage unavailable; progress is not persisted this session.
+    }
+  }
+
+  function isRequirementDone(id) {
+    return Boolean(getProgress()[id]);
+  }
+
+  function completedCount() {
+    const progress = getProgress();
+    return SITE_DATA.requirements.filter((req) => progress[req.id]).length;
+  }
+
   function pdfEscape(value) {
     return String(value).replace(/\\/g, "\\\\").replace(/\(/g, "\\(").replace(/\)/g, "\\)");
   }
@@ -191,6 +226,13 @@
   }
 
   function renderHome() {
+    const progress = getProgress();
+    const done = SITE_DATA.requirements.filter((req) => progress[req.id]).length;
+    const total = SITE_DATA.requirements.length;
+    const percent = Math.round((done / total) * 100);
+    const firstUnfinished = SITE_DATA.requirements.find((req) => !progress[req.id]) || SITE_DATA.requirements[0];
+    const allDone = done === total;
+
     app.innerHTML = `
       <section class="hero">
         <div>
@@ -201,17 +243,32 @@
           <h1>Scouting AI Merit Badge</h1>
           <p>The Artificial Intelligence merit badge introduces Scouts to AI concepts, automation, responsible use, deepfakes, practical AI skills, and career pathways. This site supports live instruction with requirement pages and interactive activities grounded in the official Scouting America requirements.</p>
           <div class="actions">
-            <a class="button" href="${link("games/ai-or-not.html")}">Play AI or Not?</a>
+            <a class="button" href="${link(`requirements/${firstUnfinished.id}.html`)}">${allDone ? "Review requirements" : (done > 0 ? "Continue exploring" : "Start here")}</a>
+            <a class="button secondary" href="${link("games/ai-or-not.html")}">Play AI or Not?</a>
             <a class="button secondary" href="${link("games/ethics.html")}">Play Ethics Game</a>
           </div>
         </div>
       </section>
 
+      <section class="progress-tracker" aria-label="Your progress">
+        <div class="progress-tracker-top">
+          <h2>${allDone ? "All requirements explored!" : "Your progress"}</h2>
+          <span class="progress-count">${done} of ${total} explored</span>
+        </div>
+        <div class="progress-bar" role="progressbar" aria-valuenow="${done}" aria-valuemin="0" aria-valuemax="${total}">
+          <span style="width: ${percent}%"></span>
+        </div>
+        <p class="progress-hint no-print">Progress is saved on this device. Mark a requirement complete at the bottom of its page.</p>
+      </section>
+
       <section class="grid" aria-label="Requirement pages">
         ${SITE_DATA.requirements.map((req) => `
-          <article class="card">
+          <article class="card ${progress[req.id] ? "card-done" : ""}">
             <a class="card-link" href="${link(`requirements/${req.id}.html`)}">
-              <span class="requirement-number">Requirement ${req.id}</span>
+              <div class="card-top">
+                <span class="requirement-number">Requirement ${req.id}</span>
+                ${progress[req.id] ? `<span class="card-check" aria-label="Completed">&#10003;</span>` : ""}
+              </div>
               <h2>${esc(req.title)}</h2>
               <p>${esc(req.summary)}</p>
             </a>
@@ -431,6 +488,12 @@
           </div>
         </section>
       ` : ""}
+      <section class="requirement-complete no-print">
+        <label class="complete-toggle">
+          <input type="checkbox" id="mark-complete" ${isRequirementDone(req.id) ? "checked" : ""}>
+          <span>Mark Requirement ${req.id} as explored</span>
+        </label>
+      </section>
       ${previousReq || nextReq ? `
         <section class="requirement-nav no-print">
           ${previousReq ? `<a class="button secondary" href="${link(`requirements/${previousReq.id}.html`)}">Previous requirement: ${previousReq.id}. ${esc(previousReq.title)}</a>` : "<span></span>"}
@@ -438,7 +501,12 @@
         </section>
       ` : ""}
     `;
-    app.querySelectorAll(".reveal-example").forEach((button) => {
+    const markComplete = document.getElementById("mark-complete");
+    if (markComplete) {
+      markComplete.addEventListener("change", () => {
+        setRequirementDone(req.id, markComplete.checked);
+      });
+    }
       button.addEventListener("click", () => {
         const target = document.getElementById(button.getAttribute("aria-controls"));
         const isHidden = target.classList.toggle("hidden");
