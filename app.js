@@ -507,6 +507,7 @@
         setRequirementDone(req.id, markComplete.checked);
       });
     }
+    app.querySelectorAll(".reveal-example").forEach((button) => {
       button.addEventListener("click", () => {
         const target = document.getElementById(button.getAttribute("aria-controls"));
         const isHidden = target.classList.toggle("hidden");
