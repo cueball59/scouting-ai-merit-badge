@@ -1096,8 +1096,10 @@
       notButton.classList.toggle("selected", selectedAnswer === "Not AI");
       aiButton.disabled = Boolean(selectedAnswer);
       notButton.disabled = Boolean(selectedAnswer);
-      nextButton.textContent = index === SITE_DATA.aiOrNot.length - 1 ? "Show final score" : "Next question";
-      nextButton.disabled = false;
+      const isLastQuestion = index === SITE_DATA.aiOrNot.length - 1;
+      nextButton.textContent = isLastQuestion ? "Show final score" : "Next question";
+      nextButton.disabled = isLastQuestion && !selectedAnswer;
+      nextButton.title = nextButton.disabled ? "Submit your answer to this question first" : "";
       revealButton.disabled = false;
     }
 
@@ -1118,6 +1120,7 @@
     });
     nextButton.addEventListener("click", () => {
       if (index === SITE_DATA.aiOrNot.length - 1) {
+        if (!answers[index]) return;
         finished = true;
         shared.showAllScores = false;
         paint();
