@@ -47,6 +47,25 @@
     return Boolean(getProgress()[id]);
   }
 
+  function launchConfetti() {
+    const colors = ["#003f87", "#ce1126", "#f2a900", "#ffffff", "#16a34a"];
+    const container = document.createElement("div");
+    container.className = "confetti-layer";
+    container.setAttribute("aria-hidden", "true");
+    for (let i = 0; i < 80; i += 1) {
+      const piece = document.createElement("span");
+      piece.className = "confetti-piece";
+      piece.style.left = `${Math.random() * 100}%`;
+      piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+      piece.style.animationDelay = `${Math.random() * 0.6}s`;
+      piece.style.animationDuration = `${2.4 + Math.random() * 1.6}s`;
+      piece.style.transform = `rotate(${Math.random() * 360}deg)`;
+      container.appendChild(piece);
+    }
+    document.body.appendChild(container);
+    setTimeout(() => container.remove(), 4500);
+  }
+
   function completedCount() {
     const progress = getProgress();
     return SITE_DATA.requirements.filter((req) => progress[req.id]).length;
@@ -311,9 +330,15 @@
       ${req.terms ? `
         <section class="panel">
           <h2>Starter glossary</h2>
-          <div class="term-list">
+          <p class="glossary-hint no-print">Tap a card to flip it and reveal the definition.</p>
+          <div class="glossary-grid">
             ${req.terms.map(([term, definition]) => `
-              <div class="term"><strong>${esc(term)}</strong><span>${esc(definition)}</span></div>
+              <button class="flip-card" type="button" aria-pressed="false">
+                <span class="flip-card-inner">
+                  <span class="flip-card-front">${esc(term)}</span>
+                  <span class="flip-card-back">${esc(definition)}</span>
+                </span>
+              </button>
             `).join("")}
           </div>
         </section>
@@ -507,6 +532,12 @@
         setRequirementDone(req.id, markComplete.checked);
       });
     }
+    app.querySelectorAll(".flip-card").forEach((cardButton) => {
+      cardButton.addEventListener("click", () => {
+        const flipped = cardButton.classList.toggle("flipped");
+        cardButton.setAttribute("aria-pressed", String(flipped));
+      });
+    });
     app.querySelectorAll(".reveal-example").forEach((button) => {
       button.addEventListener("click", () => {
         const target = document.getElementById(button.getAttribute("aria-controls"));
@@ -979,8 +1010,11 @@
         const level = detectionLevel(score.correct);
         card.innerHTML = `
           <div class="score-summary">
+            <div class="final-badge">
+              <span class="final-badge-emblem">${score.correct >= 17 ? "&#9733;" : score.correct >= 9 ? "&#9889;" : "&#129518;"}</span>
+              <span class="final-badge-label">${esc(level.title)}</span>
+            </div>
             <div class="scenario-label">How did you do?</div>
-            <h2 class="game-title">${level.title}</h2>
             <div class="final-score">${percent}%</div>
             <div class="achievement-summary">
               <strong>${score.correct} of ${SITE_DATA.aiOrNot.length} right</strong>
@@ -990,11 +1024,11 @@
             <div class="achievement-levels">
               <h3>AI detection achievement levels</h3>
               <ol>
-                <li><strong>AI Explorer:</strong> 0-4 right</li>
-                <li><strong>Pattern Spotter:</strong> 5-8 right</li>
-                <li><strong>AI Apprentice:</strong> 9-12 right</li>
-                <li><strong>AI Pattern Ranger:</strong> 13-16 right</li>
-                <li><strong>AI Detection Expert:</strong> 17-20 right</li>
+                <li${score.correct <= 4 ? ' class="level-current"' : ""}><strong>AI Explorer:</strong> 0-4 right</li>
+                <li${score.correct >= 5 && score.correct <= 8 ? ' class="level-current"' : ""}><strong>Pattern Spotter:</strong> 5-8 right</li>
+                <li${score.correct >= 9 && score.correct <= 12 ? ' class="level-current"' : ""}><strong>AI Apprentice:</strong> 9-12 right</li>
+                <li${score.correct >= 13 && score.correct <= 16 ? ' class="level-current"' : ""}><strong>AI Pattern Ranger:</strong> 13-16 right</li>
+                <li${score.correct >= 17 ? ' class="level-current"' : ""}><strong>AI Detection Expert:</strong> 17-20 right</li>
               </ol>
             </div>
             <div class="score-review">
@@ -1012,6 +1046,7 @@
             </div>
           </div>
         `;
+        launchConfetti();
         aiButton.disabled = true;
         notButton.disabled = true;
         revealButton.disabled = true;
