@@ -342,6 +342,10 @@ button.ghost {
   gap: 1rem;
 }
 
+.worksheet-field-grid-compact {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .worksheet-field {
   color: var(--cp-blue);
   display: grid;
@@ -360,6 +364,10 @@ button.ghost {
   border-radius: 0.625rem;
   min-height: 6rem;
   padding: 0.5rem;
+}
+
+.worksheet-field-grid-compact .worksheet-lines {
+  min-height: 2.4rem;
 }
 
 .two-column {

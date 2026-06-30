@@ -599,10 +599,10 @@
         <h2>Instructions</h2>
         <ul>${worksheet.instructions.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
       </section>
-      ${worksheet.sections.map((section) => `
+      ${worksheet.sections.map((section, sectionIndex) => `
         <section class="panel worksheet-panel">
           <h2>${esc(section.title)}</h2>
-          <div class="worksheet-field-grid">
+          <div class="worksheet-field-grid ${sectionIndex === 0 ? "worksheet-field-grid-compact" : ""}">
             ${section.prompts.map((prompt) => `
               <label class="worksheet-field">
                 <span>${esc(prompt)}</span>
