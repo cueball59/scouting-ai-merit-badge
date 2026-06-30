@@ -148,6 +148,28 @@
           </div>
         </section>
       ` : ""}
+      ${req.aiTimeline ? `
+        <section class="panel interactive-timeline-section">
+          <h2>Five-milestone AI timeline</h2>
+          <p>This example timeline is hidden by default. Reveal it, then select each milestone to explore why it matters.</p>
+          <button class="secondary reveal-timeline" type="button" aria-expanded="false" aria-controls="ai-timeline">Show AI timeline</button>
+          <div class="interactive-timeline hidden" id="ai-timeline">
+            <div class="timeline-buttons" role="tablist" aria-label="AI timeline milestones">
+              ${req.aiTimeline.map((item, index) => `
+                <button class="timeline-button ${index === 0 ? "selected" : ""}" type="button" data-timeline-index="${index}" role="tab" aria-selected="${index === 0 ? "true" : "false"}">
+                  <strong>${esc(item.year)}</strong>
+                  <span>${esc(item.title)}</span>
+                </button>
+              `).join("")}
+            </div>
+            <article class="timeline-detail" id="timeline-detail">
+              <span class="requirement-number">${esc(req.aiTimeline[0].year)}</span>
+              <h3>${esc(req.aiTimeline[0].title)}</h3>
+              <p>${esc(req.aiTimeline[0].detail)}</p>
+            </article>
+          </div>
+        </section>
+      ` : ""}
       ${req.videos ? `
         <section class="panel">
           <h2>Videos</h2>
@@ -234,6 +256,32 @@
         button.textContent = isHidden ? "Show example" : "Hide example";
       });
     });
+    const revealTimeline = app.querySelector(".reveal-timeline");
+    if (revealTimeline) {
+      const timeline = document.getElementById(revealTimeline.getAttribute("aria-controls"));
+      const detail = document.getElementById("timeline-detail");
+      const timelineItems = req.aiTimeline || [];
+      revealTimeline.addEventListener("click", () => {
+        const isHidden = timeline.classList.toggle("hidden");
+        revealTimeline.setAttribute("aria-expanded", String(!isHidden));
+        revealTimeline.textContent = isHidden ? "Show AI timeline" : "Hide AI timeline";
+      });
+      app.querySelectorAll("[data-timeline-index]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const index = Number(button.dataset.timelineIndex);
+          const item = timelineItems[index];
+          app.querySelectorAll("[data-timeline-index]").forEach((other) => {
+            other.classList.toggle("selected", other === button);
+            other.setAttribute("aria-selected", String(other === button));
+          });
+          detail.innerHTML = `
+            <span class="requirement-number">${esc(item.year)}</span>
+            <h3>${esc(item.title)}</h3>
+            <p>${esc(item.detail)}</p>
+          `;
+        });
+      });
+    }
     app.querySelectorAll(".prompt-toggle").forEach((button) => {
       button.addEventListener("click", () => {
         const card = button.closest(".prompt-practice-card");

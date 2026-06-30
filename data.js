@@ -69,7 +69,34 @@ const SITE_DATA = {
       ],
       counselorPrompt: "When Scouts say something is AI, ask what data it uses and whether it learns or adapts.",
       gameLink: "games/ai-or-not.html",
-      gameName: "AI or Not?"
+      gameName: "AI or Not?",
+      aiTimeline: [
+        {
+          year: "1950",
+          title: "Alan Turing proposes the Turing test",
+          detail: "Turing published a way to think about whether a machine could appear intelligent through conversation. This helped frame early questions about machine intelligence."
+        },
+        {
+          year: "1956",
+          title: "The Dartmouth workshop names AI",
+          detail: "Researchers gathered at Dartmouth College and used the term artificial intelligence. This is often treated as the formal beginning of AI as a field of study."
+        },
+        {
+          year: "1997",
+          title: "IBM Deep Blue defeats Garry Kasparov",
+          detail: "Deep Blue beat the world chess champion, showing that computers could outperform humans in a complex strategy game when designed for a narrow task."
+        },
+        {
+          year: "2012",
+          title: "Deep learning changes image recognition",
+          detail: "A neural network called AlexNet achieved a major breakthrough in image recognition, helping launch the modern deep learning boom."
+        },
+        {
+          year: "2022",
+          title: "Generative AI reaches the public",
+          detail: "Chat-based generative AI tools became widely available, making it easier for everyday users to create text, brainstorm ideas, summarize information, and experiment with AI."
+        }
+      ]
     },
     {
       id: 3,

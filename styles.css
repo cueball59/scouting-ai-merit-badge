@@ -381,6 +381,65 @@ button.ghost {
   padding-left: 0.75rem;
 }
 
+.interactive-timeline {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.timeline-buttons {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.timeline-button {
+  background: var(--cp-white);
+  border: 2px solid var(--cp-blue);
+  color: var(--cp-blue);
+  display: grid;
+  gap: 0.35rem;
+  min-height: 6rem;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.timeline-button strong {
+  color: var(--cp-red);
+  font-size: 1.2rem;
+}
+
+.timeline-button span {
+  font-weight: 800;
+}
+
+.timeline-button:hover,
+.timeline-button.selected {
+  background: var(--cp-blue);
+  color: var(--cp-white);
+}
+
+.timeline-button:hover strong,
+.timeline-button.selected strong {
+  color: var(--cp-white);
+}
+
+.timeline-detail {
+  border: 2px solid var(--cp-blue);
+  border-left: 0.6rem solid var(--cp-red);
+  border-radius: 0.625rem;
+  padding: 1rem;
+}
+
+.timeline-detail h3 {
+  color: var(--cp-blue);
+  margin: 0.35rem 0;
+}
+
+.timeline-detail p {
+  color: var(--cp-text-muted);
+}
+
 .video-grid {
   display: grid;
   gap: 1rem;
@@ -1043,6 +1102,7 @@ ul {
   .game-layout,
   .session-total-grid,
   .ai-comparison-grid,
+  .timeline-buttons,
   .video-grid,
   .tool-link-grid,
   .prompt-card-grid,
