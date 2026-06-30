@@ -354,12 +354,7 @@ button.ghost {
 }
 
 .worksheet-lines {
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent 0,
-    transparent 1.65rem,
-    var(--cp-border) 1.7rem
-  );
+  background: var(--cp-white);
   border: 2px solid var(--cp-blue);
   border-radius: 0.625rem;
   min-height: 6rem;
