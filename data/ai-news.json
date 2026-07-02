@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T12:48:12.660Z",
+  "lastUpdated": "2026-07-02T12:22:17.266Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Microsoft",
+      "title": "New AI-powered library lets people meet Theodore Roosevelt in a whole new way",
+      "url": "https://news.microsoft.com/signal/articles/ai-theodore-roosevelt-presidential-library/",
+      "summary": "The new Theodore Roosevelt Presidential Library uses AI to transform hundreds of thousands of historical documents into interactive experiences, including a digital research tool and a lifelike Roosevelt avatar.",
+      "summaryParagraphs": [
+        "The new Theodore Roosevelt Presidential Library uses AI to transform hundreds of thousands of historical documents into interactive experiences, including a digital research tool and a lifelike Roosevelt avatar.",
+        "Jul 1, 2026 &nbsp;&nbsp;-&nbsp;&nbsp; The estimated reading time is 4 min.",
+        "The Theodore Roosevelt Presidential Library opens to the public on July 4."
+      ],
+      "published": "2026-07-01T15:35:36.000Z"
+    },
     {
       "source": "Microsoft",
       "title": "Farming is risky business. This app helps Turkish growers succeed",
