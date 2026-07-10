@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08T11:58:11.746Z",
+  "lastUpdated": "2026-07-10T12:38:30.336Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -16,7 +16,7 @@
     {
       "name": "Claude",
       "ok": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -197,6 +197,18 @@
     },
     {
       "source": "Anthropic",
+      "title": "Inviting hard questions Announcements Jul 9, 2026 We’re asking the public for their hardest questions about AI, and committing to show our work as we address them.",
+      "url": "https://www.anthropic.com/news/hard-questions",
+      "summary": "We're asking the public for their hardest questions about AI, and committing to show our work as we address them.",
+      "summaryParagraphs": [
+        "We're asking the public for their hardest questions about AI, and committing to show our work as we address them.",
+        "People have a lot of hard questions about AI. It’s our job to address them.",
+        "Many people are positively disposed to AI. They already use it every day, and they see its potential for making our work and our lives less laborious, for changing the way we learn, for helping speed up scientific and technological progress, for creating new sources of prosperity, and for solving some of the biggest medical and social problems we face."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
       "title": "Jul 2, 2026 Announcements More details on Fable 5’s cyber safeguards and our jailbreak framework",
       "url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
       "summary": "What is and isn't blocked by our cyber classifiers, and a first draft of our jailbreak severity framework",
@@ -216,6 +228,42 @@
         "The Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them.",
         "Since 2025, the Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them. A team inside Alberta’s Ministry of Technology and Innovation scanned 466 million lines of code in 20 hours, remediated security gaps across its systems, and built new tools to make those systems safer.",
         "We’re sharing details of their experience as an example of how government agencies can use Claude and Claude Code to secure their systems at a large scale. This is a critical challenge, as governments rely on these systems to deliver benefits and keep services running—yet the code is often old, insecure, and incompletely documented. Alberta has also published a collection of technical white papers documenting its..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 9, 2026 Announcements Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
+      "url": "https://www.anthropic.com/news/ben-bernanke",
+      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summaryParagraphs": [
+        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "Anthropic's Long-Term Benefit Trust (LTBT) has appointed Dr. Ben Bernanke, a Distinguished Fellow at the Brookings Institution and former Chair of the Federal Reserve, as its newest member. He joins an independent body that works to hold Anthropic to its mission: the responsible development of advanced AI for the long-term benefit of humanity.",
+        "Bernanke led the Federal Reserve from 2006 to 2014, steering the central bank through the 2008 global financial crisis and the recovery that followed. Before entering government, he spent more than two decades as an academic economist, much of that time at Princeton, where he chaired the economics department and built a body of research on the Great Depression and the role banks play in financial crises. That work..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 9, 2026 Announcements Introducing a way to reflect on how you use Claude",
+      "url": "https://www.anthropic.com/news/reflect-with-claude",
+      "summary": "Introducing a new way to reflect on and refine how you use Claude. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals.",
+      "summaryParagraphs": [
+        "Introducing a new way to reflect on and refine how you use Claude. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals.",
+        "Today we're introducing, in beta, a new way to reflect on and refine how you use Claude. In our interviews with users, a common theme that’s emerged is a desire to better understand how, exactly, AI can be integrated into daily life. How often should someone use AI? How can it be used most effectively? When is AI suited to a task, and when is it better left to a human?",
+        "We built this feature to help answer these types of questions. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals. Your reflection dashboard can be found in Settings on Claude for web or the desktop app."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 9, 2026 Case Study UST is bringing Claude to physical AI",
+      "url": "https://www.anthropic.com/news/ust-claude",
+      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summaryParagraphs": [
+        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "Before a factory commits to manufacturing millions of chips, engineers stress-test the design in the fab. Before a product ships, a fault on the assembly line has to be caught before it becomes a recall. When AI does this kind of work, it’s called physical AI: intelligence built into the equipment and engineering processes that produce the things people use.",
+        "We’re partnering with UST , a technology and engineering services company that builds and runs the engineering environments its clients depend on to get chips, cars, and connected devices to market. UST is putting Claude to work inside those environments, and training 20,000 of its engineers, architects, and consultants on Claude worldwide."
       ],
       "published": ""
     },
@@ -293,6 +341,18 @@
     },
     {
       "source": "Anthropic",
+      "title": "Jun 23, 2026 Product Introducing Claude Tag",
+      "url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "summary": "Claude Tag is a new way for teams to work with Claude.",
+      "summaryParagraphs": [
+        "Claude Tag is a new way for teams to work with Claude.",
+        "We’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.",
+        "We see Claude Tag as the beginning of an evolution of Claude Code: it makes the model even more proactive, and it works better with a full team. Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team’s code is created by our internal version of Claude Tag. The same pattern is now spreading well beyond engineering—we’re tagging Claude to chase down product metric..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
       "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
       "url": "https://www.anthropic.com/news/services-track-partner-hub",
       "summary": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
@@ -324,18 +384,6 @@
         "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
         "We are suspending access to Claude Fable 5 and Claude Mythos 5. We apologize for this disruption to our customers and are working to restore access as soon as possible.",
         "Today we’re launching Claude Fable 5 : a Mythos-class 1 model that we’ve made safe for general use."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
-      "url": "https://www.anthropic.com/news/introducing-claude-tag",
-      "summary": "Claude Tag is a new way for teams to work with Claude.",
-      "summaryParagraphs": [
-        "Claude Tag is a new way for teams to work with Claude.",
-        "We’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.",
-        "We see Claude Tag as the beginning of an evolution of Claude Code: it makes the model even more proactive, and it works better with a full team. Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team’s code is created by our internal version of Claude Tag. The same pattern is now spreading well beyond engineering—we’re tagging Claude to chase down product metric..."
       ],
       "published": ""
     },
@@ -389,6 +437,30 @@
     },
     {
       "source": "Claude",
+      "title": "Jul 9, 2026 Announcements Introducing a way to reflect on how you use Claude",
+      "url": "https://www.anthropic.com/news/reflect-with-claude",
+      "summary": "Introducing a new way to reflect on and refine how you use Claude. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals.",
+      "summaryParagraphs": [
+        "Introducing a new way to reflect on and refine how you use Claude. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals.",
+        "Today we're introducing, in beta, a new way to reflect on and refine how you use Claude. In our interviews with users, a common theme that’s emerged is a desire to better understand how, exactly, AI can be integrated into daily life. How often should someone use AI? How can it be used most effectively? When is AI suited to a task, and when is it better left to a human?",
+        "We built this feature to help answer these types of questions. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals. Your reflection dashboard can be found in Settings on Claude for web or the desktop app."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
+      "title": "Jul 9, 2026 Case Study UST is bringing Claude to physical AI",
+      "url": "https://www.anthropic.com/news/ust-claude",
+      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summaryParagraphs": [
+        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "Before a factory commits to manufacturing millions of chips, engineers stress-test the design in the fab. Before a product ships, a fault on the assembly line has to be caught before it becomes a recall. When AI does this kind of work, it’s called physical AI: intelligence built into the equipment and engineering processes that produce the things people use.",
+        "We’re partnering with UST , a technology and engineering services company that builds and runs the engineering environments its clients depend on to get chips, cars, and connected devices to market. UST is putting Claude to work inside those environments, and training 20,000 of its engineers, architects, and consultants on Claude worldwide."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
       "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
       "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
       "summary": "Anthropic is announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
@@ -425,6 +497,18 @@
     },
     {
       "source": "Claude",
+      "title": "Jun 23, 2026 Product Introducing Claude Tag",
+      "url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "summary": "Claude Tag is a new way for teams to work with Claude.",
+      "summaryParagraphs": [
+        "Claude Tag is a new way for teams to work with Claude.",
+        "We’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.",
+        "We see Claude Tag as the beginning of an evolution of Claude Code: it makes the model even more proactive, and it works better with a full team. Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team’s code is created by our internal version of Claude Tag. The same pattern is now spreading well beyond engineering—we’re tagging Claude to chase down product metric..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
       "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
       "url": "https://www.anthropic.com/news/services-track-partner-hub",
       "summary": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
@@ -444,18 +528,6 @@
         "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
         "We are suspending access to Claude Fable 5 and Claude Mythos 5. We apologize for this disruption to our customers and are working to restore access as soon as possible.",
         "Today we’re launching Claude Fable 5 : a Mythos-class 1 model that we’ve made safe for general use."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Claude",
-      "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
-      "url": "https://www.anthropic.com/news/introducing-claude-tag",
-      "summary": "Claude Tag is a new way for teams to work with Claude.",
-      "summaryParagraphs": [
-        "Claude Tag is a new way for teams to work with Claude.",
-        "We’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.",
-        "We see Claude Tag as the beginning of an evolution of Claude Code: it makes the model even more proactive, and it works better with a full team. Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team’s code is created by our internal version of Claude Tag. The same pattern is now spreading well beyond engineering—we’re tagging Claude to chase down product metric..."
       ],
       "published": ""
     },
