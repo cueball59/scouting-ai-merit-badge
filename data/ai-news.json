@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T12:28:15.179Z",
+  "lastUpdated": "2026-07-21T12:00:53.040Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -10,7 +10,7 @@
     {
       "name": "Anthropic",
       "ok": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -29,12 +29,24 @@
   "posts": [
     {
       "source": "Microsoft",
+      "title": "Microsoft expands Azure AI and HPC infrastructure with AMD",
+      "url": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
+      "summary": "AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing...",
+      "summaryParagraphs": [
+        "AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing...",
+        "AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing (HPC) solutions.",
+        "Our approach to AI infrastructure is designed to support the breadth of how AI systems are built and run. We closely work with industry innovators like AMD as well as our own purpose-built silicon and systems to provide customers with a comprehensive, open and heterogenous platform to achieve the best performance, cost and energy efficiency outcomes."
+      ],
+      "published": "2026-07-20T18:20:47.000Z"
+    },
+    {
+      "source": "Microsoft",
       "title": "New AI-powered library lets people meet Theodore Roosevelt in a whole new way",
       "url": "https://news.microsoft.com/signal/articles/ai-theodore-roosevelt-presidential-library/",
       "summary": "The new Theodore Roosevelt Presidential Library uses AI to transform hundreds of thousands of historical documents into interactive experiences, including a digital research tool and a lifelike Roosevelt avatar.",
       "summaryParagraphs": [
         "The new Theodore Roosevelt Presidential Library uses AI to transform hundreds of thousands of historical documents into interactive experiences, including a digital research tool and a lifelike Roosevelt avatar.",
-        "Jul 1, 2026 &nbsp;&nbsp;-&nbsp;&nbsp; The estimated reading time is 4 min.",
+        "Jul 1, 2026 &nbsp;&nbsp;-&nbsp;&nbsp; The estimated reading time is 5 min.",
         "The Theodore Roosevelt Presidential Library opened to the public on July 4."
       ],
       "published": "2026-07-01T15:35:36.000Z"
@@ -240,6 +252,18 @@
         "What is and isn't blocked by our cyber classifiers, and a first draft of our jailbreak severity framework",
         "Claude Fable 5 has been re-deployed and is now available globally for all users. We’re taking this opportunity to share further information in two areas.",
         "First, we provide more information on the cybersecurity safeguards —specifically, the safety classifiers —that we launched with the model. These are the AI systems that accompany the model that detect and block dangerous (or potentially dangerous) cybersecurity uses. Here, we provide a detailed list of the types of harms Fable 5’s classifiers are, and are not, designed to prevent."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 20, 2026 Announcements Apply for Anthropic’s AI for Science rare disease research grants",
+      "url": "https://www.anthropic.com/news/rare-disease-research-grants",
+      "summary": "Anthropic is sharing a focused call for AI for Science applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease.",
+      "summaryParagraphs": [
+        "Anthropic is sharing a focused call for AI for Science applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease.",
+        "Last spring, we announced Anthropic’s AI for Science program , an initiative designed to accelerate scientific research and discovery through access to our API. Since launching, we have supported researchers working on a variety of high-impact projects, ranging from drug repurposing to quantum simulation. Throughout this initiative, we have found that projects are more generative when multiple AI for Science grant...",
+        "Today, we are sharing a focused call for applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease. This program has two tracks: one for scientists doing basic research, and another for early-stage biotechs workin..."
       ],
       "published": ""
     },
