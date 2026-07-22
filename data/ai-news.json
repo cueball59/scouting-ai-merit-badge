@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21T12:00:53.040Z",
+  "lastUpdated": "2026-07-22T12:05:13.642Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -10,7 +10,7 @@
     {
       "name": "Anthropic",
       "ok": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
@@ -264,6 +264,18 @@
         "Anthropic is sharing a focused call for AI for Science applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease.",
         "Last spring, we announced Anthropic’s AI for Science program , an initiative designed to accelerate scientific research and discovery through access to our API. Since launching, we have supported researchers working on a variety of high-impact projects, ranging from drug repurposing to quantum simulation. Throughout this initiative, we have found that projects are more generative when multiple AI for Science grant...",
         "Today, we are sharing a focused call for applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease. This program has two tracks: one for scientists doing basic research, and another for early-stage biotechs workin..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 21, 2026 Announcements Anthropic is donating another $20 million to Public First Action",
+      "url": "https://www.anthropic.com/news/donation-public-first-action",
+      "summary": "Anthropic is contributing an additional $20 million to Public First Action, bringing our total support to $40 million.",
+      "summaryParagraphs": [
+        "Anthropic is contributing an additional $20 million to Public First Action, bringing our total support to $40 million.",
+        "We're contributing an additional $20 million to Public First Action , bringing our total support to $40 million. Public First Action is a nonpartisan organization that educates the public about AI and works with Republicans, Democrats, and Independents who are serious about putting sensible AI safeguards in place. Both of our donations were made exclusively to support Public First Action’s public education and pol...",
+        "Our first donation in February 2026 was made to help promote policies that will maintain meaningful safeguards, sustain America’s AI leadership, and demand transparency from the companies building the most powerful AI models. In the months since, the case for these policies has only gotten stronger ."
       ],
       "published": ""
     },
