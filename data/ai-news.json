@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T12:05:13.642Z",
+  "lastUpdated": "2026-07-23T12:04:08.140Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -281,6 +281,30 @@
     },
     {
       "source": "Anthropic",
+      "title": "Jul 22, 2026 Economic Research A research agenda for the Economic Futures Research Fund",
+      "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
+      "summary": "We’re committing $200 million to the Anthropic Economic Futures Research Fund to support ambitious external research.",
+      "summaryParagraphs": [
+        "We’re committing $200 million to the Anthropic Economic Futures Research Fund to support ambitious external research.",
+        "We’re sharing the research agenda for the Anthropic Economic Futures Research Fund. We’re committing $200 million to the fund to support ambitious external research on interventions to prepare society for the economic impacts of AI.",
+        "With the research the Fund supports, we want to study what programs could make the economy more flexible and resilient, ensure the benefits of AI are shared, and minimize the harm that AI-driven disruption could cause."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 22, 2026 Product Ask Claude about the Anthropic Economic Index",
+      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+      "summary": "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore the data directly.",
+      "summaryParagraphs": [
+        "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore the data directly.",
+        "People have hard questions about AI and work: which jobs will change, which tasks are being automated, and what it means for their own field. The Anthropic Economic Index exists to help answer them with real data. Today we're launching the Anthropic Economic Index connector for Claude, which lets anyone explore that data directly.",
+        "The Anthropic Economic Index measures how AI is actually being used in the economy. The Index’s data has been useful to researchers, journalists, and policymakers, but we want it to be just as accessible to anyone curious about how AI fits into their field or day-to-day life. Now you can ask Claude questions like:"
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
       "title": "Jul 6, 2026 Case Study Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities across government systems",
       "url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
       "summary": "The Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them.",
@@ -492,6 +516,18 @@
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
         "We're introducing Claude for Teachers , providing verified K-12 educators in the US free access to premium Claude capabilities, a library of teaching skills, and a direct connection to evidence-based curricula, mapped to academic standards in all 50 states.",
         "Decades of research show that practices like differentiation, mastery-based learning, and small group instruction reliably improve student achievement, but teachers are often short on time and resources to implement them. Budgets are stretched, classes may be too large to meet every student's individual needs, and planning often spills into evenings. This strain is heaviest in under-resourced schools. Claude for T..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
+      "title": "Jul 22, 2026 Product Ask Claude about the Anthropic Economic Index",
+      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+      "summary": "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore the data directly.",
+      "summaryParagraphs": [
+        "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore the data directly.",
+        "People have hard questions about AI and work: which jobs will change, which tasks are being automated, and what it means for their own field. The Anthropic Economic Index exists to help answer them with real data. Today we're launching the Anthropic Economic Index connector for Claude, which lets anyone explore that data directly.",
+        "The Anthropic Economic Index measures how AI is actually being used in the economy. The Index’s data has been useful to researchers, journalists, and policymakers, but we want it to be just as accessible to anyone curious about how AI fits into their field or day-to-day life. Now you can ask Claude questions like:"
       ],
       "published": ""
     },
