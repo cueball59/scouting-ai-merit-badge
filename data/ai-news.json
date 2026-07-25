@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T11:56:50.652Z",
+  "lastUpdated": "2026-07-25T11:31:44.826Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -10,13 +10,13 @@
     {
       "name": "Anthropic",
       "ok": true,
-      "count": 13,
+      "count": 12,
       "error": ""
     },
     {
       "name": "Claude",
       "ok": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -173,6 +173,18 @@
     },
     {
       "source": "Anthropic",
+      "title": "Announcements Jul 9, 2026 Inviting hard questions We’re asking the public for their hardest questions about AI, and committing to show our work as we address them.",
+      "url": "https://www.anthropic.com/news/hard-questions",
+      "summary": "We're asking the public for their hardest questions about AI, and committing to show our work as we address them.",
+      "summaryParagraphs": [
+        "We're asking the public for their hardest questions about AI, and committing to show our work as we address them.",
+        "People have a lot of hard questions about AI. It’s our job to address them.",
+        "Many people are positively disposed to AI. They already use it every day, and they see its potential for making our work and our lives less laborious, for changing the way we learn, for helping speed up scientific and technological progress, for creating new sources of prosperity, and for solving some of the biggest medical and social problems we face."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
       "title": "Announcements Jun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries.",
       "url": "https://www.anthropic.com/news/expanding-project-glasswing",
       "summary": "We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries",
@@ -209,13 +221,13 @@
     },
     {
       "source": "Anthropic",
-      "title": "Inviting hard questions Announcements Jul 9, 2026 We’re asking the public for their hardest questions about AI, and committing to show our work as we address them.",
-      "url": "https://www.anthropic.com/news/hard-questions",
-      "summary": "We're asking the public for their hardest questions about AI, and committing to show our work as we address them.",
+      "title": "Introducing Claude Opus 5 Product Jul 24, 2026 Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
+      "url": "https://www.anthropic.com/news/claude-opus-5",
+      "summary": "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
       "summaryParagraphs": [
-        "We're asking the public for their hardest questions about AI, and committing to show our work as we address them.",
-        "People have a lot of hard questions about AI. It’s our job to address them.",
-        "Many people are positively disposed to AI. They already use it every day, and they see its potential for making our work and our lives less laborious, for changing the way we learn, for helping speed up scientific and technological progress, for creating new sources of prosperity, and for solving some of the biggest medical and social problems we face."
+        "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
+        "Claude Opus 5 is available today. It’s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.",
+        "On coding and knowledge work evaluations like Frontier-Bench and GDPval-AA , Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks."
       ],
       "published": ""
     },
@@ -504,6 +516,18 @@
         "Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.",
         "AI has the potential to dramatically accelerate the pace of scientific discovery and the development of healthcare interventions. Since launching our efforts in the life sciences last fall, we’ve worked to improve our model capabilities, make connections to the scientific ecosystem via MCPs and skills, and launch partnerships in an effort to realize this potential.",
         "Today, we’re introducing our most significant expansion of these efforts: Claude Science , an AI workbench for scientists. Claude Science is an app that integrates the tools and packages that researchers most commonly use, produces auditable artifacts, and provides flexible access to computing resources."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
+      "title": "Introducing Claude Opus 5 Product Jul 24, 2026 Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
+      "url": "https://www.anthropic.com/news/claude-opus-5",
+      "summary": "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
+      "summaryParagraphs": [
+        "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
+        "Claude Opus 5 is available today. It’s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.",
+        "On coding and knowledge work evaluations like Frontier-Bench and GDPval-AA , Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks."
       ],
       "published": ""
     },
