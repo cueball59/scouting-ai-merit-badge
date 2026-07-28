@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T13:20:40.789Z",
+  "lastUpdated": "2026-07-28T12:10:28.922Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -10,13 +10,13 @@
     {
       "name": "Anthropic",
       "ok": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
       "name": "Claude",
       "ok": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Microsoft",
+      "title": "Fantasy Premier League Companion gives managers a new tool for success",
+      "url": "https://news.microsoft.com/source/emea/features/fantasy-premier-league-companion-gives-managers-a-new-tool-for-success/",
+      "summary": "Now that this summer’s thrilling tournament was capped off by a Spain victory, football fans across the globe are gearing up for the start of the Premier League season, which kicks off August 21. That includes the more than 13 million players who participate in Fantasy Premier League (FPL) , the official fantasy contest for the league. In the game, managers have a £100 million budget to pick a squad of 15 players...",
+      "summaryParagraphs": [
+        "Now that this summer’s thrilling tournament was capped off by a Spain victory, football fans across the globe are gearing up for the start of the Premier League season, which kicks off August 21. That includes the more than 13 million players who participate in Fantasy Premier League (FPL) , the official fantasy contest for the league. In the game, managers have a £100 million budget to pick a squad of 15 players...",
+        "This season, managers are going to get another tool at their disposal, and not just the opportunity to choose Manchester City star Erling Haaland, who was the FPL’s top scorer last season. The Fantasy Premier League Companion powered by Copilot is built using Microsoft Foundry . It utilizes Azure OpenAI , Chat GPT 5.4 and official data from the Premier League to offer advice, answer questions and provide suggestio...",
+        "To learn more about the new tool and what managers can expect, Andy Selby, senior gaming manager at the Premier League, sat down for a Q&A about the Fantasy Premier League Companion as it prepares to launch."
+      ],
+      "published": "2026-07-27T14:56:09.000Z"
+    },
     {
       "source": "Microsoft",
       "title": "Microsoft expands Azure AI and HPC infrastructure with AMD",
@@ -317,6 +329,30 @@
     },
     {
       "source": "Anthropic",
+      "title": "Jul 27, 2026 Announcements Cognizant and Anthropic expand their partnership to bring Claude to enterprise clients",
+      "url": "https://www.anthropic.com/news/cognizant-anthropic",
+      "summary": "Cognizant embeds Claude across its platforms, with 30,000+ associates trained, and becomes a Global Premier Partner in the Claude Partner Network.",
+      "summaryParagraphs": [
+        "Cognizant embeds Claude across its platforms, with 30,000+ associates trained, and becomes a Global Premier Partner in the Claude Partner Network.",
+        "We're expanding our partnership with Cognizant , one of the world's largest technology services companies.",
+        "Cognizant uses Claude in the systems it builds and runs for clients across manufacturing, life sciences, insurance, and other industries. With the expansion of our partnership, it’s embedding Claude across its own business and engineering platforms, scaling a Claude-certified workforce as part of its new Frontier Certified workforce model, and becoming a Global Premier Partner in the Claude Partner Network ."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 27, 2026 Announcements Our position on open-weights models",
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "summary": "Anthropic CEO Dario Amodei on open-weights models",
+      "summaryParagraphs": [
+        "Anthropic CEO Dario Amodei on open-weights models",
+        "Over the last few days there has been a lot of discussion about open-weights models, especially those from China. Reports suggest that some US officials are considering banning the use of Chinese open-weights models by US companies. In response, many tech companies have signed a letter supporting open-weights models, and some people have even accused Anthropic of wanting to ban open-weights models as a means of pr...",
+        "Open-weights models that don’t have dangerous capabilities are a public good: they don’t cost anything besides the compute needed to run them, and they provide value to businesses, developers, and researchers."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
       "title": "Jul 6, 2026 Case Study Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities across government systems",
       "url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
       "summary": "The Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them.",
@@ -552,6 +588,18 @@
         "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore the data directly.",
         "People have hard questions about AI and work: which jobs will change, which tasks are being automated, and what it means for their own field. The Anthropic Economic Index exists to help answer them with real data. Today we're launching the Anthropic Economic Index connector for Claude, which lets anyone explore that data directly.",
         "The Anthropic Economic Index measures how AI is actually being used in the economy. The Index’s data has been useful to researchers, journalists, and policymakers, but we want it to be just as accessible to anyone curious about how AI fits into their field or day-to-day life. Now you can ask Claude questions like:"
+      ],
+      "published": ""
+    },
+    {
+      "source": "Claude",
+      "title": "Jul 27, 2026 Announcements Cognizant and Anthropic expand their partnership to bring Claude to enterprise clients",
+      "url": "https://www.anthropic.com/news/cognizant-anthropic",
+      "summary": "Cognizant embeds Claude across its platforms, with 30,000+ associates trained, and becomes a Global Premier Partner in the Claude Partner Network.",
+      "summaryParagraphs": [
+        "Cognizant embeds Claude across its platforms, with 30,000+ associates trained, and becomes a Global Premier Partner in the Claude Partner Network.",
+        "We're expanding our partnership with Cognizant , one of the world's largest technology services companies.",
+        "Cognizant uses Claude in the systems it builds and runs for clients across manufacturing, life sciences, insurance, and other industries. With the expansion of our partnership, it’s embedding Claude across its own business and engineering platforms, scaling a Claude-certified workforce as part of its new Frontier Certified workforce model, and becoming a Global Premier Partner in the Claude Partner Network ."
       ],
       "published": ""
     },
