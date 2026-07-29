@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T12:10:28.922Z",
+  "lastUpdated": "2026-07-29T12:17:25.998Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -31,11 +31,11 @@
       "source": "Microsoft",
       "title": "Fantasy Premier League Companion gives managers a new tool for success",
       "url": "https://news.microsoft.com/source/emea/features/fantasy-premier-league-companion-gives-managers-a-new-tool-for-success/",
-      "summary": "Now that this summer’s thrilling tournament was capped off by a Spain victory, football fans across the globe are gearing up for the start of the Premier League season, which kicks off August 21. That includes the more than 13 million players who participate in Fantasy Premier League (FPL) , the official fantasy contest for the league. In the game, managers have a £100 million budget to pick a squad of 15 players...",
+      "summary": "The new Fantasy Premier League Companion powered by Copilot uses official Premier League data to help FPL managers make informed decisions.",
       "summaryParagraphs": [
+        "The new Fantasy Premier League Companion powered by Copilot uses official Premier League data to help FPL managers make informed decisions.",
         "Now that this summer’s thrilling tournament was capped off by a Spain victory, football fans across the globe are gearing up for the start of the Premier League season, which kicks off August 21. That includes the more than 13 million players who participate in Fantasy Premier League (FPL) , the official fantasy contest for the league. In the game, managers have a £100 million budget to pick a squad of 15 players...",
-        "This season, managers are going to get another tool at their disposal, and not just the opportunity to choose Manchester City star Erling Haaland, who was the FPL’s top scorer last season. The Fantasy Premier League Companion powered by Copilot is built using Microsoft Foundry . It utilizes Azure OpenAI , Chat GPT 5.4 and official data from the Premier League to offer advice, answer questions and provide suggestio...",
-        "To learn more about the new tool and what managers can expect, Andy Selby, senior gaming manager at the Premier League, sat down for a Q&A about the Fantasy Premier League Companion as it prepares to launch."
+        "This season, managers are going to get another tool at their disposal, and not just the opportunity to choose Manchester City star Erling Haaland, who was the FPL’s top scorer last season. The Fantasy Premier League Companion powered by Copilot is built using Microsoft Foundry . It utilizes Azure OpenAI , Chat GPT 5.4 and official data from the Premier League to offer advice, answer questions and provide suggestio..."
       ],
       "published": "2026-07-27T14:56:09.000Z"
     },
