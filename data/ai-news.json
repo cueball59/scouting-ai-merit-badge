@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-29T12:17:25.998Z",
+  "lastUpdated": "2026-07-30T12:02:25.239Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -38,6 +38,18 @@
         "This season, managers are going to get another tool at their disposal, and not just the opportunity to choose Manchester City star Erling Haaland, who was the FPL’s top scorer last season. The Fantasy Premier League Companion powered by Copilot is built using Microsoft Foundry . It utilizes Azure OpenAI , Chat GPT 5.4 and official data from the Premier League to offer advice, answer questions and provide suggestio..."
       ],
       "published": "2026-07-27T14:56:09.000Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "A new approach to AI data puts communities in charge",
+      "url": "https://news.microsoft.com/signal/articles/a-new-approach-to-ai-data-puts-communities-in-charge/",
+      "summary": "A new Microsoft research project helps communities shape how they're represented in AI-generated images and future AI systems.",
+      "summaryParagraphs": [
+        "A new Microsoft research project helps communities shape how they're represented in AI-generated images and future AI systems.",
+        "Jul 22, 2026 &nbsp;&nbsp;-&nbsp;&nbsp; The estimated reading time is 7 min.",
+        "Much of what AI knows about the world comes from data most people never see and from technical processes that determine what’s included or left out."
+      ],
+      "published": "2026-07-22T15:12:02.000Z"
     },
     {
       "source": "Microsoft",
