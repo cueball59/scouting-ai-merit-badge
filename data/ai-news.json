@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-03T13:18:32.406Z",
+  "lastUpdated": "2026-08-04T12:16:23.052Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -365,7 +365,7 @@
     },
     {
       "source": "Anthropic",
-      "title": "Jul 30, 2026 Frontier Red Team Investigating three real-world incidents in our cybersecurity evaluations",
+      "title": "Jul 30, 2026 Investigating three real-world incidents in our cybersecurity evaluations",
       "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
       "summary": "In a review of our cybersecurity evaluation transcripts, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations. Below we describe what happened, how it happened, and what we’re changing. We encourage other AI labs to perform similar rev...",
       "summaryParagraphs": [
