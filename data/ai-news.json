@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-04T12:16:23.052Z",
+  "lastUpdated": "2026-08-05T12:14:08.927Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Microsoft",
+      "title": "Teaching AI to speak the language of pathology",
+      "url": "https://news.microsoft.com/signal/articles/teaching-ai-to-speak-the-language-of-pathology/",
+      "summary": "Aug 4, 2026 &nbsp;&nbsp;-&nbsp;&nbsp; The estimated reading time is 3 min.",
+      "summaryParagraphs": [
+        "Aug 4, 2026 &nbsp;&nbsp;-&nbsp;&nbsp; The estimated reading time is 3 min.",
+        "Artificial intelligence is already helping clinicians spot patterns in diagnostic images and detect signs of disease. But many of today’s pathology AI systems are built for a single task and must be rebuilt for each new application.",
+        "A study recently published in Nature Medicine describes a different approach aimed at advancing research in this field. Researchers from Microsoft Research and Paige, now part of Tempus, developed PRISM2, a pathology foundation model trained on both tissue images and language based on real pathology reports. The goal was to help AI learn from the large amount of available text data and create a system that could s..."
+      ],
+      "published": "2026-08-04T13:38:55.000Z"
+    },
     {
       "source": "Microsoft",
       "title": "Fantasy Premier League Companion gives managers a new tool for success",
@@ -240,6 +252,18 @@
         "Anthropic is redeploying Claude Fable 5 starting July 1 following the lifting of export controls, with updated cybersecurity safeguards and a new industry jailbreak framework.",
         "On Friday, June 12, the US government applied export controls to our newest models, Claude Fable 5 and Claude Mythos 5. This required us to restrict access to foreign nationals, whether inside or outside the United States. Because the order took effect immediately and we had no reliable way to verify nationality in real-time, we suspended access to both models for all users.",
         "As of today, June 30, the export controls on Fable 5 and Mythos 5 have been lifted ."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Aug 4, 2026 Announcements Mariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs Officer",
+      "url": "https://www.anthropic.com/news/tino-cuellar",
+      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summaryParagraphs": [
+        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "Mariano-Florentino (Tino) Cuéllar will join Anthropic as its first Chief Global Affairs Officer, leading the company’s work on policy, strategic international engagement, and government relationships worldwide.",
+        "In recent years, he also co-chaired the bipartisan Task Force on Nuclear Proliferation and American Security, co-led California’s Frontier AI Working Group, and served as board chair and later director of the Center for Advanced Study in the Behavioral Sciences. Currently, he is the Cameron Schrier Family Professor at Stanford Law School, where he started his teaching career before serving in the judiciary and beg..."
       ],
       "published": ""
     },
@@ -708,30 +732,6 @@
         "Claude Tag is a new way for teams to work with Claude.",
         "We’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.",
         "We see Claude Tag as the beginning of an evolution of Claude Code: it makes the model even more proactive, and it works better with a full team. Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team’s code is created by our internal version of Claude Tag. The same pattern is now spreading well beyond engineering—we’re tagging Claude to chase down product metric..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Claude",
-      "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "summary": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
-      "summaryParagraphs": [
-        "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
-        "Almost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work—and the real opportunity—is in the integration, the evaluation, and the way people's work evolves. That's why the companies getting AI integration right are doing it with partners who have done it before.",
-        "In March, we launched the Claude Partner Network—a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification—a credential, held by an individual, that signals they've been trained..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Claude",
-      "title": "Jun 9, 2026 Announcements Claude Fable 5 and Claude Mythos 5",
-      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "summary": "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
-      "summaryParagraphs": [
-        "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
-        "We are suspending access to Claude Fable 5 and Claude Mythos 5. We apologize for this disruption to our customers and are working to restore access as soon as possible.",
-        "Today we’re launching Claude Fable 5 : a Mythos-class 1 model that we’ve made safe for general use."
       ],
       "published": ""
     },
