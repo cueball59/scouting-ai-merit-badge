@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06T12:16:19.331Z",
+  "lastUpdated": "2026-08-07T11:04:55.675Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -16,7 +16,7 @@
     {
       "name": "Claude",
       "ok": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -264,6 +264,18 @@
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
         "Mariano-Florentino (Tino) Cuéllar will join Anthropic as its first Chief Global Affairs Officer, leading the company’s work on policy, strategic international engagement, and government relationships worldwide.",
         "In recent years, he also co-chaired the bipartisan Task Force on Nuclear Proliferation and American Security, co-led California’s Frontier AI Working Group, and served as board chair and later director of the Center for Advanced Study in the Behavioral Sciences. Currently, he is the Cameron Schrier Family Professor at Stanford Law School, where he started his teaching career before serving in the judiciary and beg..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Aug 7, 2026 Product Improving Fable 5's biology safeguards",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "summary": "We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces fallbacks.",
+      "summaryParagraphs": [
+        "We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces fallbacks.",
+        "We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces false positives. Fable 5 users will now experience many fewer “fallbacks”—where the system switches to a less capable model after they make a biology-related query. In our testing, this update reduced biology-related fallbacks by about 85% across our product surfaces. 1",
+        "Fable 5 will thus be able to assist with a wider range of biology tasks."
       ],
       "published": ""
     },
@@ -720,18 +732,6 @@
         "Anthropic is announcing a partnership with Tata Consultancy Services (TCS). TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network.",
         "We’re announcing a partnership with Tata Consultancy Services (TCS), one of the world’s largest technology services companies. TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network, our network of consulting and services firms that...",
         "Regulated industries need their work to be highly accurate and auditable, and enterprises in these fields already use Claude for that reason. TCS brings decades of experience delivering technology that is compliant with companies’ regulatory requirements—and the reach to bring Claude to thousands of enterprises worldwide."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Claude",
-      "title": "Jun 23, 2026 Product Introducing Claude Tag",
-      "url": "https://www.anthropic.com/news/introducing-claude-tag",
-      "summary": "Claude Tag is a new way for teams to work with Claude.",
-      "summaryParagraphs": [
-        "Claude Tag is a new way for teams to work with Claude.",
-        "We’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.",
-        "We see Claude Tag as the beginning of an evolution of Claude Code: it makes the model even more proactive, and it works better with a full team. Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team’s code is created by our internal version of Claude Tag. The same pattern is now spreading well beyond engineering—we’re tagging Claude to chase down product metric..."
       ],
       "published": ""
     },
