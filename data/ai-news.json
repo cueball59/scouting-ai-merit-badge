@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-09T10:50:46.705Z",
+  "lastUpdated": "2026-08-10T11:19:49.236Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -206,6 +206,18 @@
         "Details like these inform Ellis-Garland, an engineering geologist, what the ground beneath is made of and how it behaves. She uses this data to advise her clients at geotechnical engineering firm ENGEO what can be built above ground and how."
       ],
       "published": "2026-04-20T23:36:57.000Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Perplexity x Cristiano Ronaldo",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-x-cristiano-ronaldo",
+      "summary": "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo.",
+      "summaryParagraphs": [
+        "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo.",
+        "Cristiano Ronaldo represents discipline, consistency, and reinvention across every stage of his career. He is more than football’s all‑time leading goal scorer. He has shattered records in the Premier League, LaLiga, Serie A, and the Saudi Pro League, winning league titles, Champions League trophies, and major honors with Portugal.",
+        "He is also a dedicated Perplexity user. Perplexity is built for people who measure progress over years, not highlights, and who stay relentlessly curious even when the answer is not obvious. The best leaders, athletes, and operators share this mindset: they use Perplexity to learn, explore, and pressure‑test decisions as part of a constant drive to improve. Cristiano Ronaldo is one of the world’s most visible exam..."
+      ],
+      "published": "2025-12-04T00:00:00.000Z"
     },
     {
       "source": "Anthropic",
@@ -904,16 +916,6 @@
       "summary": "Perplexity is now integrated into Samsung Galaxy S26 phones at a deep level, powering search and reasoning for both the Perplexity assistant and Samsung's Bixby.",
       "summaryParagraphs": [
         "Perplexity is now integrated into Samsung Galaxy S26 phones at a deep level, powering search and reasoning for both the Perplexity assistant and Samsung's Bixby."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
-      "title": "Perplexity x Cristiano Ronaldo",
-      "url": "https://www.perplexity.ai/hub/blog/perplexity-x-cristiano-ronaldo",
-      "summary": "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo.",
-      "summaryParagraphs": [
-        "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo."
       ],
       "published": ""
     },
