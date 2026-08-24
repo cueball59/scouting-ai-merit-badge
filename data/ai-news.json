@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T10:37:19.006Z",
+  "lastUpdated": "2026-08-24T10:50:52.936Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -79,9 +79,11 @@
       "source": "Microsoft",
       "title": "Microsoft expands Azure AI and HPC infrastructure with AMD",
       "url": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
-      "summary": "The post Microsoft expands Azure AI and HPC infrastructure with AMD appeared first on Source . ]]>",
+      "summary": "AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing...",
       "summaryParagraphs": [
-        "The post Microsoft expands Azure AI and HPC infrastructure with AMD appeared first on Source . ]]>"
+        "AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing...",
+        "AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing (HPC) solutions.",
+        "Our approach to AI infrastructure is designed to support the breadth of how AI systems are built and run. We closely work with industry innovators like AMD as well as our own purpose-built silicon and systems to provide customers with a comprehensive, open and heterogenous platform to achieve the best performance, cost and energy efficiency outcomes."
       ],
       "published": "2026-07-20T18:20:47.000Z"
     },
@@ -125,9 +127,11 @@
       "source": "Microsoft",
       "title": "AI alone won’t change your business. The system running it will.",
       "url": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
-      "summary": "The post AI alone won’t change your business. The system running it will. appeared first on Source . ]]>",
+      "summary": "Become an AI-first enterprise with Microsoft’s agent platform.",
       "summaryParagraphs": [
-        "The post AI alone won’t change your business. The system running it will. appeared first on Source . ]]>"
+        "Become an AI-first enterprise with Microsoft’s agent platform.",
+        "AI has arrived in the enterprise, and the shift is happening all at once. Every function, every role, every workflow is being reshaped. At the same time, a new class of organizations is emerging, one that will look fundamentally different from the companies that defined the last era of business. The winners won’t be those with the most demos, but those that turn AI into a governed, continuously improving system fo...",
+        "This isn’t just about chatbots, either. Those experiences are useful, but they don’t transform how large organizations operate. The real opportunity is teams of agents executing long running work across functions like software delivery, support, finance, HR, and operations — with the identity, context, policy, and human oversight required to trust them in production."
       ],
       "published": "2026-06-02T16:25:45.000Z"
     },
