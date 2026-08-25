@@ -838,6 +838,11 @@ button.ghost {
   width: 100%;
 }
 
+.video-fallback {
+  font-size: 0.85rem;
+  margin: 0.5rem 0 0;
+}
+
 .tool-link-grid,
 .prompt-card-grid {
   display: grid;

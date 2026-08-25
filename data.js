@@ -219,12 +219,14 @@ const SITE_DATA = {
       counselorPrompt: "Keep the conversation practical and safety-focused. Emphasize not amplifying harmful content.",
       videos: [
         {
-          title: "Deepfake video discussion starter",
-          embedUrl: "https://www.youtube.com/embed/WSStTnoSb_c"
+          title: "It's Getting Harder to Spot a Deep Fake Video (Bloomberg)",
+          embedUrl: "https://www.youtube.com/embed/gLoI9hAX9dw",
+          watchUrl: "https://www.youtube.com/watch?v=gLoI9hAX9dw"
         },
         {
-          title: "Deepfake awareness video",
-          embedUrl: "https://www.youtube.com/embed/d04vPyO2AoA"
+          title: "Fake Obama created using AI video tool (BBC News)",
+          embedUrl: "https://www.youtube.com/embed/AmUC4m6w1wo",
+          watchUrl: "https://www.youtube.com/watch?v=AmUC4m6w1wo"
         }
       ]
     },

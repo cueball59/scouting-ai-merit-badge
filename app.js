@@ -608,8 +608,9 @@
               <article class="video-card">
                 <h3>${esc(video.title)}</h3>
                 <div class="video-frame">
-                  <iframe src="${esc(video.embedUrl)}" title="${esc(video.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe src="${esc(video.embedUrl.replace("www.youtube.com/embed", "www.youtube-nocookie.com/embed"))}" title="${esc(video.title)}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
+                ${video.watchUrl ? `<p class="video-fallback"><a href="${esc(video.watchUrl)}" target="_blank" rel="noopener">Watch on YouTube if the player does not load</a></p>` : ""}
               </article>
             `).join("")}
           </div>
