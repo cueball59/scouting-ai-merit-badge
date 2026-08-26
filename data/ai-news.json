@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T10:47:14.883Z",
+  "lastUpdated": "2026-08-26T10:50:09.112Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -281,6 +281,18 @@
     },
     {
       "source": "Anthropic",
+      "title": "Aug 25, 2026 Announcements Funding better evaluations of AI’s impact on wellbeing",
+      "url": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "summary": "Anthropic is launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing.",
+      "summaryParagraphs": [
+        "Anthropic is launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing.",
+        "We’re launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing. The program will provide direct funding, access to our models, and technical support to grantees building open-source evaluations that help the AI industry measure how our models affect those who use them. Grantees will work fully independently, and will publish their work as open-source projects that any...",
+        "AI systems have become central to how many people work, learn, and solve problems. They’ve also become conversational partners and can be sources of emotional support during difficult times. But as an industry, we are still working towards developing clear standards for how models should behave in these conversations, for example, when a user begins to seek companionship from a model, or uses AI to navigate a ment..."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
       "title": "Aug 4, 2026 Announcements Mariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs Officer",
       "url": "https://www.anthropic.com/news/tino-cuellar",
       "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
@@ -365,7 +377,7 @@
     },
     {
       "source": "Anthropic",
-      "title": "Jul 22, 2026 Economic Research A research agenda for the Economic Futures Research Fund",
+      "title": "Jul 22, 2026 Economics A research agenda for the Economic Futures Research Fund",
       "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
       "summary": "We’re committing $200 million to the Anthropic Economic Futures Research Fund to support ambitious external research.",
       "summaryParagraphs": [
@@ -708,18 +720,6 @@
         "The Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them.",
         "Since 2025, the Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them. A team inside Alberta’s Ministry of Technology and Innovation scanned 466 million lines of code in 20 hours, remediated security gaps across its systems, and built new tools to make those systems safer.",
         "We’re sharing details of their experience as an example of how government agencies can use Claude and Claude Code to secure their systems at a large scale. This is a critical challenge, as governments rely on these systems to deliver benefits and keep services running—yet the code is often old, insecure, and incompletely documented. Alberta has also published a collection of technical white papers documenting its..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Claude",
-      "title": "Jul 9, 2026 Announcements Introducing a way to reflect on how you use Claude",
-      "url": "https://www.anthropic.com/news/reflect-with-claude",
-      "summary": "Introducing a new way to reflect on and refine how you use Claude. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals.",
-      "summaryParagraphs": [
-        "Introducing a new way to reflect on and refine how you use Claude. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals.",
-        "Today we're introducing, in beta, a new way to reflect on and refine how you use Claude. In our interviews with users, a common theme that’s emerged is a desire to better understand how, exactly, AI can be integrated into daily life. How often should someone use AI? How can it be used most effectively? When is AI suited to a task, and when is it better left to a human?",
-        "We built this feature to help answer these types of questions. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals. Your reflection dashboard can be found in Settings on Claude for web or the desktop app."
       ],
       "published": ""
     },
