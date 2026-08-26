@@ -616,6 +616,20 @@
           </div>
         </section>
       ` : ""}
+      ${req.videoLinks ? `
+        <section class="panel">
+          <h2>More videos to watch on YouTube</h2>
+          <p>These videos have embedding turned off by their owners, so they open on YouTube in a new tab.</p>
+          <ul class="video-link-list">
+            ${req.videoLinks.map((video) => `
+              <li>
+                <a href="${esc(video.watchUrl)}" target="_blank" rel="noopener">${esc(video.title)}</a>
+                ${video.source ? `<span class="video-link-source">${esc(video.source)}</span>` : ""}
+              </li>
+            `).join("")}
+          </ul>
+        </section>
+      ` : ""}
       ${req.aiTools ? `
         <section class="panel">
           <h2>Try an AI assistant</h2>

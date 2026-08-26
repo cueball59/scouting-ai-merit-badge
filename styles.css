@@ -843,6 +843,32 @@ button.ghost {
   margin: 0.5rem 0 0;
 }
 
+.video-link-list {
+  display: grid;
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.video-link-list li {
+  align-items: baseline;
+  border-left: 4px solid var(--cp-red);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-left: 0.75rem;
+}
+
+.video-link-list a {
+  font-weight: 700;
+}
+
+.video-link-source {
+  color: var(--cp-text-muted);
+  font-size: 0.85rem;
+}
+
 .tool-link-grid,
 .prompt-card-grid {
   display: grid;

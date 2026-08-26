@@ -228,6 +228,18 @@ const SITE_DATA = {
           embedUrl: "https://www.youtube.com/embed/AmUC4m6w1wo",
           watchUrl: "https://www.youtube.com/watch?v=AmUC4m6w1wo"
         }
+      ],
+      videoLinks: [
+        {
+          title: "Deepfakes flooding your feed: Why AI videos are dangerous — and how to spot them",
+          source: "DW News",
+          watchUrl: "https://www.youtube.com/watch?v=WSStTnoSb_c"
+        },
+        {
+          title: "AI Deepfakes That Look Shockingly Real | Veo 3 Ultra-Realistic Fake Videos",
+          source: "floydbishop",
+          watchUrl: "https://www.youtube.com/watch?v=d04vPyO2AoA"
+        }
       ]
     },
     {
