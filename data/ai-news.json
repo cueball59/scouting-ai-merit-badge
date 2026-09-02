@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T14:50:51.297Z",
+  "lastUpdated": "2026-09-02T14:26:52.420Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -10,13 +10,13 @@
     {
       "name": "Anthropic",
       "ok": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Claude",
       "ok": true,
-      "count": 4,
+      "count": 2,
       "error": ""
     },
     {
@@ -220,6 +220,18 @@
       "published": "2026-04-20T23:36:57.000Z"
     },
     {
+      "source": "Perplexity",
+      "title": "How People Use AI Agents",
+      "url": "https://www.perplexity.ai/hub/blog/how-people-use-ai-agents",
+      "summary": "New Perplexity and Harvard research: most agent use is cognitive work, not errands.",
+      "summaryParagraphs": [
+        "New Perplexity and Harvard research: most agent use is cognitive work, not errands.",
+        "2025 was said to be the year that AI agent technology went mainstream. Today we are announcing Perplexity and Harvard researchers have published the first large-scale study of how people actually use AI agents in the real world.",
+        "Our researchers asked three fundamental questions: Who is adopting AI agents? How intensively are they using them? And what tasks are they delegating to their AI assistants? By analyzing hundreds of millions of anonymized interactions from Comet and Comet Assistant users, we've uncovered fundamental patterns about agent adoption and usage."
+      ],
+      "published": "2025-12-09T00:00:00.000Z"
+    },
+    {
       "source": "Anthropic",
       "title": "Announcements Aug 14, 2026 How Claude’s text watermark works In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change.",
       "url": "https://www.anthropic.com/news/claude-text-watermark",
@@ -228,6 +240,18 @@
         "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act. In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’...",
         "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act.",
         "In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change. To summarize:"
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Announcements Aug 27, 2026 Previewing the Model Hardware Standard We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
+      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "summary": "Anthropic is opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
+      "summaryParagraphs": [
+        "Anthropic is opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
+        "We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers. MHS enables AI agents to operate multiple lab and manufacturing instruments, such as microscopes, liquid handlers, and robotic arms, in parallel, and perform intricate tasks ranging from routine drug...",
+        "It typically takes a lab or manufacturing facility weeks, if not months, to set up and integrate their hardware. Most devices don’t communicate with each other, instead requiring specialists to build bespoke integrations. MHS reduces this integration work to hours or minutes. And by incorporating AI into these tools, MHS also helps researchers and engineers more readily orchestrate autonomous, round-the-clock expe..."
       ],
       "published": ""
     },
@@ -629,18 +653,6 @@
     },
     {
       "source": "Anthropic",
-      "title": "Previewing the Model Hardware Standard Announcements Aug 27, 2026 We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
-      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-      "summary": "Anthropic is opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
-      "summaryParagraphs": [
-        "Anthropic is opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
-        "We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers. MHS enables AI agents to operate multiple lab and manufacturing instruments, such as microscopes, liquid handlers, and robotic arms, in parallel, and perform intricate tasks ranging from routine drug...",
-        "It typically takes a lab or manufacturing facility weeks, if not months, to set up and integrate their hardware. Most devices don’t communicate with each other, instead requiring specialists to build bespoke integrations. MHS reduces this integration work to hours or minutes. And by incorporating AI into these tools, MHS also helps researchers and engineers more readily orchestrate autonomous, round-the-clock expe..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
       "title": "Product Jul 24, 2026 Introducing Claude Opus 5 Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
       "url": "https://www.anthropic.com/news/claude-opus-5",
       "summary": "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
@@ -672,6 +684,18 @@
         "Our latest model, Claude Opus 4.8, is an upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
         "We’re upgrading Claude Opus to a new version: Claude Opus 4.8. It builds on Opus 4.7 with improvements across benchmarks, and is a more effective collaborator. It’s available today for the same price.",
         "Opus 4.8 launches alongside several new features. Users on claude.ai now have control over the amount of effort Claude puts into a task. Claude Code has a new “dynamic workflows” feature that allows it to tackle very large-scale problems. And fast mode for Opus 4.8—where the model can work at 2.5× the speed—is now three times cheaper than it was for previous models."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Sep 1, 2026 Announcements Developing Enterprise Frontier Safeguards with our customers",
+      "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summaryParagraphs": [
+        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "We developed EFS in close collaboration with more than 100 customers in industries like financial services, healthcare, manufacturing, telecom, law, retail, and the public sector, and with our cloud partners at Amazon Web Services, Google Cloud, and Microsoft Azure.",
+        "EFS will be supported on Claude Code, Claude Enterprise, the Claude Platform, Amazon Bedrock, Claude Platform on AWS, Google’s Agent Platform, and Microsoft Foundry."
       ],
       "published": ""
     },
@@ -732,18 +756,6 @@
         "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
         "Claude Opus 5 is available today. It’s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.",
         "On coding and knowledge work evaluations like Frontier-Bench and GDPval-AA , Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Claude",
-      "title": "Product Jun 30, 2026 Introducing Claude Sonnet 5 Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale.",
-      "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "summary": "Our most agentic Sonnet yet, with top-tier intelligence for coding and everyday professional work.",
-      "summaryParagraphs": [
-        "Our most agentic Sonnet yet, with top-tier intelligence for coding and everyday professional work.",
-        "Claude Sonnet 5 is built to be the most agentic Sonnet model yet. It can make plans, use tools like browsers and terminals, and run autonomously at a level that, just a few months ago, required larger and more expensive models.",
-        "For many developers, the agentic AI era began with Sonnet-class models: Claude Sonnet 3.5, 3.6, and 3.7 were the first models that showed impressive skills in coding and tool use. More recently, though, the clearest gains in agentic capabilities have been in our Opus-class models."
       ],
       "published": ""
     },
@@ -824,16 +836,6 @@
       "summary": "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it.",
       "summaryParagraphs": [
         "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
-      "title": "How People Use AI Agents",
-      "url": "https://www.perplexity.ai/hub/blog/how-people-use-ai-agents",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "summaryParagraphs": [
-        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
       ],
       "published": ""
     },
