@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T14:26:52.420Z",
+  "lastUpdated": "2026-09-03T14:31:32.602Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Microsoft",
+      "title": "How Kier Group’s Louisa Finlay is using Copilot to drive safety and productivity in the construction industry",
+      "url": "https://news.microsoft.com/source/emea/features/how-kier-groups-louisa-finlay-is-using-copilot-to-drive-safety-and-productivity-in-the-construction-industry/",
+      "summary": "Two years ago, Kier Group plc decided to embrace AI – with a little help from work friends and peers.",
+      "summaryParagraphs": [
+        "Two years ago, Kier Group plc decided to embrace AI – with a little help from work friends and peers.",
+        "Executives at the UK construction and infrastructure firm were excited by AI’s promise to boost productivity and enhance safety practices. But “some leaders were reticent because they were very busy and it is new technology,” says Louisa Finlay, chief operating officer of Kier .",
+        "“I will happily be the one that asks the silly question,” she notes. “But if you are a senior leader, that can be quite worrying.”"
+      ],
+      "published": "2026-09-02T16:28:46.000Z"
+    },
     {
       "source": "Microsoft",
       "title": "How to build an AI agent: A simple guide for anyone",
@@ -218,18 +230,6 @@
         "Details like these inform Ellis-Garland, an engineering geologist, what the ground beneath is made of and how it behaves. She uses this data to advise her clients at geotechnical engineering firm ENGEO what can be built above ground and how."
       ],
       "published": "2026-04-20T23:36:57.000Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "How People Use AI Agents",
-      "url": "https://www.perplexity.ai/hub/blog/how-people-use-ai-agents",
-      "summary": "New Perplexity and Harvard research: most agent use is cognitive work, not errands.",
-      "summaryParagraphs": [
-        "New Perplexity and Harvard research: most agent use is cognitive work, not errands.",
-        "2025 was said to be the year that AI agent technology went mainstream. Today we are announcing Perplexity and Harvard researchers have published the first large-scale study of how people actually use AI agents in the real world.",
-        "Our researchers asked three fundamental questions: Who is adopting AI agents? How intensively are they using them? And what tasks are they delegating to their AI assistants? By analyzing hundreds of millions of anonymized interactions from Comet and Comet Assistant users, we've uncovered fundamental patterns about agent adoption and usage."
-      ],
-      "published": "2025-12-09T00:00:00.000Z"
     },
     {
       "source": "Anthropic",
@@ -737,18 +737,6 @@
     },
     {
       "source": "Claude",
-      "title": "Jul 27, 2026 Announcements Cognizant and Anthropic expand their partnership to bring Claude to enterprise clients",
-      "url": "https://www.anthropic.com/news/cognizant-anthropic",
-      "summary": "Cognizant embeds Claude across its platforms, with 30,000+ associates trained, and becomes a Global Premier Partner in the Claude Partner Network.",
-      "summaryParagraphs": [
-        "Cognizant embeds Claude across its platforms, with 30,000+ associates trained, and becomes a Global Premier Partner in the Claude Partner Network.",
-        "We're expanding our partnership with Cognizant , one of the world's largest technology services companies.",
-        "Cognizant uses Claude in the systems it builds and runs for clients across manufacturing, life sciences, insurance, and other industries. With the expansion of our partnership, it’s embedding Claude across its own business and engineering platforms, scaling a Claude-certified workforce as part of its new Frontier Certified workforce model, and becoming a Global Premier Partner in the Claude Partner Network ."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Claude",
       "title": "Product Jul 24, 2026 Introducing Claude Opus 5 Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
       "url": "https://www.anthropic.com/news/claude-opus-5",
       "summary": "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
@@ -836,6 +824,16 @@
       "summary": "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it.",
       "summaryParagraphs": [
         "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "How People Use AI Agents",
+      "url": "https://www.perplexity.ai/hub/blog/how-people-use-ai-agents",
+      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
+      "summaryParagraphs": [
+        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
       ],
       "published": ""
     },
