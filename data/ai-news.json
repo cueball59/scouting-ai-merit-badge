@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T14:31:32.602Z",
+  "lastUpdated": "2026-09-04T14:19:35.860Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -230,6 +230,18 @@
         "Details like these inform Ellis-Garland, an engineering geologist, what the ground beneath is made of and how it behaves. She uses this data to advise her clients at geotechnical engineering firm ENGEO what can be built above ground and how."
       ],
       "published": "2026-04-20T23:36:57.000Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Introducing Model Council",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-model-council",
+      "summary": "Today we are launching Model Council, a multi-model research feature that brings several models together for one answer.",
+      "summaryParagraphs": [
+        "Today we are launching Model Council, a multi-model research feature that brings several models together for one answer.",
+        "As frontier AI models become more advanced and specialized, people increasingly turn to Perplexity for model selection and accurate answers from any model they choose.",
+        "Only Perplexity offers access to all of the top AI models, and our data show that model performance is increasingly varied across different tasks and questions. In other words, what’s best for coding tasks is often suboptimal for research or creative work. But, beyond our published data for enterprises , how can you know which model is best for your query?"
+      ],
+      "published": "2026-02-05T00:00:00.000Z"
     },
     {
       "source": "Anthropic",
@@ -473,7 +485,7 @@
     },
     {
       "source": "Anthropic",
-      "title": "Jul 30, 2026 Investigating three real-world incidents in our cybersecurity evaluations",
+      "title": "Jul 30, 2026 Announcements Investigating three real-world incidents in our cybersecurity evaluations",
       "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
       "summary": "In a review of our cybersecurity evaluation transcripts, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations. Below we describe what happened, how it happened, and what we’re changing. We encourage other AI labs to perform similar rev...",
       "summaryParagraphs": [
@@ -864,16 +876,6 @@
       "summary": "With our upgraded personalization and memory, Perplexity remembers key details across conversations so future answers are more personalized and efficient.",
       "summaryParagraphs": [
         "With our upgraded personalization and memory, Perplexity remembers key details across conversations so future answers are more personalized and efficient."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
-      "title": "Introducing Model Council",
-      "url": "https://www.perplexity.ai/hub/blog/introducing-model-council",
-      "summary": "Today we are launching Model Council, a multi-model research feature that brings several models together for one answer.",
-      "summaryParagraphs": [
-        "Today we are launching Model Council, a multi-model research feature that brings several models together for one answer."
       ],
       "published": ""
     },
