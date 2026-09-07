@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06T13:40:28.003Z",
+  "lastUpdated": "2026-09-07T15:49:21.431Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -233,39 +233,15 @@
     },
     {
       "source": "Perplexity",
-      "title": "Inside the Rise of Enterprise AI Model-Switching",
-      "url": "https://www.perplexity.ai/hub/blog/inside-the-rise-of-enterprise-ai-model-switching",
-      "summary": "Enterprise usage data shows employees are now treating models as a menu of options, not a single default tool.",
+      "title": "Disaggregated Prefill and Decode",
+      "url": "https://www.perplexity.ai/hub/blog/disaggregated-prefill-and-decode",
+      "summary": "Separating prefill and decode across devices speeds up LLM inference and improves performance",
       "summaryParagraphs": [
-        "Enterprise usage data shows employees are now treating models as a menu of options, not a single default tool.",
-        "Perplexity is the only enterprise AI platform that provides access to models across multiple providers in one interface. Meanwhile, 92% of Fortune 500 companies, including six of the Magnificent 7, use Perplexity to get answers and make decisions. This gives us a unique position to see how companies actually use different AI models for different tasks and teams.",
-        "The 2025 data reveals a clear pattern: aside from engineering teams, no model achieved greater than 17% share of overall usage, and as AI models and users became more sophisticated, usage between models became increasingly fragmented. In January 2025, two top models accounted for more than 90% of enterprise usage. By December, four models had more than 10% share each, and even the leading model captured only about..."
+        "Separating prefill and decode across devices speeds up LLM inference and improves performance",
+        "In order to generate output tokens from an input prompt, LLM inference is split into two stages: prefill and decode. Prefill runs on the input tokens, populating KV caches, before entering the decode stage that generates tokens one-by-one. While a single decode step typically runs for tens of milliseconds, prefill takes substantially longer. If run on the same devices, mixing prefill with decode degrades decode pe...",
+        "In a typical LLM serving engine, the batch scheduler selects requests to process in each execution step of a model. When running on a single device or node, both prefill and decode requests are batched together. The cost of attention, which aggregates along the sequence length, grows for both prefill and decode, proportionally to the length of entries in the KV cache ( kv_len ). Decode requests usually forward a s..."
       ],
-      "published": "2026-02-03T00:00:00.000Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Happy 25th Birthday, Wikipedia",
-      "url": "https://www.perplexity.ai/hub/blog/happy-25th-birthday-wikipedia",
-      "summary": "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it.",
-      "summaryParagraphs": [
-        "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it.",
-        "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it. Over 66 million articles across 340+ languages later, millions of curious people across the world love and use Wikipedia every day.",
-        "At Perplexity, we find this nothing short of inspirational. To celebrate Wikipedia's birthday, we're offering a gift of 2,500 Perplexity Enterprise seats to share with Wikipedia editors."
-      ],
-      "published": "2026-01-15T00:00:00.000Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Introducing Perplexity for Public Safety Organizations",
-      "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-for-public-safety-organizations",
-      "summary": "Perplexity is now the first frontier AI company to offer Enterprise Pro specifically to law enforcement and public safety agencies.",
-      "summaryParagraphs": [
-        "Perplexity is now the first frontier AI company to offer Enterprise Pro specifically to law enforcement and public safety agencies.",
-        "Law enforcement runs on decisions. From responding to calls to managing a critical incident, or briefing community leaders, the job demands sound judgment in all kinds of complex, fast-moving situations. Meanwhile, millions of people depend on those decisions.",
-        "On the job, officers already use Perplexity to look up case law, prep for testimony, and connect information across jurisdictions. We want to support and celebrate the heroes who demand accurate answers for consequential decision-making. That’s why we built Perplexity for Public Safety Organizations."
-      ],
-      "published": "2026-01-08T00:00:00.000Z"
+      "published": "2025-08-01T00:00:00.000Z"
     },
     {
       "source": "Anthropic",
@@ -365,7 +341,7 @@
     },
     {
       "source": "Anthropic",
-      "title": "Aug 31, 2026 Improving our alignment and security efforts",
+      "title": "Aug 31, 2026 Announcements Improving our alignment and security efforts",
       "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
       "summary": "On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.",
       "summaryParagraphs": [
@@ -835,21 +811,21 @@
     },
     {
       "source": "Perplexity",
-      "title": "Disaggregated Prefill and Decode",
-      "url": "https://www.perplexity.ai/hub/blog/disaggregated-prefill-and-decode",
-      "summary": "Separating prefill and decode across devices speeds up LLM inference and improves performance",
-      "summaryParagraphs": [
-        "Separating prefill and decode across devices speeds up LLM inference and improves performance"
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
       "title": "Finish Your Annual Plan Faster With Perplexity",
       "url": "https://www.perplexity.ai/hub/blog/finish-your-annual-plan-faster-with-perplexity",
       "summary": "Use Perplexity to turn messy annual planning into a fast, focused system your team can actually execute.",
       "summaryParagraphs": [
         "Use Perplexity to turn messy annual planning into a fast, focused system your team can actually execute."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Happy 25th Birthday, Wikipedia",
+      "url": "https://www.perplexity.ai/hub/blog/happy-25th-birthday-wikipedia",
+      "summary": "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it.",
+      "summaryParagraphs": [
+        "Twenty-five years ago today, Wikipedia launched with a simple idea: that wisdom is everywhere, and technology should help more people access it."
       ],
       "published": ""
     },
@@ -870,6 +846,16 @@
       "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
       "summaryParagraphs": [
         "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Inside the Rise of Enterprise AI Model-Switching",
+      "url": "https://www.perplexity.ai/hub/blog/inside-the-rise-of-enterprise-ai-model-switching",
+      "summary": "Enterprise usage data shows employees are now treating models as a menu of options, not a single default tool.",
+      "summaryParagraphs": [
+        "Enterprise usage data shows employees are now treating models as a menu of options, not a single default tool."
       ],
       "published": ""
     },
@@ -900,6 +886,16 @@
       "summary": "Perplexity Computer unifies every current AI capability into a single system. Computer is a general-purpose digital worker that operates the same interfaces you do.",
       "summaryParagraphs": [
         "Perplexity Computer unifies every current AI capability into a single system. Computer is a general-purpose digital worker that operates the same interfaces you do."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Introducing Perplexity for Public Safety Organizations",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-for-public-safety-organizations",
+      "summary": "Perplexity is now the first frontier AI company to offer Enterprise Pro specifically to law enforcement and public safety agencies.",
+      "summaryParagraphs": [
+        "Perplexity is now the first frontier AI company to offer Enterprise Pro specifically to law enforcement and public safety agencies."
       ],
       "published": ""
     },
