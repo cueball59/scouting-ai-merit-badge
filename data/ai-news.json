@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-07T15:49:21.431Z",
+  "lastUpdated": "2026-09-08T14:30:44.173Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -230,18 +230,6 @@
         "Details like these inform Ellis-Garland, an engineering geologist, what the ground beneath is made of and how it behaves. She uses this data to advise her clients at geotechnical engineering firm ENGEO what can be built above ground and how."
       ],
       "published": "2026-04-20T23:36:57.000Z"
-    },
-    {
-      "source": "Perplexity",
-      "title": "Disaggregated Prefill and Decode",
-      "url": "https://www.perplexity.ai/hub/blog/disaggregated-prefill-and-decode",
-      "summary": "Separating prefill and decode across devices speeds up LLM inference and improves performance",
-      "summaryParagraphs": [
-        "Separating prefill and decode across devices speeds up LLM inference and improves performance",
-        "In order to generate output tokens from an input prompt, LLM inference is split into two stages: prefill and decode. Prefill runs on the input tokens, populating KV caches, before entering the decode stage that generates tokens one-by-one. While a single decode step typically runs for tens of milliseconds, prefill takes substantially longer. If run on the same devices, mixing prefill with decode degrades decode pe...",
-        "In a typical LLM serving engine, the batch scheduler selects requests to process in each execution step of a model. When running on a single device or node, both prefill and decode requests are batched together. The cost of attention, which aggregates along the sequence length, grows for both prefill and decode, proportionally to the length of entries in the KV cache ( kv_len ). Decode requests usually forward a s..."
-      ],
-      "published": "2025-08-01T00:00:00.000Z"
     },
     {
       "source": "Anthropic",
@@ -806,6 +794,16 @@
       "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
       "summaryParagraphs": [
         "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Perplexity",
+      "title": "Disaggregated Prefill and Decode",
+      "url": "https://www.perplexity.ai/hub/blog/disaggregated-prefill-and-decode",
+      "summary": "Separating prefill and decode across devices speeds up LLM inference and improves performance",
+      "summaryParagraphs": [
+        "Separating prefill and decode across devices speeds up LLM inference and improves performance"
       ],
       "published": ""
     },
