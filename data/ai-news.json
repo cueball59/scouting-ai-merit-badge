@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-09T14:32:53.743Z",
+  "lastUpdated": "2026-09-10T14:23:56.513Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Microsoft",
+      "title": "What if everything changes tomorrow? A Canadian company is using AI to help businesses navigate supply chain uncertainty",
+      "url": "https://news.microsoft.com/source/canada/features/ai/kinaxis-supply-chain/",
+      "summary": "Global conflicts, shifting tariffs, trade disruptions and regulatory uncertainty are forcing companies worldwide to rethink how they manage supply chains.",
+      "summaryParagraphs": [
+        "Global conflicts, shifting tariffs, trade disruptions and regulatory uncertainty are forcing companies worldwide to rethink how they manage supply chains.",
+        "For many, the challenge is not only moving goods from one place to another but understanding, in real time, how a disruption in one part of the world could ripple through factories, suppliers, inventory, transportation costs and customer demand.",
+        "Canada-based Kinaxis is trying to help companies find the right answers faster. Its flagship platform, Maestro, uses predictive AI, advanced scenario modeling and agentic AI to help businesses forecast demand, test&nbsp;possible scenarios&nbsp;and adjust plans when conditions change."
+      ],
+      "published": "2026-09-10T13:08:37.000Z"
+    },
     {
       "source": "Microsoft",
       "title": "How Kier Group’s Louisa Finlay is using Copilot to drive safety and productivity in the construction industry",
@@ -235,9 +247,9 @@
       "source": "Anthropic",
       "title": "Announcements Aug 14, 2026 How Claude’s text watermark works In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change.",
       "url": "https://www.anthropic.com/news/claude-text-watermark",
-      "summary": "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act. In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’...",
+      "summary": "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
       "summaryParagraphs": [
-        "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act. In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’...",
+        "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
         "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act.",
         "In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change. To summarize:"
       ],
@@ -283,9 +295,9 @@
       "source": "Anthropic",
       "title": "Announcements Jun 30, 2026 Claude Science, an AI workbench for scientists, is now available Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.",
       "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
-      "summary": "Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.",
+      "summary": "Claude Science integrates the tools researchers use most, produces auditable artifacts, and provides flexible access to computing resources.",
       "summaryParagraphs": [
-        "Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.",
+        "Claude Science integrates the tools researchers use most, produces auditable artifacts, and provides flexible access to computing resources.",
         "AI has the potential to dramatically accelerate the pace of scientific discovery and the development of healthcare interventions. Since launching our efforts in the life sciences last fall, we’ve worked to improve our model capabilities, make connections to the scientific ecosystem via MCPs and skills, and launch partnerships in an effort to realize this potential.",
         "Today, we’re introducing our most significant expansion of these efforts: Claude Science , an AI workbench for scientists. Claude Science is an app that integrates the tools and packages that researchers most commonly use, produces auditable artifacts, and provides flexible access to computing resources."
       ],
@@ -295,9 +307,9 @@
       "source": "Anthropic",
       "title": "Announcements Jun 30, 2026 Redeploying Fable 5 Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners.",
       "url": "https://www.anthropic.com/news/redeploying-fable-5",
-      "summary": "Anthropic is redeploying Claude Fable 5 starting July 1 following the lifting of export controls, with updated cybersecurity safeguards and a new industry jailbreak framework.",
+      "summary": "Anthropic is redeploying Claude Fable 5 starting July 1, with updated cyber safeguards and a new jailbreak framework.",
       "summaryParagraphs": [
-        "Anthropic is redeploying Claude Fable 5 starting July 1 following the lifting of export controls, with updated cybersecurity safeguards and a new industry jailbreak framework.",
+        "Anthropic is redeploying Claude Fable 5 starting July 1, with updated cyber safeguards and a new jailbreak framework.",
         "On Friday, June 12, the US government applied export controls to our newest models, Claude Fable 5 and Claude Mythos 5. This required us to restrict access to foreign nationals, whether inside or outside the United States. Because the order took effect immediately and we had no reliable way to verify nationality in real-time, we suspended access to both models for all users.",
         "As of today, June 30, the export controls on Fable 5 and Mythos 5 have been lifted ."
       ],
@@ -343,9 +355,9 @@
       "source": "Anthropic",
       "title": "Aug 4, 2026 Announcements Mariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs Officer",
       "url": "https://www.anthropic.com/news/tino-cuellar",
-      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summary": "Former California Supreme Court Justice Tino Cuéllar joins Anthropic to lead policy, international engagement, and government relations worldwide.",
       "summaryParagraphs": [
-        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "Former California Supreme Court Justice Tino Cuéllar joins Anthropic to lead policy, international engagement, and government relations worldwide.",
         "Mariano-Florentino (Tino) Cuéllar will join Anthropic as its first Chief Global Affairs Officer, leading the company’s work on policy, strategic international engagement, and government relationships worldwide.",
         "In recent years, he also co-chaired the bipartisan Task Force on Nuclear Proliferation and American Security, co-led California’s Frontier AI Working Group, and served as board chair and later director of the Center for Advanced Study in the Behavioral Sciences. Currently, he is the Cameron Schrier Family Professor at Stanford Law School, where he started his teaching career before serving in the judiciary and beg..."
       ],
@@ -379,9 +391,9 @@
       "source": "Anthropic",
       "title": "Jul 14, 2026 Product Introducing Claude for Teachers",
       "url": "https://www.anthropic.com/news/claude-for-teachers",
-      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summary": "Verified US K-12 educators get free access to premium Claude capabilities, a teaching skills library, and standards-aligned curricula for all 50 states.",
       "summaryParagraphs": [
-        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "Verified US K-12 educators get free access to premium Claude capabilities, a teaching skills library, and standards-aligned curricula for all 50 states.",
         "We're introducing Claude for Teachers , providing verified K-12 educators in the US free access to premium Claude capabilities, a library of teaching skills, and a direct connection to evidence-based curricula, mapped to academic standards in all 50 states.",
         "Decades of research show that practices like differentiation, mastery-based learning, and small group instruction reliably improve student achievement, but teachers are often short on time and resources to implement them. Budgets are stretched, classes may be too large to meet every student's individual needs, and planning often spills into evenings. This strain is heaviest in under-resourced schools. Claude for T..."
       ],
@@ -403,9 +415,9 @@
       "source": "Anthropic",
       "title": "Jul 20, 2026 Announcements Apply for Anthropic’s AI for Science rare disease research grants",
       "url": "https://www.anthropic.com/news/rare-disease-research-grants",
-      "summary": "Anthropic is sharing a focused call for AI for Science applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease.",
+      "summary": "Researchers can apply for up to $50,000 in Claude credits over six months to study rare genetic diseases as part of Anthropic's AI for Science program.",
       "summaryParagraphs": [
-        "Anthropic is sharing a focused call for AI for Science applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease.",
+        "Researchers can apply for up to $50,000 in Claude credits over six months to study rare genetic diseases as part of Anthropic's AI for Science program.",
         "Last spring, we announced Anthropic’s AI for Science program , an initiative designed to accelerate scientific research and discovery through access to our API. Since launching, we have supported researchers working on a variety of high-impact projects, ranging from drug repurposing to quantum simulation. Throughout this initiative, we have found that projects are more generative when multiple AI for Science grant...",
         "Today, we are sharing a focused call for applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease. This program has two tracks: one for scientists doing basic research, and another for early-stage biotechs workin..."
       ],
@@ -475,9 +487,9 @@
       "source": "Anthropic",
       "title": "Jul 30, 2026 Announcements Investigating three real-world incidents in our cybersecurity evaluations",
       "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
-      "summary": "In a review of our cybersecurity evaluation transcripts, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations. Below we describe what happened, how it happened, and what we’re changing. We encourage other AI labs to perform similar rev...",
+      "summary": "We found three cases where a Claude model reached the internet from an evaluation environment and accessed real systems. We share what happened and what we're changing.",
       "summaryParagraphs": [
-        "In a review of our cybersecurity evaluation transcripts, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations. Below we describe what happened, how it happened, and what we’re changing. We encourage other AI labs to perform similar rev...",
+        "We found three cases where a Claude model reached the internet from an evaluation environment and accessed real systems. We share what happened and what we're changing.",
         "In a review of our cybersecurity evaluation transcripts, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations.",
         "Below we describe what happened, how it happened, and what we’re changing. We encourage other AI labs to perform similar reviews. This post reflects our current understanding; we'll update it if any details change."
       ],
@@ -499,9 +511,9 @@
       "source": "Anthropic",
       "title": "Jul 9, 2026 Announcements Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
       "url": "https://www.anthropic.com/news/ben-bernanke",
-      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summary": "Former Federal Reserve Chair Ben Bernanke has been appointed to Anthropic's Long-Term Benefit Trust, bringing expertise on AI's economic impacts.",
       "summaryParagraphs": [
-        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "Former Federal Reserve Chair Ben Bernanke has been appointed to Anthropic's Long-Term Benefit Trust, bringing expertise on AI's economic impacts.",
         "Anthropic's Long-Term Benefit Trust (LTBT) has appointed Dr. Ben Bernanke, a Distinguished Fellow at the Brookings Institution and former Chair of the Federal Reserve, as its newest member. He joins an independent body that works to hold Anthropic to its mission: the responsible development of advanced AI for the long-term benefit of humanity.",
         "Bernanke led the Federal Reserve from 2006 to 2014, steering the central bank through the 2008 global financial crisis and the recovery that followed. Before entering government, he spent more than two decades as an academic economist, much of that time at Princeton, where he chaired the economics department and built a body of research on the Great Depression and the role banks play in financial crises. That work..."
       ],
@@ -511,9 +523,9 @@
       "source": "Anthropic",
       "title": "Jul 9, 2026 Announcements Introducing a way to reflect on how you use Claude",
       "url": "https://www.anthropic.com/news/reflect-with-claude",
-      "summary": "Introducing a new way to reflect on and refine how you use Claude. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals.",
+      "summary": "A new feature lets you track and visualize how you use Claude, and decide whether that time aligns with your goals.",
       "summaryParagraphs": [
-        "Introducing a new way to reflect on and refine how you use Claude. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals.",
+        "A new feature lets you track and visualize how you use Claude, and decide whether that time aligns with your goals.",
         "Today we're introducing, in beta, a new way to reflect on and refine how you use Claude. In our interviews with users, a common theme that’s emerged is a desire to better understand how, exactly, AI can be integrated into daily life. How often should someone use AI? How can it be used most effectively? When is AI suited to a task, and when is it better left to a human?",
         "We built this feature to help answer these types of questions. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals. Your reflection dashboard can be found in Settings on Claude for web or the desktop app."
       ],
@@ -523,9 +535,9 @@
       "source": "Anthropic",
       "title": "Jul 9, 2026 Case Study UST is bringing Claude to physical AI",
       "url": "https://www.anthropic.com/news/ust-claude",
-      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summary": "UST will train 20,000 engineers on Claude and deploy it across semiconductor, automotive, IoT, healthcare, telecom, and banking workflows.",
       "summaryParagraphs": [
-        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "UST will train 20,000 engineers on Claude and deploy it across semiconductor, automotive, IoT, healthcare, telecom, and banking workflows.",
         "Before a factory commits to manufacturing millions of chips, engineers stress-test the design in the fab. Before a product ships, a fault on the assembly line has to be caught before it becomes a recall. When AI does this kind of work, it’s called physical AI: intelligence built into the equipment and engineering processes that produce the things people use.",
         "We’re partnering with UST , a technology and engineering services company that builds and runs the engineering environments its clients depend on to get chips, cars, and connected devices to market. UST is putting Claude to work inside those environments, and training 20,000 of its engineers, architects, and consultants on Claude worldwide."
       ],
@@ -547,9 +559,9 @@
       "source": "Anthropic",
       "title": "Jun 11, 2026 Announcements Introducing Claude Corps",
       "url": "https://www.anthropic.com/news/claude-corps",
-      "summary": "Anthropic is launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+      "summary": "Claude Corps is a national fellowship for early-career people passionate about extending the benefits of AI to communities across America.",
       "summaryParagraphs": [
-        "Anthropic is launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+        "Claude Corps is a national fellowship for early-career people passionate about extending the benefits of AI to communities across America.",
         "We’re launching Claude Corps , a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
         "We’ll teach 1,000 fellows how to use Claude well, match them with nonprofits across America, and pay them to spend a year—full-time, in-person—helping host organizations to advance their missions. Our goals are twofold: that host organizations are equipped with valuable tools and systems, and fellows build AI skills that will serve them in their careers."
       ],
@@ -571,9 +583,9 @@
       "source": "Anthropic",
       "title": "Jun 12, 2026 Announcements Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
       "url": "https://www.anthropic.com/news/fable-mythos-access",
-      "summary": "The US government has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States.",
+      "summary": "The US government has issued an export control directive suspending all access to Fable 5 and Mythos 5 by foreign nationals inside or outside the US.",
       "summaryParagraphs": [
-        "The US government has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States.",
+        "The US government has issued an export control directive suspending all access to Fable 5 and Mythos 5 by foreign nationals inside or outside the US.",
         "The US government, citing national security authorities, has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States, including foreign national Anthropic employees. The net effect of this order is that we must abruptly disable Fable 5 and Mythos 5 for all our customers to ensure compliance. Access to all other Anthropic...",
         "We received the directive from the government today at 5:21pm (ET). The letter did not provide specific details of its national security concern. Our understanding is that the government believes it has become aware of a method of bypassing, or “jailbreaking” Fable 5. We reviewed a demonstration of this specific technique being used to identify a small number of previously known, minor vulnerabilities. These vulne..."
       ],
@@ -583,9 +595,9 @@
       "source": "Anthropic",
       "title": "Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries",
       "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-      "summary": "Anthropic is announcing a partnership with Tata Consultancy Services (TCS). TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network.",
+      "summary": "TCS will provide Claude to 50,000 employees across 56 countries, build Claude-powered products for regulated industries, and join our partner network.",
       "summaryParagraphs": [
-        "Anthropic is announcing a partnership with Tata Consultancy Services (TCS). TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network.",
+        "TCS will provide Claude to 50,000 employees across 56 countries, build Claude-powered products for regulated industries, and join our partner network.",
         "We’re announcing a partnership with Tata Consultancy Services (TCS), one of the world’s largest technology services companies. TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network, our network of consulting and services firms that...",
         "Regulated industries need their work to be highly accurate and auditable, and enterprises in these fields already use Claude for that reason. TCS brings decades of experience delivering technology that is compliant with companies’ regulatory requirements—and the reach to bring Claude to thousands of enterprises worldwide."
       ],
@@ -619,9 +631,9 @@
       "source": "Anthropic",
       "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
       "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "summary": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
+      "summary": "Two new components of the Claude Partner Network make it easier for enterprises to find the firms that help put Claude into production.",
       "summaryParagraphs": [
-        "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
+        "Two new components of the Claude Partner Network make it easier for enterprises to find the firms that help put Claude into production.",
         "Almost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work—and the real opportunity—is in the integration, the evaluation, and the way people's work evolves. That's why the companies getting AI integration right are doing it with partners who have done it before.",
         "In March, we launched the Claude Partner Network—a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification—a credential, held by an individual, that signals they've been trained..."
       ],
@@ -631,9 +643,9 @@
       "source": "Anthropic",
       "title": "Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats",
       "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
-      "summary": "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question.",
+      "summary": "As AI changes how cyberattacks happen, how well do the security community's frameworks hold up? A new report maps attacks onto MITRE ATT&CK.",
       "summaryParagraphs": [
-        "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question.",
+        "As AI changes how cyberattacks happen, how well do the security community's frameworks hold up? A new report maps attacks onto MITRE ATT&CK.",
         "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up?",
         "In a new report, we seek to answer that question. We examine 832 accounts that were banned for malicious cyber activity between March 2025 and March 2026 and map them onto MITRE ATT&CK , a longstanding database of the tactics and techniques used by cyberattackers. We published some of these results in Verizon’s 2026 Data Breach Investigations Report (DBIR), and are sharing a more detailed analysis here. These 832..."
       ],
@@ -679,9 +691,9 @@
       "source": "Anthropic",
       "title": "Product May 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
       "url": "https://www.anthropic.com/news/claude-opus-4-8",
-      "summary": "Our latest model, Claude Opus 4.8, is an upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
+      "summary": "Claude Opus 4.8 brings stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
       "summaryParagraphs": [
-        "Our latest model, Claude Opus 4.8, is an upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
+        "Claude Opus 4.8 brings stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
         "We’re upgrading Claude Opus to a new version: Claude Opus 4.8. It builds on Opus 4.7 with improvements across benchmarks, and is a more effective collaborator. It’s available today for the same price.",
         "Opus 4.8 launches alongside several new features. Users on claude.ai now have control over the amount of effort Claude puts into a task. Claude Code has a new “dynamic workflows” feature that allows it to tackle very large-scale problems. And fast mode for Opus 4.8—where the model can work at 2.5× the speed—is now three times cheaper than it was for previous models."
       ],
@@ -703,9 +715,9 @@
       "source": "Claude",
       "title": "Announcements Aug 14, 2026 How Claude’s text watermark works In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change.",
       "url": "https://www.anthropic.com/news/claude-text-watermark",
-      "summary": "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act. In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’...",
+      "summary": "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
       "summaryParagraphs": [
-        "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act. In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’...",
+        "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
         "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act.",
         "In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change. To summarize:"
       ],
@@ -715,23 +727,11 @@
       "source": "Claude",
       "title": "Announcements Jun 30, 2026 Claude Science, an AI workbench for scientists, is now available Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.",
       "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
-      "summary": "Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.",
+      "summary": "Claude Science integrates the tools researchers use most, produces auditable artifacts, and provides flexible access to computing resources.",
       "summaryParagraphs": [
-        "Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.",
+        "Claude Science integrates the tools researchers use most, produces auditable artifacts, and provides flexible access to computing resources.",
         "AI has the potential to dramatically accelerate the pace of scientific discovery and the development of healthcare interventions. Since launching our efforts in the life sciences last fall, we’ve worked to improve our model capabilities, make connections to the scientific ecosystem via MCPs and skills, and launch partnerships in an effort to realize this potential.",
         "Today, we’re introducing our most significant expansion of these efforts: Claude Science , an AI workbench for scientists. Claude Science is an app that integrates the tools and packages that researchers most commonly use, produces auditable artifacts, and provides flexible access to computing resources."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Claude",
-      "title": "Jul 14, 2026 Product Introducing Claude for Teachers",
-      "url": "https://www.anthropic.com/news/claude-for-teachers",
-      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-      "summaryParagraphs": [
-        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "We're introducing Claude for Teachers , providing verified K-12 educators in the US free access to premium Claude capabilities, a library of teaching skills, and a direct connection to evidence-based curricula, mapped to academic standards in all 50 states.",
-        "Decades of research show that practices like differentiation, mastery-based learning, and small group instruction reliably improve student achievement, but teachers are often short on time and resources to implement them. Budgets are stretched, classes may be too large to meet every student's individual needs, and planning often spills into evenings. This strain is heaviest in under-resourced schools. Claude for T..."
       ],
       "published": ""
     },
