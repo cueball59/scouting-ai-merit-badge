@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T16:21:11.739Z",
+  "lastUpdated": "2026-09-15T14:58:13.808Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -242,6 +242,114 @@
         "Details like these inform Ellis-Garland, an engineering geologist, what the ground beneath is made of and how it behaves. She uses this data to advise her clients at geotechnical engineering firm ENGEO what can be built above ground and how."
       ],
       "published": "2026-04-20T23:36:57.000Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Perplexity x Cristiano Ronaldo",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-x-cristiano-ronaldo",
+      "summary": "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo.",
+      "summaryParagraphs": [
+        "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo.",
+        "Cristiano Ronaldo represents discipline, consistency, and reinvention across every stage of his career. He is more than football’s all‑time leading goal scorer. He has shattered records in the Premier League, LaLiga, Serie A, and the Saudi Pro League, winning league titles, Champions League trophies, and major honors with Portugal.",
+        "He is also a dedicated Perplexity user. Perplexity is built for people who measure progress over years, not highlights, and who stay relentlessly curious even when the answer is not obvious. The best leaders, athletes, and operators share this mindset: they use Perplexity to learn, explore, and pressure‑test decisions as part of a constant drive to improve. Cristiano Ronaldo is one of the world’s most visible exam..."
+      ],
+      "published": "2025-12-04T00:00:00.000Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Building Safer AI Browsers with BrowseSafe",
+      "url": "https://www.perplexity.ai/hub/blog/building-safer-ai-browsers-with-browsesafe",
+      "summary": "BrowseSafe is our open detection model and benchmark for catching malicious instructions hidden in web pages.",
+      "summaryParagraphs": [
+        "BrowseSafe is our open detection model and benchmark for catching malicious instructions hidden in web pages.",
+        "Today, we are releasing BrowseSafe , an open research benchmark and content detection model aimed at keeping users safe as they navigate the agentic web.",
+        "As AI assistants move from search boxes into the browser itself, we expect the next generation of the web to shift from pages to agents: less about where information lives, and more about who retrieves and acts on it. Comet turns the browser into a place where an assistant can accomplish tasks, not just answer questions, so one principle is non‑negotiable: it must stay on the user’s side."
+      ],
+      "published": "2025-12-02T00:00:00.000Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Introducing AI assistants with memory",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-ai-assistants-with-memory",
+      "summary": "With our upgraded personalization and memory, Perplexity remembers key details across conversations so future answers are more personalized and efficient.",
+      "summaryParagraphs": [
+        "With our upgraded personalization and memory, Perplexity remembers key details across conversations so future answers are more personalized and efficient.",
+        "The simple act of remembering is the crux of how we navigate the world: it shapes our experiences, informs our decisions, and helps us anticipate what comes next. For AI agents like Comet Assistant, that continuity leads to a more powerful, personalized experience.",
+        "Today we are announcing new personalization features to remember your preferences, interests, and conversations. Perplexity now synthesizes them automatically like memory, for valuable context on relevant tasks. Answers are smarter, faster, and more personalized, no matter how you work."
+      ],
+      "published": "2025-11-26T00:00:00.000Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Shopping That Puts You First",
+      "url": "https://www.perplexity.ai/hub/blog/shopping-that-puts-you-first",
+      "summary": "Shopping on Perplexity is here: discovery that knows your taste, plus instant checkout with PayPal.",
+      "summaryParagraphs": [
+        "Shopping on Perplexity is here: discovery that knows your taste, plus instant checkout with PayPal.",
+        "The joy of shopping is discovering something you love. It’s the perfect winter jacket that matches your style and your San Francisco ferry commute. It’s the right gift for a young chef with a tiny kitchen. Discovery requires an experience that understands you.",
+        "Online shopping hasn’t delivered that. Search bars are sufficient to find an exact item, but fail at exploration. Editorial outlets prioritize affiliate revenue over matching readers to the exact products they’ll love. Most innovation in online shopping has focused on faster checkout, but that solves for the transaction, not the joy."
+      ],
+      "published": "2025-11-25T00:00:00.000Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Comet for Android is Here",
+      "url": "https://www.perplexity.ai/hub/blog/comet-for-android-is-here",
+      "summary": "Comet for Android is here: the most powerful AI browser, redesigned for mobile from the ground up.",
+      "summaryParagraphs": [
+        "Comet for Android is here: the most powerful AI browser, redesigned for mobile from the ground up.",
+        "As the world’s first truly AI-native browser, Comet has become the standard-bearer for getting more from the web in the age of AI. Millions of people now use Comet every day to have more focus when they browse, get more done with the Comet Assistant, and ask more questions wherever they are. Already, the internet is better on Comet .",
+        "Building an AI-first browser has required deliberate work for each OS and every form factor. We didn’t want to just force a desktop experience onto mobile. Instead, Perplexity has redesigned the mobile web browser for the new age of the internet."
+      ],
+      "published": "2025-11-20T00:00:00.000Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Announcing our Partnership with the United States Government",
+      "url": "https://www.perplexity.ai/hub/blog/announcing-our-partnership-with-the-united-states-government",
+      "summary": "Perplexity and the GSA sign the first direct government-wide AI contract, open to all federal agencies.",
+      "summaryParagraphs": [
+        "Perplexity and the GSA sign the first direct government-wide AI contract, open to all federal agencies.",
+        "Today, we are announcing a first-of-its-kind partnership with the United States government to bring Perplexity to all federal agencies.",
+        "America’s public servants deserve the most powerful, accurate AI to help them serve our nation. To meet this need, we’re collaborating with the General Services Administration (GSA) to provide our flagship enterprise AI platform to federal employees and servicemembers. Through our partnership, federal agencies can acquire Enterprise Pro for Government via GSA’s Multiple Award Schedule (MAS IT) at essentially no co..."
+      ],
+      "published": "2025-11-19T00:00:00.000Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Comet Assistant puts you in control",
+      "url": "https://www.perplexity.ai/hub/blog/comet-assistant-puts-you-in-control",
+      "summary": "Comet Assistant upgrades built on three principles: transparency, user control, and sound judgment.",
+      "summaryParagraphs": [
+        "Comet Assistant upgrades built on three principles: transparency, user control, and sound judgment.",
+        "Almost immediately after introducing Comet to the world , it was clear the Comet Assistant would set the standard for AI assistants, or agentic AI, on the web. The Comet Assistant was an immediately popular tool that surprised even us. Today we’re announcing some upgrades to Comet Assistant.",
+        "As the world increasingly looks to Perplexity for leadership in agentic AI, it might be useful to outline our approach to building AI assistants."
+      ],
+      "published": "2025-11-14T00:00:00.000Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "The New Comet Assistant",
+      "url": "https://www.perplexity.ai/hub/blog/the-new-comet-assistant",
+      "summary": "Meet the reimagined Comet Assistant: new tools for reading the web and finishing harder jobs.",
+      "summaryParagraphs": [
+        "Meet the reimagined Comet Assistant: new tools for reading the web and finishing harder jobs.",
+        "When we first launched Comet in July, we learned one thing right away. Users love the Comet Assistant. It’s a helper that follows you around, answers questions, and does work for you.",
+        "Over the last four months, we’ve seen users push the Comet Assistant to get more done: planning trips, researching purchases, managing job searches, eliminating to-do lists and the online chores that span endless tabs. Every use case is different, because every user is different. The Comet Assistant is agentic AI that works exclusively for you."
+      ],
+      "published": "2025-11-06T00:00:00.000Z"
+    },
+    {
+      "source": "Perplexity",
+      "title": "Bullying is Not Innovation",
+      "url": "https://www.perplexity.ai/hub/blog/bullying-is-not-innovation",
+      "summary": "The point of technology is to make life better for people. We call it innovation, but it’s just the constant process of asking how to make things better…",
+      "summaryParagraphs": [
+        "The point of technology is to make life better for people. We call it innovation, but it’s just the constant process of asking how to make things better…",
+        "The point of technology is to make life better for people. We call it innovation, but it’s just the constant process of asking how to make things better. Bullying, on the other hand, is when large corporations use legal threats and intimidation to block innovation and make life worse for people.",
+        "This week, Perplexity received an aggressive legal threat from Amazon, demanding we prohibit Comet users from using their AI assistants on Amazon. This is Amazon’s first legal salvo against an AI company, and it is a threat to all internet users."
+      ],
+      "published": "2025-11-04T00:00:00.000Z"
     },
     {
       "source": "Anthropic",
@@ -749,56 +857,6 @@
     },
     {
       "source": "Perplexity",
-      "title": "Announcing our Partnership with the United States Government",
-      "url": "https://www.perplexity.ai/hub/blog/announcing-our-partnership-with-the-united-states-government",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "summaryParagraphs": [
-        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
-      "title": "Building Safer AI Browsers with BrowseSafe",
-      "url": "https://www.perplexity.ai/hub/blog/building-safer-ai-browsers-with-browsesafe",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "summaryParagraphs": [
-        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
-      "title": "Bullying is Not Innovation",
-      "url": "https://www.perplexity.ai/hub/blog/bullying-is-not-innovation",
-      "summary": "The point of technology is to make life better for people. We call it innovation, but it’s just the constant process of asking how to make things better. Bullying, on the other hand, is when large corporations use legal threats and intimidation to block innovation and make life w",
-      "summaryParagraphs": [
-        "The point of technology is to make life better for people. We call it innovation, but it’s just the constant process of asking how to make things better. Bullying, on the other hand, is when large corporations use legal threats and intimidation to block innovation and make life w"
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
-      "title": "Comet Assistant puts you in control",
-      "url": "https://www.perplexity.ai/hub/blog/comet-assistant-puts-you-in-control",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "summaryParagraphs": [
-        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
-      "title": "Comet for Android is Here",
-      "url": "https://www.perplexity.ai/hub/blog/comet-for-android-is-here",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "summaryParagraphs": [
-        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
       "title": "Disaggregated Prefill and Decode",
       "url": "https://www.perplexity.ai/hub/blog/disaggregated-prefill-and-decode",
       "summary": "Separating prefill and decode across devices speeds up LLM inference and improves performance",
@@ -859,16 +917,6 @@
     },
     {
       "source": "Perplexity",
-      "title": "Introducing AI assistants with memory",
-      "url": "https://www.perplexity.ai/hub/blog/introducing-ai-assistants-with-memory",
-      "summary": "With our upgraded personalization and memory, Perplexity remembers key details across conversations so future answers are more personalized and efficient.",
-      "summaryParagraphs": [
-        "With our upgraded personalization and memory, Perplexity remembers key details across conversations so future answers are more personalized and efficient."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
       "title": "Introducing Model Council",
       "url": "https://www.perplexity.ai/hub/blog/introducing-model-council",
       "summary": "Today we are launching Model Council, a multi-model research feature that brings several models together for one answer.",
@@ -904,36 +952,6 @@
       "summary": "Perplexity is now integrated into Samsung Galaxy S26 phones at a deep level, powering search and reasoning for both the Perplexity assistant and Samsung's Bixby.",
       "summaryParagraphs": [
         "Perplexity is now integrated into Samsung Galaxy S26 phones at a deep level, powering search and reasoning for both the Perplexity assistant and Samsung's Bixby."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
-      "title": "Perplexity x Cristiano Ronaldo",
-      "url": "https://www.perplexity.ai/hub/blog/perplexity-x-cristiano-ronaldo",
-      "summary": "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo.",
-      "summaryParagraphs": [
-        "Today we are announcing that Perplexity has entered a global partnership with Cristiano Ronaldo."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
-      "title": "Shopping That Puts You First",
-      "url": "https://www.perplexity.ai/hub/blog/shopping-that-puts-you-first",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "summaryParagraphs": [
-        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Perplexity",
-      "title": "The New Comet Assistant",
-      "url": "https://www.perplexity.ai/hub/blog/the-new-comet-assistant",
-      "summary": "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity.",
-      "summaryParagraphs": [
-        "Explore Perplexity's blog for articles, announcements, product updates, and tips to optimize your experience. Stay informed and make the most of Perplexity."
       ],
       "published": ""
     },
