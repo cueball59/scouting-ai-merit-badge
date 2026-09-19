@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-18T14:28:51.636Z",
+  "lastUpdated": "2026-09-19T13:54:57.966Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -689,18 +689,6 @@
     },
     {
       "source": "Anthropic",
-      "title": "Product May 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
-      "url": "https://www.anthropic.com/news/claude-opus-4-8",
-      "summary": "Claude Opus 4.8 brings stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
-      "summaryParagraphs": [
-        "Claude Opus 4.8 brings stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
-        "We’re upgrading Claude Opus to a new version: Claude Opus 4.8. It builds on Opus 4.7 with improvements across benchmarks, and is a more effective collaborator. It’s available today for the same price.",
-        "Opus 4.8 launches alongside several new features. Users on claude.ai now have control over the amount of effort Claude puts into a task. Claude Code has a new “dynamic workflows” feature that allows it to tackle very large-scale problems. And fast mode for Opus 4.8—where the model can work at 2.5× the speed—is now three times cheaper than it was for previous models."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
       "title": "Sep 1, 2026 Announcements Developing Enterprise Frontier Safeguards with our customers",
       "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
       "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
@@ -720,6 +708,18 @@
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
         "Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access to our Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work. We have already onboarded dozens of organizations through an early-access program, and are now opening applications to the broader life science community ( apply here ). The program is...",
         "The LSVP is designed to enable life science professionals to use our models across a wide range of tasks that are currently blocked in our generally available Fable models, like drug discovery, research biology, clinical development, and manufacturing. It’s built for teams of all kinds—from academic labs to startups, pharma companies, and more."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
+      "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "summary": "We’re partnering with Accenture on independent evaluation of frontier AI—part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years.",
+      "summaryParagraphs": [
+        "We’re partnering with Accenture on independent evaluation of frontier AI—part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years.",
+        "We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO’s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic.",
+        "The partnership will be led by Faculty, Accenture’s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps businesses and governments deploy AI across many industries. Their understanding of how enterprises use AI in practice informs their safety approach, and they will bring that perspective to evaluating our models."
       ],
       "published": ""
     },
