@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-27T15:08:48.216Z",
+  "lastUpdated": "2026-09-28T18:08:51.639Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -28,6 +28,54 @@
   ],
   "posts": [
     {
+      "source": "Anthropic",
+      "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "summary": "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown.",
+      "summaryParagraphs": [
+        "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown.",
+        "We’re introducing a new life sciences research group and laboratory at Anthropic. Our focus is on fundamental biology research using Claude: exploring datasets of DNA to identify uncharacterized protein families, generating hypotheses at scale, and testing them through experiments in the lab. This post introduces the team behind this work and shares early results in which Claude discovered a novel enzyme system wi...",
+        "Today, we’re sharing early results from one of our first research programs, in which Claude autonomously discovered a novel enzyme system that is associated with an array of DNA repeats, a pattern reminiscent of CRISPR. Although we don’t yet know its function, the system that Claude discovered has a set of characteristics that have only ever been found together in a handful of other systems, all of which are progr..."
+      ],
+      "published": "2026-09-23T16:06:00.000Z"
+    },
+    {
+      "source": "Claude",
+      "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "summary": "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown.",
+      "summaryParagraphs": [
+        "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown.",
+        "We’re introducing a new life sciences research group and laboratory at Anthropic. Our focus is on fundamental biology research using Claude: exploring datasets of DNA to identify uncharacterized protein families, generating hypotheses at scale, and testing them through experiments in the lab. This post introduces the team behind this work and shares early results in which Claude discovered a novel enzyme system wi...",
+        "Today, we’re sharing early results from one of our first research programs, in which Claude autonomously discovered a novel enzyme system that is associated with an array of DNA repeats, a pattern reminiscent of CRISPR. Although we don’t yet know its function, the system that Claude discovered has a set of characteristics that have only ever been found together in a handful of other systems, all of which are progr..."
+      ],
+      "published": "2026-09-23T16:06:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "summary": "We’re partnering with Accenture on independent evaluation of frontier AI—part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years.",
+      "summaryParagraphs": [
+        "We’re partnering with Accenture on independent evaluation of frontier AI—part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years.",
+        "We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO’s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic.",
+        "The partnership will be led by Faculty, Accenture’s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps businesses and governments deploy AI across many industries. Their understanding of how enterprises use AI in practice informs their safety approach, and they will bring that perspective to evaluating our models."
+      ],
+      "published": "2026-09-18T16:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
+      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summaryParagraphs": [
+        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access to our Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work. We have already onboarded dozens of organizations through an early-access program, and are now opening applications to the broader life science community ( apply here ). The program is...",
+        "The LSVP is designed to enable life science professionals to use our models across a wide range of tasks that are currently blocked in our generally available Fable models, like drug discovery, research biology, clinical development, and manufacturing. It’s built for teams of all kinds—from academic labs to startups, pharma companies, and more."
+      ],
+      "published": "2026-09-17T15:56:00.000Z"
+    },
+    {
       "source": "Microsoft",
       "title": "What if everything changes tomorrow? A Canadian company is using AI to help businesses navigate supply chain uncertainty",
       "url": "https://news.microsoft.com/source/canada/features/ai/kinaxis-supply-chain/",
@@ -52,6 +100,90 @@
       "published": "2026-09-02T16:28:46.000Z"
     },
     {
+      "source": "Anthropic",
+      "title": "Sep 1, 2026 Announcements Developing Enterprise Frontier Safeguards with our customers",
+      "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summaryParagraphs": [
+        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "We developed EFS in close collaboration with more than 100 customers in industries like financial services, healthcare, manufacturing, telecom, law, retail, and the public sector, and with our cloud partners at Amazon Web Services, Google Cloud, and Microsoft Azure.",
+        "EFS will be supported on Claude Code, Claude Enterprise, the Claude Platform, Amazon Bedrock, Claude Platform on AWS, Google’s Agent Platform, and Microsoft Foundry."
+      ],
+      "published": "2026-09-01T23:31:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Aug 31, 2026 Announcements Improving our alignment and security efforts",
+      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "summary": "On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.",
+      "summaryParagraphs": [
+        "On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.",
+        "On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. The models—intentionally running without cyber safeguards for evaluation purposes—accessed the internet due to a misconfiguration inside a third-party evaluation environment. Separately, on August 4, the UK AI Security Institute reported an incident from its own cybersecurity testing, in which Claude...",
+        "We are conducting an in-depth analysis of both incidents. We are also planning to work with METR for an independent review. We want to ensure both studies are thorough, and will share more in the coming weeks."
+      ],
+      "published": "2026-08-31T15:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Aug 27, 2026 Announcements Previewing the Model Hardware Standard",
+      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "summary": "Anthropic is opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
+      "summaryParagraphs": [
+        "Anthropic is opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
+        "We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers. MHS enables AI agents to operate multiple lab and manufacturing instruments, such as microscopes, liquid handlers, and robotic arms, in parallel, and perform intricate tasks ranging from routine drug...",
+        "It typically takes a lab or manufacturing facility weeks, if not months, to set up and integrate their hardware. Most devices don’t communicate with each other, instead requiring specialists to build bespoke integrations. MHS reduces this integration work to hours or minutes. And by incorporating AI into these tools, MHS also helps researchers and engineers more readily orchestrate autonomous, round-the-clock expe..."
+      ],
+      "published": "2026-08-27T18:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
+      "url": "https://www.anthropic.com/news/expanding-support-for-scientists",
+      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summaryParagraphs": [
+        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "As Claude becomes increasingly capable at scientific research, we are focusing on building products and programs to support the research community. In June, we launched Claude Science , a product that integrates the tools that researchers most commonly use, produces auditable artifacts, and provides flexible access to computing resources. We have also continued to broaden our AI for Science program , which provide...",
+        "Starting today, we are announcing a significant expansion of these efforts. We are opening 10,000 seats for scientists around the world to access Claude subscriptions for free and at discounted rates for one year through our new Claude team plan for scientists . Standard seats will be free and premium seats with 5x usage limits will be available for $15 per month. Over the coming months, we intend to extend this p..."
+      ],
+      "published": "2026-08-27T17:03:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Aug 25, 2026 Announcements Funding better evaluations of AI’s impact on wellbeing",
+      "url": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "summary": "Anthropic is launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing.",
+      "summaryParagraphs": [
+        "Anthropic is launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing.",
+        "We’re launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing. The program will provide direct funding, access to our models, and technical support to grantees building open-source evaluations that help the AI industry measure how our models affect those who use them. Grantees will work fully independently, and will publish their work as open-source projects that any...",
+        "AI systems have become central to how many people work, learn, and solve problems. They’ve also become conversational partners and can be sources of emotional support during difficult times. But as an industry, we are still working towards developing clear standards for how models should behave in these conversations, for example, when a user begins to seek companionship from a model, or uses AI to navigate a ment..."
+      ],
+      "published": "2026-08-25T17:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Aug 14, 2026 Announcements How Claude’s text watermark works",
+      "url": "https://www.anthropic.com/news/claude-text-watermark",
+      "summary": "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
+      "summaryParagraphs": [
+        "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
+        "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act.",
+        "In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change. To summarize:"
+      ],
+      "published": "2026-08-14T19:16:00.000Z"
+    },
+    {
+      "source": "Claude",
+      "title": "Aug 14, 2026 Announcements How Claude’s text watermark works",
+      "url": "https://www.anthropic.com/news/claude-text-watermark",
+      "summary": "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
+      "summaryParagraphs": [
+        "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
+        "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act.",
+        "In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change. To summarize:"
+      ],
+      "published": "2026-08-14T19:16:00.000Z"
+    },
+    {
       "source": "Microsoft",
       "title": "How to build an AI agent: A simple guide for anyone",
       "url": "https://news.microsoft.com/signal/articles/how-to-build-an-ai-agent-guide/",
@@ -62,6 +194,30 @@
         "This is the beauty of AI agents. They can help workers in all kinds of roles do a range of things, like track project deadlines, monitor shared inboxes, create nightly reports and more. What sets them apart from AI chat apps is that while chat apps excel at answering questions, agents can also take action."
       ],
       "published": "2026-08-10T15:07:06.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Aug 7, 2026 Product Improving Fable 5's biology safeguards",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "summary": "We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces fallbacks.",
+      "summaryParagraphs": [
+        "We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces fallbacks.",
+        "We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces false positives. Fable 5 users will now experience many fewer “fallbacks”—where the system switches to a less capable model after they make a biology-related query. In our testing, this update reduced biology-related fallbacks by about 85% across our product surfaces. 1",
+        "Fable 5 will thus be able to assist with a wider range of biology tasks."
+      ],
+      "published": "2026-08-07T01:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Aug 4, 2026 Announcements Mariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs Officer",
+      "url": "https://www.anthropic.com/news/tino-cuellar",
+      "summary": "Former California Supreme Court Justice Tino Cuéllar joins Anthropic to lead policy, international engagement, and government relations worldwide.",
+      "summaryParagraphs": [
+        "Former California Supreme Court Justice Tino Cuéllar joins Anthropic to lead policy, international engagement, and government relations worldwide.",
+        "Mariano-Florentino (Tino) Cuéllar will join Anthropic as its first Chief Global Affairs Officer, leading the company’s work on policy, strategic international engagement, and government relationships worldwide.",
+        "In recent years, he also co-chaired the bipartisan Task Force on Nuclear Proliferation and American Security, co-led California’s Frontier AI Working Group, and served as board chair and later director of the Center for Advanced Study in the Behavioral Sciences. Currently, he is the Cameron Schrier Family Professor at Stanford Law School, where he started his teaching career before serving in the judiciary and beg..."
+      ],
+      "published": "2026-08-04T17:02:00.000Z"
     },
     {
       "source": "Microsoft",
@@ -76,6 +232,42 @@
       "published": "2026-08-04T13:38:55.000Z"
     },
     {
+      "source": "Anthropic",
+      "title": "Jul 30, 2026 Announcements Investigating three real-world incidents in our cybersecurity evaluations",
+      "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+      "summary": "We found three cases where a Claude model reached the internet from an evaluation environment and accessed real systems. We share what happened and what we're changing.",
+      "summaryParagraphs": [
+        "We found three cases where a Claude model reached the internet from an evaluation environment and accessed real systems. We share what happened and what we're changing.",
+        "In a review of our cybersecurity evaluation transcripts, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations.",
+        "Below we describe what happened, how it happened, and what we’re changing. We encourage other AI labs to perform similar reviews. This post reflects our current understanding; we'll update it if any details change."
+      ],
+      "published": "2026-07-30T15:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 27, 2026 Announcements Our position on open-weights models",
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "summary": "Anthropic CEO Dario Amodei on open-weights models",
+      "summaryParagraphs": [
+        "Anthropic CEO Dario Amodei on open-weights models",
+        "Over the last few days there has been a lot of discussion about open-weights models, especially those from China. Reports suggest that some US officials are considering banning the use of Chinese open-weights models by US companies. In response, many tech companies have signed a letter supporting open-weights models, and some people have even accused Anthropic of wanting to ban open-weights models as a means of pr...",
+        "Open-weights models that don’t have dangerous capabilities are a public good: they don’t cost anything besides the compute needed to run them, and they provide value to businesses, developers, and researchers."
+      ],
+      "published": "2026-07-27T18:36:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 27, 2026 Announcements Cognizant and Anthropic expand their partnership to bring Claude to enterprise clients",
+      "url": "https://www.anthropic.com/news/cognizant-anthropic",
+      "summary": "Cognizant embeds Claude across its platforms, with 30,000+ associates trained, and becomes a Global Premier Partner in the Claude Partner Network.",
+      "summaryParagraphs": [
+        "Cognizant embeds Claude across its platforms, with 30,000+ associates trained, and becomes a Global Premier Partner in the Claude Partner Network.",
+        "We're expanding our partnership with Cognizant , one of the world's largest technology services companies.",
+        "Cognizant uses Claude in the systems it builds and runs for clients across manufacturing, life sciences, insurance, and other industries. With the expansion of our partnership, it’s embedding Claude across its own business and engineering platforms, scaling a Claude-certified workforce as part of its new Frontier Certified workforce model, and becoming a Global Premier Partner in the Claude Partner Network ."
+      ],
+      "published": "2026-07-27T15:32:00.000Z"
+    },
+    {
       "source": "Microsoft",
       "title": "Fantasy Premier League Companion gives managers a new tool for success",
       "url": "https://news.microsoft.com/source/emea/features/fantasy-premier-league-companion-gives-managers-a-new-tool-for-success/",
@@ -86,6 +278,42 @@
         "This season, managers are going to get another tool at their disposal, and not just the opportunity to choose Manchester City star Erling Haaland, who was the FPL’s top scorer last season. The Fantasy Premier League Companion powered by Copilot is built using Microsoft Foundry . It utilizes Azure OpenAI , Chat GPT 5.4 and official data from the Premier League to offer advice, answer questions and provide suggestio..."
       ],
       "published": "2026-07-27T14:56:09.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Product Jul 24, 2026 Introducing Claude Opus 5 Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
+      "url": "https://www.anthropic.com/news/claude-opus-5",
+      "summary": "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
+      "summaryParagraphs": [
+        "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
+        "Claude Opus 5 is available today. It’s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.",
+        "On coding and knowledge work evaluations like Frontier-Bench and GDPval-AA , Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks."
+      ],
+      "published": "2026-07-24T17:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 22, 2026 Economics A research agenda for the Economic Futures Research Fund",
+      "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
+      "summary": "We’re committing $200 million to the Anthropic Economic Futures Research Fund to support ambitious external research.",
+      "summaryParagraphs": [
+        "We’re committing $200 million to the Anthropic Economic Futures Research Fund to support ambitious external research.",
+        "We’re sharing the research agenda for the Anthropic Economic Futures Research Fund. We’re committing $200 million to the fund to support ambitious external research on interventions to prepare society for the economic impacts of AI.",
+        "With the research the Fund supports, we want to study what programs could make the economy more flexible and resilient, ensure the benefits of AI are shared, and minimize the harm that AI-driven disruption could cause."
+      ],
+      "published": "2026-07-22T17:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 22, 2026 Product Ask Claude about the Anthropic Economic Index",
+      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+      "summary": "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore the data directly.",
+      "summaryParagraphs": [
+        "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore the data directly.",
+        "People have hard questions about AI and work: which jobs will change, which tasks are being automated, and what it means for their own field. The Anthropic Economic Index exists to help answer them with real data. Today we're launching the Anthropic Economic Index connector for Claude, which lets anyone explore that data directly.",
+        "The Anthropic Economic Index measures how AI is actually being used in the economy. The Index’s data has been useful to researchers, journalists, and policymakers, but we want it to be just as accessible to anyone curious about how AI fits into their field or day-to-day life. Now you can ask Claude questions like:"
+      ],
+      "published": "2026-07-22T17:00:00.000Z"
     },
     {
       "source": "Microsoft",
@@ -100,6 +328,18 @@
       "published": "2026-07-22T15:12:02.000Z"
     },
     {
+      "source": "Anthropic",
+      "title": "Jul 21, 2026 Announcements Anthropic is donating another $20 million to Public First Action",
+      "url": "https://www.anthropic.com/news/donation-public-first-action",
+      "summary": "Anthropic is contributing an additional $20 million to Public First Action, bringing our total support to $40 million.",
+      "summaryParagraphs": [
+        "Anthropic is contributing an additional $20 million to Public First Action, bringing our total support to $40 million.",
+        "We're contributing an additional $20 million to Public First Action , bringing our total support to $40 million. Public First Action is a nonpartisan organization that educates the public about AI and works with Republicans, Democrats, and Independents who are serious about putting sensible AI safeguards in place. Both of our donations were made exclusively to support Public First Action’s public education and pol...",
+        "Our first donation in February 2026 was made to help promote policies that will maintain meaningful safeguards, sustain America’s AI leadership, and demand transparency from the companies building the most powerful AI models. In the months since, the case for these policies has only gotten stronger ."
+      ],
+      "published": "2026-07-21T17:00:00.000Z"
+    },
+    {
       "source": "Microsoft",
       "title": "Microsoft expands Azure AI and HPC infrastructure with AMD",
       "url": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
@@ -110,6 +350,114 @@
         "Our approach to AI infrastructure is designed to support the breadth of how AI systems are built and run. We closely work with industry innovators like AMD as well as our own purpose-built silicon and systems to provide customers with a comprehensive, open and heterogenous platform to achieve the best performance, cost and energy efficiency outcomes."
       ],
       "published": "2026-07-20T18:20:47.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 20, 2026 Announcements Apply for Anthropic’s AI for Science rare disease research grants",
+      "url": "https://www.anthropic.com/news/rare-disease-research-grants",
+      "summary": "Researchers can apply for up to $50,000 in Claude credits over six months to study rare genetic diseases as part of Anthropic's AI for Science program.",
+      "summaryParagraphs": [
+        "Researchers can apply for up to $50,000 in Claude credits over six months to study rare genetic diseases as part of Anthropic's AI for Science program.",
+        "Last spring, we announced Anthropic’s AI for Science program , an initiative designed to accelerate scientific research and discovery through access to our API. Since launching, we have supported researchers working on a variety of high-impact projects, ranging from drug repurposing to quantum simulation. Throughout this initiative, we have found that projects are more generative when multiple AI for Science grant...",
+        "Today, we are sharing a focused call for applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease. This program has two tracks: one for scientists doing basic research, and another for early-stage biotechs workin..."
+      ],
+      "published": "2026-07-20T17:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 14, 2026 Product Introducing Claude for Teachers",
+      "url": "https://www.anthropic.com/news/claude-for-teachers",
+      "summary": "Verified US K-12 educators get free access to premium Claude capabilities, a teaching skills library, and standards-aligned curricula for all 50 states.",
+      "summaryParagraphs": [
+        "Verified US K-12 educators get free access to premium Claude capabilities, a teaching skills library, and standards-aligned curricula for all 50 states.",
+        "We're introducing Claude for Teachers , providing verified K-12 educators in the US free access to premium Claude capabilities, a library of teaching skills, and a direct connection to evidence-based curricula, mapped to academic standards in all 50 states.",
+        "Decades of research show that practices like differentiation, mastery-based learning, and small group instruction reliably improve student achievement, but teachers are often short on time and resources to implement them. Budgets are stretched, classes may be too large to meet every student's individual needs, and planning often spills into evenings. This strain is heaviest in under-resourced schools. Claude for T..."
+      ],
+      "published": "2026-07-14T15:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 14, 2026 Announcements Anthropic commits $10 million to Canadian AI research",
+      "url": "https://www.anthropic.com/news/canadian-ai-research",
+      "summary": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research.",
+      "summaryParagraphs": [
+        "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research.",
+        "Canadian institutions and researchers have played a critical role in the modern AI era. During a period of broad skepticism about research into neural networks, the University of Toronto and the Université de Montréal were two of only a handful of institutions that incubated this crucial line of work, while researchers at the University of Alberta did pioneering work on reinforcement learning. And in the early 201...",
+        "Today, Canadians both at home and abroad continue to play leading roles in AI research, safety, and policy—including at Anthropic. That’s why we’re committing $10 million CAD to Canadian research institutions to fund the next generation of this work. We’re also publishing our first Canadian country brief based on the Anthropic Economic Index, which provides a snapshot of how Canadians are putting Claude to work."
+      ],
+      "published": "2026-07-14T13:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 9, 2026 Case Study UST is bringing Claude to physical AI",
+      "url": "https://www.anthropic.com/news/ust-claude",
+      "summary": "UST will train 20,000 engineers on Claude and deploy it across semiconductor, automotive, IoT, healthcare, telecom, and banking workflows.",
+      "summaryParagraphs": [
+        "UST will train 20,000 engineers on Claude and deploy it across semiconductor, automotive, IoT, healthcare, telecom, and banking workflows.",
+        "Before a factory commits to manufacturing millions of chips, engineers stress-test the design in the fab. Before a product ships, a fault on the assembly line has to be caught before it becomes a recall. When AI does this kind of work, it’s called physical AI: intelligence built into the equipment and engineering processes that produce the things people use.",
+        "We’re partnering with UST , a technology and engineering services company that builds and runs the engineering environments its clients depend on to get chips, cars, and connected devices to market. UST is putting Claude to work inside those environments, and training 20,000 of its engineers, architects, and consultants on Claude worldwide."
+      ],
+      "published": "2026-07-09T23:55:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Announcements Jul 9, 2026 Inviting hard questions We’re asking the public for their hardest questions about AI, and committing to show our work as we address them.",
+      "url": "https://www.anthropic.com/news/hard-questions",
+      "summary": "We're asking the public for their hardest questions about AI, and committing to show our work as we address them.",
+      "summaryParagraphs": [
+        "We're asking the public for their hardest questions about AI, and committing to show our work as we address them.",
+        "People have a lot of hard questions about AI. It’s our job to address them.",
+        "Many people are positively disposed to AI. They already use it every day, and they see its potential for making our work and our lives less laborious, for changing the way we learn, for helping speed up scientific and technological progress, for creating new sources of prosperity, and for solving some of the biggest medical and social problems we face."
+      ],
+      "published": "2026-07-09T16:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 9, 2026 Announcements Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
+      "url": "https://www.anthropic.com/news/ben-bernanke",
+      "summary": "Former Federal Reserve Chair Ben Bernanke has been appointed to Anthropic's Long-Term Benefit Trust, bringing expertise on AI's economic impacts.",
+      "summaryParagraphs": [
+        "Former Federal Reserve Chair Ben Bernanke has been appointed to Anthropic's Long-Term Benefit Trust, bringing expertise on AI's economic impacts.",
+        "Anthropic's Long-Term Benefit Trust (LTBT) has appointed Dr. Ben Bernanke, a Distinguished Fellow at the Brookings Institution and former Chair of the Federal Reserve, as its newest member. He joins an independent body that works to hold Anthropic to its mission: the responsible development of advanced AI for the long-term benefit of humanity.",
+        "Bernanke led the Federal Reserve from 2006 to 2014, steering the central bank through the 2008 global financial crisis and the recovery that followed. Before entering government, he spent more than two decades as an academic economist, much of that time at Princeton, where he chaired the economics department and built a body of research on the Great Depression and the role banks play in financial crises. That work..."
+      ],
+      "published": "2026-07-09T16:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 9, 2026 Announcements Introducing a way to reflect on how you use Claude",
+      "url": "https://www.anthropic.com/news/reflect-with-claude",
+      "summary": "A new feature lets you track and visualize how you use Claude, and decide whether that time aligns with your goals.",
+      "summaryParagraphs": [
+        "A new feature lets you track and visualize how you use Claude, and decide whether that time aligns with your goals.",
+        "Today we're introducing, in beta, a new way to reflect on and refine how you use Claude. In our interviews with users, a common theme that’s emerged is a desire to better understand how, exactly, AI can be integrated into daily life. How often should someone use AI? How can it be used most effectively? When is AI suited to a task, and when is it better left to a human?",
+        "We built this feature to help answer these types of questions. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals. Your reflection dashboard can be found in Settings on Claude for web or the desktop app."
+      ],
+      "published": "2026-07-09T13:20:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 6, 2026 Case Study Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities across government systems",
+      "url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
+      "summary": "The Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them.",
+      "summaryParagraphs": [
+        "The Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them.",
+        "Since 2025, the Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them. A team inside Alberta’s Ministry of Technology and Innovation scanned 466 million lines of code in 20 hours, remediated security gaps across its systems, and built new tools to make those systems safer.",
+        "We’re sharing details of their experience as an example of how government agencies can use Claude and Claude Code to secure their systems at a large scale. This is a critical challenge, as governments rely on these systems to deliver benefits and keep services running—yet the code is often old, insecure, and incompletely documented. Alberta has also published a collection of technical white papers documenting its..."
+      ],
+      "published": "2026-07-06T16:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jul 2, 2026 Announcements More details on Fable 5’s cyber safeguards and our jailbreak framework",
+      "url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
+      "summary": "What is and isn't blocked by our cyber classifiers, and a first draft of our jailbreak severity framework",
+      "summaryParagraphs": [
+        "What is and isn't blocked by our cyber classifiers, and a first draft of our jailbreak severity framework",
+        "Claude Fable 5 has been re-deployed and is now available globally for all users. We’re taking this opportunity to share further information in two areas.",
+        "First, we provide more information on the cybersecurity safeguards —specifically, the safety classifiers —that we launched with the model. These are the AI systems that accompany the model that detect and block dangerous (or potentially dangerous) cybersecurity uses. Here, we provide a detailed list of the types of harms Fable 5’s classifiers are, and are not, designed to prevent."
+      ],
+      "published": "2026-07-02T21:07:00.000Z"
     },
     {
       "source": "Microsoft",
@@ -124,6 +472,54 @@
       "published": "2026-07-01T15:35:36.000Z"
     },
     {
+      "source": "Anthropic",
+      "title": "Announcements Jun 30, 2026 Redeploying Fable 5 Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners.",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "summary": "Anthropic is redeploying Claude Fable 5 starting July 1, with updated cyber safeguards and a new jailbreak framework.",
+      "summaryParagraphs": [
+        "Anthropic is redeploying Claude Fable 5 starting July 1, with updated cyber safeguards and a new jailbreak framework.",
+        "On Friday, June 12, the US government applied export controls to our newest models, Claude Fable 5 and Claude Mythos 5. This required us to restrict access to foreign nationals, whether inside or outside the United States. Because the order took effect immediately and we had no reliable way to verify nationality in real-time, we suspended access to both models for all users.",
+        "As of today, June 30, the export controls on Fable 5 and Mythos 5 have been lifted ."
+      ],
+      "published": "2026-06-30T16:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Announcements Jun 30, 2026 Claude Science, an AI workbench for scientists, is now available Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.",
+      "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+      "summary": "Claude Science integrates the tools researchers use most, produces auditable artifacts, and provides flexible access to computing resources.",
+      "summaryParagraphs": [
+        "Claude Science integrates the tools researchers use most, produces auditable artifacts, and provides flexible access to computing resources.",
+        "AI has the potential to dramatically accelerate the pace of scientific discovery and the development of healthcare interventions. Since launching our efforts in the life sciences last fall, we’ve worked to improve our model capabilities, make connections to the scientific ecosystem via MCPs and skills, and launch partnerships in an effort to realize this potential.",
+        "Today, we’re introducing our most significant expansion of these efforts: Claude Science , an AI workbench for scientists. Claude Science is an app that integrates the tools and packages that researchers most commonly use, produces auditable artifacts, and provides flexible access to computing resources."
+      ],
+      "published": "2026-06-30T15:07:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 23, 2026 Product Introducing Claude Tag",
+      "url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "summary": "Claude Tag is a new way for teams to work with Claude.",
+      "summaryParagraphs": [
+        "Claude Tag is a new way for teams to work with Claude.",
+        "We’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.",
+        "We see Claude Tag as the beginning of an evolution of Claude Code: it makes the model even more proactive, and it works better with a full team. Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team’s code is created by our internal version of Claude Tag. The same pattern is now spreading well beyond engineering—we’re tagging Claude to chase down product metric..."
+      ],
+      "published": "2026-06-23T14:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+      "summary": "Anthropic opens in Seoul and announces new partnerships across the Korean AI ecosystem.",
+      "summaryParagraphs": [
+        "Anthropic opens in Seoul and announces new partnerships across the Korean AI ecosystem.",
+        "We’ve just opened our Seoul office . Alongside it, we’re announcing new partnerships across the Korean AI ecosystem, with the enterprises, startups, and researchers behind some of the most ambitious uses of Claude. We’ve also signed a Memorandum of Understanding (MOU) with Korea’s Ministry of Science and ICT to advance AI safety.",
+        "“What I see in Korea are teams who understand that innovation and safety are two sides of the same coin,” said KiYoung Choi, Representative Director of Korea at Anthropic. “Korean organizations are building with Claude to bring the benefits of AI to millions around the world. Opening an office in Seoul gives a long-term home to our work alongside the people shaping Korean leadership in AI.”"
+      ],
+      "published": "2026-06-17T19:34:00.000Z"
+    },
+    {
       "source": "Microsoft",
       "title": "Farming is risky business. This app helps Turkish growers succeed",
       "url": "https://news.microsoft.com/source/emea/features/farming-is-risky-business-this-app-helps-turkish-growers-succeed/",
@@ -134,6 +530,78 @@
         "“Imagine there’s only this black carpet and there’s all these pots, and they were talking about me saying, ‘This eccentric lady is trying to grow pots — plastic will not give fruit,’” she recalled with a chuckle. Now those pots are full of blooming blueberry bushes, and she is expecting an abundant harvest in June."
       ],
       "published": "2026-06-16T13:41:44.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 12, 2026 Announcements Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "summary": "The US government has issued an export control directive suspending all access to Fable 5 and Mythos 5 by foreign nationals inside or outside the US.",
+      "summaryParagraphs": [
+        "The US government has issued an export control directive suspending all access to Fable 5 and Mythos 5 by foreign nationals inside or outside the US.",
+        "The US government, citing national security authorities, has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States, including foreign national Anthropic employees. The net effect of this order is that we must abruptly disable Fable 5 and Mythos 5 for all our customers to ensure compliance. Access to all other Anthropic...",
+        "We received the directive from the government today at 5:21pm (ET). The letter did not provide specific details of its national security concern. Our understanding is that the government believes it has become aware of a method of bypassing, or “jailbreaking” Fable 5. We reviewed a demonstration of this specific technique being used to identify a small number of previously known, minor vulnerabilities. These vulne..."
+      ],
+      "published": "2026-06-12T23:38:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 12, 2026 Announcements Results from the first Anthropic Public Record",
+      "url": "https://www.anthropic.com/news/anthropic-public-record",
+      "summary": "Anthropic Public Record is a national survey of attitudes and opinions towards AI.",
+      "summaryParagraphs": [
+        "Anthropic Public Record is a national survey of attitudes and opinions towards AI.",
+        "We’re conducting a new survey series, Anthropic Public Record, to understand how the public thinks and feels about AI, and presenting a snapshot of the results from the first wave, fielded in November and December of 2025 with nearly 52,000 Americans.",
+        "Strikingly, on most questions, AI did not heavily divide Americans along typical partisan, geographic, or educational lines. In general, there was broad consensus across topics: Americans are eager to realize AI’s promised benefits but fear the disruption it may bring, and they want accountability from the companies building it. To the extent we saw disagreement, it was largely only in the intensity of people's vi..."
+      ],
+      "published": "2026-06-12T21:51:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries",
+      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+      "summary": "TCS will provide Claude to 50,000 employees across 56 countries, build Claude-powered products for regulated industries, and join our partner network.",
+      "summaryParagraphs": [
+        "TCS will provide Claude to 50,000 employees across 56 countries, build Claude-powered products for regulated industries, and join our partner network.",
+        "We’re announcing a partnership with Tata Consultancy Services (TCS), one of the world’s largest technology services companies. TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network, our network of consulting and services firms that...",
+        "Regulated industries need their work to be highly accurate and auditable, and enterprises in these fields already use Claude for that reason. TCS brings decades of experience delivering technology that is compliant with companies’ regulatory requirements—and the reach to bring Claude to thousands of enterprises worldwide."
+      ],
+      "published": "2026-06-12T18:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "summary": "Anthropic is announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
+      "summaryParagraphs": [
+        "Anthropic is announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
+        "We’re announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies. DXC will train tens of thousands of Claude-certified forward-deployed engineers (FDEs)—engineers embedded directly inside customer organizations—to bring Claude into the systems DXC operates for the world’s largest banks, airlines, insurers, manufacturers, and government agencies.",
+        "These systems, which DXC has run for decades, handle the transactions, claims, and operations businesses depend on, under strict security and compliance requirements. Before bringing Claude to these businesses, DXC worked with Claude inside its own operations, comprising some 115,000 employees across 70 countries, with similarly stringent requirements—including collaborating with Claude to write more than 95% of t..."
+      ],
+      "published": "2026-06-11T18:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 11, 2026 Announcements Introducing Claude Corps",
+      "url": "https://www.anthropic.com/news/claude-corps",
+      "summary": "Claude Corps is a national fellowship for early-career people passionate about extending the benefits of AI to communities across America.",
+      "summaryParagraphs": [
+        "Claude Corps is a national fellowship for early-career people passionate about extending the benefits of AI to communities across America.",
+        "We’re launching Claude Corps , a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
+        "We’ll teach 1,000 fellows how to use Claude well, match them with nonprofits across America, and pay them to spend a year—full-time, in-person—helping host organizations to advance their missions. Our goals are twofold: that host organizations are equipped with valuable tools and systems, and fellows build AI skills that will serve them in their careers."
+      ],
+      "published": "2026-06-11T13:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 9, 2026 Announcements Claude Fable 5 and Claude Mythos 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "summary": "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
+      "summaryParagraphs": [
+        "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
+        "We are suspending access to Claude Fable 5 and Claude Mythos 5. We apologize for this disruption to our customers and are working to restore access as soon as possible.",
+        "Today we’re launching Claude Fable 5 : a Mythos-class 1 model that we’ve made safe for general use."
+      ],
+      "published": "2026-06-09T17:00:00.000Z"
     },
     {
       "source": "Microsoft",
@@ -148,6 +616,30 @@
       "published": "2026-06-09T15:05:35.000Z"
     },
     {
+      "source": "Anthropic",
+      "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "summary": "Two new components of the Claude Partner Network make it easier for enterprises to find the firms that help put Claude into production.",
+      "summaryParagraphs": [
+        "Two new components of the Claude Partner Network make it easier for enterprises to find the firms that help put Claude into production.",
+        "Almost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work—and the real opportunity—is in the integration, the evaluation, and the way people's work evolves. That's why the companies getting AI integration right are doing it with partners who have done it before.",
+        "In March, we launched the Claude Partner Network—a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification—a credential, held by an individual, that signals they've been trained..."
+      ],
+      "published": "2026-06-03T13:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats",
+      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "summary": "As AI changes how cyberattacks happen, how well do the security community's frameworks hold up? A new report maps attacks onto MITRE ATT&CK.",
+      "summaryParagraphs": [
+        "As AI changes how cyberattacks happen, how well do the security community's frameworks hold up? A new report maps attacks onto MITRE ATT&CK.",
+        "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up?",
+        "In a new report, we seek to answer that question. We examine 832 accounts that were banned for malicious cyber activity between March 2025 and March 2026 and map them onto MITRE ATT&CK , a longstanding database of the tactics and techniques used by cyberattackers. We published some of these results in Verizon’s 2026 Data Breach Investigations Report (DBIR), and are sharing a more detailed analysis here. These 832..."
+      ],
+      "published": "2026-06-03T10:55:00.000Z"
+    },
+    {
       "source": "Microsoft",
       "title": "AI alone won’t change your business. The system running it will.",
       "url": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
@@ -158,6 +650,18 @@
         "This isn’t just about chatbots, either. Those experiences are useful, but they don’t transform how large organizations operate. The real opportunity is teams of agents executing long running work across functions like software delivery, support, finance, HR, and operations — with the identity, context, policy, and human oversight required to trust them in production."
       ],
       "published": "2026-06-02T16:25:45.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Announcements Jun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries.",
+      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "summary": "We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries",
+      "summaryParagraphs": [
+        "We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries",
+        "Project Glasswing is our collaborative effort to secure the world’s most important software. In early April, we announced that roughly 50 initial partners had access to Claude Mythos Preview, and since then, they’ve been deploying the model to scan their codebases for vulnerabilities. We recently described how these partners have so far found more than 10,000 high- or critical-severity security flaws.",
+        "We’re now expanding Project Glasswing. Following several weeks of close collaboration with our Project Glasswing partners, the security industry, open-source software maintainers, and the US government, we’re extending the partnership to approximately 150 new organizations. Each one will need to meet our security requirements before they gain access."
+      ],
+      "published": "2026-06-02T11:00:00.000Z"
     },
     {
       "source": "Microsoft",
@@ -242,510 +746,6 @@
         "Details like these inform Ellis-Garland, an engineering geologist, what the ground beneath is made of and how it behaves. She uses this data to advise her clients at geotechnical engineering firm ENGEO what can be built above ground and how."
       ],
       "published": "2026-04-20T23:36:57.000Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Announcements Jul 9, 2026 Inviting hard questions We’re asking the public for their hardest questions about AI, and committing to show our work as we address them.",
-      "url": "https://www.anthropic.com/news/hard-questions",
-      "summary": "We're asking the public for their hardest questions about AI, and committing to show our work as we address them.",
-      "summaryParagraphs": [
-        "We're asking the public for their hardest questions about AI, and committing to show our work as we address them.",
-        "People have a lot of hard questions about AI. It’s our job to address them.",
-        "Many people are positively disposed to AI. They already use it every day, and they see its potential for making our work and our lives less laborious, for changing the way we learn, for helping speed up scientific and technological progress, for creating new sources of prosperity, and for solving some of the biggest medical and social problems we face."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Announcements Jun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries.",
-      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
-      "summary": "We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries",
-      "summaryParagraphs": [
-        "We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries",
-        "Project Glasswing is our collaborative effort to secure the world’s most important software. In early April, we announced that roughly 50 initial partners had access to Claude Mythos Preview, and since then, they’ve been deploying the model to scan their codebases for vulnerabilities. We recently described how these partners have so far found more than 10,000 high- or critical-severity security flaws.",
-        "We’re now expanding Project Glasswing. Following several weeks of close collaboration with our Project Glasswing partners, the security industry, open-source software maintainers, and the US government, we’re extending the partnership to approximately 150 new organizations. Each one will need to meet our security requirements before they gain access."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Announcements Jun 30, 2026 Claude Science, an AI workbench for scientists, is now available Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.",
-      "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
-      "summary": "Claude Science integrates the tools researchers use most, produces auditable artifacts, and provides flexible access to computing resources.",
-      "summaryParagraphs": [
-        "Claude Science integrates the tools researchers use most, produces auditable artifacts, and provides flexible access to computing resources.",
-        "AI has the potential to dramatically accelerate the pace of scientific discovery and the development of healthcare interventions. Since launching our efforts in the life sciences last fall, we’ve worked to improve our model capabilities, make connections to the scientific ecosystem via MCPs and skills, and launch partnerships in an effort to realize this potential.",
-        "Today, we’re introducing our most significant expansion of these efforts: Claude Science , an AI workbench for scientists. Claude Science is an app that integrates the tools and packages that researchers most commonly use, produces auditable artifacts, and provides flexible access to computing resources."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Announcements Jun 30, 2026 Redeploying Fable 5 Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners.",
-      "url": "https://www.anthropic.com/news/redeploying-fable-5",
-      "summary": "Anthropic is redeploying Claude Fable 5 starting July 1, with updated cyber safeguards and a new jailbreak framework.",
-      "summaryParagraphs": [
-        "Anthropic is redeploying Claude Fable 5 starting July 1, with updated cyber safeguards and a new jailbreak framework.",
-        "On Friday, June 12, the US government applied export controls to our newest models, Claude Fable 5 and Claude Mythos 5. This required us to restrict access to foreign nationals, whether inside or outside the United States. Because the order took effect immediately and we had no reliable way to verify nationality in real-time, we suspended access to both models for all users.",
-        "As of today, June 30, the export controls on Fable 5 and Mythos 5 have been lifted ."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Aug 14, 2026 Announcements How Claude’s text watermark works",
-      "url": "https://www.anthropic.com/news/claude-text-watermark",
-      "summary": "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
-      "summaryParagraphs": [
-        "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
-        "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act.",
-        "In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change. To summarize:"
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Aug 25, 2026 Announcements Funding better evaluations of AI’s impact on wellbeing",
-      "url": "https://www.anthropic.com/news/wellbeing-research-grants",
-      "summary": "Anthropic is launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing.",
-      "summaryParagraphs": [
-        "Anthropic is launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing.",
-        "We’re launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing. The program will provide direct funding, access to our models, and technical support to grantees building open-source evaluations that help the AI industry measure how our models affect those who use them. Grantees will work fully independently, and will publish their work as open-source projects that any...",
-        "AI systems have become central to how many people work, learn, and solve problems. They’ve also become conversational partners and can be sources of emotional support during difficult times. But as an industry, we are still working towards developing clear standards for how models should behave in these conversations, for example, when a user begins to seek companionship from a model, or uses AI to navigate a ment..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
-      "url": "https://www.anthropic.com/news/expanding-support-for-scientists",
-      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-      "summaryParagraphs": [
-        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "As Claude becomes increasingly capable at scientific research, we are focusing on building products and programs to support the research community. In June, we launched Claude Science , a product that integrates the tools that researchers most commonly use, produces auditable artifacts, and provides flexible access to computing resources. We have also continued to broaden our AI for Science program , which provide...",
-        "Starting today, we are announcing a significant expansion of these efforts. We are opening 10,000 seats for scientists around the world to access Claude subscriptions for free and at discounted rates for one year through our new Claude team plan for scientists . Standard seats will be free and premium seats with 5x usage limits will be available for $15 per month. Over the coming months, we intend to extend this p..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Aug 27, 2026 Announcements Previewing the Model Hardware Standard",
-      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-      "summary": "Anthropic is opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
-      "summaryParagraphs": [
-        "Anthropic is opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
-        "We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers. MHS enables AI agents to operate multiple lab and manufacturing instruments, such as microscopes, liquid handlers, and robotic arms, in parallel, and perform intricate tasks ranging from routine drug...",
-        "It typically takes a lab or manufacturing facility weeks, if not months, to set up and integrate their hardware. Most devices don’t communicate with each other, instead requiring specialists to build bespoke integrations. MHS reduces this integration work to hours or minutes. And by incorporating AI into these tools, MHS also helps researchers and engineers more readily orchestrate autonomous, round-the-clock expe..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Aug 31, 2026 Announcements Improving our alignment and security efforts",
-      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
-      "summary": "On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.",
-      "summaryParagraphs": [
-        "On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.",
-        "On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. The models—intentionally running without cyber safeguards for evaluation purposes—accessed the internet due to a misconfiguration inside a third-party evaluation environment. Separately, on August 4, the UK AI Security Institute reported an incident from its own cybersecurity testing, in which Claude...",
-        "We are conducting an in-depth analysis of both incidents. We are also planning to work with METR for an independent review. We want to ensure both studies are thorough, and will share more in the coming weeks."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Aug 4, 2026 Announcements Mariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs Officer",
-      "url": "https://www.anthropic.com/news/tino-cuellar",
-      "summary": "Former California Supreme Court Justice Tino Cuéllar joins Anthropic to lead policy, international engagement, and government relations worldwide.",
-      "summaryParagraphs": [
-        "Former California Supreme Court Justice Tino Cuéllar joins Anthropic to lead policy, international engagement, and government relations worldwide.",
-        "Mariano-Florentino (Tino) Cuéllar will join Anthropic as its first Chief Global Affairs Officer, leading the company’s work on policy, strategic international engagement, and government relationships worldwide.",
-        "In recent years, he also co-chaired the bipartisan Task Force on Nuclear Proliferation and American Security, co-led California’s Frontier AI Working Group, and served as board chair and later director of the Center for Advanced Study in the Behavioral Sciences. Currently, he is the Cameron Schrier Family Professor at Stanford Law School, where he started his teaching career before serving in the judiciary and beg..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Aug 7, 2026 Product Improving Fable 5's biology safeguards",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "summary": "We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces fallbacks.",
-      "summaryParagraphs": [
-        "We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces fallbacks.",
-        "We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces false positives. Fable 5 users will now experience many fewer “fallbacks”—where the system switches to a less capable model after they make a biology-related query. In our testing, this update reduced biology-related fallbacks by about 85% across our product surfaces. 1",
-        "Fable 5 will thus be able to assist with a wider range of biology tasks."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 14, 2026 Announcements Anthropic commits $10 million to Canadian AI research",
-      "url": "https://www.anthropic.com/news/canadian-ai-research",
-      "summary": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research.",
-      "summaryParagraphs": [
-        "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research.",
-        "Canadian institutions and researchers have played a critical role in the modern AI era. During a period of broad skepticism about research into neural networks, the University of Toronto and the Université de Montréal were two of only a handful of institutions that incubated this crucial line of work, while researchers at the University of Alberta did pioneering work on reinforcement learning. And in the early 201...",
-        "Today, Canadians both at home and abroad continue to play leading roles in AI research, safety, and policy—including at Anthropic. That’s why we’re committing $10 million CAD to Canadian research institutions to fund the next generation of this work. We’re also publishing our first Canadian country brief based on the Anthropic Economic Index, which provides a snapshot of how Canadians are putting Claude to work."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 14, 2026 Product Introducing Claude for Teachers",
-      "url": "https://www.anthropic.com/news/claude-for-teachers",
-      "summary": "Verified US K-12 educators get free access to premium Claude capabilities, a teaching skills library, and standards-aligned curricula for all 50 states.",
-      "summaryParagraphs": [
-        "Verified US K-12 educators get free access to premium Claude capabilities, a teaching skills library, and standards-aligned curricula for all 50 states.",
-        "We're introducing Claude for Teachers , providing verified K-12 educators in the US free access to premium Claude capabilities, a library of teaching skills, and a direct connection to evidence-based curricula, mapped to academic standards in all 50 states.",
-        "Decades of research show that practices like differentiation, mastery-based learning, and small group instruction reliably improve student achievement, but teachers are often short on time and resources to implement them. Budgets are stretched, classes may be too large to meet every student's individual needs, and planning often spills into evenings. This strain is heaviest in under-resourced schools. Claude for T..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 2, 2026 Announcements More details on Fable 5’s cyber safeguards and our jailbreak framework",
-      "url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
-      "summary": "What is and isn't blocked by our cyber classifiers, and a first draft of our jailbreak severity framework",
-      "summaryParagraphs": [
-        "What is and isn't blocked by our cyber classifiers, and a first draft of our jailbreak severity framework",
-        "Claude Fable 5 has been re-deployed and is now available globally for all users. We’re taking this opportunity to share further information in two areas.",
-        "First, we provide more information on the cybersecurity safeguards —specifically, the safety classifiers —that we launched with the model. These are the AI systems that accompany the model that detect and block dangerous (or potentially dangerous) cybersecurity uses. Here, we provide a detailed list of the types of harms Fable 5’s classifiers are, and are not, designed to prevent."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 20, 2026 Announcements Apply for Anthropic’s AI for Science rare disease research grants",
-      "url": "https://www.anthropic.com/news/rare-disease-research-grants",
-      "summary": "Researchers can apply for up to $50,000 in Claude credits over six months to study rare genetic diseases as part of Anthropic's AI for Science program.",
-      "summaryParagraphs": [
-        "Researchers can apply for up to $50,000 in Claude credits over six months to study rare genetic diseases as part of Anthropic's AI for Science program.",
-        "Last spring, we announced Anthropic’s AI for Science program , an initiative designed to accelerate scientific research and discovery through access to our API. Since launching, we have supported researchers working on a variety of high-impact projects, ranging from drug repurposing to quantum simulation. Throughout this initiative, we have found that projects are more generative when multiple AI for Science grant...",
-        "Today, we are sharing a focused call for applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease. This program has two tracks: one for scientists doing basic research, and another for early-stage biotechs workin..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 21, 2026 Announcements Anthropic is donating another $20 million to Public First Action",
-      "url": "https://www.anthropic.com/news/donation-public-first-action",
-      "summary": "Anthropic is contributing an additional $20 million to Public First Action, bringing our total support to $40 million.",
-      "summaryParagraphs": [
-        "Anthropic is contributing an additional $20 million to Public First Action, bringing our total support to $40 million.",
-        "We're contributing an additional $20 million to Public First Action , bringing our total support to $40 million. Public First Action is a nonpartisan organization that educates the public about AI and works with Republicans, Democrats, and Independents who are serious about putting sensible AI safeguards in place. Both of our donations were made exclusively to support Public First Action’s public education and pol...",
-        "Our first donation in February 2026 was made to help promote policies that will maintain meaningful safeguards, sustain America’s AI leadership, and demand transparency from the companies building the most powerful AI models. In the months since, the case for these policies has only gotten stronger ."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 22, 2026 Economics A research agenda for the Economic Futures Research Fund",
-      "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
-      "summary": "We’re committing $200 million to the Anthropic Economic Futures Research Fund to support ambitious external research.",
-      "summaryParagraphs": [
-        "We’re committing $200 million to the Anthropic Economic Futures Research Fund to support ambitious external research.",
-        "We’re sharing the research agenda for the Anthropic Economic Futures Research Fund. We’re committing $200 million to the fund to support ambitious external research on interventions to prepare society for the economic impacts of AI.",
-        "With the research the Fund supports, we want to study what programs could make the economy more flexible and resilient, ensure the benefits of AI are shared, and minimize the harm that AI-driven disruption could cause."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 22, 2026 Product Ask Claude about the Anthropic Economic Index",
-      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
-      "summary": "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore the data directly.",
-      "summaryParagraphs": [
-        "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore the data directly.",
-        "People have hard questions about AI and work: which jobs will change, which tasks are being automated, and what it means for their own field. The Anthropic Economic Index exists to help answer them with real data. Today we're launching the Anthropic Economic Index connector for Claude, which lets anyone explore that data directly.",
-        "The Anthropic Economic Index measures how AI is actually being used in the economy. The Index’s data has been useful to researchers, journalists, and policymakers, but we want it to be just as accessible to anyone curious about how AI fits into their field or day-to-day life. Now you can ask Claude questions like:"
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 27, 2026 Announcements Cognizant and Anthropic expand their partnership to bring Claude to enterprise clients",
-      "url": "https://www.anthropic.com/news/cognizant-anthropic",
-      "summary": "Cognizant embeds Claude across its platforms, with 30,000+ associates trained, and becomes a Global Premier Partner in the Claude Partner Network.",
-      "summaryParagraphs": [
-        "Cognizant embeds Claude across its platforms, with 30,000+ associates trained, and becomes a Global Premier Partner in the Claude Partner Network.",
-        "We're expanding our partnership with Cognizant , one of the world's largest technology services companies.",
-        "Cognizant uses Claude in the systems it builds and runs for clients across manufacturing, life sciences, insurance, and other industries. With the expansion of our partnership, it’s embedding Claude across its own business and engineering platforms, scaling a Claude-certified workforce as part of its new Frontier Certified workforce model, and becoming a Global Premier Partner in the Claude Partner Network ."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 27, 2026 Announcements Our position on open-weights models",
-      "url": "https://www.anthropic.com/news/position-open-weights-models",
-      "summary": "Anthropic CEO Dario Amodei on open-weights models",
-      "summaryParagraphs": [
-        "Anthropic CEO Dario Amodei on open-weights models",
-        "Over the last few days there has been a lot of discussion about open-weights models, especially those from China. Reports suggest that some US officials are considering banning the use of Chinese open-weights models by US companies. In response, many tech companies have signed a letter supporting open-weights models, and some people have even accused Anthropic of wanting to ban open-weights models as a means of pr...",
-        "Open-weights models that don’t have dangerous capabilities are a public good: they don’t cost anything besides the compute needed to run them, and they provide value to businesses, developers, and researchers."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 30, 2026 Announcements Investigating three real-world incidents in our cybersecurity evaluations",
-      "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
-      "summary": "We found three cases where a Claude model reached the internet from an evaluation environment and accessed real systems. We share what happened and what we're changing.",
-      "summaryParagraphs": [
-        "We found three cases where a Claude model reached the internet from an evaluation environment and accessed real systems. We share what happened and what we're changing.",
-        "In a review of our cybersecurity evaluation transcripts, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations.",
-        "Below we describe what happened, how it happened, and what we’re changing. We encourage other AI labs to perform similar reviews. This post reflects our current understanding; we'll update it if any details change."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 6, 2026 Case Study Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities across government systems",
-      "url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
-      "summary": "The Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them.",
-      "summaryParagraphs": [
-        "The Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them.",
-        "Since 2025, the Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them. A team inside Alberta’s Ministry of Technology and Innovation scanned 466 million lines of code in 20 hours, remediated security gaps across its systems, and built new tools to make those systems safer.",
-        "We’re sharing details of their experience as an example of how government agencies can use Claude and Claude Code to secure their systems at a large scale. This is a critical challenge, as governments rely on these systems to deliver benefits and keep services running—yet the code is often old, insecure, and incompletely documented. Alberta has also published a collection of technical white papers documenting its..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 9, 2026 Announcements Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
-      "url": "https://www.anthropic.com/news/ben-bernanke",
-      "summary": "Former Federal Reserve Chair Ben Bernanke has been appointed to Anthropic's Long-Term Benefit Trust, bringing expertise on AI's economic impacts.",
-      "summaryParagraphs": [
-        "Former Federal Reserve Chair Ben Bernanke has been appointed to Anthropic's Long-Term Benefit Trust, bringing expertise on AI's economic impacts.",
-        "Anthropic's Long-Term Benefit Trust (LTBT) has appointed Dr. Ben Bernanke, a Distinguished Fellow at the Brookings Institution and former Chair of the Federal Reserve, as its newest member. He joins an independent body that works to hold Anthropic to its mission: the responsible development of advanced AI for the long-term benefit of humanity.",
-        "Bernanke led the Federal Reserve from 2006 to 2014, steering the central bank through the 2008 global financial crisis and the recovery that followed. Before entering government, he spent more than two decades as an academic economist, much of that time at Princeton, where he chaired the economics department and built a body of research on the Great Depression and the role banks play in financial crises. That work..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 9, 2026 Announcements Introducing a way to reflect on how you use Claude",
-      "url": "https://www.anthropic.com/news/reflect-with-claude",
-      "summary": "A new feature lets you track and visualize how you use Claude, and decide whether that time aligns with your goals.",
-      "summaryParagraphs": [
-        "A new feature lets you track and visualize how you use Claude, and decide whether that time aligns with your goals.",
-        "Today we're introducing, in beta, a new way to reflect on and refine how you use Claude. In our interviews with users, a common theme that’s emerged is a desire to better understand how, exactly, AI can be integrated into daily life. How often should someone use AI? How can it be used most effectively? When is AI suited to a task, and when is it better left to a human?",
-        "We built this feature to help answer these types of questions. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals. Your reflection dashboard can be found in Settings on Claude for web or the desktop app."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 9, 2026 Case Study UST is bringing Claude to physical AI",
-      "url": "https://www.anthropic.com/news/ust-claude",
-      "summary": "UST will train 20,000 engineers on Claude and deploy it across semiconductor, automotive, IoT, healthcare, telecom, and banking workflows.",
-      "summaryParagraphs": [
-        "UST will train 20,000 engineers on Claude and deploy it across semiconductor, automotive, IoT, healthcare, telecom, and banking workflows.",
-        "Before a factory commits to manufacturing millions of chips, engineers stress-test the design in the fab. Before a product ships, a fault on the assembly line has to be caught before it becomes a recall. When AI does this kind of work, it’s called physical AI: intelligence built into the equipment and engineering processes that produce the things people use.",
-        "We’re partnering with UST , a technology and engineering services company that builds and runs the engineering environments its clients depend on to get chips, cars, and connected devices to market. UST is putting Claude to work inside those environments, and training 20,000 of its engineers, architects, and consultants on Claude worldwide."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
-      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
-      "summary": "Anthropic is announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
-      "summaryParagraphs": [
-        "Anthropic is announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
-        "We’re announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies. DXC will train tens of thousands of Claude-certified forward-deployed engineers (FDEs)—engineers embedded directly inside customer organizations—to bring Claude into the systems DXC operates for the world’s largest banks, airlines, insurers, manufacturers, and government agencies.",
-        "These systems, which DXC has run for decades, handle the transactions, claims, and operations businesses depend on, under strict security and compliance requirements. Before bringing Claude to these businesses, DXC worked with Claude inside its own operations, comprising some 115,000 employees across 70 countries, with similarly stringent requirements—including collaborating with Claude to write more than 95% of t..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 11, 2026 Announcements Introducing Claude Corps",
-      "url": "https://www.anthropic.com/news/claude-corps",
-      "summary": "Claude Corps is a national fellowship for early-career people passionate about extending the benefits of AI to communities across America.",
-      "summaryParagraphs": [
-        "Claude Corps is a national fellowship for early-career people passionate about extending the benefits of AI to communities across America.",
-        "We’re launching Claude Corps , a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
-        "We’ll teach 1,000 fellows how to use Claude well, match them with nonprofits across America, and pay them to spend a year—full-time, in-person—helping host organizations to advance their missions. Our goals are twofold: that host organizations are equipped with valuable tools and systems, and fellows build AI skills that will serve them in their careers."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 12, 2026 Announcements Results from the first Anthropic Public Record",
-      "url": "https://www.anthropic.com/news/anthropic-public-record",
-      "summary": "Anthropic Public Record is a national survey of attitudes and opinions towards AI.",
-      "summaryParagraphs": [
-        "Anthropic Public Record is a national survey of attitudes and opinions towards AI.",
-        "We’re conducting a new survey series, Anthropic Public Record, to understand how the public thinks and feels about AI, and presenting a snapshot of the results from the first wave, fielded in November and December of 2025 with nearly 52,000 Americans.",
-        "Strikingly, on most questions, AI did not heavily divide Americans along typical partisan, geographic, or educational lines. In general, there was broad consensus across topics: Americans are eager to realize AI’s promised benefits but fear the disruption it may bring, and they want accountability from the companies building it. To the extent we saw disagreement, it was largely only in the intensity of people's vi..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 12, 2026 Announcements Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
-      "url": "https://www.anthropic.com/news/fable-mythos-access",
-      "summary": "The US government has issued an export control directive suspending all access to Fable 5 and Mythos 5 by foreign nationals inside or outside the US.",
-      "summaryParagraphs": [
-        "The US government has issued an export control directive suspending all access to Fable 5 and Mythos 5 by foreign nationals inside or outside the US.",
-        "The US government, citing national security authorities, has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States, including foreign national Anthropic employees. The net effect of this order is that we must abruptly disable Fable 5 and Mythos 5 for all our customers to ensure compliance. Access to all other Anthropic...",
-        "We received the directive from the government today at 5:21pm (ET). The letter did not provide specific details of its national security concern. Our understanding is that the government believes it has become aware of a method of bypassing, or “jailbreaking” Fable 5. We reviewed a demonstration of this specific technique being used to identify a small number of previously known, minor vulnerabilities. These vulne..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries",
-      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-      "summary": "TCS will provide Claude to 50,000 employees across 56 countries, build Claude-powered products for regulated industries, and join our partner network.",
-      "summaryParagraphs": [
-        "TCS will provide Claude to 50,000 employees across 56 countries, build Claude-powered products for regulated industries, and join our partner network.",
-        "We’re announcing a partnership with Tata Consultancy Services (TCS), one of the world’s largest technology services companies. TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network, our network of consulting and services firms that...",
-        "Regulated industries need their work to be highly accurate and auditable, and enterprises in these fields already use Claude for that reason. TCS brings decades of experience delivering technology that is compliant with companies’ regulatory requirements—and the reach to bring Claude to thousands of enterprises worldwide."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
-      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
-      "summary": "Anthropic opens in Seoul and announces new partnerships across the Korean AI ecosystem.",
-      "summaryParagraphs": [
-        "Anthropic opens in Seoul and announces new partnerships across the Korean AI ecosystem.",
-        "We’ve just opened our Seoul office . Alongside it, we’re announcing new partnerships across the Korean AI ecosystem, with the enterprises, startups, and researchers behind some of the most ambitious uses of Claude. We’ve also signed a Memorandum of Understanding (MOU) with Korea’s Ministry of Science and ICT to advance AI safety.",
-        "“What I see in Korea are teams who understand that innovation and safety are two sides of the same coin,” said KiYoung Choi, Representative Director of Korea at Anthropic. “Korean organizations are building with Claude to bring the benefits of AI to millions around the world. Opening an office in Seoul gives a long-term home to our work alongside the people shaping Korean leadership in AI.”"
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 23, 2026 Product Introducing Claude Tag",
-      "url": "https://www.anthropic.com/news/introducing-claude-tag",
-      "summary": "Claude Tag is a new way for teams to work with Claude.",
-      "summaryParagraphs": [
-        "Claude Tag is a new way for teams to work with Claude.",
-        "We’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.",
-        "We see Claude Tag as the beginning of an evolution of Claude Code: it makes the model even more proactive, and it works better with a full team. Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team’s code is created by our internal version of Claude Tag. The same pattern is now spreading well beyond engineering—we’re tagging Claude to chase down product metric..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "summary": "Two new components of the Claude Partner Network make it easier for enterprises to find the firms that help put Claude into production.",
-      "summaryParagraphs": [
-        "Two new components of the Claude Partner Network make it easier for enterprises to find the firms that help put Claude into production.",
-        "Almost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work—and the real opportunity—is in the integration, the evaluation, and the way people's work evolves. That's why the companies getting AI integration right are doing it with partners who have done it before.",
-        "In March, we launched the Claude Partner Network—a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification—a credential, held by an individual, that signals they've been trained..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats",
-      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
-      "summary": "As AI changes how cyberattacks happen, how well do the security community's frameworks hold up? A new report maps attacks onto MITRE ATT&CK.",
-      "summaryParagraphs": [
-        "As AI changes how cyberattacks happen, how well do the security community's frameworks hold up? A new report maps attacks onto MITRE ATT&CK.",
-        "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up?",
-        "In a new report, we seek to answer that question. We examine 832 accounts that were banned for malicious cyber activity between March 2025 and March 2026 and map them onto MITRE ATT&CK , a longstanding database of the tactics and techniques used by cyberattackers. We published some of these results in Verizon’s 2026 Data Breach Investigations Report (DBIR), and are sharing a more detailed analysis here. These 832..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 9, 2026 Announcements Claude Fable 5 and Claude Mythos 5",
-      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "summary": "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
-      "summaryParagraphs": [
-        "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
-        "We are suspending access to Claude Fable 5 and Claude Mythos 5. We apologize for this disruption to our customers and are working to restore access as soon as possible.",
-        "Today we’re launching Claude Fable 5 : a Mythos-class 1 model that we’ve made safe for general use."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Product Jul 24, 2026 Introducing Claude Opus 5 Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
-      "url": "https://www.anthropic.com/news/claude-opus-5",
-      "summary": "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
-      "summaryParagraphs": [
-        "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
-        "Claude Opus 5 is available today. It’s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.",
-        "On coding and knowledge work evaluations like Frontier-Bench and GDPval-AA , Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Sep 1, 2026 Announcements Developing Enterprise Frontier Safeguards with our customers",
-      "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
-      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-      "summaryParagraphs": [
-        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "We developed EFS in close collaboration with more than 100 customers in industries like financial services, healthcare, manufacturing, telecom, law, retail, and the public sector, and with our cloud partners at Amazon Web Services, Google Cloud, and Microsoft Azure.",
-        "EFS will be supported on Claude Code, Claude Enterprise, the Claude Platform, Amazon Bedrock, Claude Platform on AWS, Google’s Agent Platform, and Microsoft Foundry."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
-      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
-      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-      "summaryParagraphs": [
-        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access to our Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work. We have already onboarded dozens of organizations through an early-access program, and are now opening applications to the broader life science community ( apply here ). The program is...",
-        "The LSVP is designed to enable life science professionals to use our models across a wide range of tasks that are currently blocked in our generally available Fable models, like drug discovery, research biology, clinical development, and manufacturing. It’s built for teams of all kinds—from academic labs to startups, pharma companies, and more."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
-      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-      "summary": "We’re partnering with Accenture on independent evaluation of frontier AI—part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years.",
-      "summaryParagraphs": [
-        "We’re partnering with Accenture on independent evaluation of frontier AI—part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years.",
-        "We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO’s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic.",
-        "The partnership will be led by Faculty, Accenture’s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps businesses and governments deploy AI across many industries. Their understanding of how enterprises use AI in practice informs their safety approach, and they will bring that perspective to evaluating our models."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
-      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "summary": "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown.",
-      "summaryParagraphs": [
-        "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown.",
-        "We’re introducing a new life sciences research group and laboratory at Anthropic. Our focus is on fundamental biology research using Claude: exploring datasets of DNA to identify uncharacterized protein families, generating hypotheses at scale, and testing them through experiments in the lab. This post introduces the team behind this work and shares early results in which Claude discovered a novel enzyme system wi...",
-        "Today, we’re sharing early results from one of our first research programs, in which Claude autonomously discovered a novel enzyme system that is associated with an array of DNA repeats, a pattern reminiscent of CRISPR. Although we don’t yet know its function, the system that Claude discovered has a set of characteristics that have only ever been found together in a handful of other systems, all of which are progr..."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Claude",
-      "title": "Aug 14, 2026 Announcements How Claude’s text watermark works",
-      "url": "https://www.anthropic.com/news/claude-text-watermark",
-      "summary": "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
-      "summaryParagraphs": [
-        "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
-        "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act.",
-        "In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change. To summarize:"
-      ],
-      "published": ""
-    },
-    {
-      "source": "Claude",
-      "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
-      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "summary": "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown.",
-      "summaryParagraphs": [
-        "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown.",
-        "We’re introducing a new life sciences research group and laboratory at Anthropic. Our focus is on fundamental biology research using Claude: exploring datasets of DNA to identify uncharacterized protein families, generating hypotheses at scale, and testing them through experiments in the lab. This post introduces the team behind this work and shares early results in which Claude discovered a novel enzyme system wi...",
-        "Today, we’re sharing early results from one of our first research programs, in which Claude autonomously discovered a novel enzyme system that is associated with an array of DNA repeats, a pattern reminiscent of CRISPR. Although we don’t yet know its function, the system that Claude discovered has a set of characteristics that have only ever been found together in a handful of other systems, all of which are progr..."
-      ],
-      "published": ""
     },
     {
       "source": "Perplexity",
