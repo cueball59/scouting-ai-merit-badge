@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T16:23:32.755Z",
+  "lastUpdated": "2026-10-01T17:00:53.414Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -16,7 +16,7 @@
     {
       "name": "Claude",
       "ok": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
@@ -27,6 +27,30 @@
     }
   ],
   "posts": [
+    {
+      "source": "Anthropic",
+      "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
+      "url": "https://www.anthropic.com/news/barclays-scales-claude",
+      "summary": "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations.",
+      "summaryParagraphs": [
+        "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations.",
+        "Barclays is extending Claude across the bank to accelerate software development, modernize legacy systems, and improve operational efficiency. As part of this rollout, Barclays expects Claude Code adoption to reach 50% of its developer population by the end of 2026, rising to a majority of software engineers in 2027.",
+        "Integrating AI across a large, complex, and highly regulated organization requires both capable technology and disciplined governance. Expanding its collaboration with Anthropic reflects a shared commitment to deploying AI responsibly, reliably, and in ways that deliver real outcomes, such as providing faster support for customers."
+      ],
+      "published": "2026-10-01T15:19:00.000Z"
+    },
+    {
+      "source": "Claude",
+      "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
+      "url": "https://www.anthropic.com/news/barclays-scales-claude",
+      "summary": "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations.",
+      "summaryParagraphs": [
+        "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations.",
+        "Barclays is extending Claude across the bank to accelerate software development, modernize legacy systems, and improve operational efficiency. As part of this rollout, Barclays expects Claude Code adoption to reach 50% of its developer population by the end of 2026, rising to a majority of software engineers in 2027.",
+        "Integrating AI across a large, complex, and highly regulated organization requires both capable technology and disciplined governance. Expanding its collaboration with Anthropic reflects a shared commitment to deploying AI responsibly, reliably, and in ways that deliver real outcomes, such as providing faster support for customers."
+      ],
+      "published": "2026-10-01T15:19:00.000Z"
+    },
     {
       "source": "Anthropic",
       "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
@@ -70,7 +94,7 @@
       "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
       "summaryParagraphs": [
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access to our Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work. We have already onboarded dozens of organizations through an early-access program, and are now opening applications to the broader life science community ( apply here ). The program is...",
+        "Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access to our Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work. We have already onboarded dozens of organizations through an early-access program, and are now opening applications to the broader life science community ( join waitlist here ). The pr...",
         "The LSVP is designed to enable life science professionals to use our models across a wide range of tasks that are currently blocked in our generally available Fable models, like drug discovery, research biology, clinical development, and manufacturing. It’s built for teams of all kinds—from academic labs to startups, pharma companies, and more."
       ],
       "published": "2026-09-17T15:56:00.000Z"
@@ -722,30 +746,6 @@
         "You hear about it everywhere, from LinkedIn posts to keynote speakers to job listings: Learning to use AI is the way to get ahead in your job and help future-proof your career."
       ],
       "published": "2026-04-28T15:05:49.000Z"
-    },
-    {
-      "source": "Microsoft",
-      "title": "Cricket Australia uses AI Insights to bring fans closer to the action",
-      "url": "https://news.microsoft.com/source/asia/features/cricket-australia-uses-ai-insights-to-bring-fans-closer-to-the-action/",
-      "summary": "Cricket Australia Live app brings the game closer to fans with Microsoft AI powered rich insights",
-      "summaryParagraphs": [
-        "Cricket Australia Live app brings the game closer to fans with Microsoft AI powered rich insights",
-        "When England and Australia faced off on Day 5 of the fifth Test of the always tense Ashes cricket series in January, every ball bowled and solid crack had fans on the edge of their seats both at the Sydney Cricket Ground and around the globe.",
-        "As Australia looked to extend its winning streak to four straight Ashes on home soil, it was clear that left-handed batter Travis Head was leading the way for Australia as the runs piled up. But just how good was his performance? Fans using the Cricket Australia Live app had an instant answer."
-      ],
-      "published": "2026-04-23T01:47:07.000Z"
-    },
-    {
-      "source": "Microsoft",
-      "title": "Pairing geotechnical data with AI helps New Zealand build better",
-      "url": "https://news.microsoft.com/source/asia/features/pairing-geotechnical-data-with-ai-helps-new-zealand-to-build-better/",
-      "summary": "Beca’s digital twin platform BEYON and its AI assistant, powered by Azure and Azure OpenAI in Microsoft Foundry is helping New Zealand build safer.",
-      "summaryParagraphs": [
-        "Beca’s digital twin platform BEYON and its AI assistant, powered by Azure and Azure OpenAI in Microsoft Foundry is helping New Zealand build safer.",
-        "Olivia Ellis-Garland clicks on a map of New Zealand on her laptop and types: “Show me the investigations in Hobsonville.” A list pops up in seconds and the map automatically zooms, displaying underground tests of the scenic Auckland suburb, each containing crucial data like soil composition, water levels and rock layers.",
-        "Details like these inform Ellis-Garland, an engineering geologist, what the ground beneath is made of and how it behaves. She uses this data to advise her clients at geotechnical engineering firm ENGEO what can be built above ground and how."
-      ],
-      "published": "2026-04-20T23:36:57.000Z"
     },
     {
       "source": "Perplexity",
