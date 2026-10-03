@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02T16:15:13.871Z",
+  "lastUpdated": "2026-10-03T14:42:33.544Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,30 @@
     }
   ],
   "posts": [
+    {
+      "source": "Anthropic",
+      "title": "Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+      "url": "https://www.anthropic.com/news/claude-frontier-academy",
+      "summary": "Claude Frontier Academy trains Frontier Deployed Engineers to the standard of Anthropic’s own — a $100 million commitment to train 10,000 by the end of 2027.",
+      "summaryParagraphs": [
+        "Claude Frontier Academy trains Frontier Deployed Engineers to the standard of Anthropic’s own — a $100 million commitment to train 10,000 by the end of 2027.",
+        "The first-of-its-kind Academy trains Frontier Deployed Engineers using the same standard of skills as Anthropic’s own engineers, starting with cohorts from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk and others.",
+        "Today we are launching Claude Frontier Academy to solve one of the most pressing issues in AI implementation: talent. Backed by a $100 million commitment, Anthropic aims to train 10,000 Frontier Deployed Engineers (FDEs) by the end of 2027. Engineers from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley and Novo Nordisk are in the first cohorts."
+      ],
+      "published": "2026-10-02T23:01:00.000Z"
+    },
+    {
+      "source": "Claude",
+      "title": "Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+      "url": "https://www.anthropic.com/news/claude-frontier-academy",
+      "summary": "Claude Frontier Academy trains Frontier Deployed Engineers to the standard of Anthropic’s own — a $100 million commitment to train 10,000 by the end of 2027.",
+      "summaryParagraphs": [
+        "Claude Frontier Academy trains Frontier Deployed Engineers to the standard of Anthropic’s own — a $100 million commitment to train 10,000 by the end of 2027.",
+        "The first-of-its-kind Academy trains Frontier Deployed Engineers using the same standard of skills as Anthropic’s own engineers, starting with cohorts from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk and others.",
+        "Today we are launching Claude Frontier Academy to solve one of the most pressing issues in AI implementation: talent. Backed by a $100 million commitment, Anthropic aims to train 10,000 Frontier Deployed Engineers (FDEs) by the end of 2027. Engineers from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley and Novo Nordisk are in the first cohorts."
+      ],
+      "published": "2026-10-02T23:01:00.000Z"
+    },
     {
       "source": "Anthropic",
       "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
@@ -722,30 +746,6 @@
         "Instead of scanning dense nutritional tables line by line—looking for a mismatched number or a missing comma—the designer on his team now runs a prompt through an AI agent Rodríguez built himself. Seconds later, it flags any discrepancies between the technical documentation and the final label."
       ],
       "published": "2026-05-14T13:01:18.000Z"
-    },
-    {
-      "source": "Microsoft",
-      "title": "Inside Porsche Cup Brasil’s AI-powered race operations",
-      "url": "https://news.microsoft.com/source/latam/features/ai/porsche-cup-brasil-ai-powered-crash-analysis/?lang=en",
-      "summary": "Porsche Cup Brasil uses AI and real-time telemetry to analyze crashes, speed repairs and improve race operations—cutting turnaround time by nearly half.",
-      "summaryParagraphs": [
-        "Porsche Cup Brasil uses AI and real-time telemetry to analyze crashes, speed repairs and improve race operations—cutting turnaround time by nearly half.",
-        "Porsche Cup Brasil is turning racing into a real-time decision system. From AI-powered crash analysis to live telemetry streamed through connected data platforms, the series is transforming how teams diagnose problems, recover cars and manage race operations, turning delays into faster turnaround times and keeping more cars on track. On a race weekend where the gap between competing and falling behind is measured...",
-        "The process begins when a damaged car arrives in the pit. Engineers conduct a physical inspection and document the exterior damage."
-      ],
-      "published": "2026-05-07T15:03:19.000Z"
-    },
-    {
-      "source": "Microsoft",
-      "title": "Work smarter in 90 days: A real-world guide to using AI",
-      "url": "https://news.microsoft.com/signal/articles/work-smarter-in-90-days-a-real-world-guide-to-using-ai/",
-      "summary": "Learn how to use AI at work in 90 days with a practical, step-by-step plan to boost productivity, build key skills and grow your career.",
-      "summaryParagraphs": [
-        "Learn how to use AI at work in 90 days with a practical, step-by-step plan to boost productivity, build key skills and grow your career.",
-        "Apr 28, 2026 &nbsp;&nbsp;-&nbsp;&nbsp; The estimated reading time is 7 min.",
-        "You hear about it everywhere, from LinkedIn posts to keynote speakers to job listings: Learning to use AI is the way to get ahead in your job and help future-proof your career."
-      ],
-      "published": "2026-04-28T15:05:49.000Z"
     },
     {
       "source": "Perplexity",
