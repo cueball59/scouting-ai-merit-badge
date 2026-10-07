@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T16:45:48.444Z",
+  "lastUpdated": "2026-10-07T17:24:33.933Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Anthropic",
+      "title": "Announcements Oct 6, 2026 Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "summary": "We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+      "summaryParagraphs": [
+        "We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+        "We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals. The program now consists of three access tiers, which allow security teams to apply for the level of access that best suits their work. Each tier includes access to our most capable models, including Claude Opus 5.5...",
+        "Cybersecurity is inherently dual use: the same capabilities that enable a security team to find and fix a vulnerability can also help a malicious actor exploit it. For this reason, our generally available models, such as Claude Opus 5.5 , Claude Fable 5.1 , and Claude Sonnet 5.5 , have conservative cyber safeguards that block most cyber work. This is intended to limit the harmful activities malicious actors can ca..."
+      ],
+      "published": "2026-10-06T19:00:00.000Z"
+    },
     {
       "source": "Anthropic",
       "title": "Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
@@ -734,18 +746,6 @@
         "She knows who in the 97-bed&nbsp;home&nbsp;has had a fall,&nbsp;who’s&nbsp;refusing medication and if someone is nearing&nbsp;end&nbsp;of&nbsp;life. And&nbsp;she’s&nbsp;all&nbsp;set&nbsp;for the 9:30&nbsp;a.m.&nbsp;meeting, where she flags the day’s follow-ups and priorities to her team of registered nurses and personal care assistants."
       ],
       "published": "2026-05-18T23:06:46.000Z"
-    },
-    {
-      "source": "Microsoft",
-      "title": "Costa Rican dairy cooperative turns AI agents into coworkers",
-      "url": "https://news.microsoft.com/source/latam/features/ai/costa-rica-dos-pinos-ai-agents-microsoft-copilot-en/?lang=en",
-      "summary": "Costa Rica’s Dos Pinos uses AI agents with Microsoft Copilot to boost efficiency, eliminate errors, and transform workflows across its dairy operations.",
-      "summaryParagraphs": [
-        "Costa Rica’s Dos Pinos uses AI agents with Microsoft Copilot to boost efficiency, eliminate errors, and transform workflows across its dairy operations.",
-        "When a new packaging redesign lands on his team, Jhojan Rodríguez no longer braces for the most stressful part of the job.",
-        "Instead of scanning dense nutritional tables line by line—looking for a mismatched number or a missing comma—the designer on his team now runs a prompt through an AI agent Rodríguez built himself. Seconds later, it flags any discrepancies between the technical documentation and the final label."
-      ],
-      "published": "2026-05-14T13:01:18.000Z"
     },
     {
       "source": "Perplexity",
