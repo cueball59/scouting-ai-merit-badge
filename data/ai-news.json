@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07T17:24:33.933Z",
+  "lastUpdated": "2026-10-08T17:23:03.845Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,30 @@
     }
   ],
   "posts": [
+    {
+      "source": "Anthropic",
+      "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "summary": "We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.",
+      "summaryParagraphs": [
+        "We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.",
+        "Each year, Anthropic updates its Usage Policy in response to the evolving capabilities of our models, and the feedback we’ve received from our customers. We're publishing a new version of the policy today. In this post, we summarize the changes we’ve made.",
+        "Most of the updates in the latest version are intended to clarify existing rules. In the year since our last refresh, Claude has taken on longer, more independent work. This update provides new examples that show how our rules apply to Claude’s new capabilities. It draws on new patterns of misuse in influence operations, weapons development, and surveillance that we’ve observed in the past year (as we’ve documente..."
+      ],
+      "published": "2026-10-08T17:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
+      "url": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "summary": "Anthropic is committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI.",
+      "summaryParagraphs": [
+        "Anthropic is committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI.",
+        "Anthropic is deepening its support for American scientific research by committing $150 million over three years to the Genesis Mission , a federal initiative to accelerate scientific and technological discovery through AI. The funding will go toward making Claude available to more than 15 agencies that are part of the mission, including NASA, the National Institutes of Health, and the National Science Foundation.",
+        "We first announced our partnership with the US Department of Energy (DOE) and the Genesis Mission last December . Since then, we have worked with DOE to bring Claude to scientists across the national laboratories. Today, we announced this new commitment as part of the Science: A New Golden Age Summit hosted by the White House Office of Science and Technology Policy in Washington, DC."
+      ],
+      "published": "2026-10-08T13:00:00.000Z"
+    },
     {
       "source": "Anthropic",
       "title": "Announcements Oct 6, 2026 Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
@@ -722,30 +746,6 @@
         "We’re now expanding Project Glasswing. Following several weeks of close collaboration with our Project Glasswing partners, the security industry, open-source software maintainers, and the US government, we’re extending the partnership to approximately 150 new organizations. Each one will need to meet our security requirements before they gain access."
       ],
       "published": "2026-06-02T11:00:00.000Z"
-    },
-    {
-      "source": "Microsoft",
-      "title": "There is no Copilot without the pilots, says Slovenian insurance executive",
-      "url": "https://news.microsoft.com/source/emea/features/zavarovalnica-triglav-copilot-adoption-insurance/",
-      "summary": "How Zavarovalnica Triglav is adopting Microsoft Copilot across a regulated insurance business, using digital mentors and strong governance.",
-      "summaryParagraphs": [
-        "How Zavarovalnica Triglav is adopting Microsoft Copilot across a regulated insurance business, using digital mentors and strong governance.",
-        "For a 125-plus-year-old company in a highly regulated industry, Zavarovalnica Triglav , the Triglav Group’s parent company , has been an early and enthusiastic adopter of AI, through Copilot.",
-        "The diversified insurance and financial group, based in Ljubljana, Slovenia, has been using Copilot “heavily since the beginning” of the AI tool, says Klemen Ramoveš, chief digital officer, at Triglav."
-      ],
-      "published": "2026-05-27T20:55:17.000Z"
-    },
-    {
-      "source": "Microsoft",
-      "title": "At aged care provider Regis, AI takes on paperwork so staff can focus on residents",
-      "url": "https://news.microsoft.com/source/asia/features/at-aged-care-provider-regis-ai-takes-on-paperwork-so-staff-can-focus-on-residents/",
-      "summary": "Regis Aged Care uses AI with Microsoft Foundry and Copilot Studio to reduce admin work and help staff focus on resident care.",
-      "summaryParagraphs": [
-        "Regis Aged Care uses AI with Microsoft Foundry and Copilot Studio to reduce admin work and help staff focus on resident care.",
-        "Dorkas Sangalang is just 30 minutes into her morning shift,&nbsp;and&nbsp;she’s&nbsp;already up to speed on&nbsp;clinical concerns&nbsp;raised&nbsp;overnight about the residents of the aged care home&nbsp;she works at.",
-        "She knows who in the 97-bed&nbsp;home&nbsp;has had a fall,&nbsp;who’s&nbsp;refusing medication and if someone is nearing&nbsp;end&nbsp;of&nbsp;life. And&nbsp;she’s&nbsp;all&nbsp;set&nbsp;for the 9:30&nbsp;a.m.&nbsp;meeting, where she flags the day’s follow-ups and priorities to her team of registered nurses and personal care assistants."
-      ],
-      "published": "2026-05-18T23:06:46.000Z"
     },
     {
       "source": "Perplexity",
