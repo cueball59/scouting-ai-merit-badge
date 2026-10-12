@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-11T16:18:18.472Z",
+  "lastUpdated": "2026-10-12T19:47:06.534Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,16 @@
     }
   ],
   "posts": [
+    {
+      "source": "Microsoft",
+      "title": "Introducing Microsoft's latest custom chip: Maia 300",
+      "url": "https://news.microsoft.com/maia-2026/",
+      "summary": "The post Introducing Microsoft's latest custom chip: Maia 300 appeared first on Source . ]]>",
+      "summaryParagraphs": [
+        "The post Introducing Microsoft's latest custom chip: Maia 300 appeared first on Source . ]]>"
+      ],
+      "published": "2026-10-12T13:14:40.000Z"
+    },
     {
       "source": "Anthropic",
       "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
@@ -734,18 +744,6 @@
         "In a new report, we seek to answer that question. We examine 832 accounts that were banned for malicious cyber activity between March 2025 and March 2026 and map them onto MITRE ATT&CK , a longstanding database of the tactics and techniques used by cyberattackers. We published some of these results in Verizon’s 2026 Data Breach Investigations Report (DBIR), and are sharing a more detailed analysis here. These 832..."
       ],
       "published": "2026-06-03T10:55:00.000Z"
-    },
-    {
-      "source": "Microsoft",
-      "title": "AI alone won’t change your business. The system running it will.",
-      "url": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
-      "summary": "Become an AI-first enterprise with Microsoft’s agent platform.",
-      "summaryParagraphs": [
-        "Become an AI-first enterprise with Microsoft’s agent platform.",
-        "AI has arrived in the enterprise, and the shift is happening all at once. Every function, every role, every workflow is being reshaped. At the same time, a new class of organizations is emerging, one that will look fundamentally different from the companies that defined the last era of business. The winners won’t be those with the most demos, but those that turn AI into a governed, continuously improving system fo...",
-        "This isn’t just about chatbots, either. Those experiences are useful, but they don’t transform how large organizations operate. The real opportunity is teams of agents executing long running work across functions like software delivery, support, finance, HR, and operations — with the identity, context, policy, and human oversight required to trust them in production."
-      ],
-      "published": "2026-06-02T16:25:45.000Z"
     },
     {
       "source": "Perplexity",
