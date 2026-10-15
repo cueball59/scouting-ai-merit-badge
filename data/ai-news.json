@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T15:05:11.244Z",
+  "lastUpdated": "2026-10-15T14:58:14.203Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Anthropic",
+      "title": "Oct 14, 2026 Policy Preparing for the 2026 US midterms",
+      "url": "https://www.anthropic.com/news/2026-us-midterms",
+      "summary": "Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.",
+      "summaryParagraphs": [
+        "Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.",
+        "Earlier this year, we shared an update on our election safeguards , which described how we measure and prevent political bias, detect misuse, and direct people to accurate voting information.",
+        "Below, we outline how we've built on that work and continued to strengthen our election safeguards ahead of this year’s US midterms."
+      ],
+      "published": "2026-10-14T18:33:00.000Z"
+    },
     {
       "source": "Anthropic",
       "title": "Oct 14, 2026 Announcements Anthropic opens Singapore office and signs MOU with the Government of Singapore",
@@ -732,18 +744,6 @@
         "Cancer treatment has gotten more precise over time, as doctors first classified the disease by where it began in the body and, more recently, by the mutations found inside cancer cells to help find the right drugs to treat it."
       ],
       "published": "2026-06-09T15:05:35.000Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "summary": "Two new components of the Claude Partner Network make it easier for enterprises to find the firms that help put Claude into production.",
-      "summaryParagraphs": [
-        "Two new components of the Claude Partner Network make it easier for enterprises to find the firms that help put Claude into production.",
-        "Almost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work—and the real opportunity—is in the integration, the evaluation, and the way people's work evolves. That's why the companies getting AI integration right are doing it with partners who have done it before.",
-        "In March, we launched the Claude Partner Network—a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification—a credential, held by an individual, that signals they've been trained..."
-      ],
-      "published": "2026-06-03T13:00:00.000Z"
     },
     {
       "source": "Perplexity",
