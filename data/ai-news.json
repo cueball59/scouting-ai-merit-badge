@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-15T14:58:14.203Z",
+  "lastUpdated": "2026-10-16T14:48:16.471Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,30 @@
     }
   ],
   "posts": [
+    {
+      "source": "Anthropic",
+      "title": "Oct 15, 2026 Announcements An update on independent evaluators",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "summary": "Anthropic announces updates to embedding independent evaluators",
+      "summaryParagraphs": [
+        "Anthropic announces updates to embedding independent evaluators",
+        "Last month, we committed to stronger independent, third-party assessment of our models and safety practices. We also signed the White House Accord on Super Intelligence, in which companies pledged to partner with independent external auditors or evaluators. Today, we’re announcing that we’ve started to give employee-like access to a team from METR , a nonprofit that evaluates frontier AI models.",
+        "METR will publish the results of its risk assessments. Over the past year, we’ve worked with METR on several reviews of our Risk Reports . We’re also working with SecureBio and Accenture as evaluators, and are in early discussions with several other organizations, including Hugging Face ."
+      ],
+      "published": "2026-10-15T17:20:00.000Z"
+    },
+    {
+      "source": "Microsoft",
+      "title": "Missed a lecture? This AI agent at Bar-Ilan University helps students catch up",
+      "url": "https://news.microsoft.com/source/emea/features/missed-a-lecture-this-ai-agent-at-bar-ilan-university-helps-students-catch-up/",
+      "summary": "When Yarden Shay missed some classes in her first semester at Bar-Ilan University (BIU) last year, she struggled to get up to speed. The lectures were on legal responsibility, just one of 22 modules in the first year of her undergraduate degree in criminology and psychology.",
+      "summaryParagraphs": [
+        "When Yarden Shay missed some classes in her first semester at Bar-Ilan University (BIU) last year, she struggled to get up to speed. The lectures were on legal responsibility, just one of 22 modules in the first year of her undergraduate degree in criminology and psychology.",
+        "Plugging that knowledge gap with borrowed notes while staying on top of six to eight hours of fresh lectures daily was an ordeal, she recalls.",
+        "“So, you’re already falling behind, and you’re getting new information that isn’t connecting, because you don’t have the previous information. The stress is everywhere.” That stress is less an issue for her today."
+      ],
+      "published": "2026-10-15T15:22:58.000Z"
+    },
     {
       "source": "Anthropic",
       "title": "Oct 14, 2026 Policy Preparing for the 2026 US midterms",
@@ -720,30 +744,6 @@
         "We’ll teach 1,000 fellows how to use Claude well, match them with nonprofits across America, and pay them to spend a year—full-time, in-person—helping host organizations to advance their missions. Our goals are twofold: that host organizations are equipped with valuable tools and systems, and fellows build AI skills that will serve them in their careers."
       ],
       "published": "2026-06-11T13:00:00.000Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 9, 2026 Announcements Claude Fable 5 and Claude Mythos 5",
-      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "summary": "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
-      "summaryParagraphs": [
-        "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
-        "We are suspending access to Claude Fable 5 and Claude Mythos 5. We apologize for this disruption to our customers and are working to restore access as soon as possible.",
-        "Today we’re launching Claude Fable 5 : a Mythos-class 1 model that we’ve made safe for general use."
-      ],
-      "published": "2026-06-09T17:00:00.000Z"
-    },
-    {
-      "source": "Microsoft",
-      "title": "Why don’t cancer medicines work the same for everyone?",
-      "url": "https://news.microsoft.com/signal/articles/why-dont-cancer-medicines-work-the-same-for-everyone-ex-vivo/",
-      "summary": "Why do cancer drugs work for some people but not others? New AI research looks at how tumor cells behave to better match treatments to patients.",
-      "summaryParagraphs": [
-        "Why do cancer drugs work for some people but not others? New AI research looks at how tumor cells behave to better match treatments to patients.",
-        "Jun 9, 2026 &nbsp;&nbsp;-&nbsp;&nbsp; The estimated reading time is 6 min.",
-        "Cancer treatment has gotten more precise over time, as doctors first classified the disease by where it began in the body and, more recently, by the mutations found inside cancer cells to help find the right drugs to treat it."
-      ],
-      "published": "2026-06-09T15:05:35.000Z"
     },
     {
       "source": "Perplexity",
