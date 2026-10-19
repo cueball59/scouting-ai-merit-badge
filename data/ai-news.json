@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T13:58:59.109Z",
+  "lastUpdated": "2026-10-19T16:58:13.492Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -16,7 +16,7 @@
     {
       "name": "Claude",
       "ok": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Anthropic",
+      "title": "Oct 18, 2026 Announcements Investing in the public benefit",
+      "url": "https://www.anthropic.com/news/public-benefit-fund",
+      "summary": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+      "summaryParagraphs": [
+        "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+        "Today, we’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows. Subject to stockholder approval, 5% of Anthropic’s shares will be committed today, with an additional 2% added at the board’s discretion for every 50% increase in the company’s value above a set baseline.",
+        "As a public benefit corporation, most of our work in pursuit of our mission takes place inside the company: research relevant to AI safety and interpretability; applied biomedical research; discounts on Claude for nonprofits and scientific institutions. These activities have both a public benefit component and for-profit value, so we house them directly in the company."
+      ],
+      "published": "2026-10-18T16:49:35.513Z"
+    },
     {
       "source": "Anthropic",
       "title": "Oct 15, 2026 Announcements An update on independent evaluators",
@@ -732,18 +744,6 @@
         "These systems, which DXC has run for decades, handle the transactions, claims, and operations businesses depend on, under strict security and compliance requirements. Before bringing Claude to these businesses, DXC worked with Claude inside its own operations, comprising some 115,000 employees across 70 countries, with similarly stringent requirements—including collaborating with Claude to write more than 95% of t..."
       ],
       "published": "2026-06-11T18:00:00.000Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 11, 2026 Announcements Introducing Claude Corps",
-      "url": "https://www.anthropic.com/news/claude-corps",
-      "summary": "Claude Corps is a national fellowship for early-career people passionate about extending the benefits of AI to communities across America.",
-      "summaryParagraphs": [
-        "Claude Corps is a national fellowship for early-career people passionate about extending the benefits of AI to communities across America.",
-        "We’re launching Claude Corps , a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.",
-        "We’ll teach 1,000 fellows how to use Claude well, match them with nonprofits across America, and pay them to spend a year—full-time, in-person—helping host organizations to advance their missions. Our goals are twofold: that host organizations are equipped with valuable tools and systems, and fellows build AI skills that will serve them in their careers."
-      ],
-      "published": "2026-06-11T13:00:00.000Z"
     },
     {
       "source": "Perplexity",
