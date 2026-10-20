@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T16:58:13.492Z",
+  "lastUpdated": "2026-10-20T15:01:22.565Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Microsoft",
+      "title": "A concrete vision: Saint-Gobain and Microsoft Discovery build for the future",
+      "url": "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/",
+      "summary": "PARIS — Saint-Gobain’s business is construction materials. It got its start in 1665, when King Louis XIV charged the company with making the mirrors for his lavish new palace in Versailles. And he needed a lot of mirrors.",
+      "summaryParagraphs": [
+        "PARIS — Saint-Gobain’s business is construction materials. It got its start in 1665, when King Louis XIV charged the company with making the mirrors for his lavish new palace in Versailles. And he needed a lot of mirrors.",
+        "The idea was to break the monopoly that glass-making power Venice had at the time, cutting costs and improving efficiency.",
+        "These days, Saint-Gobain has 161,000 employees in 81 countries making construction materials — glass is still important, but there’s also gypsum for plaster board, insulation and concrete admixtures and cement additives."
+      ],
+      "published": "2026-10-20T12:28:37.000Z"
+    },
     {
       "source": "Anthropic",
       "title": "Oct 18, 2026 Announcements Investing in the public benefit",
@@ -732,18 +744,6 @@
         "Regulated industries need their work to be highly accurate and auditable, and enterprises in these fields already use Claude for that reason. TCS brings decades of experience delivering technology that is compliant with companies’ regulatory requirements—and the reach to bring Claude to thousands of enterprises worldwide."
       ],
       "published": "2026-06-12T18:00:00.000Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
-      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
-      "summary": "Anthropic is announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
-      "summaryParagraphs": [
-        "Anthropic is announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
-        "We’re announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies. DXC will train tens of thousands of Claude-certified forward-deployed engineers (FDEs)—engineers embedded directly inside customer organizations—to bring Claude into the systems DXC operates for the world’s largest banks, airlines, insurers, manufacturers, and government agencies.",
-        "These systems, which DXC has run for decades, handle the transactions, claims, and operations businesses depend on, under strict security and compliance requirements. Before bringing Claude to these businesses, DXC worked with Claude inside its own operations, comprising some 115,000 employees across 70 countries, with similarly stringent requirements—including collaborating with Claude to write more than 95% of t..."
-      ],
-      "published": "2026-06-11T18:00:00.000Z"
     },
     {
       "source": "Perplexity",
