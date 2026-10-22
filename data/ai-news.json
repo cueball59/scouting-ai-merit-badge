@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T15:12:01.379Z",
+  "lastUpdated": "2026-10-22T15:13:28.707Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -16,7 +16,7 @@
     {
       "name": "Claude",
       "ok": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -27,6 +27,30 @@
     }
   ],
   "posts": [
+    {
+      "source": "Microsoft",
+      "title": "Before the ambulance arrives: How AI is helping the NHS rethink patient care",
+      "url": "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care/",
+      "summary": "When someone in the UK dials 999 for an ambulance, their focus is understandably on when help will arrive. Less visible is the planning, training, analysis and coordination that happen long before a paramedic reaches the patient.",
+      "summaryParagraphs": [
+        "When someone in the UK dials 999 for an ambulance, their focus is understandably on when help will arrive. Less visible is the planning, training, analysis and coordination that happen long before a paramedic reaches the patient.",
+        "“We all think about the ambulance when it’s on scene, but there’s so much that happens before that goes on before an ambulance crew even arrives with a patient,” says James Goulding, chief clinical information officer at Yorkshire Ambulance Service (YAS) NHS Trust. YAS is one of 200 plus trusts, or organizational units, of the UK’s National Health Service.",
+        "That preparation includes planning services, recruiting and training staff, analyzing population health data and understanding the experiences of patients who do not speak English fluently."
+      ],
+      "published": "2026-10-21T16:24:40.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "summary": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the compa...",
+      "summaryParagraphs": [
+        "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the compa...",
+        "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control.",
+        "“I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs. “I use AI tools in my research every day and see what they make possible, and as an educator I have confronted some of the hard questions they raise. As a grandfather, I want to help ensure that AI is developed and deployed for the long-term benefit of humanity.”"
+      ],
+      "published": "2026-10-21T00:00:00.000Z"
+    },
     {
       "source": "Microsoft",
       "title": "A concrete vision: Saint-Gobain and Microsoft Discovery build for the future",
@@ -663,25 +687,13 @@
     },
     {
       "source": "Anthropic",
-      "title": "Jul 6, 2026 Case Study Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities across government systems",
-      "url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
-      "summary": "The Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them.",
-      "summaryParagraphs": [
-        "The Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them.",
-        "Since 2025, the Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them. A team inside Alberta’s Ministry of Technology and Innovation scanned 466 million lines of code in 20 hours, remediated security gaps across its systems, and built new tools to make those systems safer.",
-        "We’re sharing details of their experience as an example of how government agencies can use Claude and Claude Code to secure their systems at a large scale. This is a critical challenge, as governments rely on these systems to deliver benefits and keep services running—yet the code is often old, insecure, and incompletely documented. Alberta has also published a collection of technical white papers documenting its..."
-      ],
-      "published": "2026-07-06T16:00:00.000Z"
-    },
-    {
-      "source": "Anthropic",
       "title": "Announcements",
       "url": "https://www.anthropic.com/news/announcements",
       "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
       "summaryParagraphs": [
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-        "Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption."
+        "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement.",
+        "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
       ],
       "published": ""
     },
@@ -693,7 +705,7 @@
       "summaryParagraphs": [
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
         "A rare Ebola strain is spreading in the DRC, with no confirmed vaccine. Global health organizations are using Claude to respond as fast as possible.",
-        "AI research and products that put safety at the frontier. AI will have a vast impact on the world. Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks."
+        "The inside story of how Claude Code went from an internal CLI to Anthropic's coding agent, told by researchers, engineers and early users who built it."
       ],
       "published": ""
     },
@@ -706,18 +718,6 @@
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
         "To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.",
         "We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Product",
-      "url": "https://www.anthropic.com/news/product",
-      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-      "summaryParagraphs": [
-        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore real data about AI and work.",
-        "Verified US K-12 educators get free access to premium Claude capabilities, a teaching skills library, and standards-aligned curricula for all 50 states."
       ],
       "published": ""
     },
