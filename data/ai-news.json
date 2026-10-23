@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T15:13:28.707Z",
+  "lastUpdated": "2026-10-23T15:01:02.693Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -16,7 +16,7 @@
     {
       "name": "Claude",
       "ok": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -27,6 +27,30 @@
     }
   ],
   "posts": [
+    {
+      "source": "Anthropic",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summaryParagraphs": [
+        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "Today, we’re donating Agent Skills , the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation (AAIF). More than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot, and VS Code, have integrated Agent Skills since we published the standard in December 2025.",
+        "A skill is a folder containing a SKILL.md file that teaches an agent a specific task or domain, along with any scripts or reference material it needs. We developed skills while working on Claude Code. It handled general knowledge work well, but often lacked the procedural knowledge that real business tasks need. Within weeks of our October 2025 launch, developers published thousands of skills on GitHub and wrote l..."
+      ],
+      "published": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "source": "Anthropic",
+      "title": "Open call for guest investigators in the life sciences",
+      "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "summary": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
+      "summaryParagraphs": [
+        "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
+        "Today, we’re inviting members of the life sciences community to apply to work with us on special projects. We’re looking for proposals from principal investigators and their research groups at academic institutions, nonprofits, or government labs who want to use Claude to investigate key questions in causal human biology, structural and computational molecular biology, medicinal chemistry, drug discovery, and clin...",
+        "Over 8–12 weeks, guest investigators will work directly with Anthropic researchers on a problem of interest and produce the analyses, artifacts, and tools that will be most helpful for them in their work. Our team will run our models and harnesses at no cost to them."
+      ],
+      "published": "2026-10-22T00:00:00.000Z"
+    },
     {
       "source": "Microsoft",
       "title": "Before the ambulance arrives: How AI is helping the NHS rethink patient care",
@@ -663,37 +687,13 @@
     },
     {
       "source": "Anthropic",
-      "title": "Jul 9, 2026 Announcements Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
-      "url": "https://www.anthropic.com/news/ben-bernanke",
-      "summary": "Former Federal Reserve Chair Ben Bernanke has been appointed to Anthropic's Long-Term Benefit Trust, bringing expertise on AI's economic impacts.",
-      "summaryParagraphs": [
-        "Former Federal Reserve Chair Ben Bernanke has been appointed to Anthropic's Long-Term Benefit Trust, bringing expertise on AI's economic impacts.",
-        "Anthropic's Long-Term Benefit Trust (LTBT) has appointed Dr. Ben Bernanke, a Distinguished Fellow at the Brookings Institution and former Chair of the Federal Reserve, as its newest member. He joins an independent body that works to hold Anthropic to its mission: the responsible development of advanced AI for the long-term benefit of humanity.",
-        "Bernanke led the Federal Reserve from 2006 to 2014, steering the central bank through the 2008 global financial crisis and the recovery that followed. Before entering government, he spent more than two decades as an academic economist, much of that time at Princeton, where he chaired the economics department and built a body of research on the Great Depression and the role banks play in financial crises. That work..."
-      ],
-      "published": "2026-07-09T16:00:00.000Z"
-    },
-    {
-      "source": "Anthropic",
-      "title": "Jul 9, 2026 Announcements Introducing a way to reflect on how you use Claude",
-      "url": "https://www.anthropic.com/news/reflect-with-claude",
-      "summary": "A new feature lets you track and visualize how you use Claude, and decide whether that time aligns with your goals.",
-      "summaryParagraphs": [
-        "A new feature lets you track and visualize how you use Claude, and decide whether that time aligns with your goals.",
-        "Today we're introducing, in beta, a new way to reflect on and refine how you use Claude. In our interviews with users, a common theme that’s emerged is a desire to better understand how, exactly, AI can be integrated into daily life. How often should someone use AI? How can it be used most effectively? When is AI suited to a task, and when is it better left to a human?",
-        "We built this feature to help answer these types of questions. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals. Your reflection dashboard can be found in Settings on Claude for web or the desktop app."
-      ],
-      "published": "2026-07-09T13:20:00.000Z"
-    },
-    {
-      "source": "Anthropic",
       "title": "Announcements",
       "url": "https://www.anthropic.com/news/announcements",
       "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
       "summaryParagraphs": [
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement.",
-        "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
+        "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
+        "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement."
       ],
       "published": ""
     },
@@ -723,6 +723,18 @@
     },
     {
       "source": "Anthropic",
+      "title": "Product",
+      "url": "https://www.anthropic.com/news/product",
+      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "summaryParagraphs": [
+        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "We’re donating Agent Skills, the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation. More than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot, and VS Code, have integrated Agent Skills since we published the standard in December 2025.",
+        "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore real data about AI and work."
+      ],
+      "published": ""
+    },
+    {
+      "source": "Anthropic",
       "title": "Safeguards",
       "url": "https://www.anthropic.com/news/safeguards",
       "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
@@ -730,18 +742,6 @@
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
         "Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.",
         "Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Security",
-      "url": "https://www.anthropic.com/news/security",
-      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-      "summaryParagraphs": [
-        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "We’re launching the Anthropic Cyber Mission, a long-term commitment to securing the systems everyone depends on.",
-        "Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threat reports in 2025."
       ],
       "published": ""
     },
