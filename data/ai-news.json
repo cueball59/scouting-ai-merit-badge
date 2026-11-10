@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-09T20:40:47.485Z",
+  "lastUpdated": "2026-11-10T17:45:11.300Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -16,7 +16,7 @@
     {
       "name": "Claude",
       "ok": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     },
     {
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Anthropic",
+      "title": "Anthropic launches roadshow for proposed initial public offering",
+      "url": "https://www.anthropic.com/news/roadshow-launch",
+      "summary": "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
+      "summaryParagraphs": [
+        "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
+        "The proposed offering consists of 825,000,000 shares of Class A common stock. Of these, 801,351,354 shares are being offered by Anthropic and 23,648,646 shares are being offered by certain existing stockholders. Anthropic will not receive any proceeds from the sale of shares by the selling stockholders. Anthropic also expects to grant the underwriters a 30-day option to purchase up to an additional 123,750,000 sha...",
+        "The initial public offering price is expected to be between $70.00 and $78.00 per share. Anthropic has applied to list its Class A common stock on the Nasdaq Global Select Market under the symbol “ANT.”"
+      ],
+      "published": "2026-11-10T00:00:00.000Z"
+    },
     {
       "source": "Anthropic",
       "title": "AI for Science expands to foundations and research institutions",
@@ -680,8 +692,8 @@
       "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
       "summaryParagraphs": [
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "Our most capable models for daunting technical work, Claude Fable 5.2 and Claude Mythos 5.2 set a new bar in coding, finance, and the sciences.",
-        "We’re highlighting 20 scientific foundations, institutions, and research groups around the world that we’ve partnered with in an expansion of our AI for Science program."
+        "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
+        "Our most capable models for daunting technical work, Claude Fable 5.2 and Claude Mythos 5.2 set a new bar in coding, finance, and the sciences."
       ],
       "published": ""
     },
@@ -730,18 +742,6 @@
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
         "We’re donating Agent Skills, the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation. More than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot, and VS Code, have integrated Agent Skills since we published the standard in December 2025.",
         "We're launching the Anthropic Economic Index connector for Claude, which lets anyone explore real data about AI and work."
-      ],
-      "published": ""
-    },
-    {
-      "source": "Anthropic",
-      "title": "Safeguards",
-      "url": "https://www.anthropic.com/news/safeguards",
-      "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-      "summaryParagraphs": [
-        "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.",
-        "Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%."
       ],
       "published": ""
     },
