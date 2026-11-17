@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T20:23:30.514Z",
+  "lastUpdated": "2026-11-17T19:09:26.239Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Microsoft",
+      "title": "Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Microsoft AI Experiences",
+      "url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences/",
+      "summary": "REDMOND, Wash., and SAN FRANCISCO — Nov. 17, 2026 — Microsoft Corp. (NASDAQ: MSFT) and Salesforce Inc. (NYSE: CRM) today announced Copilotforce, a new partnership that helps employees get more done in the tools they already use by bringing Salesforce customer context, business processes and actions into Microsoft Copilot and other AI-powered productivity experiences.&nbsp;&nbsp;",
+      "summaryParagraphs": [
+        "REDMOND, Wash., and SAN FRANCISCO — Nov. 17, 2026 — Microsoft Corp. (NASDAQ: MSFT) and Salesforce Inc. (NYSE: CRM) today announced Copilotforce, a new partnership that helps employees get more done in the tools they already use by bringing Salesforce customer context, business processes and actions into Microsoft Copilot and other AI-powered productivity experiences.&nbsp;&nbsp;",
+        "Unveiled at Microsoft Ignite, the partnership introduces new integrations across Microsoft Copilot, Microsoft Teams and Microsoft Fabric, including Salesforce in Copilot, a plugin available in public preview with 38+ prebuilt sales skills. Together, these capabilities help businesses move faster, reduce manual work and get more value from their existing technology investments — while maintaining the security, gove...",
+        "Bringing Salesforce workflows together with conversations, meetings and documents in Microsoft 365 means less time spent moving between systems and more time on the work that matters. Salesforce in Copilot connects customer context with the work happening across the business so employees can make more informed decisions and take action without constantly switching applications."
+      ],
+      "published": "2026-11-17T18:10:16.000Z"
+    },
     {
       "source": "Anthropic",
       "title": "Anthropic launches roadshow for proposed initial public offering",
@@ -672,18 +684,6 @@
         "Our first donation in February 2026 was made to help promote policies that will maintain meaningful safeguards, sustain America’s AI leadership, and demand transparency from the companies building the most powerful AI models. In the months since, the case for these policies has only gotten stronger ."
       ],
       "published": "2026-07-21T17:00:00.000Z"
-    },
-    {
-      "source": "Microsoft",
-      "title": "Microsoft expands Azure AI and HPC infrastructure with AMD",
-      "url": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
-      "summary": "AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing...",
-      "summaryParagraphs": [
-        "AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing...",
-        "AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing (HPC) solutions.",
-        "Our approach to AI infrastructure is designed to support the breadth of how AI systems are built and run. We closely work with industry innovators like AMD as well as our own purpose-built silicon and systems to provide customers with a comprehensive, open and heterogenous platform to achieve the best performance, cost and energy efficiency outcomes."
-      ],
-      "published": "2026-07-20T18:20:47.000Z"
     },
     {
       "source": "Anthropic",
