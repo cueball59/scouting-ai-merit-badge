@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-18T18:49:43.084Z",
+  "lastUpdated": "2026-11-19T18:58:03.205Z",
   "sources": [
     {
       "name": "Microsoft",
@@ -27,6 +27,18 @@
     }
   ],
   "posts": [
+    {
+      "source": "Anthropic",
+      "title": "Anthropic prices initial public offering",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "summary": "Today Anthropic, PBC priced its initial public offering of its Class A common stock.",
+      "summaryParagraphs": [
+        "Today Anthropic, PBC priced its initial public offering of its Class A common stock.",
+        "Today Anthropic, PBC priced its initial public offering of its Class A common stock at $83.00 per share. The offering consists of 980,000,000 shares of Class A common stock, 956,351,354 of which are being sold by Anthropic and 23,648,646 of which are being sold by certain selling stockholders. Anthropic will not receive any proceeds from the sale of shares by the selling stockholders.",
+        "The shares are expected to begin trading on the Nasdaq Global Select Market on November 19, 2026 under the symbol “ANT.” The offering is expected to close on November 20, 2026, subject to the satisfaction of customary closing conditions. In addition, Anthropic has granted the underwriters a 30-day option to purchase up to an additional 147,000,000 shares of its Class A common stock."
+      ],
+      "published": "2026-11-18T00:00:00.000Z"
+    },
     {
       "source": "Microsoft",
       "title": "Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Microsoft AI Experiences",
@@ -675,25 +687,13 @@
     },
     {
       "source": "Anthropic",
-      "title": "Jul 21, 2026 Announcements Anthropic is donating another $20 million to Public First Action",
-      "url": "https://www.anthropic.com/news/donation-public-first-action",
-      "summary": "Anthropic is contributing an additional $20 million to Public First Action, bringing our total support to $40 million.",
-      "summaryParagraphs": [
-        "Anthropic is contributing an additional $20 million to Public First Action, bringing our total support to $40 million.",
-        "We're contributing an additional $20 million to Public First Action , bringing our total support to $40 million. Public First Action is a nonpartisan organization that educates the public about AI and works with Republicans, Democrats, and Independents who are serious about putting sensible AI safeguards in place. Both of our donations were made exclusively to support Public First Action’s public education and pol...",
-        "Our first donation in February 2026 was made to help promote policies that will maintain meaningful safeguards, sustain America’s AI leadership, and demand transparency from the companies building the most powerful AI models. In the months since, the case for these policies has only gotten stronger ."
-      ],
-      "published": "2026-07-21T17:00:00.000Z"
-    },
-    {
-      "source": "Anthropic",
       "title": "Announcements",
       "url": "https://www.anthropic.com/news/announcements",
       "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
       "summaryParagraphs": [
         "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-        "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
-        "Our most capable models for daunting technical work, Claude Fable 5.2 and Claude Mythos 5.2 set a new bar in coding, finance, and the sciences."
+        "Today Anthropic, PBC priced its initial public offering of its Class A common stock.",
+        "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock."
       ],
       "published": ""
     },
