@@ -1385,7 +1385,7 @@
       <section class="page-title">
         <span class="requirement-number">Requirement 4(b)</span>
         <h1>Ethics in AI:<br>What Would You Do?</h1>
-        <p>Choose a response, discuss tradeoffs, then reveal talking points. There is not always one perfect answer, which is literally the point.</p>
+        <p>Choose a response, discuss tradeoffs, then reveal facilitator notes. Each scenario includes an optimal answer, a strong secondary answer, and detailed talking points for every option.</p>
       </section>
       <section class="game-layout">
         <article class="game-card game-stage ethics-stage" id="ethics-card"></article>
@@ -1405,6 +1405,16 @@
     function paint() {
       const item = SITE_DATA.ethics[index];
       const progress = Math.round(((index + 1) / SITE_DATA.ethics.length) * 100);
+      const pointsForChoice = (choice) => {
+        const points = item.optionTalkingPoints && item.optionTalkingPoints[choice];
+        if (Array.isArray(points) && points.length) return points;
+        return item.guide ? [item.guide] : [];
+      };
+      const choiceTier = (choice) => {
+        if (choice === item.optimalChoice) return { label: "Optimal answer", className: "optimal" };
+        if (choice === item.secondaryChoice) return { label: "Secondary answer", className: "secondary" };
+        return { label: "Higher-risk option", className: "risk" };
+      };
       card.innerHTML = `
         <div class="game-topline">
           <div class="game-count">Scenario ${index + 1} of ${SITE_DATA.ethics.length}</div>
@@ -1419,12 +1429,32 @@
           `).join("")}
         </div>
         <div class="answer-box ${revealed ? "" : "hidden"}">
-          <span class="answer-pill">Talking points</span>
+          <span class="answer-pill">Facilitator debrief</span>
           ${selected ? `<p><strong>Group choice:</strong> ${esc(selected)}</p>` : ""}
+          ${item.optimalChoice ? `<p><strong>Optimal answer:</strong> ${esc(item.optimalChoice)}</p>` : ""}
+          ${item.secondaryChoice ? `<p><strong>Secondary answer:</strong> ${esc(item.secondaryChoice)}</p>` : ""}
           <p>${esc(item.guide)}</p>
           <p><strong>Scout Law connections:</strong> ${item.scoutLaw.map(esc).join(", ")}</p>
-          <h3>Discussion questions</h3>
-          <ul>${item.discuss.map((question) => `<li>${esc(question)}</li>`).join("")}</ul>
+          <h3>Option-by-option talking points</h3>
+          <div class="ethics-option-points">
+            ${item.choices.map((choice) => {
+              const tier = choiceTier(choice);
+              const points = pointsForChoice(choice);
+              return `
+                <article class="ethics-option-card ${selected === choice ? "selected" : ""}">
+                  <div class="ethics-option-head">
+                    <strong>${esc(choice)}</strong>
+                    <span class="ethics-tier ${esc(tier.className)}">${esc(tier.label)}</span>
+                  </div>
+                  <ul>${points.map((point) => `<li>${esc(point)}</li>`).join("")}</ul>
+                </article>
+              `;
+            }).join("")}
+          </div>
+          ${item.discuss && item.discuss.length ? `
+            <h3>Extra discussion questions</h3>
+            <ul>${item.discuss.map((question) => `<li>${esc(question)}</li>`).join("")}</ul>
+          ` : ""}
         </div>
       `;
 

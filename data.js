@@ -630,80 +630,320 @@ const SITE_DATA = {
       title: "School Admissions",
       scenario: "An AI system ranks students for a selective school program using grades, test scores, activities, and historical admissions data.",
       choices: ["Use the AI ranking as-is", "Require human review and an appeals process", "Stop using AI entirely", "Ask for more fairness data first"],
+      optimalChoice: "Require human review and an appeals process",
+      secondaryChoice: "Ask for more fairness data first",
       guide: "Fairness depends on data quality, bias checks, transparency, human oversight, and a way for students to appeal.",
       scoutLaw: ["Trustworthy", "Kind"],
+      optionTalkingPoints: {
+        "Use the AI ranking as-is": [
+          "Fast and consistent, but it can lock in historical bias and miss context like hardship, growth, or unique contributions.",
+          "Students and families cannot challenge errors without transparent review criteria and an appeal process.",
+          "High risk if the model has not been independently audited for disparate impact."
+        ],
+        "Require human review and an appeals process": [
+          "Best balance: AI helps process applications, but trained staff make final calls with accountability.",
+          "Appeals allow correction of data errors, special circumstances, and edge cases AI cannot interpret well.",
+          "Supports fairness, transparency, and due process while still using technology efficiently."
+        ],
+        "Stop using AI entirely": [
+          "Removes algorithmic bias risk, but may increase human bias, inconsistency, and slower decisions.",
+          "Can reduce scale and make review workloads harder for admissions staff.",
+          "Reasonable temporary pause if serious harm is found, but not always necessary as a permanent policy."
+        ],
+        "Ask for more fairness data first": [
+          "Strong step before expansion: compare outcomes across demographics, neighborhoods, and school types.",
+          "Should include model cards, false-positive/false-negative rates, and third-party validation.",
+          "Good move, but should still pair with human review and appeals for real-world decisions."
+        ]
+      },
       discuss: ["How can the system be audited?", "What role should humans play?", "How should individual circumstances be considered?"]
     },
     {
       title: "Emergency Room Prioritization",
       scenario: "A hospital wants AI to help prioritize emergency patients based on symptoms, vital signs, medical history, and risk factors.",
       choices: ["Let AI decide the order", "Use AI as advice for trained staff", "Only use first-come, first-served", "Use AI only for non-urgent cases"],
+      optimalChoice: "Use AI as advice for trained staff",
+      secondaryChoice: "Use AI only for non-urgent cases",
       guide: "Life-or-death contexts need human judgment, override procedures, backup plans, and clear accountability.",
       scoutLaw: ["Helpful", "Courteous", "Kind", "Brave"],
+      optionTalkingPoints: {
+        "Let AI decide the order": [
+          "Could improve speed, but removes clinician judgment in high-stakes edge cases.",
+          "Model errors can cause serious harm if there is no mandatory human check.",
+          "Liability and accountability become unclear when automated decisions are final."
+        ],
+        "Use AI as advice for trained staff": [
+          "Best choice: AI can surface risk quickly while clinicians apply context and make final triage decisions.",
+          "Supports safer care through human override, escalation rules, and medical accountability.",
+          "Works well with protocol audits, ongoing calibration, and post-incident review."
+        ],
+        "Only use first-come, first-served": [
+          "Simple and transparent, but medically unsafe because urgency is ignored.",
+          "Can delay care for critical patients and increase preventable harm.",
+          "Not aligned with emergency medicine priorities."
+        ],
+        "Use AI only for non-urgent cases": [
+          "Lower risk than full automation and useful as a pilot with monitoring.",
+          "Still leaves key triage decisions to humans for critical patients.",
+          "Good transitional approach while validating fairness and reliability."
+        ]
+      },
       discuss: ["Who is responsible for mistakes?", "When should staff override the AI?", "What backup is needed?"]
     },
     {
       title: "Predictive Policing",
       scenario: "A police department uses AI to predict high-crime areas from historical data and assign patrols.",
       choices: ["Deploy patrols wherever AI predicts", "Review for bias before deployment", "Publish methods and oversight rules", "Reject the system until community input happens"],
+      optimalChoice: "Review for bias before deployment",
+      secondaryChoice: "Reject the system until community input happens",
       guide: "Historical data may reflect biased enforcement. Community trust, transparency, oversight, and limits on use matter.",
       scoutLaw: ["Trustworthy", "Loyal", "Helpful", "Brave"],
+      optionTalkingPoints: {
+        "Deploy patrols wherever AI predicts": [
+          "Fast to operationalize, but can amplify past enforcement bias and over-police specific neighborhoods.",
+          "Creates feedback loops where more patrols generate more recorded incidents in the same locations.",
+          "High civil-rights and trust risk without safeguards."
+        ],
+        "Review for bias before deployment": [
+          "Best starting point: validate inputs, outcomes, and error rates across communities before use.",
+          "Bias review should include independent experts, fairness metrics, and clear usage limits.",
+          "Allows evidence-based go/no-go decisions instead of blind trust."
+        ],
+        "Publish methods and oversight rules": [
+          "Improves transparency and public accountability.",
+          "Helps communities understand what data is used and how decisions are reviewed.",
+          "Important, but publication alone does not replace bias testing."
+        ],
+        "Reject the system until community input happens": [
+          "Protects trust by requiring affected communities to shape rules first.",
+          "Useful when trust is low or model governance is weak.",
+          "Strong safeguard, but should be paired with a practical path to redesign and evaluation."
+        ]
+      },
       discuss: ["How can communities be treated fairly?", "What data should be off-limits?", "What oversight should exist?"]
     },
     {
       title: "AI Essay Grading",
       scenario: "A school uses AI to grade essays for writing mechanics, understanding, creativity, and learning objectives.",
       choices: ["Let AI assign final grades", "Use AI feedback but teacher final review", "Use AI only for grammar suggestions", "Create an appeals path for students"],
+      optimalChoice: "Use AI feedback but teacher final review",
+      secondaryChoice: "Create an appeals path for students",
       guide: "Creativity, culture, language, and context are hard to grade automatically. Teachers should stay involved.",
       scoutLaw: ["Trustworthy", "Helpful", "Kind"],
+      optionTalkingPoints: {
+        "Let AI assign final grades": [
+          "Efficient, but risky because models can miss nuance, originality, and cultural context.",
+          "May penalize non-standard writing styles or multilingual learners unfairly.",
+          "Final grading authority should remain with educators."
+        ],
+        "Use AI feedback but teacher final review": [
+          "Best balance: AI supports speed and consistency, teachers preserve judgment and fairness.",
+          "Teachers can interpret context, originality, and growth over time.",
+          "Supports accountability because a human is responsible for final outcomes."
+        ],
+        "Use AI only for grammar suggestions": [
+          "Low risk and useful for editing support.",
+          "Misses opportunities where AI can help with structure and rubric alignment.",
+          "Safe limited use, but too narrow for full assessment workflows."
+        ],
+        "Create an appeals path for students": [
+          "Essential fairness safeguard when students think grading was inaccurate or biased.",
+          "Promotes trust, transparency, and correction of edge cases.",
+          "Strong policy addition, but still needs teacher review in the initial grading step."
+        ]
+      },
       discuss: ["How can creativity be judged fairly?", "How should cultural differences be handled?", "What appeals process is fair?"]
     },
     {
       title: "Environmental Resource AI",
       scenario: "A city uses AI to recommend water usage, energy distribution, and waste management decisions.",
       choices: ["Prioritize conservation above all", "Balance environment, community, and cost", "Let elected leaders override AI", "Ask residents for input before launch"],
+      optimalChoice: "Balance environment, community, and cost",
+      secondaryChoice: "Ask residents for input before launch",
       guide: "Good decisions balance conservation, community needs, economic impact, and future generations.",
       scoutLaw: ["Thrifty", "Clean", "Helpful"],
+      optionTalkingPoints: {
+        "Prioritize conservation above all": [
+          "Protects natural resources, but can impose unfair burdens on vulnerable communities.",
+          "May ignore affordability, access, and local economic realities.",
+          "Useful principle, but needs equity guardrails."
+        ],
+        "Balance environment, community, and cost": [
+          "Best choice: reflects real policy tradeoffs and long-term sustainability.",
+          "Encourages measurable goals for conservation, affordability, and reliability.",
+          "Supports transparent decision criteria that can be publicly evaluated."
+        ],
+        "Let elected leaders override AI": [
+          "Democratic accountability matters, especially for public services.",
+          "Overrides can correct model blind spots in emergencies or policy conflicts.",
+          "Needs transparency to avoid arbitrary or politically biased decisions."
+        ],
+        "Ask residents for input before launch": [
+          "Builds trust and surfaces local knowledge AI might miss.",
+          "Helps identify unintended consequences before full deployment.",
+          "Strong governance step, but still needs quantitative policy balancing."
+        ]
+      },
       discuss: ["How should competing needs be balanced?", "Who gets a voice?", "How can fairness be measured?"]
     },
     {
       title: "Youth Platform Moderation",
       scenario: "A youth platform uses AI to filter inappropriate content and flag harmful interactions.",
       choices: ["Filter aggressively", "Use AI plus human moderators", "Let users appeal removals", "Show warnings instead of removing content"],
+      optimalChoice: "Use AI plus human moderators",
+      secondaryChoice: "Let users appeal removals",
       guide: "Safety matters, but context, privacy, false positives, and fair appeals matter too.",
       scoutLaw: ["Clean", "Courteous", "Friendly", "Brave"],
+      optionTalkingPoints: {
+        "Filter aggressively": [
+          "Can reduce harmful exposure quickly, especially for younger users.",
+          "High false-positive risk may remove harmless speech and frustrate users.",
+          "Should be paired with review and appeals to avoid over-censorship."
+        ],
+        "Use AI plus human moderators": [
+          "Best balance: AI scales detection, humans review nuance, context, and edge cases.",
+          "Improves both safety and fairness versus fully automated moderation.",
+          "Supports accountability through documented moderator decisions."
+        ],
+        "Let users appeal removals": [
+          "Critical due-process protection when moderation errors happen.",
+          "Builds trust and improves model quality by learning from overturned cases.",
+          "Strong complement to moderation, but not enough by itself."
+        ],
+        "Show warnings instead of removing content": [
+          "Less restrictive and can preserve expression in borderline cases.",
+          "Not sufficient for clearly harmful, exploitative, or dangerous content.",
+          "Better as a graduated response for lower-risk content categories."
+        ]
+      },
       discuss: ["How strict should filters be?", "What should happen after a false flag?", "When should humans review content?"]
     },
     {
       title: "Autonomous Vehicle Safety",
       scenario: "A self-driving vehicle must make fast decisions during possible accidents.",
       choices: ["Protect passengers first", "Minimize total harm", "Follow traffic law only", "Require human driver takeover"],
+      optimalChoice: "Minimize total harm",
+      secondaryChoice: "Require human driver takeover",
       guide: "Safety priorities, legal responsibility, risk balancing, and testing standards must be clear before deployment.",
       scoutLaw: ["Trustworthy", "Helpful", "Brave", "Loyal"],
+      optionTalkingPoints: {
+        "Protect passengers first": [
+          "Appeals to buyer expectations, but can increase risk to pedestrians and other road users.",
+          "Ethically difficult when public roads require shared safety responsibilities.",
+          "May conflict with broader public-safety goals."
+        ],
+        "Minimize total harm": [
+          "Best ethical baseline for system-level safety policy.",
+          "Aligns with reducing severe injury and fatality risk across everyone affected.",
+          "Requires transparent testing, clear thresholds, and independent safety audits."
+        ],
+        "Follow traffic law only": [
+          "Clear and auditable, but laws do not cover every emergency edge case.",
+          "Can produce unsafe outcomes if rigid compliance ignores immediate danger.",
+          "Good baseline, but insufficient as sole decision rule."
+        ],
+        "Require human driver takeover": [
+          "Adds a fail-safe when confidence is low or scenarios are ambiguous.",
+          "Useful transitional safeguard while systems mature.",
+          "Can fail if handoff happens too late, so timing and alerts are critical."
+        ]
+      },
       discuss: ["How should priorities be programmed?", "Who is responsible?", "How should risks be tested?"]
     },
     {
       title: "Loan Approval",
       scenario: "A bank uses AI to approve or deny loans based on credit history, income, debt, and financial patterns.",
       choices: ["Trust the model output", "Require explanations for denials", "Offer human review for edge cases", "Audit for demographic bias"],
+      optimalChoice: "Audit for demographic bias",
+      secondaryChoice: "Require explanations for denials",
       guide: "Access to credit affects opportunity. The process needs explainability, fairness audits, appeals, and human review.",
       scoutLaw: ["Trustworthy", "Thrifty", "Helpful"],
+      optionTalkingPoints: {
+        "Trust the model output": [
+          "Fast and consistent, but unsafe if data or model design embeds bias.",
+          "Applicants may be denied without meaningful recourse.",
+          "Not acceptable without fairness controls and transparency."
+        ],
+        "Require explanations for denials": [
+          "Improves transparency and helps applicants understand what to improve.",
+          "Supports legal compliance in many lending contexts.",
+          "Strong protection, but does not by itself prevent systemic bias."
+        ],
+        "Offer human review for edge cases": [
+          "Useful for unusual situations where models may be uncertain or incomplete.",
+          "Can correct false negatives and context gaps.",
+          "Needs clear standards so review is consistent and not arbitrary."
+        ],
+        "Audit for demographic bias": [
+          "Best foundation: detects disparate impact and monitors fairness over time.",
+          "Should include periodic testing by protected characteristics and outcomes.",
+          "Enables proactive fixes instead of only reacting to complaints."
+        ]
+      },
       discuss: ["How can bias be prevented?", "What should applicants be told?", "How should special circumstances count?"]
     },
     {
       title: "Job Application Screening",
       scenario: "A company uses AI to screen resumes and rank candidates before interviews.",
       choices: ["Interview only top AI-ranked candidates", "Audit the model for bias", "Keep a human recruiter in the loop", "Tell applicants how AI is used"],
+      optimalChoice: "Keep a human recruiter in the loop",
+      secondaryChoice: "Audit the model for bias",
       guide: "Hiring systems should support equal opportunity, transparency, human oversight, and respectful treatment.",
       scoutLaw: ["Friendly", "Kind", "Helpful"],
+      optionTalkingPoints: {
+        "Interview only top AI-ranked candidates": [
+          "Efficient but risky: can eliminate qualified candidates due to model bias or missing context.",
+          "Over-reliance can narrow diversity and reinforce legacy hiring patterns.",
+          "Should not be used as an automatic gate with no human review."
+        ],
+        "Audit the model for bias": [
+          "Critical governance step to detect unfair outcomes across groups.",
+          "Needs regular re-testing as job requirements and labor markets change.",
+          "Strong secondary policy, but still needs human oversight in live decisions."
+        ],
+        "Keep a human recruiter in the loop": [
+          "Best balance: AI supports prioritization, humans evaluate nuance and potential.",
+          "Allows context-aware decisions and accountability in final candidate selection.",
+          "Reduces automation bias by requiring explicit recruiter judgment."
+        ],
+        "Tell applicants how AI is used": [
+          "Builds trust and supports informed consent.",
+          "Helps candidates understand process expectations and feedback channels.",
+          "Important transparency measure, but does not by itself guarantee fairness."
+        ]
+      },
       discuss: ["How can fairness be checked?", "What should applicants know?", "What should humans decide?"]
     },
     {
       title: "Personalized Data Collection",
       scenario: "An app collects personal data to personalize services and improve its AI model.",
       choices: ["Collect all useful data", "Collect only what is necessary", "Let users opt in and delete data", "Explain data use in plain language"],
+      optimalChoice: "Collect only what is necessary",
+      secondaryChoice: "Let users opt in and delete data",
       guide: "Privacy requires consent, limits, security, transparency, and user control.",
       scoutLaw: ["Trustworthy", "Loyal", "Courteous"],
+      optionTalkingPoints: {
+        "Collect all useful data": [
+          "May improve model performance, but creates major privacy, security, and trust risks.",
+          "Increases breach impact and potential misuse of sensitive information.",
+          "Usually violates data minimization principles."
+        ],
+        "Collect only what is necessary": [
+          "Best default: limits risk while still enabling core product functionality.",
+          "Supports privacy-by-design and reduces legal exposure.",
+          "Forces teams to justify each data field with a clear purpose."
+        ],
+        "Let users opt in and delete data": [
+          "Strong user-control model that improves consent quality and trust.",
+          "Deletion rights reduce long-term exposure from stale or sensitive data.",
+          "Excellent safeguard, but still needs minimization and security by default."
+        ],
+        "Explain data use in plain language": [
+          "Improves informed consent and reduces confusion from legal jargon.",
+          "Should include what is collected, why, retention period, and sharing rules.",
+          "Necessary transparency step, but not enough without strict collection limits."
+        ]
+      },
       discuss: ["What data is truly needed?", "How should it be protected?", "What control should users have?"]
     }
   ]
