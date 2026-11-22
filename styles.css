@@ -546,6 +546,28 @@ button.ghost {
   padding-left: 0.75rem;
 }
 
+.project-plan-steps,
+.project-plan-checklist {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.project-example-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-example-card {
+  border: 2px solid var(--cp-blue);
+  border-radius: 0.75rem;
+  padding: 0.9rem;
+}
+
+.project-example-card h3 {
+  margin-top: 0;
+}
+
 .parent-safety-note {
   border: 2px solid var(--cp-red);
   margin-top: 1.5rem;

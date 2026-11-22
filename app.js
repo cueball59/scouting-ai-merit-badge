@@ -532,6 +532,35 @@
         <h3>Live-session activities</h3>
         <ul>${req.activities.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
       </section>
+      ${req.projectPlanGuide ? `
+        <section class="panel">
+          <h2>Requirement 7a project planning guide</h2>
+          <p>${esc(req.projectPlanGuide.intro)}</p>
+          <h3>Project map (fill this out first)</h3>
+          <ol class="project-plan-steps">
+            ${req.projectPlanGuide.steps.map((step) => `<li>${esc(step)}</li>`).join("")}
+          </ol>
+          <h3>Readiness checklist</h3>
+          <ul class="project-plan-checklist">
+            ${req.projectPlanGuide.checklist.map((item) => `<li>${esc(item)}</li>`).join("")}
+          </ul>
+        </section>
+      ` : ""}
+      ${req.approvedProjectExamples ? `
+        <section class="panel">
+          <h2>Examples of approved 7a project types</h2>
+          <p>These are sample project types that are usually acceptable with counselor approval. Scouts can also propose their own project ideas.</p>
+          <div class="project-example-grid">
+            ${req.approvedProjectExamples.map((project) => `
+              <article class="project-example-card">
+                <h3>${esc(project.title)}</h3>
+                <p>${esc(project.details)}</p>
+                <p><strong>Why this can be approved:</strong> ${esc(project.whyApproved)}</p>
+              </article>
+            `).join("")}
+          </div>
+        </section>
+      ` : ""}
       ${req.terms ? `
         <section class="panel">
           <h2>Starter glossary</h2>

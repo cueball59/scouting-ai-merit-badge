@@ -347,6 +347,57 @@ const SITE_DATA = {
         "For the lesson option, include an explanation, examples, and an interactive demo.",
         "Reflect on what worked, what failed, and what was learned."
       ],
+      projectPlanGuide: {
+        intro: "Use this map before you build so your counselor can quickly review your Requirement 7a plan.",
+        steps: [
+          "Project goal: What problem are you solving, and who does it help?",
+          "Success target: How will you know your project worked? (Example: 8 out of 10 correct classifications.)",
+          "Data plan: What data do you need, where does it come from, and is it safe/allowed to use?",
+          "Tools and platform: What app, language, model, or no-code tool will you use?",
+          "Build plan: List 3-5 implementation steps in order.",
+          "Ethics and safety: Identify fairness, privacy, accuracy, and misuse risks plus protections.",
+          "Test plan: How will you test with sample inputs and edge cases?",
+          "Share and reflect: How will you demo your result and explain what you learned?"
+        ],
+        checklist: [
+          "My counselor approved this project idea before I started building.",
+          "My data does not include private personal information.",
+          "I can explain one ethical risk and one safeguard in my design.",
+          "I have a simple demo plan for sharing with my counselor."
+        ]
+      },
+      approvedProjectExamples: [
+        {
+          title: "Image classifier for recyclable vs. trash items",
+          details: "Build a small model or no-code classifier that labels common objects from photos.",
+          whyApproved: "It has clear objectives, defined data needs, measurable accuracy, and obvious ethical considerations."
+        },
+        {
+          title: "Camp packing helper using rule + AI suggestions",
+          details: "Create a tool that asks trip conditions (weather, trip length) and suggests a packing list.",
+          whyApproved: "It solves a real Scouting need, uses structured inputs, and requires review for safety and accuracy."
+        },
+        {
+          title: "Troop FAQ assistant (human-reviewed)",
+          details: "Build a simple assistant that answers troop schedule, uniform, and meeting logistics questions from approved content.",
+          whyApproved: "Useful community project with clear guardrails on data, scope, and human review."
+        },
+        {
+          title: "Wildlife or plant ID helper for local hikes",
+          details: "Use an AI model to suggest likely species from a photo, then verify with trusted sources.",
+          whyApproved: "Strong learning project that includes model limitations, confidence checks, and safety disclaimers."
+        },
+        {
+          title: "Homework study-question generator",
+          details: "Build prompts/workflow that generate practice questions from class notes, then verify correctness.",
+          whyApproved: "Age-appropriate project with clear educational value and built-in quality control."
+        },
+        {
+          title: "Simple anomaly detector for sensor logs",
+          details: "Use sample temperature/light data and flag unusual values for review.",
+          whyApproved: "Demonstrates data use, objective thresholds, testing, and discussion of false positives."
+        }
+      ],
       counselorPrompt: "Confirm the project or lesson is age-appropriate, safe, and grounded in responsible AI use."
     },
     {
