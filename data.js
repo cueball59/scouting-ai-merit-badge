@@ -236,9 +236,9 @@ const SITE_DATA = {
           watchUrl: "https://www.youtube.com/watch?v=WSStTnoSb_c"
         },
         {
-          title: "AI Deepfakes That Look Shockingly Real | Veo 3 Ultra-Realistic Fake Videos",
-          source: "floydbishop",
-          watchUrl: "https://www.youtube.com/watch?v=d04vPyO2AoA"
+          title: "This is not Morgan Freeman - A Deepfake Singularity",
+          source: "Diep Nep",
+          watchUrl: "https://www.youtube.com/watch?v=oxXpB9pSETo"
         }
       ]
     },

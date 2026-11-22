@@ -546,6 +546,20 @@ button.ghost {
   padding-left: 0.75rem;
 }
 
+.parent-safety-note {
+  border: 2px solid var(--cp-red);
+  margin-top: 1.5rem;
+}
+
+.parent-safety-note h2 {
+  color: var(--cp-red);
+  margin-top: 0;
+}
+
+.parent-safety-note p {
+  margin-bottom: 0;
+}
+
 .requirement-detail-list {
   display: grid;
   gap: 0.5rem;

@@ -468,6 +468,11 @@
         </div>
       </section>
 
+      <section class="panel parent-safety-note">
+        <h2>AI safety reminder for Scouts</h2>
+        <p><strong>Before using AI tools or creating any login on a consumer-facing site, Scouts should speak with a parent or guardian first.</strong> AI safety, privacy, and responsible account use are important.</p>
+      </section>
+
       <section class="progress-tracker" aria-label="Your progress">
         <div class="progress-tracker-top">
           <h2>${allDone ? "All requirements explored!" : "Your progress"}</h2>
